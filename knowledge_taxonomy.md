@@ -1,7 +1,7 @@
 # AWS Knowledge Taxonomy & Categorization
 
 ## 1. Knowledge Types
-To ensure the Context-Aware Hybrid RAG system applies the correct retrieval strategy (Dense vs. Sparse), all documents are classified into four types:
+To ensure the Context-Aware system applies the correct retrieval strategy (Dense vs. Sparse), all documents are classified into four types:
 * **Factual:** API References, Instance Types, Limits, Quotas. (Heavy reliance on exact match/BM25).
 * **Procedural:** User Guides (UG), Developer Guides (DG), step-by-step tutorials.
 * **Conceptual:** Well-Architected Framework, Overviews, Architecture whitepapers. (Heavy reliance on Dense Vector search).
