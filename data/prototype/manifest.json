@@ -1,0 +1,744 @@
+{
+  "documents": [
+    {
+      "id": "AWS-AWS-aws-overview",
+      "title": "AWS Whitepaper",
+      "source_path": "data/prototype/AWS/L0/aws-overview.md",
+      "service": "AWS",
+      "knowledge_type": "factual",
+      "target_layer": "L0",
+      "token_count": 39326,
+      "last_updated": "2026-03-26"
+    },
+    {
+      "id": "AWS-AWS-wellarchitected-framework",
+      "title": "Framework",
+      "source_path": "data/prototype/AWS/L1/wellarchitected-framework.md",
+      "service": "AWS",
+      "knowledge_type": "conceptual",
+      "target_layer": "L1",
+      "token_count": 227057,
+      "last_updated": "2026-03-26"
+    },
+    {
+      "id": "AWS-AWS-glossary-ref",
+      "title": "Reference",
+      "source_path": "data/prototype/AWS/L0/glossary-ref.md",
+      "service": "AWS",
+      "knowledge_type": "factual",
+      "target_layer": "L0",
+      "token_count": 23908,
+      "last_updated": "2026-03-26"
+    },
+    {
+      "id": "AWS-LAMBDA-lambda-dg",
+      "title": "Developer Guide",
+      "source_path": "data/prototype/Lambda/L2/lambda-dg.md",
+      "service": "Lambda",
+      "knowledge_type": "procedural",
+      "target_layer": "L2",
+      "token_count": 438822,
+      "last_updated": "2026-03-26"
+    },
+    {
+      "id": "AWS-LAMBDA-lambda-api",
+      "title": "API Reference",
+      "source_path": "data/prototype/Lambda/L1/lambda-api.md",
+      "service": "Lambda",
+      "knowledge_type": "procedural",
+      "target_layer": "L1",
+      "token_count": 72430,
+      "last_updated": "2026-03-26"
+    },
+    {
+      "id": "AWS-LAMBDA-serverless-core",
+      "title": "Developer Guide",
+      "source_path": "data/prototype/Lambda/L1/serverless-core.md",
+      "service": "Lambda",
+      "knowledge_type": "conceptual",
+      "target_layer": "L1",
+      "token_count": 14479,
+      "last_updated": "2026-03-26"
+    },
+    {
+      "id": "AWS-IAM-iam-ug",
+      "title": "User Guide",
+      "source_path": "data/prototype/IAM/L2/iam-ug.md",
+      "service": "IAM",
+      "knowledge_type": "procedural",
+      "target_layer": "L2",
+      "token_count": 548347,
+      "last_updated": "2026-03-26"
+    },
+    {
+      "id": "AWS-IAM-iam-api",
+      "title": "API Reference",
+      "source_path": "data/prototype/IAM/L1/iam-api.md",
+      "service": "IAM",
+      "knowledge_type": "factual",
+      "target_layer": "L1",
+      "token_count": 101265,
+      "last_updated": "2026-03-26"
+    },
+    {
+      "id": "AWS-IAM-service-authorization",
+      "title": "Service Authorization Reference",
+      "source_path": "data/prototype/IAM/L1/service-authorization.md",
+      "service": "IAM",
+      "knowledge_type": "factual",
+      "target_layer": "L1",
+      "token_count": 763164,
+      "last_updated": "2026-03-26"
+    },
+    {
+      "id": "AWS-IAM-aws-managed-policy",
+      "title": "Reference Guide",
+      "source_path": "data/prototype/IAM/L0/aws-managed-policy.md",
+      "service": "IAM",
+      "knowledge_type": "factual",
+      "target_layer": "L0",
+      "token_count": 431387,
+      "last_updated": "2026-03-26"
+    },
+    {
+      "id": "AWS-IAM-sts-api",
+      "title": "API Reference",
+      "source_path": "data/prototype/IAM/L1/sts-api.md",
+      "service": "IAM",
+      "knowledge_type": "factual",
+      "target_layer": "L1",
+      "token_count": 16239,
+      "last_updated": "2026-03-26"
+    },
+    {
+      "id": "AWS-IAM-access-analyzer-api",
+      "title": "API Reference",
+      "source_path": "data/prototype/IAM/L1/access-analyzer-api.md",
+      "service": "IAM",
+      "knowledge_type": "factual",
+      "target_layer": "L1",
+      "token_count": 29639,
+      "last_updated": "2026-03-26"
+    },
+    {
+      "id": "AWS-IAM-rolesanywhere-guide",
+      "title": "User Guide",
+      "source_path": "data/prototype/IAM/L1/rolesanywhere-guide.md",
+      "service": "IAM",
+      "knowledge_type": "procedural",
+      "target_layer": "L1",
+      "token_count": 21138,
+      "last_updated": "2026-03-26"
+    },
+    {
+      "id": "AWS-IAM-rolesanywhere-api",
+      "title": "API Reference",
+      "source_path": "data/prototype/IAM/L2/rolesanywhere-api.md",
+      "service": "IAM",
+      "knowledge_type": "factual",
+      "target_layer": "L2",
+      "token_count": 12591,
+      "last_updated": "2026-03-26"
+    },
+    {
+      "id": "AWS-S3-s3-userguide",
+      "title": "User Guide",
+      "source_path": "data/prototype/S3/L1/s3-userguide.md",
+      "service": "S3",
+      "knowledge_type": "conceptual",
+      "target_layer": "L1",
+      "token_count": 645440,
+      "last_updated": "2026-03-26"
+    },
+    {
+      "id": "AWS-S3-s3-api",
+      "title": "API Reference",
+      "source_path": "data/prototype/S3/L0/s3-api.md",
+      "service": "S3",
+      "knowledge_type": "procedural",
+      "target_layer": "L0",
+      "token_count": 472283,
+      "last_updated": "2026-03-26"
+    },
+    {
+      "id": "AWS-S3-glacier-dg",
+      "title": "Developer Guide",
+      "source_path": "data/prototype/S3/L2/glacier-dg.md",
+      "service": "S3",
+      "knowledge_type": "procedural",
+      "target_layer": "L2",
+      "token_count": 86691,
+      "last_updated": "2026-03-26"
+    },
+    {
+      "id": "AWS-S3-s3-outposts",
+      "title": "User Guide",
+      "source_path": "data/prototype/S3/L1/s3-outposts.md",
+      "service": "S3",
+      "knowledge_type": "procedural",
+      "target_layer": "L1",
+      "token_count": 41567,
+      "last_updated": "2026-03-26"
+    },
+    {
+      "id": "AWS-EC2-ec2-ug",
+      "title": "User Guide",
+      "source_path": "data/prototype/EC2/L2/ec2-ug.md",
+      "service": "EC2",
+      "knowledge_type": "conceptual",
+      "target_layer": "L2",
+      "token_count": 622595,
+      "last_updated": "2026-03-26"
+    },
+    {
+      "id": "AWS-EC2-ec2-types",
+      "title": "Instance Types",
+      "source_path": "data/prototype/EC2/Excluded/ec2-types.md",
+      "service": "EC2",
+      "knowledge_type": "factual",
+      "target_layer": "EXCLUDED",
+      "token_count": 96364,
+      "last_updated": "2026-03-26"
+    },
+    {
+      "id": "AWS-EC2-enclaves-user",
+      "title": "User Guide",
+      "source_path": "data/prototype/EC2/L1/enclaves-user.md",
+      "service": "EC2",
+      "knowledge_type": "procedural",
+      "target_layer": "L1",
+      "token_count": 23218,
+      "last_updated": "2026-03-26"
+    },
+    {
+      "id": "AWS-EC2-windows-ami-reference",
+      "title": "Reference",
+      "source_path": "data/prototype/EC2/L1/windows-ami-reference.md",
+      "service": "EC2",
+      "knowledge_type": "factual",
+      "target_layer": "L1",
+      "token_count": 21845,
+      "last_updated": "2026-03-26"
+    },
+    {
+      "id": "AWS-EC2-ec2-api",
+      "title": "API Reference",
+      "source_path": "data/prototype/EC2/L0/ec2-api.md",
+      "service": "EC2",
+      "knowledge_type": "contextual",
+      "target_layer": "L0",
+      "token_count": 496018,
+      "last_updated": "2026-03-26"
+    },
+    {
+      "id": "AWS-EC2-vm-import-ug",
+      "title": "User Guide",
+      "source_path": "data/prototype/EC2/L0/vm-import-ug.md",
+      "service": "EC2",
+      "knowledge_type": "factual",
+      "target_layer": "L0",
+      "token_count": 15709,
+      "last_updated": "2026-03-26"
+    },
+    {
+      "id": "AWS-EC2-sql-server-ec2",
+      "title": "User Guide",
+      "source_path": "data/prototype/EC2/L0/sql-server-ec2.md",
+      "service": "EC2",
+      "knowledge_type": "procedural",
+      "target_layer": "L0",
+      "token_count": 22148,
+      "last_updated": "2026-03-26"
+    },
+    {
+      "id": "AWS-EC2-ec2-dg",
+      "title": "Developer Guide",
+      "source_path": "data/prototype/EC2/L1/ec2-dg.md",
+      "service": "EC2",
+      "knowledge_type": "conceptual",
+      "target_layer": "L1",
+      "token_count": 168599,
+      "last_updated": "2026-03-26"
+    },
+    {
+      "id": "AWS-EC2-ec2-instance-connect-api",
+      "title": "API Reference",
+      "source_path": "data/prototype/EC2/L2/ec2-instance-connect-api.md",
+      "service": "EC2",
+      "knowledge_type": "factual",
+      "target_layer": "L2",
+      "token_count": 1939,
+      "last_updated": "2026-03-26"
+    },
+    {
+      "id": "AWS-EC2-cfn-ug",
+      "title": "User Guide",
+      "source_path": "data/prototype/EC2/L1/cfn-ug.md",
+      "service": "EC2",
+      "knowledge_type": "conceptual",
+      "target_layer": "L1",
+      "token_count": 203519,
+      "last_updated": "2026-03-26"
+    },
+    {
+      "id": "AWS-VPC-aws-overview",
+      "title": "User Guide",
+      "source_path": "data/prototype/VPC/L1/aws-overview.md",
+      "service": "VPC",
+      "knowledge_type": "conceptual",
+      "target_layer": "L1",
+      "token_count": 129344,
+      "last_updated": "2026-03-26"
+    },
+    {
+      "id": "AWS-VPC-vpc-pg",
+      "title": "VPC Peering",
+      "source_path": "data/prototype/VPC/L0/vpc-pg.md",
+      "service": "VPC",
+      "knowledge_type": "conceptual",
+      "target_layer": "L0",
+      "token_count": 10921,
+      "last_updated": "2026-03-26"
+    },
+    {
+      "id": "AWS-VPC-vpc-tm",
+      "title": "Tra\ufb03c Mirroring",
+      "source_path": "data/prototype/VPC/L0/vpc-tm.md",
+      "service": "VPC",
+      "knowledge_type": "contextual",
+      "target_layer": "L0",
+      "token_count": 10430,
+      "last_updated": "2026-03-26"
+    },
+    {
+      "id": "AWS-VPC-ec2-api",
+      "title": "API Reference",
+      "source_path": "data/prototype/VPC/L2/ec2-api.md",
+      "service": "VPC",
+      "knowledge_type": "factual",
+      "target_layer": "L2",
+      "token_count": 496088,
+      "last_updated": "2026-03-26"
+    },
+    {
+      "id": "AWS-VPC-vpc-ipam",
+      "title": "IP Address Manager",
+      "source_path": "data/prototype/VPC/L0/vpc-ipam.md",
+      "service": "VPC",
+      "knowledge_type": "procedural",
+      "target_layer": "L0",
+      "token_count": 59972,
+      "last_updated": "2026-03-26"
+    },
+    {
+      "id": "AWS-VPC-aws-privatelink",
+      "title": "AWS PrivateLink",
+      "source_path": "data/prototype/VPC/L0/aws-privatelink.md",
+      "service": "VPC",
+      "knowledge_type": "procedural",
+      "target_layer": "L0",
+      "token_count": 34341,
+      "last_updated": "2026-03-26"
+    },
+    {
+      "id": "AWS-VPC-vpc-tgw",
+      "title": "AWS Transit Gateway",
+      "source_path": "data/prototype/VPC/L2/vpc-tgw.md",
+      "service": "VPC",
+      "knowledge_type": "procedural",
+      "target_layer": "L2",
+      "token_count": 43661,
+      "last_updated": "2026-03-26"
+    },
+    {
+      "id": "AWS-VPC-tgwnm",
+      "title": "AWS Global Networks for Transit Gateways User Guide",
+      "source_path": "data/prototype/VPC/L0/tgwnm.md",
+      "service": "VPC",
+      "knowledge_type": "procedural",
+      "target_layer": "L0",
+      "token_count": 23814,
+      "last_updated": "2026-03-26"
+    },
+    {
+      "id": "AWS-VPC-cloudwan",
+      "title": "AWS Cloud WAN User Guide",
+      "source_path": "data/prototype/VPC/L1/cloudwan.md",
+      "service": "VPC",
+      "knowledge_type": "procedural",
+      "target_layer": "L1",
+      "token_count": 49449,
+      "last_updated": "2026-03-26"
+    },
+    {
+      "id": "AWS-VPC-network-manager-api",
+      "title": "API Reference",
+      "source_path": "data/prototype/VPC/L2/network-manager-api.md",
+      "service": "VPC",
+      "knowledge_type": "factual",
+      "target_layer": "L2",
+      "token_count": 55868,
+      "last_updated": "2026-03-26"
+    },
+    {
+      "id": "AWS-VPC-reachability-ug",
+      "title": "Reachability Analyzer",
+      "source_path": "data/prototype/VPC/L2/reachability-ug.md",
+      "service": "VPC",
+      "knowledge_type": "factual",
+      "target_layer": "L2",
+      "token_count": 11388,
+      "last_updated": "2026-03-26"
+    },
+    {
+      "id": "AWS-VPC-infrastructure-performance",
+      "title": "Infrastructure Performance User Guide",
+      "source_path": "data/prototype/VPC/L1/infrastructure-performance.md",
+      "service": "VPC",
+      "knowledge_type": "factual",
+      "target_layer": "L1",
+      "token_count": 3681,
+      "last_updated": "2026-03-26"
+    },
+    {
+      "id": "AWS-VPC-network-access-analyzer",
+      "title": "Network Access Analyzer",
+      "source_path": "data/prototype/VPC/L1/network-access-analyzer.md",
+      "service": "VPC",
+      "knowledge_type": "conceptual",
+      "target_layer": "L1",
+      "token_count": 7557,
+      "last_updated": "2026-03-26"
+    },
+    {
+      "id": "AWS-VPC-vpc-lattice",
+      "title": "User Guide",
+      "source_path": "data/prototype/VPC/L1/vpc-lattice.md",
+      "service": "VPC",
+      "knowledge_type": "procedural",
+      "target_layer": "L1",
+      "token_count": 41921,
+      "last_updated": "2026-03-26"
+    },
+    {
+      "id": "AWS-VPC-vpc-lattice-api",
+      "title": "API Reference",
+      "source_path": "data/prototype/VPC/L2/vpc-lattice-api.md",
+      "service": "VPC",
+      "knowledge_type": "procedural",
+      "target_layer": "L2",
+      "token_count": 44992,
+      "last_updated": "2026-03-26"
+    },
+    {
+      "id": "AWS-RDS-rds-ug",
+      "title": "User Guide",
+      "source_path": "data/prototype/RDS/L0/rds-ug.md",
+      "service": "RDS",
+      "knowledge_type": "procedural",
+      "target_layer": "L0",
+      "token_count": 988361,
+      "last_updated": "2026-03-26"
+    },
+    {
+      "id": "AWS-RDS-aurora-ug",
+      "title": "User Guide for Aurora",
+      "source_path": "data/prototype/RDS/L1/aurora-ug.md",
+      "service": "RDS",
+      "knowledge_type": "procedural",
+      "target_layer": "L1",
+      "token_count": 835912,
+      "last_updated": "2026-03-26"
+    },
+    {
+      "id": "AWS-RDS-aurora-dsql-ug",
+      "title": "User Guide",
+      "source_path": "data/prototype/RDS/L1/aurora-dsql-ug.md",
+      "service": "RDS",
+      "knowledge_type": "procedural",
+      "target_layer": "L1",
+      "token_count": 65924,
+      "last_updated": "2026-03-26"
+    },
+    {
+      "id": "AWS-RDS-rds-gsg",
+      "title": "Getting Started Guide",
+      "source_path": "data/prototype/RDS/L1/rds-gsg.md",
+      "service": "RDS",
+      "knowledge_type": "procedural",
+      "target_layer": "L1",
+      "token_count": 9855,
+      "last_updated": "2026-03-26"
+    },
+    {
+      "id": "AWS-RDS-rds-api",
+      "title": "API Reference",
+      "source_path": "data/prototype/RDS/L2/rds-api.md",
+      "service": "RDS",
+      "knowledge_type": "procedural",
+      "target_layer": "L2",
+      "token_count": 150743,
+      "last_updated": "2026-03-26"
+    },
+    {
+      "id": "AWS-RDS-performance-insights-api",
+      "title": "API Reference",
+      "source_path": "data/prototype/RDS/L1/performance-insights-api.md",
+      "service": "RDS",
+      "knowledge_type": "factual",
+      "target_layer": "L1",
+      "token_count": 13757,
+      "last_updated": "2026-03-26"
+    },
+    {
+      "id": "AWS-RDS-rdsdataservice-api",
+      "title": "API Reference",
+      "source_path": "data/prototype/RDS/L2/rdsdataservice-api.md",
+      "service": "RDS",
+      "knowledge_type": "factual",
+      "target_layer": "L2",
+      "token_count": 6042,
+      "last_updated": "2026-03-26"
+    },
+    {
+      "id": "AWS-RDS-rds-oracle-relnotes",
+      "title": "Amazon RDS for Oracle Release Notes",
+      "source_path": "data/prototype/RDS/L1/rds-oracle-relnotes.md",
+      "service": "RDS",
+      "knowledge_type": "factual",
+      "target_layer": "L1",
+      "token_count": 440844,
+      "last_updated": "2026-03-26"
+    },
+    {
+      "id": "AWS-RDS-rds-postgresql-relnotes",
+      "title": "Amazon RDS for PostgreSQL Release Notes",
+      "source_path": "data/prototype/RDS/L0/rds-postgresql-relnotes.md",
+      "service": "RDS",
+      "knowledge_type": "factual",
+      "target_layer": "L0",
+      "token_count": 44335,
+      "last_updated": "2026-03-26"
+    },
+    {
+      "id": "AWS-RDS-aurora-mysql-relnotes",
+      "title": "Release Notes for Aurora MySQL",
+      "source_path": "data/prototype/RDS/L2/aurora-mysql-relnotes.md",
+      "service": "RDS",
+      "knowledge_type": "factual",
+      "target_layer": "L2",
+      "token_count": 105256,
+      "last_updated": "2026-03-26"
+    },
+    {
+      "id": "AWS-RDS-aurora-postgresql-relnotes",
+      "title": "Release Notes for Aurora PostgreSQL",
+      "source_path": "data/prototype/RDS/L1/aurora-postgresql-relnotes.md",
+      "service": "RDS",
+      "knowledge_type": "factual",
+      "target_layer": "L1",
+      "token_count": 140689,
+      "last_updated": "2026-03-26"
+    },
+    {
+      "id": "AWS-CLOUDFORMATION-cfn-ug",
+      "title": "User Guide",
+      "source_path": "data/prototype/CloudFormation/L1/cfn-ug.md",
+      "service": "CloudFormation",
+      "knowledge_type": "conceptual",
+      "target_layer": "L1",
+      "token_count": 203964,
+      "last_updated": "2026-03-26"
+    },
+    {
+      "id": "AWS-CLOUDFORMATION-cfn-api",
+      "title": "API Reference",
+      "source_path": "data/prototype/CloudFormation/L1/cfn-api.md",
+      "service": "CloudFormation",
+      "knowledge_type": "contextual",
+      "target_layer": "L1",
+      "token_count": 66796,
+      "last_updated": "2026-03-26"
+    },
+    {
+      "id": "AWS-CLOUDFORMATION-cloudformation-hooks",
+      "title": "Hooks User Guide",
+      "source_path": "data/prototype/CloudFormation/L1/cloudformation-hooks.md",
+      "service": "CloudFormation",
+      "knowledge_type": "procedural",
+      "target_layer": "L1",
+      "token_count": 27426,
+      "last_updated": "2026-03-26"
+    },
+    {
+      "id": "AWS-CLOUDFORMATION-cfn-guard",
+      "title": "User Guide",
+      "source_path": "data/prototype/CloudFormation/L1/cfn-guard.md",
+      "service": "CloudFormation",
+      "knowledge_type": "procedural",
+      "target_layer": "L1",
+      "token_count": 13398,
+      "last_updated": "2026-03-26"
+    },
+    {
+      "id": "AWS-CLOUDFORMATION-cloudformation-cli",
+      "title": "CloudFormation Command Line Interface (CLI) User Guide",
+      "source_path": "data/prototype/CloudFormation/L2/cloudformation-cli.md",
+      "service": "CloudFormation",
+      "knowledge_type": "procedural",
+      "target_layer": "L2",
+      "token_count": 24996,
+      "last_updated": "2026-03-26"
+    },
+    {
+      "id": "AWS-CLOUDWATCH-acw-ug",
+      "title": "User Guide",
+      "source_path": "data/prototype/CloudWatch/L0/acw-ug.md",
+      "service": "CloudWatch",
+      "knowledge_type": "procedural",
+      "target_layer": "L0",
+      "token_count": 585517,
+      "last_updated": "2026-03-26"
+    },
+    {
+      "id": "AWS-CLOUDWATCH-acw-api",
+      "title": "API Reference",
+      "source_path": "data/prototype/CloudWatch/L1/acw-api.md",
+      "service": "CloudWatch",
+      "knowledge_type": "factual",
+      "target_layer": "L1",
+      "token_count": 42724,
+      "last_updated": "2026-03-26"
+    },
+    {
+      "id": "AWS-CLOUDWATCH-aiops",
+      "title": "CloudWatch investigations API Reference",
+      "source_path": "data/prototype/CloudWatch/L1/aiops.md",
+      "service": "CloudWatch",
+      "knowledge_type": "procedural",
+      "target_layer": "L1",
+      "token_count": 6593,
+      "last_updated": "2026-03-26"
+    },
+    {
+      "id": "AWS-CLOUDWATCH-app-insights-api",
+      "title": "Welcome",
+      "source_path": "data/prototype/CloudWatch/L0/app-insights-api.md",
+      "service": "CloudWatch",
+      "knowledge_type": "factual",
+      "target_layer": "L0",
+      "token_count": 15762,
+      "last_updated": "2026-03-26"
+    },
+    {
+      "id": "AWS-CLOUDWATCH-synthetics-apireference",
+      "title": "Welcome",
+      "source_path": "data/prototype/CloudWatch/L1/synthetics-apireference.md",
+      "service": "CloudWatch",
+      "knowledge_type": "factual",
+      "target_layer": "L1",
+      "token_count": 17738,
+      "last_updated": "2026-03-26"
+    },
+    {
+      "id": "AWS-CLOUDWATCH-applicationsignals-api",
+      "title": "Welcome",
+      "source_path": "data/prototype/CloudWatch/L1/applicationsignals-api.md",
+      "service": "CloudWatch",
+      "knowledge_type": "procedural",
+      "target_layer": "L1",
+      "token_count": 24072,
+      "last_updated": "2026-03-26"
+    },
+    {
+      "id": "AWS-CLOUDWATCH-network-flow-monitor-api",
+      "title": "API Reference",
+      "source_path": "data/prototype/CloudWatch/L0/network-flow-monitor-api.md",
+      "service": "CloudWatch",
+      "knowledge_type": "factual",
+      "target_layer": "L0",
+      "token_count": 14697,
+      "last_updated": "2026-03-26"
+    },
+    {
+      "id": "AWS-CLOUDWATCH-internet-monitor-api",
+      "title": "API Reference",
+      "source_path": "data/prototype/CloudWatch/L2/internet-monitor-api.md",
+      "service": "CloudWatch",
+      "knowledge_type": "factual",
+      "target_layer": "L2",
+      "token_count": 12454,
+      "last_updated": "2026-03-26"
+    },
+    {
+      "id": "AWS-CLOUDWATCH-cloudwatchrum-api",
+      "title": "API Reference",
+      "source_path": "data/prototype/CloudWatch/L2/cloudwatchrum-api.md",
+      "service": "CloudWatch",
+      "knowledge_type": "factual",
+      "target_layer": "L2",
+      "token_count": 14700,
+      "last_updated": "2026-03-26"
+    },
+    {
+      "id": "AWS-CLOUDWATCH-observabilityadmin",
+      "title": "Observability Admin API Reference",
+      "source_path": "data/prototype/CloudWatch/L1/observabilityadmin.md",
+      "service": "CloudWatch",
+      "knowledge_type": "procedural",
+      "target_layer": "L1",
+      "token_count": 24755,
+      "last_updated": "2026-03-26"
+    },
+    {
+      "id": "AWS-CLOUDWATCH-acw-cli",
+      "title": "Command Line Reference",
+      "source_path": "data/prototype/CloudWatch/L2/acw-cli.md",
+      "service": "CloudWatch",
+      "knowledge_type": "procedural",
+      "target_layer": "L2",
+      "token_count": 12612,
+      "last_updated": "2026-03-26"
+    },
+    {
+      "id": "AWS-CLOUDWATCH-cwl-ug",
+      "title": "User Guide",
+      "source_path": "data/prototype/CloudWatch/L1/cwl-ug.md",
+      "service": "CloudWatch",
+      "knowledge_type": "procedural",
+      "target_layer": "L1",
+      "token_count": 276781,
+      "last_updated": "2026-03-26"
+    },
+    {
+      "id": "AWS-CLOUDWATCH-cwl-api",
+      "title": "API Reference",
+      "source_path": "data/prototype/CloudWatch/L0/cwl-api.md",
+      "service": "CloudWatch",
+      "knowledge_type": "factual",
+      "target_layer": "L0",
+      "token_count": 81440,
+      "last_updated": "2026-03-26"
+    },
+    {
+      "id": "AWS-CLOUDWATCH-user-guide",
+      "title": "User Guide",
+      "source_path": "data/prototype/CloudWatch/L1/user-guide.md",
+      "service": "CloudWatch",
+      "knowledge_type": "procedural",
+      "target_layer": "L1",
+      "token_count": 125206,
+      "last_updated": "2026-03-26"
+    },
+    {
+      "id": "AWS-CLOUDWATCH-eventbridge-api",
+      "title": "API Reference",
+      "source_path": "data/prototype/CloudWatch/L1/eventbridge-api.md",
+      "service": "CloudWatch",
+      "knowledge_type": "procedural",
+      "target_layer": "L1",
+      "token_count": 41288,
+      "last_updated": "2026-03-26"
+    }
+  ]
+}
