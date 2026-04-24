@@ -394,7 +394,7 @@ This automatically:
 
 ---
 
-## 8. Design Decisions
+## 7. Design Decisions
 
 | Decision | Rationale |
 |----------|-----------|
