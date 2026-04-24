@@ -389,109 +389,12 @@ This automatically:
 1. Loads Module 1 output from `module1/s3/intermediate/`
 2. Mocks Module 2 entity/relationship data
 3. Runs the full L4 → L3 → L2 → L1 → L0 pipeline
-4. Saves raw output to `integration_output.json`
-5. Transforms and saves structured output to `structured_output.json`
+4. Saves output to `final_pipeline_output.json`
 
-### 6.2 Standalone Pipeline
-
-```bash
-cd compression_pipeline/module3
-python -m summarizer.main input.json --output results.json
-```
-
-### 6.3 Output Transformer (Standalone)
-
-```bash
-cd compression_pipeline
-python module3/transform_output.py --input integration_output.json --output structured_output.json
-```
-
-### CLI Arguments
-
-#### `integration_runner.py`
-
-No CLI arguments. Configuration is via module-level constants:
-
-| Constant | Default | Description |
-|----------|---------|-------------|
-| `CHUNKS_PER_SECTION` | `20` | Max chunks per synthetic section (controls TextRank batch size) |
-
-#### `summarizer/main.py`
-
-| Argument | Default | Description |
-|----------|---------|-------------|
-| `input` | *(required)* | Path to the combined input JSON |
-| `--output` | `output.json` | Destination for the pipeline output |
-| `--verbose` | `false` | Enable debug logging |
-
-#### `transform_output.py`
-
-| Argument | Default | Description |
-|----------|---------|-------------|
-| `--input` | `integration_output.json` | Path to raw pipeline output |
-| `--output` | `structured_output.json` | Destination for structured output |
-
-### Dependencies
-
-```bash
-pip install transformers>=4.36.0 torch>=2.1.0 sentencepiece>=0.1.99 protobuf>=3.20.0 sumy>=0.11.0 nltk>=3.8.1 networkx>=3.2
-```
-
-**Models downloaded at runtime:**
-- `sshleifer/distilbart-cnn-12-6` — DistilBART for abstractive summarisation (L3, L2, L0)
-
-**NLTK data downloaded at runtime:**
-- `punkt` / `punkt_tab` — sentence tokenisation for TextRank (L4)
 
 ---
 
-## 7. Performance Considerations
-
-| Concern | Mitigation |
-|---------|-----------|
-| TextRank is O(n²) on sentences | Chunks are batched into sections of ≤20 chunks (`CHUNKS_PER_SECTION`), keeping the sentence graph small |
-| DistilBART model loading | Lazy singleton pattern — model loaded once per process and cached |
-| BART input limit (1024 tokens) | All inputs are truncated to 1024 tokens before model inference |
-| Large AKU / entity lists | Deduplication applied at every stage; entity lists are order-preserving unique |
-
----
-
-## 8. Downstream Usage (Module 4+)
-
-The hierarchical summaries are consumed downstream as follows:
-
-- **Level 4 (Sections)** → fine-grained reference material for retrieval-augmented generation (RAG).
-- **Level 3 (Documents)** → document-level context for cross-document comparisons.
-- **Level 2 (Topics)** → thematic overviews for topic-based navigation and search.
-- **Level 1 (Categories)** → high-level category descriptors for dashboard views and classification.
-- **Level 0 (Global)** → single-sentence corpus description for metadata, indexing, and at-a-glance overviews.
-- **Validation reports** → quality gates for automated pipeline health checks.
-- **Preserved entities / AKUs** → traceability chain back to source chunks and knowledge graph nodes.
-
----
-
-## 9. File Structure
-
-```
-module3/
-├── integration_runner.py          # End-to-end runner (M1 → M3)
-├── transform_output.py            # Post-pipeline output cleaner
-├── requirements.txt               # Python dependencies
-└── summarizer/
-    ├── __init__.py                # Package exports
-    ├── main.py                    # CLI entry point
-    ├── pipeline.py                # Orchestrator (L4 → L3 → L2 → L1 → L0)
-    ├── section_summarizer.py      # Level 4 — extractive (TextRank)
-    ├── document_summarizer.py     # Level 3 — hybrid (extractive + BART)
-    ├── topic_summarizer.py        # Level 2 — abstractive (BART)
-    ├── category_summarizer.py     # Level 1 — template-based
-    ├── global_summarizer.py       # Level 0 — abstractive (BART)
-    └── validator.py               # Post-summarisation validation
-```
-
----
-
-## 10. Design Decisions
+## 8. Design Decisions
 
 | Decision | Rationale |
 |----------|-----------|
