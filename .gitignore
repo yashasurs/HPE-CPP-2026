@@ -40,3 +40,7 @@ results/
 
 # Logs
 *.log
+
+hpe_cpp/
+
+compression_pipeline/module3/transform_output.py
