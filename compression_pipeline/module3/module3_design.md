@@ -318,7 +318,7 @@ All checks are combined into an aggregate report per summary with an `overall_pa
 
 ### 5.1 Raw Pipeline Output
 
-`compression_pipeline/integration_output.json`
+
 
 ```json
 {
@@ -338,20 +338,9 @@ All checks are combined into an aggregate report per summary with an `overall_pa
 }
 ```
 
-### 5.2 Structured Output (Post-Transform)
+### 5.2 Structured Output 
 
-`compression_pipeline/structured_output.json`
-
-The raw output is cleaned by `transform_output.py`, which applies:
-
-1. **Boilerplate stripping** — removes known boilerplate patterns (e.g. "Amazon Simple Storage Service API Reference", "Request Syntax …", "See Also …").
-2. **Sentence deduplication** — exact-match removal after normalisation.
-3. **Near-duplicate merging** — word-overlap-based redundancy removal (threshold: 75%).
-4. **Noise filtering** — strips short fragments, single-word headers, and non-informative sentences.
-5. **UUID assignment** — each summary receives a unique `summary_id`.
-6. **AKU/Entity ID generation** — entities mapped to stable IDs like `ent_aws_s3`; AKUs receive sequential IDs like `aku_0`.
-7. **Category classification** — keyword-based classification into: `security`, `storage`, `networking`, `api`, `configuration`, `operational`, `contextual`.
-8. **Compression ratio** — `cleaned_length / original_length`.
+- **Compression ratio** — `cleaned_length / original_length`.
 
 #### Structured section schema
 

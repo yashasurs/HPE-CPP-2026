@@ -1,0 +1,51 @@
+{
+  "level_4": [
+    {
+      "summary_id": "b96b93aa-f7a6-413f-b0ed-13dde9258f9f",
+      "level": 4,
+      "level_name": "section",
+      "text": "This guide explains the Amazon Simple Storage Service (Amazon S3) application programming interface (API). You can use any toolkit that supports HTTP to use the REST API. You can even use a browser to fetch objects, as long as they are anonymously readable. The REST API uses the standard HTTP headers and status codes, so that standard browsers and toolkits work as expected. Authenticated access requires credentials that AWS can use to authenticate your requests. It requires you to write the necessary code to calculate a valid signature to authenticate your requests. We recommend the following alternatives instead: • Use the AWS SDKs to send your requests. If you use the SDKs, you don't need to write code to calculate a signature for request authentication because the SDK clients authenticate your requests by using access keys that you provide. Permissions You can have valid credentials to authenticate your requests, but unless you have S3 permissions from the account owner or bucket owner you cannot create or access Amazon S3 resources. s3express-zone-id.region- code.amazonaws.com/key-name . Permissions • General purpose bucket permissions - Permissions • General purpose bucket permissions - Then, you make the CreateSession API call on the bucket to obtain a session token. Then, you make the CreateSession API call on the bucket to obtain a session token. x-amz-if-match-initiated-time If present, this header aborts an in progress multipart upload only if it was initiated on the provided timestamp. The CompleteMultipartUpload API operation concatenates the parts that you provide in the list. The processing of a CompleteMultipartUpload request could take several minutes to ﬁnalize. Permissions • General purpose bucket permissions -",
+      "token_count": 269,
+      "source_chunk_ids": [],
+      "source_document": "AWS-Document",
+      "heading_path": [],
+      "category": "api",
+      "preserved_akus": [
+        "aku_0",
+        "aku_1",
+        "aku_2",
+        "aku_3",
+        "aku_4",
+        "aku_5",
+        "aku_6",
+        "aku_7",
+        "aku_8",
+        "aku_9",
+        "aku_10"
+      ],
+      "preserved_entities": [
+        "ent_the_following_topics",
+        "ent_the_sdk_clients",
+        "ent_credentials_that_aws_can_use_to",
+        "ent_the_aws_cli_in_the_amazon",
+        "ent_your_requests",
+        "ent_authenticated_access",
+        "ent_multipart_upload_and_permissions_in_the",
+        "ent_a_session_token",
+        "ent_the_createsession_api_call_on_the",
+        "ent_these_endpoints",
+        "ent_this_header",
+        "ent_an_in_progress_multipart_upload",
+        "ent_buckets_for_storage_transfers_and_usage",
+        "ent_the_parts_that_you_provide_in",
+        "ent_several_minutes",
+        "ent_the_completemultipartupload_api_operation",
+        "ent_using_requester",
+        "ent_the_processing_of_a_completemultipartupload_request"
+      ],
+      "compression_ratio": 0.504,
+      "parent_summary_id": "8190fbca-7395-4c50-adc1-04488bde3f3c",
+      "child_summary_ids": []
+    }
+  ]
+}
