@@ -1,17 +1,12 @@
 [
   {
-    "chunk_id": "c0",
+    "chunk_id": "c1",
     "akus": [
       [
         "Authenticated access",
         "require",
         "credentials that AWS can use to authenticate"
-      ]
-    ]
-  },
-  {
-    "chunk_id": "c1",
-    "akus": [
+      ],
       [
         "The S3 API reference",
         "group",
@@ -49,29 +44,19 @@
     "akus": [
       [
         "Amazon S3",
-        "concatenate",
-        "all the parts"
-      ],
-      [
-        "Amazon S3",
         "send",
         "white space characters"
       ]
     ]
   },
   {
-    "chunk_id": "c6",
+    "chunk_id": "c5",
     "akus": [
       [
         "The S3 on Outposts hostname",
         "take",
         "the form AccessPointName AccountId.outpostID.s3- outposts.Region.amazonaws.com"
-      ]
-    ]
-  },
-  {
-    "chunk_id": "c7",
-    "akus": [
+      ],
       [
         "The access point hostname",
         "take",
@@ -85,7 +70,7 @@
     ]
   },
   {
-    "chunk_id": "c8",
+    "chunk_id": "c6",
     "akus": [
       [
         "Amazon S3",
@@ -99,33 +84,23 @@
       ],
       [
         "Amazon S3",
-        "generate",
-        "a unique version ID for the copied"
-      ]
-    ]
-  },
-  {
-    "chunk_id": "c9",
-    "akus": [
+        "decrypt",
+        "the object for copying"
+      ],
       [
         "x amz copy source server side encryption",
         "specify",
         "the customer provided encryption key for Amazon"
       ],
       [
-        "Unrecognized or unsupported values",
-        "write",
-        "a destination object"
-      ],
-      [
-        "the account ID that you provide",
-        "match",
-        "the actual owner of the destination bucket"
+        "Amazon S3",
+        "generate",
+        "a unique version ID for the copied"
       ]
     ]
   },
   {
-    "chunk_id": "c10",
+    "chunk_id": "c7",
     "akus": [
       [
         "Your SSE KMS configuration",
@@ -136,12 +111,22 @@
         "Amazon S3",
         "override",
         "the customer managed key for the bucket"
+      ],
+      [
+        "Unrecognized or unsupported values",
+        "write",
+        "a destination object"
       ]
     ]
   },
   {
-    "chunk_id": "c11",
+    "chunk_id": "c8",
     "akus": [
+      [
+        "Amazon S3",
+        "specify",
+        "the customer provided encryption key for Amazon"
+      ],
       [
         "Amazon S3",
         "store",
@@ -161,16 +146,11 @@
         "The value",
         "match",
         "the default encryption context the bucket Amazon"
-      ],
-      [
-        "the account ID that you provide",
-        "match",
-        "the actual owner of the source bucket"
       ]
     ]
   },
   {
-    "chunk_id": "c12",
+    "chunk_id": "c9",
     "akus": [
       [
         "Amazon S3",
@@ -180,7 +160,7 @@
     ]
   },
   {
-    "chunk_id": "c14",
+    "chunk_id": "c10",
     "akus": [
       [
         "Amazon S3",
@@ -190,7 +170,7 @@
     ]
   },
   {
-    "chunk_id": "c15",
+    "chunk_id": "c11",
     "akus": [
       [
         "the bucket policy",
@@ -200,27 +180,32 @@
     ]
   },
   {
-    "chunk_id": "c18",
+    "chunk_id": "c12",
+    "akus": [
+      [
+        "Your SSE KMS configuration",
+        "support",
+        "1 customer managed key"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "c13",
     "akus": [
       [
         "Amazon S3",
         "specify",
         "the bucket whose cors configuration is being"
-      ]
-    ]
-  },
-  {
-    "chunk_id": "c19",
-    "akus": [
+      ],
       [
         "S3 Intelligent Tiering",
         "deliver",
-        "automatic cost savings in three low latency"
+        "automatic cost savings"
       ]
     ]
   },
   {
-    "chunk_id": "c25",
+    "chunk_id": "c17",
     "akus": [
       [
         "bucket owners",
@@ -230,7 +215,7 @@
     ]
   },
   {
-    "chunk_id": "c27",
+    "chunk_id": "c18",
     "akus": [
       [
         "S3 Object Lock",
@@ -245,13 +230,8 @@
     ]
   },
   {
-    "chunk_id": "c28",
+    "chunk_id": "c19",
     "akus": [
-      [
-        "requester x amz version id",
-        "return",
-        "the version ID of the delete marker"
-      ],
       [
         "Amazon S3",
         "perform",
@@ -260,17 +240,7 @@
     ]
   },
   {
-    "chunk_id": "c32",
-    "akus": [
-      [
-        "ID that you provide",
-        "match",
-        "the actual owner of the bucket"
-      ]
-    ]
-  },
-  {
-    "chunk_id": "c33",
+    "chunk_id": "c22",
     "akus": [
       [
         "The previous version of the API",
@@ -280,7 +250,17 @@
     ]
   },
   {
-    "chunk_id": "c36",
+    "chunk_id": "c23",
+    "akus": [
+      [
+        "Response Syntax HTTP/1.1 200 Sample Response Showing",
+        "illustrate",
+        "one usage of GetBucketLogging"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "c24",
     "akus": [
       [
         "a get request soon after put or",
@@ -290,12 +270,17 @@
     ]
   },
   {
-    "chunk_id": "c37",
+    "chunk_id": "c25",
     "akus": [
       [
         "Amazon S3",
         "assume",
         "the specified IAM role to replicate objects"
+      ],
+      [
+        "only the bucket owner",
+        "read",
+        "the bucket website configuration"
       ],
       [
         "The Destination element",
@@ -310,17 +295,7 @@
     ]
   },
   {
-    "chunk_id": "c38",
-    "akus": [
-      [
-        "only the bucket owner",
-        "read",
-        "the bucket website configuration"
-      ]
-    ]
-  },
-  {
-    "chunk_id": "c39",
+    "chunk_id": "c26",
     "akus": [
       [
         "Directory buckets",
@@ -330,7 +305,7 @@
     ]
   },
   {
-    "chunk_id": "c40",
+    "chunk_id": "c27",
     "akus": [
       [
         "The Object Lambda access point hostname",
@@ -340,18 +315,13 @@
     ]
   },
   {
-    "chunk_id": "c41",
+    "chunk_id": "c28",
     "akus": [
       [
         "the GetObject operation",
         "return",
         "the current version of an object"
-      ]
-    ]
-  },
-  {
-    "chunk_id": "c42",
-    "akus": [
+      ],
       [
         "Amazon S3",
         "specify",
@@ -360,7 +330,7 @@
     ]
   },
   {
-    "chunk_id": "c43",
+    "chunk_id": "c29",
     "akus": [
       [
         "your request",
@@ -370,17 +340,7 @@
     ]
   },
   {
-    "chunk_id": "c44",
-    "akus": [
-      [
-        "Date Mon 3 Oct 2016 22:32:00 GMT",
-        "illustrate",
-        "one usage of GetObject"
-      ]
-    ]
-  },
-  {
-    "chunk_id": "c47",
+    "chunk_id": "c31",
     "akus": [
       [
         "x amz server side encryption customer key",
@@ -390,7 +350,7 @@
     ]
   },
   {
-    "chunk_id": "c50",
+    "chunk_id": "c33",
     "akus": [
       [
         "The S3 on Outposts hostname",
@@ -400,7 +360,7 @@
     ]
   },
   {
-    "chunk_id": "c53",
+    "chunk_id": "c35",
     "akus": [
       [
         "Range HeadObject",
@@ -410,7 +370,7 @@
     ]
   },
   {
-    "chunk_id": "c55",
+    "chunk_id": "c37",
     "akus": [
       [
         "The header of the source object",
@@ -420,17 +380,7 @@
     ]
   },
   {
-    "chunk_id": "c57",
-    "akus": [
-      [
-        "S3 Intelligent Tiering",
-        "deliver",
-        "automatic cost savings"
-      ]
-    ]
-  },
-  {
-    "chunk_id": "c59",
+    "chunk_id": "c39",
     "akus": [
       [
         "your single paginated request",
@@ -445,7 +395,7 @@
     ]
   },
   {
-    "chunk_id": "c62",
+    "chunk_id": "c41",
     "akus": [
       [
         "Amazon S3",
@@ -455,7 +405,17 @@
     ]
   },
   {
-    "chunk_id": "c65",
+    "chunk_id": "c42",
+    "akus": [
+      [
+        "x amz optional object attributes",
+        "specify",
+        "the optional fields you want that returned"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "c43",
     "akus": [
       [
         "Authorization authorization string Sample Response for general",
@@ -470,18 +430,13 @@
     ]
   },
   {
-    "chunk_id": "c66",
+    "chunk_id": "c44",
     "akus": [
       [
         "version id marker",
         "specify",
         "the object version you want to start"
-      ]
-    ]
-  },
-  {
-    "chunk_id": "c68",
-    "akus": [
+      ],
       [
         "The ListParts request",
         "return",
@@ -490,7 +445,7 @@
     ]
   },
   {
-    "chunk_id": "c70",
+    "chunk_id": "c46",
     "akus": [
       [
         "Amazon S3",
@@ -500,7 +455,7 @@
     ]
   },
   {
-    "chunk_id": "c71",
+    "chunk_id": "c47",
     "akus": [
       [
         "the bucket",
@@ -511,27 +466,22 @@
         "Amazon S3",
         "receive",
         "a cross origin request or a pre"
-      ]
-    ]
-  },
-  {
-    "chunk_id": "c72",
-    "akus": [
+      ],
       [
         "Amazon S3",
         "abort",
         "a multipart upload"
-      ],
-      [
-        "in this case a bucket owner which",
-        "perform",
-        "any of the operations"
       ]
     ]
   },
   {
-    "chunk_id": "c73",
+    "chunk_id": "c48",
     "akus": [
+      [
+        "version of the API",
+        "support",
+        "filtering based only on an object key"
+      ],
       [
         "The bucket owner",
         "grant",
@@ -545,17 +495,7 @@
     ]
   },
   {
-    "chunk_id": "c74",
-    "akus": [
-      [
-        "Amazon S3",
-        "publish",
-        "events of the s3 ObjectCreated type"
-      ]
-    ]
-  },
-  {
-    "chunk_id": "c75",
+    "chunk_id": "c49",
     "akus": [
       [
         "The action",
@@ -565,22 +505,12 @@
     ]
   },
   {
-    "chunk_id": "c76",
+    "chunk_id": "c50",
     "akus": [
       [
         "the individual checksum value you provide through",
         "match",
         "the checksum algorithm you set through x"
-      ]
-    ]
-  },
-  {
-    "chunk_id": "c77",
-    "akus": [
-      [
-        "Amazon S3",
-        "replicate",
-        "objects that are stored at rest"
       ],
       [
         "Each rule",
@@ -590,8 +520,13 @@
     ]
   },
   {
-    "chunk_id": "c78",
+    "chunk_id": "c51",
     "akus": [
+      [
+        "Amazon S3",
+        "replicate",
+        "objects that are stored at rest"
+      ],
       [
         "a GetBucketVersioning request",
         "return",
@@ -611,31 +546,16 @@
         "All objects added to the bucket",
         "receive",
         "a unique version ID"
-      ],
-      [
-        "All objects added to the bucket",
-        "receive",
-        "the version ID null"
       ]
     ]
   },
   {
-    "chunk_id": "c79",
+    "chunk_id": "c52",
     "akus": [
       [
         "only the bucket owner",
         "configure",
         "the website attached to a bucket"
-      ]
-    ]
-  },
-  {
-    "chunk_id": "c80",
-    "akus": [
-      [
-        "Amazon S3",
-        "generate",
-        "a unique version ID of that object"
       ],
       [
         "the redirect",
@@ -645,12 +565,22 @@
     ]
   },
   {
-    "chunk_id": "c84",
+    "chunk_id": "c53",
+    "akus": [
+      [
+        "Amazon S3",
+        "generate",
+        "a unique version ID of that object"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "c55",
     "akus": [
       [
         "n't Amazon S3",
         "override",
-        "the bucket default encryption in your CreateSession"
+        "the bucket default encryption"
       ],
       [
         "the encryption request headers",
@@ -660,47 +590,37 @@
     ]
   },
   {
-    "chunk_id": "c85",
-    "akus": [
-      [
-        "Your SSE KMS configuration",
-        "support",
-        "1 customer managed key"
-      ]
-    ]
-  },
-  {
-    "chunk_id": "c86",
+    "chunk_id": "c57",
     "akus": [
       [
         "Amazon S3",
         "add",
         "the default checksum CRC64NVME"
-      ]
-    ]
-  },
-  {
-    "chunk_id": "c87",
-    "akus": [
+      ],
       [
         "Amazon S3",
         "generate",
         "a unique version ID for the object"
-      ]
-    ]
-  },
-  {
-    "chunk_id": "c88",
-    "akus": [
+      ],
       [
         "Amazon S3",
         "receive",
         "multiple write requests for the same object"
-      ],
+      ]
+    ]
+  },
+  {
+    "chunk_id": "c58",
+    "akus": [
       [
         "Amazon S3",
         "store",
         "the specified object tags"
+      ],
+      [
+        "Amazon S3",
+        "generate",
+        "a unique version ID"
       ],
       [
         "The write offset value that you specified",
@@ -710,7 +630,7 @@
     ]
   },
   {
-    "chunk_id": "c93",
+    "chunk_id": "c61",
     "akus": [
       [
         "Amazon S3",
@@ -725,12 +645,12 @@
       [
         "Amazon S3",
         "update",
-        "the restoration period relative to the current"
+        "the restoration period"
       ]
     ]
   },
   {
-    "chunk_id": "c94",
+    "chunk_id": "c62",
     "akus": [
       [
         "Amazon S3 Select",
@@ -746,12 +666,7 @@
         "Amazon S3 Select",
         "support",
         "columnar compression for Parquet"
-      ]
-    ]
-  },
-  {
-    "chunk_id": "c95",
-    "akus": [
+      ],
       [
         "Amazon S3",
         "return",
@@ -765,7 +680,7 @@
     ]
   },
   {
-    "chunk_id": "c98",
+    "chunk_id": "c64",
     "akus": [
       [
         "Amazon S3",
@@ -775,7 +690,7 @@
     ]
   },
   {
-    "chunk_id": "c100",
+    "chunk_id": "c65",
     "akus": [
       [
         "Amazon S3",
@@ -785,7 +700,7 @@
     ]
   },
   {
-    "chunk_id": "c102",
+    "chunk_id": "c67",
     "akus": [
       [
         "x amz copy source",
@@ -795,7 +710,7 @@
     ]
   },
   {
-    "chunk_id": "c105",
+    "chunk_id": "c69",
     "akus": [
       [
         "Amazon S3",
@@ -805,18 +720,13 @@
     ]
   },
   {
-    "chunk_id": "c116",
+    "chunk_id": "c76",
     "akus": [
       [
         "the GetBucketVersioning request",
         "return",
         "a versioning state value"
-      ]
-    ]
-  },
-  {
-    "chunk_id": "c117",
-    "akus": [
+      ],
       [
         "S3 Access Grants",
         "vend",
@@ -825,17 +735,7 @@
     ]
   },
   {
-    "chunk_id": "c120",
-    "akus": [
-      [
-        "All Amazon S3 on Outposts REST API",
-        "require",
-        "an additional parameter of x amz outpost"
-      ]
-    ]
-  },
-  {
-    "chunk_id": "c166",
+    "chunk_id": "c108",
     "akus": [
       [
         "Amazon S3",
@@ -850,7 +750,7 @@
     ]
   },
   {
-    "chunk_id": "c167",
+    "chunk_id": "c109",
     "akus": [
       [
         "No BucketRegion BucketRegion",
@@ -860,7 +760,7 @@
     ]
   },
   {
-    "chunk_id": "c171",
+    "chunk_id": "c111",
     "akus": [
       [
         "Amazon S3",
@@ -870,7 +770,7 @@
     ]
   },
   {
-    "chunk_id": "c172",
+    "chunk_id": "c112",
     "akus": [
       [
         "Amazon S3",
@@ -880,7 +780,7 @@
     ]
   },
   {
-    "chunk_id": "c174",
+    "chunk_id": "c113",
     "akus": [
       [
         "The aws value",
@@ -910,7 +810,7 @@
     ]
   },
   {
-    "chunk_id": "c175",
+    "chunk_id": "c114",
     "akus": [
       [
         "The SOAP 1.1 request",
@@ -920,7 +820,7 @@
     ]
   },
   {
-    "chunk_id": "c177",
+    "chunk_id": "c115",
     "akus": [
       [
         "Amazon S3",
@@ -930,23 +830,23 @@
     ]
   },
   {
-    "chunk_id": "c179",
+    "chunk_id": "c116",
     "akus": [
       [
         "an object",
         "match",
         "all of the predicates"
-      ],
-      [
-        "Yes Amazon S3",
-        "specify",
-        "the schedule for generating inventory results"
       ]
     ]
   },
   {
-    "chunk_id": "c180",
+    "chunk_id": "c117",
     "akus": [
+      [
+        "No SSES3",
+        "specify",
+        "the use of SSE S3 to encrypt"
+      ],
       [
         "Amazon S3",
         "scan",
@@ -955,8 +855,13 @@
     ]
   },
   {
-    "chunk_id": "c181",
+    "chunk_id": "c118",
     "akus": [
+      [
+        "Amazon S3",
+        "transition",
+        "noncurrent object versions"
+      ],
       [
         "Amazon S3",
         "remove",
@@ -965,17 +870,7 @@
     ]
   },
   {
-    "chunk_id": "c182",
-    "akus": [
-      [
-        "Amazon S3",
-        "transition",
-        "noncurrent object versions"
-      ]
-    ]
-  },
-  {
-    "chunk_id": "c183",
+    "chunk_id": "c119",
     "akus": [
       [
         "Amazon S3",
@@ -985,12 +880,17 @@
     ]
   },
   {
-    "chunk_id": "c185",
+    "chunk_id": "c120",
     "akus": [
       [
         "Amazon S3",
         "retain",
         "how many noncurrent versions"
+      ],
+      [
+        "No NoncurrentDays",
+        "specify",
+        "the number of days an object is"
       ],
       [
         "Amazon S3",
@@ -1005,7 +905,7 @@
     ]
   },
   {
-    "chunk_id": "c186",
+    "chunk_id": "c121",
     "akus": [
       [
         "The UpdateObjectEncryption operation",
@@ -1025,17 +925,7 @@
     ]
   },
   {
-    "chunk_id": "c188",
-    "akus": [
-      [
-        "No Owner",
-        "specify",
-        "the owner of the object"
-      ]
-    ]
-  },
-  {
-    "chunk_id": "c189",
+    "chunk_id": "c123",
     "akus": [
       [
         "Amazon S3",
@@ -1065,18 +955,13 @@
     ]
   },
   {
-    "chunk_id": "c190",
+    "chunk_id": "c124",
     "akus": [
       [
         "S3 Select",
         "split",
         "the same record"
-      ]
-    ]
-  },
-  {
-    "chunk_id": "c191",
-    "akus": [
+      ],
       [
         "Amazon S3",
         "replicate",
@@ -1085,7 +970,7 @@
     ]
   },
   {
-    "chunk_id": "c192",
+    "chunk_id": "c125",
     "akus": [
       [
         "Amazon S3",
@@ -1093,24 +978,19 @@
         "only the filter that you can specify"
       ],
       [
-        "Existing customers of Amazon S3 Select",
-        "continue",
-        "Type OutputLocation data type Required No Amazon"
-      ]
-    ]
-  },
-  {
-    "chunk_id": "c193",
-    "akus": [
-      [
         "the header",
         "return",
         "the value TRUE"
+      ],
+      [
+        "the header",
+        "return",
+        "the value FALSE"
       ]
     ]
   },
   {
-    "chunk_id": "c195",
+    "chunk_id": "c127",
     "akus": [
       [
         "a PUT Object request",
@@ -1120,27 +1000,17 @@
     ]
   },
   {
-    "chunk_id": "c197",
+    "chunk_id": "c128",
     "akus": [
       [
         "Amazon S3",
         "replicate",
-        "objects created with server side encryption"
+        "objects created with server side encryption using"
       ]
     ]
   },
   {
-    "chunk_id": "c198",
-    "akus": [
-      [
-        "Amazon S3",
-        "publish",
-        "a message to report the specified events"
-      ]
-    ]
-  },
-  {
-    "chunk_id": "c202",
+    "chunk_id": "c131",
     "akus": [
       [
         "S3 on Outposts",
@@ -1155,22 +1025,17 @@
     ]
   },
   {
-    "chunk_id": "c203",
+    "chunk_id": "c132",
     "akus": [
       [
         "Amazon S3",
         "support",
         "only symmetric encryption KMS keys"
-      ],
-      [
-        "No SSES3",
-        "specify",
-        "the use of SSE S3 to encrypt"
       ]
     ]
   },
   {
-    "chunk_id": "c205",
+    "chunk_id": "c133",
     "akus": [
       [
         "whose object keys",
@@ -1180,27 +1045,37 @@
     ]
   },
   {
-    "chunk_id": "c206",
+    "chunk_id": "c134",
     "akus": [
+      [
+        "the specified job",
+        "invoke",
+        "an AWS Lambda function"
+      ],
+      [
+        "the specified job",
+        "execute",
+        "a DELETE Object tagging call"
+      ],
       [
         "Amazon S3 Control",
         "direct",
         "the specified job"
-      ]
-    ]
-  },
-  {
-    "chunk_id": "c207",
-    "akus": [
+      ],
       [
-        "Amazon S3",
-        "store",
-        "the job completion report"
+        "the specified job",
+        "run",
+        "a PUT Copy object call"
+      ],
+      [
+        "the specified job",
+        "run",
+        "a PUT Object tagging call"
       ]
     ]
   },
   {
-    "chunk_id": "c209",
+    "chunk_id": "c136",
     "akus": [
       [
         "S3 Access Grants",
@@ -1210,22 +1085,17 @@
     ]
   },
   {
-    "chunk_id": "c212",
-    "akus": [
-      [
-        "Active routes",
-        "process",
-        "Amazon S3 requests"
-      ]
-    ]
-  },
-  {
-    "chunk_id": "c213",
+    "chunk_id": "c138",
     "akus": [
       [
         "The UpdateObjectEncryption operation",
         "support",
         "the SSE KMS encryption type"
+      ],
+      [
+        "Active routes",
+        "process",
+        "Amazon S3 requests"
       ],
       [
         "S3 on Outposts",
@@ -1236,16 +1106,11 @@
         "S3 on Outposts",
         "take",
         "the associated action"
-      ],
-      [
-        "No NoncurrentDays",
-        "specify",
-        "the number of days an object is"
       ]
     ]
   },
   {
-    "chunk_id": "c214",
+    "chunk_id": "c139",
     "akus": [
       [
         "Amazon S3",
@@ -1275,7 +1140,7 @@
     ]
   },
   {
-    "chunk_id": "c215",
+    "chunk_id": "c140",
     "akus": [
       [
         "S3 on Outposts",
@@ -1291,12 +1156,7 @@
         "S3 on Outposts",
         "replicate",
         "metadata changes made to the replica copies"
-      ]
-    ]
-  },
-  {
-    "chunk_id": "c216",
-    "akus": [
+      ],
       [
         "The filters",
         "determine",
@@ -1305,7 +1165,7 @@
     ]
   },
   {
-    "chunk_id": "c217",
+    "chunk_id": "c141",
     "akus": [
       [
         "Amazon S3",
@@ -1315,18 +1175,13 @@
     ]
   },
   {
-    "chunk_id": "c218",
+    "chunk_id": "c142",
     "akus": [
       [
         "Your SSE- KMS configuration",
         "support",
         "1 customer managed key per directory bucket"
-      ]
-    ]
-  },
-  {
-    "chunk_id": "c219",
-    "akus": [
+      ],
       [
         "S3 Initiate Restore Object jobs that target",
         "require",
@@ -1335,8 +1190,13 @@
     ]
   },
   {
-    "chunk_id": "c221",
+    "chunk_id": "c144",
     "akus": [
+      [
+        "S3 on Outposts",
+        "replicate",
+        "metadata from the source objects"
+      ],
       [
         "Amazon S3",
         "replicate",
@@ -1345,23 +1205,23 @@
     ]
   },
   {
-    "chunk_id": "c227",
+    "chunk_id": "c147",
     "akus": [
       [
         "No OwnerId",
         "return",
         "the AWS account ID of the outpost"
-      ],
-      [
-        "S3 Tables",
-        "assign",
-        "a field ID"
       ]
     ]
   },
   {
-    "chunk_id": "c229",
+    "chunk_id": "c148",
     "akus": [
+      [
+        "S3 Tables",
+        "assign",
+        "a field ID"
+      ],
       [
         "S3 Tables",
         "support",
@@ -1370,7 +1230,7 @@
     ]
   },
   {
-    "chunk_id": "c233",
+    "chunk_id": "c152",
     "akus": [
       [
         "The access key ID",
@@ -1381,12 +1241,7 @@
         "The parent account",
         "control",
         "a user 's ability to access AWS"
-      ]
-    ]
-  },
-  {
-    "chunk_id": "c234",
-    "akus": [
+      ],
       [
         "The API libraries",
         "compute",
@@ -1395,8 +1250,13 @@
     ]
   },
   {
-    "chunk_id": "c235",
+    "chunk_id": "c153",
     "akus": [
+      [
+        "Amazon S3 dual stack endpoints",
+        "support",
+        "requests to S3 buckets"
+      ],
       [
         "Any IP addresses outside of this range",
         "deny",
@@ -1405,22 +1265,17 @@
     ]
   },
   {
-    "chunk_id": "c236",
+    "chunk_id": "c154",
     "akus": [
       [
         "Amazon S3",
         "support",
         "only regional dual stack endpoint names"
-      ],
-      [
-        "outside of this range",
-        "deny",
-        "access to the bucket examplebucket"
       ]
     ]
   },
   {
-    "chunk_id": "c239",
+    "chunk_id": "c162",
     "akus": [
       [
         "An IAM user or an AWS account",
@@ -1430,7 +1285,17 @@
     ]
   },
   {
-    "chunk_id": "c248",
+    "chunk_id": "c180",
+    "akus": [
+      [
+        "a federated user with a limited set",
+        "lists",
+        "keys in the specified bucket"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "c186",
     "akus": [
       [
         "Facility B",
@@ -1450,17 +1315,7 @@
     ]
   },
   {
-    "chunk_id": "c251",
-    "akus": [
-      [
-        "an object",
-        "copy",
-        "for example C:/AWS"
-      ]
-    ]
-  },
-  {
-    "chunk_id": "c258",
+    "chunk_id": "c242",
     "akus": [
       [
         "Bash AWS CLI with Bash script",
@@ -1470,7 +1325,7 @@
     ]
   },
   {
-    "chunk_id": "c259",
+    "chunk_id": "c243",
     "akus": [
       [
         "Bash AWS CLI with Bash script",
@@ -1480,17 +1335,22 @@
     ]
   },
   {
-    "chunk_id": "c273",
+    "chunk_id": "c246",
+    "akus": [
+      [
+        "API Reference Bash AWS CLI with Bash",
+        "find",
+        "the complete example"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "c274",
     "akus": [
       [
         "The method",
         "return",
         "a list of the Amazon S3 objects"
-      ],
-      [
-        "The DeleteObjectsAsync method",
-        "add",
-        "a delete marker"
       ]
     ]
   },
@@ -1498,10 +1358,25 @@
     "chunk_id": "c275",
     "akus": [
       [
+        "The DeleteObjectsAsync method",
+        "add",
+        "a delete marker for each object deleted"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "c279",
+    "akus": [
+      [
         "Get S3Object",
         "return",
         "a collection of Amazon S3.Model S3Object instances"
-      ],
+      ]
+    ]
+  },
+  {
+    "chunk_id": "c280",
+    "akus": [
       [
         "Get S3Object",
         "return",
@@ -1510,7 +1385,7 @@
     ]
   },
   {
-    "chunk_id": "c292",
+    "chunk_id": "c307",
     "akus": [
       [
         "The sample",
@@ -1520,23 +1395,13 @@
     ]
   },
   {
-    "chunk_id": "c300",
+    "chunk_id": "c329",
     "akus": [
-      [
-        "the AWS Log Delivery group",
-        "write",
-        "access to the bucket"
-      ],
       [
         "Most Amazon S3 use cases",
         "require",
         "the use of access control lists ACLs"
-      ]
-    ]
-  },
-  {
-    "chunk_id": "c301",
-    "akus": [
+      ],
       [
         "The entity tag",
         "represent",
@@ -1545,7 +1410,7 @@
     ]
   },
   {
-    "chunk_id": "c302",
+    "chunk_id": "c333",
     "akus": [
       [
         "The second rule",
@@ -1555,7 +1420,7 @@
     ]
   },
   {
-    "chunk_id": "c305",
+    "chunk_id": "c334",
     "akus": [
       [
         "all users",
@@ -1565,7 +1430,17 @@
     ]
   },
   {
-    "chunk_id": "c348",
+    "chunk_id": "c340",
+    "akus": [
+      [
+        "The bucket",
+        "exist",
+        "if caught instanceof S3ServiceException"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "c399",
     "akus": [
       [
         "Amazon S3",
@@ -1576,21 +1451,31 @@
         "Amazon S3",
         "encrypt",
         "the object at rest"
+      ],
+      [
+        "import boto3 from boto3.s3.transfer import TransferConfig MB",
+        "handle",
+        "callbacks from the transfer manager"
       ]
     ]
   },
   {
-    "chunk_id": "c354",
+    "chunk_id": "c404",
     "akus": [
       [
         "The function",
         "retrieve",
         "the S3 bucket name and object key"
+      ],
+      [
+        "Your metadata headers",
+        "exceed",
+        "the maximum allowed metadata size"
       ]
     ]
   },
   {
-    "chunk_id": "c355",
+    "chunk_id": "c405",
     "akus": [
       [
         "Your request",
@@ -1598,14 +1483,14 @@
         "a required header"
       ],
       [
-        "Your metadata headers",
-        "exceed",
-        "the maximum allowed metadata size"
-      ],
-      [
         "A header that you provided",
         "imply",
         "functionality that is not implement ed"
+      ],
+      [
+        "The tag policy",
+        "allow",
+        "the specified value for the following tag"
       ],
       [
         "The version ID specified in the request",
@@ -1615,17 +1500,7 @@
     ]
   },
   {
-    "chunk_id": "c356",
-    "akus": [
-      [
-        "The tag policy",
-        "allow",
-        "the specified value for the following tag"
-      ]
-    ]
-  },
-  {
-    "chunk_id": "c359",
+    "chunk_id": "c407",
     "akus": [
       [
         "The SelectRequest entity",
@@ -1635,7 +1510,7 @@
     ]
   },
   {
-    "chunk_id": "c361",
+    "chunk_id": "c409",
     "akus": [
       [
         "The AWS Region in the resource ARN",
@@ -1645,7 +1520,7 @@
     ]
   },
   {
-    "chunk_id": "c364",
+    "chunk_id": "c410",
     "akus": [
       [
         "The name specified in the request",
@@ -1655,7 +1530,7 @@
     ]
   },
   {
-    "chunk_id": "c365",
+    "chunk_id": "c411",
     "akus": [
       [
         "the functi on",
@@ -1670,7 +1545,7 @@
     ]
   },
   {
-    "chunk_id": "c367",
+    "chunk_id": "c412",
     "akus": [
       [
         "a high request rate",
@@ -1680,7 +1555,7 @@
     ]
   },
   {
-    "chunk_id": "c368",
+    "chunk_id": "c413",
     "akus": [
       [
         "Amazon S3",
@@ -1705,8 +1580,13 @@
     ]
   },
   {
-    "chunk_id": "c371",
+    "chunk_id": "c415",
     "akus": [
+      [
+        "The DeleteObject operation",
+        "remove",
+        "the specified object"
+      ],
       [
         "Amazon S3",
         "support",
@@ -1715,38 +1595,23 @@
     ]
   },
   {
-    "chunk_id": "c372",
+    "chunk_id": "c416",
     "akus": [
-      [
-        "The DeleteObject operation",
-        "remove",
-        "the specified object"
-      ],
       [
         "The GetObjectAccessControlPolicy operation",
         "fetch",
         "the access control policy for an object"
-      ],
-      [
-        "the authentication information For more information about",
-        "put",
-        "Your AWS Access Key ID"
       ]
     ]
   },
   {
-    "chunk_id": "c373",
+    "chunk_id": "c417",
     "akus": [
       [
         "Amazon S3",
         "offer",
         "the ability to identify what API signature"
-      ]
-    ]
-  },
-  {
-    "chunk_id": "c374",
-    "akus": [
+      ],
       [
         "the signature generated by Amazon S3",
         "match",
@@ -1756,12 +1621,7 @@
         "the system",
         "receive",
         "an authenticated request"
-      ]
-    ]
-  },
-  {
-    "chunk_id": "c375",
-    "akus": [
+      ],
       [
         "the AWSAccessKeyId element",
         "identify",
@@ -1770,7 +1630,7 @@
     ]
   },
   {
-    "chunk_id": "c377",
+    "chunk_id": "c419",
     "akus": [
       [
         "the system",
@@ -1781,36 +1641,41 @@
         "Some toolkits",
         "insert",
         "headers you do not know that about"
+      ],
+      [
+        "the header x amz meta- username fred",
+        "become",
+        "meta username fred barney"
       ]
     ]
   },
   {
-    "chunk_id": "c378",
+    "chunk_id": "c420",
     "akus": [
       [
         "Amazon S3",
         "support",
         "Signature Version 4 a protocol for authenticating"
       ],
-      [
-        "Browser based uploads using POST AWS signature",
-        "support",
-        "POST which allows your users to upload"
-      ],
-      [
-        "Browser based uploads using POST AWS signature",
-        "support",
-        "Signature Version 4 a protocol for authenticating"
-      ]
-    ]
-  },
-  {
-    "chunk_id": "c379",
-    "akus": [
       [
         "Amazon S3",
         "cancel",
         "the incomplete multipart upload"
+      ],
+      [
+        "Browser based uploads using POST AWS signature",
+        "open",
+        "a web browser"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "c422",
+    "akus": [
+      [
+        "the parent tag",
+        "specify",
+        "GET Bucket lifecycle Deprecated Amazon Simple Storage"
       ]
     ]
   }
