@@ -1,1681 +1,8196 @@
 [
   {
-    "chunk_id": "c1",
+    "chunk_id": "d300b802-d8c3-4342-8cb8-2f618e452391",
     "akus": [
       [
-        "Authenticated access",
-        "require",
-        "credentials that AWS can use to authenticate"
-      ],
-      [
-        "The S3 API reference",
-        "group",
-        "each of its Actions and Data Types"
+        "REST API",
+        "USES",
+        "standard HTTP headers"
       ]
     ]
   },
   {
-    "chunk_id": "c2",
-    "akus": [
-      [
-        "Bucket names",
-        "follow",
-        "the format bucket base name zone id"
-      ],
-      [
-        "The S3 on Outposts hostname",
-        "take",
-        "the form AccessPointName-AccountId.outpostID.s3-outposts.Region.amazonaws.com"
-      ],
-      [
-        "The access point hostname",
-        "take",
-        "the form AccessPointName-AccountId.s3-accesspoint.Region.amazonaws.com"
-      ],
-      [
-        "the account ID that you provide",
-        "match",
-        "the actual owner of the bucket"
-      ]
-    ]
-  },
-  {
-    "chunk_id": "c3",
+    "chunk_id": "30692bd6-62c2-40a3-8a3e-6f6fd4ad7a11",
     "akus": [
       [
         "Amazon S3",
-        "send",
+        "SUPPORTS",
+        "REST API"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "90a54d80-6866-407b-b1e6-16d487139187",
+    "akus": [
+      [
+        "REST API",
+        "USES",
+        "standard HTTP headers"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "8e167a70-c775-4370-851f-1a9c29682eeb",
+    "akus": [
+      [
+        "Amazon S3",
+        "CONCATENATE",
+        "all the parts"
+      ],
+      [
+        "Amazon S3",
+        "SENDS",
         "white space characters"
+      ],
+      [
+        "Amazon S3",
+        "CONCATENATE",
+        "ascending order"
+      ],
+      [
+        "CompleteMultipartUpload",
+        "RETURNS",
+        "200 OK response"
+      ],
+      [
+        "SDKs",
+        "DETECT",
+        "embedded error"
       ]
     ]
   },
   {
-    "chunk_id": "c5",
+    "chunk_id": "311393c8-e66b-450c-b7a2-29055217af12",
     "akus": [
       [
-        "The S3 on Outposts hostname",
-        "take",
-        "the form AccessPointName AccountId.outpostID.s3- outposts.Region.amazonaws.com"
+        "S3",
+        "RETURNS",
+        "409 ConditionalRequestConflict response"
       ],
       [
-        "The access point hostname",
-        "take",
-        "the Amazon S3"
+        "Amazon S3",
+        "RETURNS",
+        "412 Precondition Failed error"
       ],
       [
-        "Cache Control",
-        "specify",
-        "the caching behavior along the request reply"
+        "header",
+        "SPECIFIES",
+        "Base64 encoded, 32-bit CRC32 checksum data"
+      ],
+      [
+        "header",
+        "SPECIFIES",
+        "Base64 encoded, 32-bit CRC32C checksum"
+      ],
+      [
+        "header",
+        "SPECIFIES",
+        "Base64 encoded, 160-bit SHA1 digest"
+      ],
+      [
+        "header",
+        "SPECIFIES",
+        "Base64 encoded, 256-bit SHA256 digest"
       ]
     ]
   },
   {
-    "chunk_id": "c6",
+    "chunk_id": "1c3cafe9-c3aa-4122-aa61-53583d54e692",
     "akus": [
       [
-        "Amazon S3",
-        "copy",
-        "the latest version of the source object"
-      ],
-      [
-        "Amazon S3",
-        "return",
-        "the version ID of the copied object"
-      ],
-      [
-        "Amazon S3",
-        "decrypt",
-        "the object for copying"
-      ],
-      [
-        "x amz copy source server side encryption",
-        "specify",
-        "the customer provided encryption key for Amazon"
-      ],
-      [
-        "Amazon S3",
-        "generate",
-        "a unique version ID for the copied"
+        "multipart upload",
+        "USES",
+        "S3 Bucket Key"
       ]
     ]
   },
   {
-    "chunk_id": "c7",
+    "chunk_id": "8dba664e-388a-4217-bb6c-b6f52200845c",
     "akus": [
       [
-        "Your SSE KMS configuration",
-        "support",
-        "1 customer managed key per directory bucket"
+        "Objects",
+        "HAS",
+        "diﬀerent entity tags"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "6142a7da-5d2a-42d2-bcda-8729c9c69c54",
+    "akus": [
+      [
+        "Amazon S3 transfer acceleration",
+        "SUPPORTS",
+        "cross-Region copies"
       ],
       [
         "Amazon S3",
-        "override",
-        "the customer managed key for the bucket"
+        "SUPPORTS",
+        "copy operations"
+      ],
+      [
+        "VPC endpoints",
+        "SUPPORTS",
+        "cross-Region requests"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "40d38cf8-c210-4b8b-ae03-922b53fc4073",
+    "akus": [
+      [
+        "Amazon S3",
+        "RECEIVES",
+        "copy request"
+      ],
+      [
+        "SDKs",
+        "DETECT",
+        "embedded error"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "1f73179f-dbc4-4383-a531-b87a907122e6",
+    "akus": [
+      [
+        "S3",
+        "RETURNS",
+        "409 ConditionalRequestConflict response"
+      ],
+      [
+        "Amazon S3",
+        "RETURNS",
+        "412 Precondition Failed error"
+      ],
+      [
+        "source and destination buckets",
+        "HAS",
+        "same parent AWS Region"
+      ],
+      [
+        "Only the owner",
+        "HAS",
+        "full access control"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "869c353f-7029-423c-90c8-9e696ccfec66",
+    "akus": [
+      [
+        "Amazon S3",
+        "COPY",
+        "latest version"
+      ],
+      [
+        "Amazon S3",
+        "CREATES",
+        "unique version ID"
+      ],
+      [
+        "Amazon S3",
+        "CREATES",
+        "x amz version id response header"
+      ],
+      [
+        "Amazon S3",
+        "RETURNS",
+        "version ID"
+      ],
+      [
+        "Amazon S3",
+        "CREATES",
+        "copied object"
+      ],
+      [
+        "Amazon S3",
+        "RETURNS",
+        "200 OK"
+      ],
+      [
+        "Amazon S3",
+        "SUPPORTS",
+        "copy operations"
+      ],
+      [
+        "CRC32",
+        "IS",
+        "default checksum algorithm"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "3f3f2a83-2d1e-4ace-8d26-b6a4241f77f2",
+    "akus": [
+      [
+        "Amazon S3",
+        "RETURNS",
+        "412 Precondition Failed response code"
+      ],
+      [
+        "Amazon S3",
+        "RETURNS",
+        "200 OK"
+      ],
+      [
+        "Amazon S3",
+        "RETURNS",
+        "412 Precondition"
+      ],
+      [
+        "grantee",
+        "RETRIEVE",
+        "object ACL"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "eb29cbfb-eb31-42fa-83c3-e74bfcaf006d",
+    "akus": [
+      [
+        "Amazon S3",
+        "USES",
+        "corresponding KMS key"
+      ],
+      [
+        "SSE-KMS configuration",
+        "SUPPORTS",
+        "1 customer managed key"
+      ],
+      [
+        "Amazon S3",
+        "ENCRYPTS",
+        "all new objects"
+      ],
+      [
+        "Amazon S3",
+        "USES",
+        "corresponding encryption key"
+      ],
+      [
+        "Amazon S3",
+        "ENCRYPTS",
+        "server-side encryption"
       ],
       [
         "Unrecognized or unsupported values",
-        "write",
-        "a destination object"
+        "WRITES",
+        "destination object"
       ]
     ]
   },
   {
-    "chunk_id": "c8",
+    "chunk_id": "ecdebde7-4031-4e61-a9a6-3ad9323d6851",
     "akus": [
       [
         "Amazon S3",
-        "specify",
-        "the customer provided encryption key for Amazon"
+        "USES",
+        "S3 Bucket Key"
       ],
       [
         "Amazon S3",
-        "store",
-        "the encryption key"
+        "USES",
+        "OUTPOSTS Storage Class"
       ],
       [
-        "x amz server side encryption context",
-        "specify",
-        "the AWS KMS Encryption Context"
+        "Directory buckets",
+        "SUPPORTS",
+        "Availability Zones"
       ],
       [
-        "Unsupported storage Amazon S3 Amazon Simple Storage",
-        "write",
-        "a destination object"
-      ],
-      [
-        "The value",
-        "match",
-        "the default encryption context the bucket Amazon"
-      ]
-    ]
-  },
-  {
-    "chunk_id": "c9",
-    "akus": [
-      [
-        "Amazon S3",
-        "store",
-        "the value of this header"
-      ]
-    ]
-  },
-  {
-    "chunk_id": "c10",
-    "akus": [
-      [
-        "Amazon S3",
-        "return",
-        "the encryption algorithm and the MD5 digest"
-      ]
-    ]
-  },
-  {
-    "chunk_id": "c11",
-    "akus": [
-      [
-        "the bucket policy",
-        "grant",
-        "the s3express CreateSession permission"
-      ]
-    ]
-  },
-  {
-    "chunk_id": "c12",
-    "akus": [
-      [
-        "Your SSE KMS configuration",
-        "support",
+        "SSE-KMS configuration",
+        "SUPPORTS",
         "1 customer managed key"
+      ],
+      [
+        "Unsupported storage class values",
+        "WRITES",
+        "destination object"
+      ],
+      [
+        "Amazon S3",
+        "USES",
+        "object encryption"
+      ],
+      [
+        "STANDARD storage class",
+        "PROVIDES",
+        "high durability"
       ]
     ]
   },
   {
-    "chunk_id": "c13",
+    "chunk_id": "ca3046f6-4adc-49cc-8ce0-692fcf63c051",
+    "akus": [
+      [
+        "Amazon",
+        "USES",
+        "OUTPOSTS Storage Class"
+      ],
+      [
+        "only the empty tag-set",
+        "SUPPORTS",
+        "CopyObject operation"
+      ],
+      [
+        "Any requests",
+        "RECEIVES",
+        "501 Not Implemented status code"
+      ],
+      [
+        "tag-set",
+        "ENCODE",
+        "URL Query parameters"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "49166da5-8c3e-4f36-8476-46cb4ac17ac8",
     "akus": [
       [
         "Amazon S3",
-        "specify",
-        "the bucket whose cors configuration is being"
+        "STORES",
+        "object metadata"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "1dec78d9-79e8-4316-bdff-1e2238c24680",
+    "akus": [
+      [
+        "Amazon S3",
+        "CREATES",
+        "default checksum"
       ],
       [
-        "S3 Intelligent Tiering",
-        "deliver",
+        "Amazon S3",
+        "CREATES",
+        "uploaded object"
+      ],
+      [
+        "ETag",
+        "REFLECT",
+        "only changes"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "a94780d9-f61f-4547-a481-73a53f87f806",
+    "akus": [
+      [
+        "only the s3:CreateBucket permission",
+        "REQUIRES",
+        "CreateBucket request"
+      ],
+      [
+        "General purpose buckets",
+        "EXIST",
+        "global namespace"
+      ],
+      [
+        "AWS",
+        "HAS",
+        "four partitions"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "b46a1ad5-1ba7-4f26-81e4-342230ec166d",
+    "akus": [
+      [
+        "S3 Object Ownership",
+        "SET",
+        "Bucket owner enforced ACLs disabled"
+      ],
+      [
+        "S3 Object Lock",
+        "ENABLES",
+        "new bucket"
+      ],
+      [
+        "General purpose buckets",
+        "FOLLOW",
+        "specific naming convention"
+      ],
+      [
+        "all Block Public Access settings",
+        "ENABLES",
+        "directory buckets"
+      ],
+      [
+        "all Block Public Access settings",
+        "ENABLES",
+        "bucket level"
+      ],
+      [
+        "desired bucket ACL",
+        "GRANTS",
+        "public access"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "02919ed7-58af-442c-bed9-4db9d89afcb7",
+    "akus": [
+      [
+        "Directory buckets",
+        "USES",
+        "bucket owner enforced setting"
+      ],
+      [
+        "S3 Object Lock",
+        "ENABLES",
+        "new bucket"
+      ],
+      [
+        "objects",
+        "UPLOAD",
+        "bucket owner full control canned ACL"
+      ],
+      [
+        "Objects",
+        "UPDATES",
+        "bucket owner"
+      ],
+      [
+        "grantee",
+        "RETRIEVE",
+        "bucket ACL"
+      ],
+      [
+        "account",
+        "ENABLES",
+        "Local Zones"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "e566fc50-c8c1-4433-afad-80d071ce3286",
+    "akus": [
+      [
+        "Amazon S3",
+        "RETURNS",
+        "all AWS Regions"
+      ],
+      [
+        "Amazon S3",
+        "RETURNS",
+        "200 OK"
+      ],
+      [
+        "ARNs",
+        "IDENTIFY",
+        "AWS resources"
+      ],
+      [
+        "Amazon S3",
+        "RETURNS",
+        "legacy compatibility"
+      ],
+      [
+        "ARNs",
+        "IDENTIFY",
+        "all of AWS"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "3812fdbd-2e3d-409e-b365-3313cde7013a",
+    "akus": [
+      [
+        "Amazon S3",
+        "ABORT",
+        "multipart upload"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "2e3aadb9-9d7e-4e7c-a8d7-b8240a1e5710",
+    "akus": [
+      [
+        "General purpose bucket permissions",
+        "PERFORM",
+        "multipart upload"
+      ],
+      [
+        "Amazon S3",
+        "USES",
+        "corresponding KMS key"
+      ],
+      [
+        "Amazon S3",
+        "ENCRYPTS",
+        "all new objects"
+      ],
+      [
+        "Amazon S3",
+        "ENCRYPTS",
+        "diﬀerent encryption key"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "a85ad8fa-7360-4a5d-90cc-7e6be87c31bf",
+    "akus": [
+      [
+        "encryption request headers",
+        "MATCH",
+        "Zonal endpoint API calls"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "fac31e81-6662-4ce8-af2d-3987f852ea33",
+    "akus": [
+      [
+        "Amazon S3",
+        "USES",
+        "encryption settings values"
+      ],
+      [
+        "encryption request headers",
+        "MATCH",
+        "Zonal endpoint API calls"
+      ],
+      [
+        "Each canned ACL",
+        "HAS",
+        "predefined set"
+      ],
+      [
+        "CLI",
+        "USES",
+        "bucket's default encryption configuration"
+      ],
+      [
+        "Only the owner",
+        "HAS",
+        "full access control"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "5fad39e0-d8b2-4b33-9d73-d1bbf2fa28c4",
+    "akus": [
+      [
+        "Amazon S3",
+        "USES",
+        "encryption settings values"
+      ],
+      [
+        "encryption request headers",
+        "MATCH",
+        "Zonal endpoint API calls"
+      ],
+      [
+        "CLI",
+        "USES",
+        "CreateSession request"
+      ],
+      [
+        "KMS key",
+        "EXIST",
+        "same account"
+      ],
+      [
+        "CLI",
+        "USES",
+        "bucket's default encryption configuration"
+      ],
+      [
+        "Only the owner",
+        "HAS",
+        "full access control"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "f9117e7d-ed4b-4ccb-a74f-2ce3849e5ca7",
+    "akus": [
+      [
+        "Amazon S3",
+        "USES",
+        "AWS managed key"
+      ],
+      [
+        "Amazon S3",
+        "USES",
+        "STANDARD Storage Class"
+      ],
+      [
+        "Amazon S3",
+        "USES",
+        "OUTPOSTS Storage Class"
+      ],
+      [
+        "Amazon S3",
+        "USES",
+        "S3 Bucket"
+      ],
+      [
+        "Directory buckets",
+        "SUPPORTS",
+        "Availability Zones"
+      ],
+      [
+        "SSE-KMS configuration",
+        "SUPPORTS",
+        "1 customer managed key"
+      ],
+      [
+        "Amazon S3",
+        "STORES",
+        "object metadata"
+      ],
+      [
+        "STANDARD storage class",
+        "PROVIDES",
+        "high durability"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "f74e0edc-61cf-4c03-aef7-c81244156e72",
+    "akus": [
+      [
+        "multipart upload",
+        "USES",
+        "S3 Bucket Key"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "d2ee6e91-5ea4-4ead-9bbc-ab4fea232650",
+    "akus": [
+      [
+        "Access points",
+        "SUPPORTS",
+        "initiated multipart upload"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "5b2fcbeb-4a9f-4291-bed7-141e6eb91661",
+    "akus": [
+      [
+        "Amazon S3",
+        "RETURNS",
+        "encryption algorithm"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "16a9dc65-7122-48ed-83f8-59f805e89cbd",
+    "akus": [
+      [
+        "SDKs",
+        "HANDLES",
+        "session token refreshes"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "9ea09c29-b7f6-4c30-a5da-4287d7bc0be6",
+    "akus": [
+      [
+        "Only 1 customer managed key",
+        "SUPPORTS",
+        "directory bucket"
+      ],
+      [
+        "Amazon S3",
+        "USES",
+        "encryption settings values"
+      ],
+      [
+        "CLI",
+        "USES",
+        "CreateSession request"
+      ],
+      [
+        "CLI",
+        "USES",
+        "bucket's default encryption configuration"
+      ],
+      [
+        "session",
+        "CREATES",
+        "Zonal endpoint API operations"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "dc5fc65f-390f-4790-aea1-eeb795aa530d",
+    "akus": [
+      [
+        "SSE-KMS configuration",
+        "SUPPORTS",
+        "1 customer managed key"
+      ],
+      [
+        "KMS key",
+        "EXIST",
+        "same account"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "65a3d47a-615f-4a68-a4ed-80c4ec2e6945",
+    "akus": [
+      [
+        "S3 Intelligent-Tiering",
+        "DELIVER",
+        "three low latency and high throughput access tiers"
+      ],
+      [
+        "S3 Intelligent-Tiering",
+        "DELIVER",
         "automatic cost savings"
       ]
     ]
   },
   {
-    "chunk_id": "c17",
+    "chunk_id": "1ed9abba-fc15-44cc-b3e9-eb58a7caa46e",
     "akus": [
       [
-        "bucket owners",
-        "grant",
-        "permission to delete the website configuration"
+        "Amazon S3",
+        "DELETES",
+        "all the lifecycle configuration rules"
+      ],
+      [
+        "Amazon S3",
+        "DELETES",
+        "any objects"
       ]
     ]
   },
   {
-    "chunk_id": "c18",
+    "chunk_id": "f70e60bc-df49-49dd-a050-731ae31b928b",
+    "akus": [
+      [
+        "root principal",
+        "PERFORM",
+        "GetBucketPolicy, PutBucketPolicy, and DeleteBucketPolicy API actions"
+      ],
+      [
+        "Amazon S3",
+        "RETURNS",
+        "403 Access Denied error"
+      ],
+      [
+        "Amazon S3",
+        "RETURNS",
+        "405 Method Not"
+      ],
+      [
+        "calling identity",
+        "HAS",
+        "DeleteBucketPolicy permissions"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "6c1d2d39-5435-4453-936a-62e339bf00b5",
+    "akus": [
+      [
+        "Amazon S3",
+        "RETURNS",
+        "200 OK response"
+      ],
+      [
+        "Amazon S3",
+        "RETURNS",
+        "404 response"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "95dd1fb0-5859-41f0-a04b-1db9d2c1f0e5",
+    "akus": [
+      [
+        "IfMatchLastModifiedTime",
+        "SUPPORTS",
+        "directory buckets"
+      ],
+      [
+        "If-Match header",
+        "SUPPORTS",
+        "both general purpose and directory buckets"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "97464cdc-86d0-47f4-8424-f9b3ca2ff17e",
     "akus": [
       [
         "S3 Object Lock",
-        "bypass",
-        "Governance mode restrictions"
-      ],
-      [
-        "the ETag entity tag value provided during",
-        "match",
-        "the ETag of the object in S3"
+        "BYPASS",
+        "Governance-mode restrictions"
       ]
     ]
   },
   {
-    "chunk_id": "c19",
+    "chunk_id": "a7971f86-65e4-4adf-8154-7fe46627528e",
     "akus": [
       [
         "Amazon S3",
-        "perform",
-        "a delete operation"
-      ]
-    ]
-  },
-  {
-    "chunk_id": "c22",
-    "akus": [
+        "USES",
+        "header value"
+      ],
       [
-        "The previous version of the API",
-        "support",
-        "filtering based only on an object key"
+        "Content-MD5 request header",
+        "REQUIRES",
+        "all Multi"
       ]
     ]
   },
   {
-    "chunk_id": "c23",
-    "akus": [
-      [
-        "Response Syntax HTTP/1.1 200 Sample Response Showing",
-        "illustrate",
-        "one usage of GetBucketLogging"
-      ]
-    ]
-  },
-  {
-    "chunk_id": "c24",
-    "akus": [
-      [
-        "a get request soon after put or",
-        "return",
-        "a wrong result"
-      ]
-    ]
-  },
-  {
-    "chunk_id": "c25",
+    "chunk_id": "1f7dc7ca-bb0c-40b0-843a-42540a1d9030",
     "akus": [
       [
         "Amazon S3",
-        "assume",
-        "the specified IAM role to replicate objects"
+        "DELETES",
+        "specific object version"
       ],
       [
-        "only the bucket owner",
-        "read",
-        "the bucket website configuration"
-      ],
-      [
-        "The Destination element",
-        "identify",
-        "the target bucket where Amazon S3 creates"
-      ],
-      [
-        "the person requesting a download from this",
-        "pay",
-        "the transfer fees"
+        "Each object sub-section",
+        "INCLUDES",
+        "one or more preconditions"
       ]
     ]
   },
   {
-    "chunk_id": "c26",
+    "chunk_id": "fe6717bb-3610-4220-87e6-3c9c0afee6e4",
+    "akus": [
+      [
+        "transfer acceleration state",
+        "SET",
+        "Suspended on a bucket"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "1f756625-8359-4df3-8cc7-39e60c7a24e7",
+    "akus": [
+      [
+        "S3 Intelligent-Tiering",
+        "DELIVER",
+        "automatic cost savings"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "53109b2d-df83-427e-b615-0e8d4f71eb33",
+    "akus": [
+      [
+        "Objects",
+        "TRANSITION",
+        "Glacier Flexible"
+      ],
+      [
+        "Custom filters",
+        "TAKE",
+        "default transition behavior"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "af9bd5c3-c290-4078-b56c-705062da0899",
+    "akus": [
+      [
+        "Amazon S3",
+        "CONTINUE",
+        "backward compatibility"
+      ],
+      [
+        "bucket policy",
+        "APPLY",
+        "other Regions"
+      ],
+      [
+        "calls",
+        "GOVERN",
+        "bucket's home Region"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "abe0abdd-9e62-46ba-8358-7dfa6dfc3588",
+    "akus": [
+      [
+        "Amazon S3",
+        "SET",
+        "all newly created buckets"
+      ],
+      [
+        "Amazon S3",
+        "DETECT",
+        "specified events"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "eabce91a-a167-4f00-bcff-2e73d8c31039",
+    "akus": [
+      [
+        "root principal",
+        "PERFORM",
+        "GetBucketPolicy, PutBucketPolicy, and DeleteBucketPolicy API actions"
+      ],
+      [
+        "Amazon S3",
+        "RETURNS",
+        "403 Access Denied error"
+      ],
+      [
+        "Amazon S3",
+        "RETURNS",
+        "405 Method Not"
+      ],
+      [
+        "calling identity",
+        "HAS",
+        "GetBucketPolicy permissions"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "46bf1f1f-190f-46ff-a75b-cc9ee7086bc5",
+    "akus": [
+      [
+        "Amazon S3",
+        "REPLICATE",
+        "all objects"
+      ],
+      [
+        "Amazon S3",
+        "ASSUME",
+        "specified IAM role"
+      ],
+      [
+        "Amazon S3",
+        "CREATES",
+        "object replicas"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "c9e8d39c-e3c9-4d45-96f2-6a92a2d88d28",
     "akus": [
       [
         "Directory buckets",
-        "support",
-        "EXPRESS_ONEZONE the S3 Express One Zone storage"
-      ]
-    ]
-  },
-  {
-    "chunk_id": "c27",
-    "akus": [
+        "SUPPORTS",
+        "Availability Zones"
+      ],
       [
-        "The Object Lambda access point hostname",
-        "take",
-        "the form AccessPointName AccountId.s3 object- lambda.Region.amazonaws.com"
-      ]
-    ]
-  },
-  {
-    "chunk_id": "c28",
-    "akus": [
-      [
-        "the GetObject operation",
-        "return",
-        "the current version of an object"
+        "Unsupported storage class values",
+        "WRITES",
+        "destination object"
       ],
       [
         "Amazon S3",
-        "specify",
-        "the customer provided encryption key that you"
-      ]
-    ]
-  },
-  {
-    "chunk_id": "c29",
-    "akus": [
-      [
-        "your request",
-        "involve",
-        "a bucket that is either a source"
-      ]
-    ]
-  },
-  {
-    "chunk_id": "c31",
-    "akus": [
-      [
-        "x amz server side encryption customer key",
-        "specify",
-        "the customer provided encryption key for Amazon"
-      ]
-    ]
-  },
-  {
-    "chunk_id": "c33",
-    "akus": [
-      [
-        "The S3 on Outposts hostname",
-        "take",
-        "the form Amazon S3 Amazon Simple Storage"
-      ]
-    ]
-  },
-  {
-    "chunk_id": "c35",
-    "akus": [
-      [
-        "Range HeadObject",
-        "return",
-        "only the metadata for an object"
-      ]
-    ]
-  },
-  {
-    "chunk_id": "c37",
-    "akus": [
-      [
-        "The header of the source object",
-        "return",
-        "a value of COMPLETED"
-      ]
-    ]
-  },
-  {
-    "chunk_id": "c39",
-    "akus": [
-      [
-        "your single paginated request",
-        "return",
-        "all of the buckets in your account"
+        "RETURNS",
+        "status code 404 Not"
       ],
       [
-        "The first paginated response",
-        "return",
-        "up to 1000 buckets"
+        "requests",
+        "SENDS",
+        "Zonal endpoint"
       ]
     ]
   },
   {
-    "chunk_id": "c41",
+    "chunk_id": "406d4cf3-7f8a-4814-84cd-9cc9c48855e9",
+    "akus": [
+      [
+        "S3",
+        "RETURNS",
+        "304 Not Modified HTTP status code"
+      ],
+      [
+        "S3",
+        "RETURNS",
+        "304 Not Modified status code"
+      ],
+      [
+        "S3",
+        "RETURNS",
+        "200 OK"
+      ],
+      [
+        "response-cache-control",
+        "SET",
+        "Cache-Control header"
+      ],
+      [
+        "response-content-disposition",
+        "SET",
+        "Content-Disposition header"
+      ],
+      [
+        "response-content-encoding",
+        "SET",
+        "Content-Encoding header"
+      ],
+      [
+        "response-content-language",
+        "SET",
+        "Content-Language header"
+      ],
+      [
+        "response-content-type",
+        "SET",
+        "Content-Type header"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "295d01b2-6434-4d92-9ee9-a4fc298865d3",
     "akus": [
       [
         "Amazon S3",
-        "return",
+        "USES",
+        "message integrity check"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "0f340a08-3205-45f3-8904-d8610194efea",
+    "akus": [
+      [
+        "Directory buckets",
+        "SUPPORTS",
+        "Availability Zones"
+      ],
+      [
+        "Amazon S3",
+        "RETURNS",
+        "all objects"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "7dd12009-4bc5-45d5-aa7f-17d5d9085d30",
+    "akus": [
+      [
+        "Amazon S3",
+        "RETURNS",
+        "all objects"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "af3dc711-7b57-4cca-9601-4dcd0370e8b6",
+    "akus": [
+      [
+        "Amazon S3",
+        "STORES",
+        "object metadata"
+      ],
+      [
+        "Amazon S3",
+        "RETURNS",
+        "x amz tagging count header"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "b3d80886-e106-465d-81a7-c47c0b536f76",
+    "akus": [
+      [
+        "General purpose bucket permissions",
+        "HAS",
+        "READ. access"
+      ],
+      [
+        "version ID",
+        "PASS",
+        "GetObjectAttributes request"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "4e3497f5-fb74-4668-9b74-adda7fa1666e",
+    "akus": [
+      [
+        "Amazon S3",
+        "RETURNS",
+        "all objects"
+      ],
+      [
+        "ETag",
+        "IS",
+        "opaque identifier"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "bf4546a2-e184-4573-b7ce-09bf9701631b",
+    "akus": [
+      [
+        "Valid Values",
+        "SPECIFIES",
+        "Object Lock rule"
+      ],
+      [
+        "Bucket settings",
+        "REQUIRES",
+        "both a mode"
+      ],
+      [
+        "Root level tag",
+        "INDICATE",
+        "Retention mode"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "81d28ae6-5067-4eb4-bac4-5a50aac38040",
+    "akus": [
+      [
+        "Amazon S3",
+        "EVALUATE",
+        "PublicAccessBlock configuration"
+      ],
+      [
+        "Amazon S3",
+        "IGNORE",
+        "all public ACLs"
+      ],
+      [
+        "Amazon S3",
+        "IGNORE",
+        "public ACLs"
+      ],
+      [
+        "Amazon S3",
+        "BLOCKS",
+        "public bucket policies"
+      ],
+      [
+        "Amazon S3",
+        "RESTRICTS",
+        "public bucket policies"
+      ],
+      [
+        "Amazon S3",
+        "BLOCKS",
+        "public access control lists"
+      ],
+      [
+        "Amazon S3",
+        "USES",
+        "most restrictive combination"
+      ],
+      [
+        "Account-level settings",
+        "INHERIT",
+        "organization-level policies"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "dcad6ff2-4609-4f0e-85b3-941eb409b4e9",
+    "akus": [
+      [
+        "ARNs",
+        "IDENTIFY",
+        "AWS resources"
+      ],
+      [
+        "ARNs",
+        "IDENTIFY",
+        "all of AWS"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "3b6dbaa0-5417-4c6e-859a-d9ef50c582cd",
+    "akus": [
+      [
+        "Amazon S3",
+        "RETURNS",
+        "status code 404 Not Found error"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "213b5b39-263e-49ea-a304-88a6392f9d3c",
+    "akus": [
+      [
+        "Amazon S3",
+        "RETURNS",
+        "304 Not Modified response code"
+      ],
+      [
+        "Amazon S3",
+        "RETURNS",
+        "200 OK"
+      ],
+      [
+        "S3",
+        "RETURNS",
+        "416 - Requested Range Not Satisfiable error"
+      ],
+      [
+        "HeadObject",
+        "RETURNS",
+        "only the metadata"
+      ],
+      [
+        "Useful querying",
+        "RETURNS",
+        "only the metadata"
+      ],
+      [
+        "response-cache-control",
+        "SET",
+        "Cache-Control header"
+      ],
+      [
+        "response-content-disposition",
+        "SET",
+        "Content-Disposition header"
+      ],
+      [
+        "response-content-encoding",
+        "SET",
+        "Content-Encoding header"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "d0442e0d-4f37-45ad-92e6-a7d47bd86054",
+    "akus": [
+      [
+        "Amazon S3",
+        "RETURNS",
+        "x- amz-replication-status header"
+      ],
+      [
+        "Amazon S3",
+        "RETURNS",
+        "any object request"
+      ],
+      [
+        "Amazon S3",
+        "STORES",
+        "object replicas"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "38890310-30ea-46e4-8819-6549cbd7af60",
+    "akus": [
+      [
+        "Directory buckets",
+        "SUPPORTS",
+        "Availability Zones"
+      ],
+      [
+        "Amazon S3",
+        "RETURNS",
+        "all objects"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "039a8e49-5eda-48e3-b3df-34b0b780ec38",
+    "akus": [
+      [
+        "Amazon S3",
+        "STORES",
+        "object metadata"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "553af029-9a45-4a30-8aec-8278168222f6",
+    "akus": [
+      [
+        "S3 Intelligent-Tiering",
+        "DELIVER",
+        "three low latency and high throughput access tiers"
+      ],
+      [
+        "S3 Intelligent-Tiering",
+        "DELIVER",
+        "automatic cost savings"
+      ],
+      [
+        "NextContinuationToken",
+        "PROVIDES",
+        "subsequent request"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "4c4f7cfe-1f12-4d3f-bca8-500a86ad15cc",
+    "akus": [
+      [
+        "NextContinuationToken",
+        "PROVIDES",
+        "subsequent request"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "fe0983d7-efe1-48f9-8f92-f2839ca44c84",
+    "akus": [
+      [
+        "ContinuationToken",
+        "INDICATE",
+        "Amazon S3"
+      ],
+      [
+        "Amazon S3",
+        "APPLY",
+        "default page size"
+      ],
+      [
+        "All unpaginated ListBuckets requests",
+        "REJECT",
+        "AWS accounts"
+      ],
+      [
+        "Unpaginated ListBuckets requests",
+        "SUPPORTS",
+        "AWS accounts"
+      ],
+      [
+        "NextContinuationToken",
+        "PROVIDES",
+        "subsequent request"
+      ],
+      [
+        "AWS Region",
+        "EXPRESS",
+        "us west-2"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "4fee8120-c9c3-43b2-a432-432fa5c7168a",
+    "akus": [
+      [
+        "All bucket names",
+        "BEGIN",
+        "specified bucket name prefix"
+      ],
+      [
+        "Unpaginated requests",
+        "SUPPORTS",
+        "AWS accounts"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "df5beb1f-774b-4c17-89ea-3c3bbc7938d5",
+    "akus": [
+      [
+        "multipart uploads",
+        "SORT",
+        "ListMultipartUploads response"
+      ],
+      [
+        "Multipart uploads",
+        "SORT",
+        "ascending order"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "55ba71fa-3fc9-4653-ac6f-9b619c76ef7f",
+    "akus": [
+      [
+        "multipart uploads",
+        "SORT",
+        "ListMultipartUploads response"
+      ],
+      [
+        "All keys",
+        "GROUP",
+        "single result element"
+      ],
+      [
+        "object key",
+        "CONTAINS",
+        "any Unicode character"
+      ],
+      [
+        "XML 1.0 parser",
+        "PARSE",
+        "certain characters"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "1365d9c4-ab6d-4e55-a3ef-4971f9a0499b",
+    "akus": [
+      [
+        "distinct key prefixes",
+        "RETURNS",
+        "Prefix child element"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "4559d8bb-e74f-4f26-aef8-af8ea38c562c",
+    "akus": [
+      [
+        "Amazon S3",
+        "START",
+        "specified key"
+      ],
+      [
+        "All of the keys up to 1,000",
+        "ROLL",
+        "common prefix count"
+      ],
+      [
+        "All of the keys up to 1,000",
+        "ROLL",
+        "single return"
+      ],
+      [
+        "Limits the response to keys",
+        "SPECIFIES",
+        "optional fields"
+      ],
+      [
+        "Amazon S3",
+        "CONTINUE",
+        "backward compatibility"
+      ],
+      [
+        "object key",
+        "CONTAINS",
+        "any Unicode character"
+      ],
+      [
+        "XML 1.0 parser",
+        "PARSE",
+        "certain characters"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "4ee4a443-0068-4001-9dd6-2f2e88885a1d",
+    "akus": [
+      [
+        "Amazon S3",
+        "RETRIEVE",
+        "alphabetical order"
+      ],
+      [
+        "Amazon S3",
+        "RETURNS",
+        "all of the results"
+      ],
+      [
+        "object key",
+        "CONTAINS",
+        "any Unicode character"
+      ],
+      [
+        "XML 1.0 parser",
+        "PARSE",
+        "certain characters"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "1846d3ed-3ad0-45a4-803b-63a2ec44476d",
+    "akus": [
+      [
+        "Amazon S3",
+        "RETURNS",
+        "each such key group"
+      ],
+      [
+        "Amazon S3",
+        "RETURNS",
+        "only the keys"
+      ],
+      [
+        "General purpose bucket permissions",
+        "HAS",
+        "READ access"
+      ],
+      [
+        "Amazon S3",
+        "RETURNS",
         "one CommonPrefixes element"
-      ]
-    ]
-  },
-  {
-    "chunk_id": "c42",
-    "akus": [
+      ],
       [
-        "x amz optional object attributes",
-        "specify",
-        "the optional fields you want that returned"
-      ]
-    ]
-  },
-  {
-    "chunk_id": "c43",
-    "akus": [
+        "ListObjectsV2",
+        "RETURNS",
+        "general purpose buckets"
+      ],
       [
-        "Authorization authorization string Sample Response for general",
-        "illustrate",
-        "one usage of ListObjectsV2"
+        "ListObjectsV2",
+        "RETURNS",
+        "directory buckets"
       ],
       [
         "Amazon S3",
-        "return",
-        "the IsTruncated element"
-      ]
-    ]
-  },
-  {
-    "chunk_id": "c44",
-    "akus": [
-      [
-        "version id marker",
-        "specify",
-        "the object version you want to start"
-      ],
-      [
-        "The ListParts request",
-        "return",
-        "a maximum of 1,000 uploaded parts"
-      ]
-    ]
-  },
-  {
-    "chunk_id": "c46",
-    "akus": [
-      [
-        "Amazon S3",
-        "support",
-        "a set of predefined ACLs known as"
-      ]
-    ]
-  },
-  {
-    "chunk_id": "c47",
-    "akus": [
-      [
-        "the bucket",
-        "service",
-        "cross origin requests"
+        "USES",
+        "delimiter character"
       ],
       [
         "Amazon S3",
-        "receive",
-        "a cross origin request or a pre"
-      ],
-      [
-        "Amazon S3",
-        "abort",
-        "a multipart upload"
+        "CONTINUE",
+        "backward compatibility"
       ]
     ]
   },
   {
-    "chunk_id": "c48",
+    "chunk_id": "8113f5ee-88e3-48ec-8cf0-9b85b2de90d1",
     "akus": [
       [
-        "version of the API",
-        "support",
-        "filtering based only on an object key"
+        "ContinuationToken",
+        "INDICATE",
+        "Amazon S3"
       ],
       [
-        "The bucket owner",
+        "object key",
+        "CONTAINS",
+        "any Unicode character"
+      ],
+      [
+        "XML 1.0 parser",
+        "PARSE",
+        "certain characters"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "9fb60d2c-0f17-4d6e-b864-c0a32d3f53ad",
+    "akus": [
+      [
+        "Amazon S3",
+        "RETURNS",
+        "IsTruncated element"
+      ],
+      [
+        "Amazon S3",
+        "RETURNS",
+        "each such key group"
+      ],
+      [
+        "Amazon S3",
+        "RETURNS",
+        "only the keys"
+      ],
+      [
+        "Amazon S3",
+        "RETURNS",
+        "one CommonPrefixes element"
+      ],
+      [
+        "Amazon S3",
+        "USES",
+        "delimiter character"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "459366b9-689e-4891-9bb6-550743cccfe7",
+    "akus": [
+      [
+        "Amazon S3",
+        "RETURNS",
+        "all of the results"
+      ],
+      [
+        "All keys",
+        "GROUP",
+        "single result element"
+      ],
+      [
+        "object key",
+        "CONTAINS",
+        "any Unicode character"
+      ],
+      [
+        "MaxKeys",
+        "SPECIFIES",
+        "maximum number"
+      ],
+      [
+        "XML 1.0 parser",
+        "PARSE",
+        "certain characters"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "6daa7571-caa7-4012-9a48-20a44b21071e",
+    "akus": [
+      [
+        "Each canned ACL",
+        "HAS",
+        "predefined set"
+      ],
+      [
+        "Enabled",
+        "ENABLES",
+        "accelerated data transfers"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "c23c7c9c-55ef-4418-8ae9-e0d845925599",
+    "akus": [
+      [
+        "request's Origin header",
+        "MATCH",
+        "AllowedOrigin elements"
+      ],
+      [
+        "storage class analysis export analysis reports",
+        "SENDS",
+        "comma separated values CSV flat file"
+      ],
+      [
+        "PutBucketAnalyticsConfiguration",
+        "HAS",
+        "• HTTP Error"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "e7b88650-50fc-45ba-a915-f333dd1dec9e",
+    "akus": [
+      [
+        "Amazon S3",
+        "VALIDATES",
+        "KMS key ID"
+      ],
+      [
+        "SSE-KMS configuration",
+        "SUPPORTS",
+        "1 customer managed key"
+      ],
+      [
+        "Every header",
+        "MATCH",
+        "AllowedHeader element"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "4b81344a-e1fb-44b6-95be-f1ef238b9728",
+    "akus": [
+      [
+        "Amazon S3",
+        "VALIDATES",
+        "KMS key ID"
+      ],
+      [
+        "SSE-KMS configuration",
+        "SUPPORTS",
+        "1 customer managed key"
+      ],
+      [
+        "CRC32",
+        "IS",
+        "default checksum algorithm"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "40f4c31d-1b91-4656-833f-929e42e68238",
+    "akus": [
+      [
+        "S3 Intelligent-Tiering",
+        "DELIVER",
+        "three low latency and high throughput access tiers"
+      ],
+      [
+        "S3 Intelligent-Tiering",
+        "DELIVER",
+        "automatic cost savings"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "03c1dd9b-ef76-423e-be2b-c6bb38069eaa",
+    "akus": [
+      [
+        "Amazon S3 inventory",
+        "CREATES",
+        "daily or weekly basis"
+      ],
+      [
+        "user",
+        "CREATES",
+        "S3 Inventory report"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "cc99db93-1c18-4526-8b4a-9f6b63a80e4c",
+    "akus": [
+      [
+        "Amazon S3",
+        "ABORT",
+        "multipart upload"
+      ],
+      [
+        "Explicit denial",
+        "SUPERSEDE",
+        "any other permissions"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "365e7f4d-816c-4b2e-91b5-5126734f4bfb",
+    "akus": [
+      [
+        "Amazon S3 Lifecycle configuration",
+        "HAS",
+        "up to 1,000 rules"
+      ],
+      [
+        "Amazon S3",
+        "PROVIDES",
+        "predefined actions"
+      ],
+      [
+        "user",
+        "HAS",
+        "PutLifecycleConfiguration permission"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "024d57c3-d47b-4c7f-b99c-5b0554af826c",
+    "akus": [
+      [
+        "Objects",
+        "TRANSITION",
+        "Glacier Flexible"
+      ],
+      [
+        "Custom filters",
+        "TAKE",
+        "default transition behavior"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "d18671c8-d566-45fd-bd5f-40684df107b5",
+    "akus": [
+      [
+        "Buckets",
+        "SUPPORTS",
+        "target grants"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "e4f6e0b4-f5ec-4633-b486-e4bb98c014c9",
+    "akus": [
+      [
+        "Amazon S3",
+        "DETECT",
+        "specified events"
+      ],
+      [
+        "Amazon S3",
+        "PUBLISHES",
+        "event notification"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "d6441792-e7b3-4c42-8c40-ba26561062ce",
+    "akus": [
+      [
+        "S3",
+        "FAIL",
+        "BadDigest error"
+      ],
+      [
+        "root principal",
+        "PERFORM",
+        "GetBucketPolicy, PutBucketPolicy, and DeleteBucketPolicy API actions"
+      ],
+      [
+        "Amazon S3",
+        "RETURNS",
+        "403 Access Denied error"
+      ],
+      [
+        "Amazon S3",
+        "RETURNS",
+        "405 Method Not"
+      ],
+      [
+        "calling identity",
+        "HAS",
+        "PutBucketPolicy permissions"
+      ],
+      [
+        "CRC32",
+        "IS",
+        "default checksum algorithm"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "23bb32b3-98f3-4db9-ad36-79e474dd5f4c",
+    "akus": [
+      [
+        "Object Lock",
+        "ENABLES",
+        "existing bucket"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "fc6ed36f-80f8-4664-80cd-eb81beb4b0b5",
+    "akus": [
+      [
+        "S3 RTC",
+        "REPLICATE",
+        "99.99 percent"
+      ],
+      [
+        "S3 RTC",
+        "REPLICATE",
+        "15 minutes"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "afa70735-4f83-42ca-82a7-138994fe665c",
+    "akus": [
+      [
+        "All objects",
+        "RECEIVES",
+        "unique version ID"
+      ],
+      [
+        "All objects",
+        "RECEIVES",
+        "version ID"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "10c3ecc3-eeee-4440-aed8-908ee5ee6cc2",
+    "akus": [
+      [
+        "routing rule",
+        "REDIRECT",
+        "EC2 instance"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "d2871f6a-eaf7-474d-98a6-59ccee331003",
+    "akus": [
+      [
+        "Amazon S3",
+        "PROVIDES",
+        "S3 Object Lock"
+      ],
+      [
+        "Amazon S3",
+        "CREATES",
+        "unique version ID"
+      ],
+      [
+        "Amazon S3",
+        "CREATES",
+        "partial objects"
+      ],
+      [
+        "S3",
+        "RETURNS",
+        "409 ConditionalRequestConflict response"
+      ],
+      [
+        "Amazon S3",
+        "RETURNS",
+        "412 Precondition Failed error"
+      ],
+      [
+        "General purpose bucket permissions",
+        "REQUIRES",
+        "your. policies"
+      ],
+      [
+        "Amazon S3",
+        "RECEIVES",
+        "multiple write. requests"
+      ],
+      [
+        "Amazon S3",
+        "CREATES",
+        "each write request"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "a8d1097d-e369-413a-bf94-332b84d419d0",
+    "akus": [
+      [
+        "S3",
+        "RETURNS",
+        "409 ConditionalRequestConflict response"
+      ],
+      [
+        "Amazon S3",
+        "RETURNS",
+        "412 Precondition Failed error"
+      ],
+      [
+        "Only the owner",
+        "HAS",
+        "full access control"
+      ],
+      [
+        "Content MD5",
+        "REQUIRES",
+        "any request"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "f4c98c27-7887-49ed-af5f-2892451bac9f",
+    "akus": [
+      [
+        "S3",
+        "FAIL",
+        "BadDigest error"
+      ],
+      [
+        "Amazon S3",
+        "ENCRYPTS",
+        "server-side encryption"
+      ],
+      [
+        "encryption request headers",
+        "MATCH",
+        "Zonal endpoint API calls"
+      ],
+      [
+        "header",
+        "SPECIFIES",
+        "Base64 encoded, 32-bit CRC32 checksum data"
+      ],
+      [
+        "header",
+        "SPECIFIES",
+        "Base64 encoded, 32-bit CRC32C checksum"
+      ],
+      [
+        "CRC32",
+        "IS",
+        "default checksum algorithm"
+      ],
+      [
+        "Content MD5",
+        "REQUIRES",
+        "any request"
+      ],
+      [
+        "header",
+        "SPECIFIES",
+        "Base64 encoded, 160-bit SHA1 digest"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "72f86d20-7d53-489d-9712-5c28085d46cf",
+    "akus": [
+      [
+        "Amazon S3",
+        "USES",
+        "AWS managed key"
+      ],
+      [
+        "Amazon S3",
+        "USES",
+        "S3 Bucket"
+      ],
+      [
+        "SSE-KMS configuration",
+        "SUPPORTS",
+        "1 customer managed key"
+      ],
+      [
+        "Amazon S3",
+        "USES",
+        "encryption settings values"
+      ],
+      [
+        "encryption request headers",
+        "MATCH",
+        "Zonal endpoint API calls"
+      ],
+      [
+        "CLI",
+        "USES",
+        "CreateSession request"
+      ],
+      [
+        "KMS key",
+        "EXIST",
+        "same account"
+      ],
+      [
+        "CLI",
+        "USES",
+        "bucket's default encryption configuration"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "a5bbc085-650b-4201-9f6a-82a6bb01cc22",
+    "akus": [
+      [
+        "Amazon S3",
+        "USES",
+        "STANDARD Storage Class"
+      ],
+      [
+        "Amazon S3",
+        "USES",
+        "OUTPOSTS Storage Class"
+      ],
+      [
+        "Directory buckets",
+        "SUPPORTS",
+        "Availability Zones"
+      ],
+      [
+        "Amazon S3",
+        "STORES",
+        "object metadata"
+      ],
+      [
+        "STANDARD storage class",
+        "PROVIDES",
+        "high durability"
+      ],
+      [
+        "tag-set",
+        "ENCODE",
+        "URL Query parameters"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "92958134-e671-4880-bb0d-7f4fd9415250",
+    "akus": [
+      [
+        "Amazon S3",
+        "CREATES",
+        "default checksum"
+      ],
+      [
+        "Amazon S3",
+        "CREATES",
+        "uploaded object"
+      ],
+      [
+        "expiration",
+        "CONFIGURES",
+        "Amazon S3 User Guide"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "946b3e8c-b1f1-48fa-95e2-6c5f8aec461e",
+    "akus": [
+      [
+        "Amazon S3",
+        "CREATES",
+        "unique version ID"
+      ],
+      [
+        "Subsequent write requests",
+        "INCLUDES",
+        "appropriate encryption parameters"
+      ],
+      [
+        "Amazon S3",
+        "RECEIVES",
+        "multiple write requests"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "49a2dba7-496c-45e6-b09b-171aa4018b73",
+    "akus": [
+      [
+        "Amazon S3",
+        "STORES",
+        "specified object tags"
+      ],
+      [
+        "Amazon S3",
+        "RETURNS",
+        "encryption algorithm"
+      ],
+      [
+        "Amazon S3",
+        "STORES",
+        "tagging subresource"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "b0b4ad61-597a-4c3a-9833-ed7e77ec6b1b",
+    "akus": [
+      [
+        "Each canned ACL",
+        "HAS",
+        "predefined set"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "e4adbc20-42c7-449e-8b4a-80b409d828ca",
+    "akus": [
+      [
+        "ACL",
+        "SET",
+        "object version level"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "9aed1fb7-e582-459b-afa4-8e92619f4c29",
+    "akus": [
+      [
+        "Object Lock",
+        "ENABLES",
+        "existing bucket"
+      ],
+      [
+        "PutObjectLockConfiguration",
+        "PLACE",
+        "specified bucket"
+      ],
+      [
+        "DefaultRetention settings",
+        "REQUIRES",
+        "both a mode"
+      ],
+      [
+        "XML",
+        "SPECIFIES",
+        "full control"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "d71cbaa3-5837-4606-af54-37f1dd85f7c2",
+    "akus": [
+      [
+        "Object Lock",
+        "ENABLES",
+        "existing bucket"
+      ],
+      [
+        "Users",
+        "REQUIRES",
+        "s3:PutObjectRetention permission"
+      ],
+      [
+        "version ID",
+        "INDICATE",
+        "Root level tag"
+      ],
+      [
+        "Bucket settings",
+        "REQUIRES",
+        "both a mode"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "4ffc5d23-20bd-44b3-9f95-67ca561df3ef",
+    "akus": [
+      [
+        "Amazon S3",
+        "EVALUATE",
+        "PublicAccessBlock configuration"
+      ],
+      [
+        "Amazon S3",
+        "IGNORE",
+        "all public ACLs"
+      ],
+      [
+        "Amazon S3",
+        "IGNORE",
+        "public ACLs"
+      ],
+      [
+        "Amazon S3",
+        "BLOCKS",
+        "public bucket policies"
+      ],
+      [
+        "Amazon S3",
+        "RESTRICTS",
+        "public bucket policies"
+      ],
+      [
+        "Amazon S3",
+        "BLOCKS",
+        "public access control lists"
+      ],
+      [
+        "Amazon S3",
+        "USES",
+        "most restrictive combination"
+      ],
+      [
+        "Account-level settings",
+        "INHERIT",
+        "organization-level policies"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "25c7350c-8923-4496-8008-8166fe140c79",
+    "akus": [
+      [
+        "Amazon S3",
+        "RETURNS",
+        "412 Precondition Failed error"
+      ],
+      [
+        "S3 API",
+        "RETURNS",
+        "412 Precondition Failed error"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "6f0fb694-94bf-4666-bd76-912f589558ac",
+    "akus": [
+      [
+        "Pattern",
+        "MATCH",
+        "specified ETag"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "15f1b290-59b1-4cd4-a748-5524df721214",
+    "akus": [
+      [
+        "Amazon S3",
+        "RESTORE",
+        "current version"
+      ],
+      [
+        "Standard retrievals",
+        "FINISH",
+        "3-5 hours"
+      ],
+      [
+        "Bulk retrievals",
+        "FINISH",
+        "5-12 hours"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "0b43830b-81a2-4fae-a5c6-331b1dc23749",
+    "akus": [
+      [
+        "Amazon S3",
+        "PROCESSES",
+        "current restore request"
+      ],
+      [
+        "Amazon S3",
+        "RETURNS",
+        "200 OK response"
+      ],
+      [
+        "Amazon S3",
+        "RETURNS",
+        "202 Accepted"
+      ],
+      [
+        "Amazon S3",
+        "RETURNS",
+        "200 OK"
+      ],
+      [
+        "Amazon S3",
+        "UPDATES",
+        "restoration period"
+      ],
+      [
+        "error",
+        "APPLY",
+        "Expedited retrievals"
+      ],
+      [
+        "Valid Values",
+        "ALLOWS",
+        "storage tier"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "dbafddfe-792b-49d6-b552-e77a1c6c4703",
+    "akus": [
+      [
+        "Amazon S3 Select",
+        "SUPPORTS",
+        "whole-object compression"
+      ],
+      [
+        "Amazon S3 Select",
+        "SUPPORTS",
+        "CSV and JSON files"
+      ],
+      [
+        "Amazon S3",
+        "RETURNS",
+        "200 OK response"
+      ],
+      [
+        "Amazon S3 Select",
+        "SUPPORTS",
+        "anonymous access"
+      ],
+      [
+        "Amazon S3 Select",
+        "SUPPORTS",
+        "columnar compression"
+      ],
+      [
+        "UTF-8 - UTF-8",
+        "IS",
+        "only encoding type"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "143adf8d-1c3f-4fe2-a104-7308d307721a",
+    "akus": [
+      [
+        "OutputSerialization",
+        "DIRECT",
+        "Amazon S3"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "c9491e8c-d7bd-47f8-b67b-1a6eeda4692c",
+    "akus": [
+      [
+        "all UpdateObjectEncryption requests",
+        "RESTRICTS",
+        "KMS keys"
+      ],
+      [
+        "Requests",
+        "REQUIRES",
+        "AWS Signature Version"
+      ],
+      [
+        "Requests",
+        "REQUIRES",
+        "AWS KMS key"
+      ],
+      [
+        "Requests",
+        "REQUIRES",
+        "valid AWS KMS key"
+      ],
+      [
+        "Requests",
+        "REQUIRES",
+        "valid new encryption. type"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "3cb9b991-0eb6-46ff-bcbd-6a37dbcc73bf",
+    "akus": [
+      [
+        "Amazon S3",
+        "RETURNS",
+        "upload ID"
+      ],
+      [
+        "Amazon S3",
+        "VALIDATES",
+        "provided MD5 value"
+      ],
+      [
+        "AWS S3",
+        "USES",
+        "x amz content sha256"
+      ],
+      [
+        "Amazon S3",
+        "FREE",
+        "parts storage"
+      ],
+      [
+        "Amazon S3",
+        "VALIDATES",
+        "part data"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "354c0720-815c-4d23-965f-365ac3f0b688",
+    "akus": [
+      [
+        "Amazon S3",
+        "ENCRYPTS",
+        "server-side encryption"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "7036959c-84a7-49f4-8c19-0793536e78d4",
+    "akus": [
+      [
+        "multipart upload",
+        "USES",
+        "S3 Bucket Key"
+      ],
+      [
+        "header",
+        "SPECIFIES",
+        "Base64 encoded, 32-bit CRC32 checksum data"
+      ],
+      [
+        "header",
+        "SPECIFIES",
+        "Base64 encoded, 32-bit CRC32C checksum"
+      ],
+      [
+        "header",
+        "SPECIFIES",
+        "Base64 encoded, 160-bit SHA1 digest"
+      ],
+      [
+        "header",
+        "SPECIFIES",
+        "Base64 encoded, 256-bit SHA256 digest"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "c7d61de2-a087-44d5-a8ff-1abd110ad823",
+    "akus": [
+      [
+        "Amazon S3",
+        "RETURNS",
+        "encryption-specific headers"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "f8c431ba-775b-4bc4-8733-b904d406e948",
+    "akus": [
+      [
+        "Amazon S3",
+        "RETURNS",
+        "upload ID"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "4a59b6ec-4008-41e0-a892-de96f74ac5f7",
+    "akus": [
+      [
+        "Amazon S3",
+        "RETURNS",
+        "200 OK"
+      ],
+      [
+        "Amazon S3",
+        "SUPPORTS",
+        "copy operations"
+      ],
+      [
+        "source and destination buckets",
+        "HAS",
+        "same parent AWS Region"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "dfd2d6ee-5b2a-46dc-8c8f-2a80fc73c234",
+    "akus": [
+      [
+        "multipart upload",
+        "USES",
+        "S3 Bucket Key"
+      ],
+      [
+        "Amazon S3",
+        "RETURNS",
+        "200 OK"
+      ],
+      [
+        "Amazon S3",
+        "RETURNS",
+        "412 Precondition"
+      ],
+      [
+        "header",
+        "SPECIFIES",
+        "Base64 encoded, 32-bit CRC32 checksum"
+      ],
+      [
+        "header",
+        "SPECIFIES",
+        "Base64 encoded, 64-bit CRC64NVME checksum"
+      ],
+      [
+        "header",
+        "SPECIFIES",
+        "Base64 encoded, 160-bit SHA1 checksum"
+      ],
+      [
+        "header",
+        "SPECIFIES",
+        "Base64 encoded, 256-bit SHA256 Entity tag"
+      ],
+      [
+        "header",
+        "SPECIFIES",
+        "Base64 encoded, 32-bit CRC32C"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "7834b883-d8cd-4c2e-9c75-301706217642",
+    "akus": [
+      [
+        "Passes",
+        "TRANSFORMS",
+        "GetObject operation"
+      ],
+      [
+        "AWS",
+        "PROVIDES",
+        "some prebuilt Lambda functions"
+      ],
+      [
+        "WriteGetObjectResponse caller",
+        "PROVIDES",
+        "same metadata"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "9de4a9cd-4dd5-4956-a4d1-fcff2f3b1733",
+    "akus": [
+      [
+        "AssociateAccessGrantsIdentityCenter",
+        "ASSOCIATES",
+        "AWS IAM Identity Center instance"
+      ],
+      [
+        "AssociateAccessGrantsIdentityCenter",
+        "ASSOCIATES",
+        "S3 Access Grants instance"
+      ],
+      [
+        "Amazon S3",
+        "RETURNS",
+        "all objects"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "e8625829-ce88-4fc4-a735-3aa94ceaa435",
+    "akus": [
+      [
         "grant",
-        "FULL_CONTROL to all logs"
-      ],
-      [
-        "The Permissions request element",
-        "specify",
-        "the kind of access the grantee has"
+        "INCLUDES",
+        "application ARN"
       ]
     ]
   },
   {
-    "chunk_id": "c49",
+    "chunk_id": "88483a23-34b1-4d97-8ca0-ae0ca7e69ce8",
     "akus": [
       [
-        "The action",
-        "replace",
-        "the existing notification configuration on the bucket"
+        "S3",
+        "SUPPORTS",
+        "VPC-style access points"
+      ],
+      [
+        "BucketAccountId",
+        "REQUIRES",
+        "same account access point"
+      ],
+      [
+        "BucketAccountId",
+        "REQUIRES",
+        "cross-account access point"
+      ],
+      [
+        "AWS account ID",
+        "ASSOCIATES",
+        "access point"
+      ],
+      [
+        "Scope",
+        "SUPPORTS",
+        "access points"
       ]
     ]
   },
   {
-    "chunk_id": "c50",
+    "chunk_id": "ebd315a5-0945-4337-97c6-f76133acec90",
     "akus": [
       [
-        "the individual checksum value you provide through",
-        "match",
-        "the checksum algorithm you set through x"
+        "S3 Object Lock",
+        "ENABLES",
+        "new bucket"
       ],
       [
-        "Each rule",
-        "identify",
-        "a subset of objects to replicate"
+        "ID",
+        "REQUIRES",
+        "Outposts buckets"
+      ],
+      [
+        "Not every string",
+        "IS",
+        "acceptable bucket name"
       ]
     ]
   },
   {
-    "chunk_id": "c51",
+    "chunk_id": "52ef5124-d37c-4a49-b1be-694c2ac104b4",
     "akus": [
       [
-        "Amazon S3",
-        "replicate",
-        "objects that are stored at rest"
+        "ID",
+        "REQUIRES",
+        "Outposts buckets"
       ],
       [
-        "a GetBucketVersioning request",
-        "return",
-        "a versioning state value"
-      ],
-      [
-        "The noncurrent expiration lifecycle configuration",
-        "manage",
-        "the deletes of the noncurrent object versions"
-      ],
-      [
-        "A version enabled bucket",
-        "maintain",
-        "one current and zero or more noncurrent"
-      ],
-      [
-        "All objects added to the bucket",
-        "receive",
-        "a unique version ID"
+        "Batch Operations",
+        "EXECUTES",
+        "single action"
       ]
     ]
   },
   {
-    "chunk_id": "c52",
+    "chunk_id": "6896c32d-6b67-429c-94c4-43c4e6f55d10",
     "akus": [
       [
-        "only the bucket owner",
-        "configure",
-        "the website attached to a bucket"
+        "Pattern",
+        "CREATES",
+        "new S3 Storage Lens group"
       ],
       [
-        "the redirect",
-        "insert",
-        "an object key prefix report-404/"
+        "Higher numbers",
+        "INDICATE",
+        "higher priority"
+      ],
+      [
+        "Jobs",
+        "CREATES",
+        "either a manifest file"
       ]
     ]
   },
   {
-    "chunk_id": "c53",
+    "chunk_id": "4b391c7c-02cd-43ac-83a2-8bb2514cb63a",
     "akus": [
       [
-        "Amazon S3",
-        "generate",
-        "a unique version ID of that object"
+        "S3 Access Grants",
+        "ASSIGN",
+        "default location"
       ]
     ]
   },
   {
-    "chunk_id": "c55",
+    "chunk_id": "c9046860-e682-4400-9dee-77c472bad9db",
     "akus": [
       [
-        "n't Amazon S3",
-        "override",
-        "the bucket default encryption"
+        "Amazon S3",
+        "DELETES",
+        "all the lifecycle configuration rules"
       ],
       [
-        "the encryption request headers",
-        "match",
-        "the default encryption configuration of the directory"
+        "Amazon S3",
+        "DELETES",
+        "any objects"
       ]
     ]
   },
   {
-    "chunk_id": "c57",
+    "chunk_id": "cb2b6024-9941-4315-8e59-5772c58ac0ad",
     "akus": [
       [
         "Amazon S3",
-        "add",
-        "the default checksum CRC64NVME"
+        "RETURNS",
+        "403 Access Denied error"
       ],
       [
         "Amazon S3",
-        "generate",
-        "a unique version ID for the object"
-      ],
-      [
-        "Amazon S3",
-        "receive",
-        "multiple write requests for the same object"
+        "RETURNS",
+        "405 Method Not"
       ]
     ]
   },
   {
-    "chunk_id": "c58",
+    "chunk_id": "88bcab06-18cb-4854-ba80-88695f37de90",
     "akus": [
       [
-        "Amazon S3",
-        "store",
-        "the specified object tags"
+        "DeleteStorageLensConfigurationTagging",
+        "DELETES",
+        "Amazon S3 Storage Lens configuration tags"
       ],
       [
-        "Amazon S3",
-        "generate",
-        "a unique version ID"
-      ],
-      [
-        "The write offset value that you specified",
-        "match",
-        "the current object size"
+        "Organization-level policies",
+        "OVERRIDE",
+        "account-level settings"
       ]
     ]
   },
   {
-    "chunk_id": "c61",
+    "chunk_id": "0319eef0-a832-4371-ac00-da19547007ee",
     "akus": [
       [
-        "Amazon S3",
-        "process",
-        "your current restore request for the object"
-      ],
-      [
-        "Amazon S3",
-        "restore",
-        "the current version"
-      ],
-      [
-        "Amazon S3",
-        "update",
-        "the restoration period"
+        "grant",
+        "INCLUDES",
+        "application ARN"
       ]
     ]
   },
   {
-    "chunk_id": "c62",
+    "chunk_id": "cadf15f4-d9b4-4b69-86e1-a7380f89d999",
     "akus": [
       [
-        "Amazon S3 Select",
-        "support",
-        "whole object compression for Parquet objects"
-      ],
-      [
-        "The SelectObjectContent action",
-        "support",
-        "the following GetObject functionality"
-      ],
-      [
-        "Amazon S3 Select",
-        "support",
-        "columnar compression for Parquet"
-      ],
-      [
-        "Amazon S3",
-        "return",
-        "an upload ID a unique identifier that"
-      ],
-      [
-        "Amazon S3",
-        "free",
-        "the parts storage"
-      ]
-    ]
-  },
-  {
-    "chunk_id": "c64",
-    "akus": [
-      [
-        "Amazon S3",
-        "ignore",
-        "any provided ChecksumAlgorithm parameter"
-      ]
-    ]
-  },
-  {
-    "chunk_id": "c65",
-    "akus": [
-      [
-        "Amazon S3",
-        "return",
-        "the upload ID a unique identifier that"
-      ]
-    ]
-  },
-  {
-    "chunk_id": "c67",
-    "akus": [
-      [
-        "x amz copy source",
-        "identify",
-        "the current version of the source object"
-      ]
-    ]
-  },
-  {
-    "chunk_id": "c69",
-    "akus": [
-      [
-        "Amazon S3",
-        "perform",
-        "validation of the checksum values"
-      ]
-    ]
-  },
-  {
-    "chunk_id": "c76",
-    "akus": [
-      [
-        "the GetBucketVersioning request",
-        "return",
-        "a versioning state value"
+        "S3 Access Grants",
+        "ASSIGN",
+        "ID default"
       ],
       [
         "S3 Access Grants",
-        "vend",
+        "ASSIGN",
+        "default location"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "6cc270a4-e286-455e-8b7d-16844ec47aca",
+    "akus": [
+      [
+        "VpcConfiguration",
+        "SPECIFIES",
+        "access point"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "a6b8bc83-d575-45fc-b098-c39f5a4636d4",
+    "akus": [
+      [
+        "Root level tag",
+        "INDICATE",
+        "current policy status"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "b66227e0-ffa8-4d7e-9365-33bcbe3ae243",
+    "akus": [
+      [
+        "Only users",
+        "PERFORM",
+        "Outposts bucket"
+      ],
+      [
+        "Amazon S3",
+        "RETURNS",
+        "403 Access Denied error"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "20cf8938-763a-428f-a075-2ca50186c94c",
+    "akus": [
+      [
+        "Only users",
+        "PERFORM",
+        "Outposts bucket"
+      ],
+      [
+        "Amazon S3",
+        "RETURNS",
+        "403 Access Denied error"
+      ],
+      [
+        "calling identity",
+        "HAS",
+        "GetBucketPolicy permissions"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "0dd68228-67ab-4f34-972c-a49454fb9898",
+    "akus": [
+      [
+        "tag",
+        "SET",
+        "Outposts bucket"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "35c4e01d-470f-454f-8ff7-4bb1bd326b30",
+    "akus": [
+      [
+        "S3 Access Grants",
+        "VEND",
         "temporary access credentials"
-      ]
-    ]
-  },
-  {
-    "chunk_id": "c108",
-    "akus": [
-      [
-        "Amazon S3",
-        "abort",
-        "an incomplete multipart upload"
       ],
       [
-        "an object",
-        "match",
-        "all of the predicates for the filter"
+        "API",
+        "RETURNS",
+        "directory identities"
       ]
     ]
   },
   {
-    "chunk_id": "c109",
-    "akus": [
-      [
-        "No BucketRegion BucketRegion",
-        "indicate",
-        "the AWS region where the bucket is"
-      ]
-    ]
-  },
-  {
-    "chunk_id": "c111",
+    "chunk_id": "bb273ab2-1bf8-4ede-8a54-7aca86eb5406",
     "akus": [
       [
         "Amazon S3",
-        "return",
-        "any requested headers that are allowed"
-      ]
-    ]
-  },
-  {
-    "chunk_id": "c112",
-    "akus": [
-      [
-        "Amazon S3",
-        "wrap",
-        "this field value"
-      ]
-    ]
-  },
-  {
-    "chunk_id": "c113",
-    "akus": [
-      [
-        "The aws value",
-        "indicate",
-        "an AWS managed table bucket"
+        "BLOCKS",
+        "public bucket policies"
       ],
       [
         "Amazon S3",
-        "support",
+        "BLOCKS",
+        "public access control lists"
+      ],
+      [
+        "specified Multi-Region Access Point",
+        "HAS",
+        "access control policy"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "f5ab11b5-c48c-48e1-a0ec-f1d6ac714a1a",
+    "akus": [
+      [
+        "Amazon S3",
+        "IGNORE",
+        "all public ACLs"
+      ],
+      [
+        "Amazon S3",
+        "IGNORE",
+        "public ACLs"
+      ],
+      [
+        "Amazon S3",
+        "RESTRICTS",
+        "public bucket policies"
+      ],
+      [
+        "S3 Storage Lens",
+        "COUNT",
+        "prefix depth"
+      ],
+      [
+        "Amazon S3",
+        "USES",
+        "the. delimiter"
+      ],
+      [
+        "S3",
+        "USES",
+        "the. default delimiter"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "f4658df5-399b-4ce7-808b-012ca857ff5e",
+    "akus": [
+      [
+        "AND or OR logical operator",
+        "USES",
+        "multiple filter conditions"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "ad38e72b-90c2-4da5-b4cb-cead6d832284",
+    "akus": [
+      [
+        "S3 Access Grants instance",
+        "SERVE",
+        "logical grouping"
+      ],
+      [
+        "identifier",
+        "IS",
+        "IAM Amazon Resource Name"
+      ],
+      [
+        "maximum number",
+        "RETURNS",
+        "List Access Grants response"
+      ],
+      [
+        "grant",
+        "INCLUDES",
+        "application ARN"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "4001f690-9c18-4c16-b2e7-3c19e770d632",
+    "akus": [
+      [
+        "Amazon S3",
+        "RETRIEVE",
+        "next page"
+      ],
+      [
+        "previous call",
+        "RETURNS",
+        "NextToken field"
+      ],
+      [
+        "AccessPointList",
+        "CONTAINS",
+        "identification and configuration information"
+      ],
+      [
+        "maximum number",
+        "RETURNS",
+        "List Access Grants response"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "b6f927d4-ad19-41f8-907c-89afecb5f68a",
+    "akus": [
+      [
+        "maximum number",
+        "RETURNS",
+        "ListAccessPointsForDirectoryBuckets response"
+      ],
+      [
+        "AccessPointList",
+        "CONTAINS",
+        "identification and configuration information"
+      ],
+      [
+        "Each pagination token",
+        "EXPIRE",
+        "24 hours"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "e5e20b23-d9cc-413c-b606-c9bbccc0b070",
+    "akus": [
+      [
+        "Amazon S3",
+        "RETURNS",
+        "NextToken element"
+      ],
+      [
+        "Amazon S3",
+        "INCLUDES",
+        "List Jobs response"
+      ],
+      [
+        "Each call",
+        "RETURNS",
+        "up to 100 Multi-Region Access Points"
+      ],
+      [
+        "Amazon S3",
+        "RETURNS",
+        "previous List Jobs request"
+      ],
+      [
+        "maximum number",
+        "RETURNS",
+        "List Caller Access Grants response"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "e7a6e5c6-9a9d-419e-9879-ca1046bf0474",
+    "akus": [
+      [
+        "ID",
+        "REQUIRES",
+        "Outposts buckets"
+      ],
+      [
+        "Each pagination token",
+        "EXPIRE",
+        "24 hours"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "97cc2b90-dd1d-4dc7-9b1e-978dde732195",
+    "akus": [
+      [
+        "Each access point",
+        "HAS",
+        "only one policy"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "7a445e11-a04b-4b7f-a5e3-b5e7c2b6aa21",
+    "akus": [
+      [
+        "Outposts buckets",
+        "SUPPORTS",
+        "lifecycle configurations"
+      ],
+      [
+        "AWS account ID",
+        "CREATES",
+        "Amazon S3"
+      ],
+      [
+        "Root level tag",
+        "CREATES",
+        "Amazon S3"
+      ],
+      [
+        "AWS account ID",
+        "CREATES",
+        "lifecycle configuration"
+      ],
+      [
+        "Root level tag",
+        "CREATES",
+        "lifecycle configuration"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "8b357fae-b9af-41e8-a6e0-dbad9a317df3",
+    "akus": [
+      [
+        "Amazon S3",
+        "RETURNS",
+        "405 Method Not Allowed error"
+      ],
+      [
+        "Amazon S3",
+        "RETURNS",
+        "403 Access Denied error"
+      ],
+      [
+        "calling identity",
+        "HAS",
+        "PutBucketPolicy permissions"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "494403da-af46-485a-b6a3-40d03f751d5d",
+    "akus": [
+      [
+        "S3",
+        "ASSUME",
+        "Amazon Resource Name"
+      ],
+      [
+        "S3",
+        "ASSUME",
+        "AWS Identity"
+      ],
+      [
+        "Outposts buckets",
+        "ENCRYPTS",
+        "all times"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "cd8441eb-155b-445a-a646-2abaadb32ca7",
+    "akus": [
+      [
+        "PutBucketTagging",
+        "HAS",
+        "Error code"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "02a99314-ec0f-4286-9602-193323dfe252",
+    "akus": [
+      [
+        "Amazon S3",
+        "DELETES",
+        "existing tag"
+      ],
+      [
+        "Amazon S3",
+        "LIMITS",
+        "maximum number"
+      ],
+      [
+        "Amazon S3",
+        "LIMITS",
+        "50 tags"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "85932b93-1d7d-4758-92e4-487459d58bb0",
+    "akus": [
+      [
+        "Amazon S3",
+        "IGNORE",
+        "all public ACLs"
+      ],
+      [
+        "Amazon S3",
+        "IGNORE",
+        "public ACLs"
+      ],
+      [
+        "Amazon S3",
+        "BLOCKS",
+        "public bucket policies"
+      ],
+      [
+        "Amazon S3",
+        "RESTRICTS",
+        "public bucket policies"
+      ],
+      [
+        "Amazon S3",
+        "THROW",
+        "Associates an access control policy with the specified Multi Region"
+      ],
+      [
+        "Each Multi-Region Access Point",
+        "HAS",
+        "only one policy"
+      ],
+      [
+        "Amazon S3",
+        "BLOCKS",
+        "public access control lists"
+      ],
+      [
+        "Organization-level policies",
+        "OVERRIDE",
+        "account-level settings"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "fa69fd14-8d7d-4546-8acf-b078d2696359",
+    "akus": [
+      [
+        "S3 Access Grants",
+        "ASSIGN",
+        "default location s3://"
+      ],
+      [
+        "S3 Access Grants",
+        "ASSIGN",
+        "ID default"
+      ],
+      [
+        "S3 Access Grants",
+        "ASSIGN",
+        "default location"
+      ],
+      [
+        "Amazon S3",
+        "UPDATES",
+        "whose priority"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "b7cd57d7-6ca1-4e0a-b7ce-03185a2c2661",
+    "akus": [
+      [
+        "CreateFileSystem",
+        "CREATES",
+        "S3 File System resource"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "248fa431-d89d-4550-80e7-255b1bec42b2",
+    "akus": [
+      [
+        "Amazon Resource Name",
+        "ASSOCIATES",
+        "file system"
+      ],
+      [
+        "Mount targets",
+        "PROVIDES",
+        "network access"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "05848b7f-2608-4d5e-990c-a174aa467b3f",
+    "akus": [
+      [
+        "All security groups",
+        "BELONG",
+        "same VPC"
+      ],
+      [
+        "subnet",
+        "DETERMINE",
+        "Availability Zone"
+      ],
+      [
+        "Mount targets",
+        "PROVIDES",
+        "network access"
+      ],
+      [
+        "address",
+        "ASSIGN",
+        "subnet's available IPv4 address range"
+      ],
+      [
+        "address",
+        "ASSIGN",
+        "subnet's available IPv6 address range"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "61cad857-2858-4104-90ba-79a1b5d7e44d",
+    "akus": [
+      [
+        "JSON-formatted resource policy",
+        "APPLY",
+        "file system"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "6a07d80e-87ca-456e-81d1-5dcecfc053ec",
+    "akus": [
+      [
+        "All security groups",
+        "BELONG",
+        "same VPC"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "df78a560-90c5-4bd2-92eb-6c0408e6a220",
+    "akus": [
+      [
+        "Amazon Resource Name",
+        "GET",
+        "metrics configuration"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "53327a30-402b-4793-ae92-3dfaebccd3a2",
+    "akus": [
+      [
+        "GetTableRecordExpirationConfiguration",
+        "RETRIEVE",
+        "expiration configuration settings"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "9ca30d3b-e409-47ec-adb4-5c1449838af2",
+    "akus": [
+      [
+        "GetTableStorageClass",
+        "RETRIEVE",
+        "storage class configuration"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "df5bb244-3c58-4e9e-9a73-6b9873cb3467",
+    "akus": [
+      [
+        "TagResource",
+        "APPLY",
+        "one or more user-defined tags"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "073a47c0-f7ef-47e1-9292-771f45322423",
+    "akus": [
+      [
+        "UntagResource",
+        "DELETES",
+        "specified user-defined tags"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "351cf351-cbb9-4792-bbbb-1bcb18fc61e6",
+    "akus": [
+      [
+        "applications",
+        "REQUEST",
+        "parallel ListVectors operation"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "37d826db-59d2-4bac-a10b-51b515611621",
+    "akus": [
+      [
+        "S3 Vectors",
+        "CONVERT",
+        "32-bit floating point"
+      ],
+      [
+        "GetVectors, ListVectors, and QueryVectors operations",
+        "RETURNS",
+        "float32 values"
+      ],
+      [
+        "Diﬀerent AWS SDKs",
+        "HAS",
+        "diﬀerent default numeric types"
+      ],
+      [
+        "segmentCount",
+        "REPRESENT",
+        "parallel ListVectors request"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "a91c5be7-6d35-4f96-938e-affdb82bfaca",
+    "akus": [
+      [
+        "Amazon S3",
+        "ABORT",
+        "incomplete multipart upload"
+      ],
+      [
+        "ABAC",
+        "ENABLES",
+        "general purpose bucket"
+      ],
+      [
+        "ABAC",
+        "DISABLES",
+        "general purpose buckets"
+      ],
+      [
+        "Container",
+        "SPECIFIES",
+        "replica ownership"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "6456890e-d5d1-4527-8c29-5969e02b50b0",
+    "akus": [
+      [
+        "Amazon S3",
+        "ASSIGN",
+        "all log object keys"
+      ],
+      [
+        "Amazon S3",
+        "CREATES",
+        "default checksum"
+      ],
+      [
+        "Amazon S3",
+        "CREATES",
+        "uploaded object"
+      ],
+      [
+        "ARNs",
+        "IDENTIFY",
+        "AWS resources"
+      ],
+      [
+        "Pattern",
+        "INDICATE",
+        "AWS region"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "6c607c76-ecf9-43ba-af12-b3fb96211634",
+    "akus": [
+      [
+        "General purpose buckets",
+        "APPLY",
+        "each part"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "a1b9a455-d00a-4645-aa57-3ba8866837d4",
+    "akus": [
+      [
+        "Amazon S3",
+        "CREATES",
+        "default checksum"
+      ],
+      [
+        "Amazon S3",
+        "CREATES",
+        "uploaded object"
+      ],
+      [
+        "header",
+        "SPECIFIES",
+        "Base64 encoded, 32-bit CRC32 checksum"
+      ],
+      [
+        "header",
+        "SPECIFIES",
+        "Base64 encoded, 64-bit CRC64NVME checksum"
+      ],
+      [
+        "header",
+        "SPECIFIES",
+        "Base64 encoded, 160-bit SHA1 checksum"
+      ],
+      [
+        "header",
+        "SPECIFIES",
+        "Base64 encoded, 256-bit SHA256 Entity tag"
+      ],
+      [
+        "header",
+        "SPECIFIES",
+        "Base64 encoded, 32-bit CRC32C"
+      ],
+      [
+        "ETag",
+        "REFLECT",
+        "only changes"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "ad0111c4-2173-4d06-938c-d613737a9df7",
+    "akus": [
+      [
+        "CSV field values",
+        "CONTAINS",
+        "quoted record delimiters"
+      ],
+      [
+        "account",
+        "ENABLES",
+        "Local Zones"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "c606f4bd-2a31-471d-8710-3059c6956363",
+    "akus": [
+      [
+        "DefaultRetention settings",
+        "REQUIRES",
+        "both a mode"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "fce48fde-e381-4f13-b556-1bccfe4bb22d",
+    "akus": [
+      [
+        "Amazon S3",
+        "SUPPORTS",
         "symmetric encryption KMS keys"
       ],
       [
-        "AWS KMS",
-        "resolve",
-        "the key within the requester \u2019s account"
-      ],
-      [
-        "the customer value",
-        "indicate",
-        "a customer- managed table bucket"
-      ],
-      [
-        "Your proposed upload",
-        "exceed",
-        "the maximum allowed object size"
+        "Amazon S3",
+        "USES",
+        "storage class"
       ]
     ]
   },
   {
-    "chunk_id": "c114",
-    "akus": [
-      [
-        "The SOAP 1.1 request",
-        "miss",
-        "a security element"
-      ]
-    ]
-  },
-  {
-    "chunk_id": "c115",
+    "chunk_id": "21191e13-fa21-47ea-9985-1caebbd51faf",
     "akus": [
       [
         "Amazon S3",
-        "replicate",
+        "SUPPORTS",
+        "symmetric encryption KMS keys"
+      ],
+      [
+        "Amazon S3",
+        "RETURNS",
+        "all AWS Regions"
+      ],
+      [
+        "Amazon S3",
+        "RETURNS",
+        "200 OK"
+      ],
+      [
+        "Amazon S3",
+        "RETURNS",
+        "legacy compatibility"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "61bdd73b-b438-4df7-957a-0597dc518fff",
+    "akus": [
+      [
+        "account",
+        "SIGN",
+        "Amazon S3 service"
+      ],
+      [
+        "Simple programs",
+        "DISPLAY",
+        "end user"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "d24e6d62-0c83-41d7-9826-1265a3eb42f4",
+    "akus": [
+      [
+        "Amazon S3",
+        "REPLICATE",
         "existing source bucket objects"
       ]
     ]
   },
   {
-    "chunk_id": "c116",
+    "chunk_id": "aed10812-568f-4e26-875c-b85dcaacc499",
     "akus": [
       [
-        "an object",
-        "match",
-        "all of the predicates"
+        "Amazon S3",
+        "REPLICATE",
+        "existing source bucket objects"
+      ],
+      [
+        "FilterRule",
+        "SPECIFIES",
+        "Amazon S3 object key name"
+      ],
+      [
+        "additional checksum",
+        "RETURNS",
+        "Part element"
       ]
     ]
   },
   {
-    "chunk_id": "c117",
+    "chunk_id": "3fe1720a-00a3-4b01-87c7-4d9c681cefc1",
     "akus": [
       [
-        "No SSES3",
-        "specify",
-        "the use of SSE S3 to encrypt"
+        "All of these tags",
+        "EXIST",
+        "object 's tag set"
+      ],
+      [
+        "InputSerialization",
+        "RETRIEVE",
+        "serialization format"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "202d6d21-bc09-451c-8227-8cb5e98ea82e",
+    "akus": [
+      [
+        "Amazon S3",
+        "SCAN",
+        "general purpose bucket"
+      ],
+      [
+        "Valid Values",
+        "SPECIFIES",
+        "S3 Inventory configuration"
+      ],
+      [
+        "S3BucketDestination",
+        "CONTAINS",
+        "bucket name"
+      ],
+      [
+        "InventoryS3BucketDestination",
+        "CONTAINS",
+        "bucket name"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "2a6df7cb-0a8f-4ff2-96b6-83975c463eba",
+    "akus": [
+      [
+        "Amazon S3",
+        "USES",
+        "newline character"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "70856450-d3f3-41d0-b74c-81d60841f306",
+    "akus": [
+      [
+        "Lifecycle Rule",
+        "APPLY",
+        "any object"
+      ],
+      [
+        "Lifecycle Rule",
+        "APPLY",
+        "all objects"
       ],
       [
         "Amazon S3",
-        "scan",
-        "your general purpose bucket"
-      ]
-    ]
-  },
-  {
-    "chunk_id": "c118",
-    "akus": [
+        "ASSIGN",
+        "all log object keys"
+      ],
       [
         "Amazon S3",
-        "transition",
+        "DELETES",
         "noncurrent object versions"
       ],
       [
         "Amazon S3",
-        "remove",
-        "a delete marker with no noncurrent versions"
-      ]
-    ]
-  },
-  {
-    "chunk_id": "c119",
-    "akus": [
+        "TRANSITION",
+        "noncurrent object versions"
+      ],
       [
         "Amazon S3",
-        "store",
+        "STORES",
         "server access logs"
+      ],
+      [
+        "Amazon S3",
+        "TRANSITION",
+        "specific storage class"
+      ],
+      [
+        "LifecycleRule",
+        "CONTAINS",
+        "Prefix element"
       ]
     ]
   },
   {
-    "chunk_id": "c120",
+    "chunk_id": "0474004b-d317-4371-bfea-84685ebf020f",
     "akus": [
       [
         "Amazon S3",
-        "retain",
+        "STORES",
+        "server access logs"
+      ],
+      [
+        "Buckets",
+        "SUPPORTS",
+        "target grants"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "e2edc9c4-1a65-42bf-aebf-366e40e25c03",
+    "akus": [
+      [
+        "Amazon S3",
+        "RETAIN",
         "how many noncurrent versions"
       ],
       [
-        "No NoncurrentDays",
-        "specify",
-        "the number of days an object is"
+        "Amazon S3",
+        "TRANSITION",
+        "any additional noncurrent versions"
       ],
       [
         "Amazon S3",
-        "perform",
-        "the associated action"
+        "DELETES",
+        "noncurrent object versions"
       ],
       [
         "Amazon S3",
-        "transition",
-        "any additional noncurrent versions beyond the specified"
+        "TRANSITION",
+        "noncurrent object versions"
+      ],
+      [
+        "Amazon S3",
+        "RETAIN",
+        "same storage class"
+      ],
+      [
+        "Amazon S3",
+        "PERFORM",
+        "associated action"
+      ],
+      [
+        "Amazon S3",
+        "DETECT",
+        "specified events"
+      ],
+      [
+        "Amazon S3",
+        "TRANSITION",
+        "specific period"
       ]
     ]
   },
   {
-    "chunk_id": "c121",
+    "chunk_id": "4e99bc71-1ae3-43ce-9e90-ebf3ec8e7ed8",
     "akus": [
       [
-        "The UpdateObjectEncryption operation",
-        "support",
-        "the SSE S3 and SSE KMS encryption"
+        "Directory buckets",
+        "SUPPORTS",
+        "Availability Zones"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "1947e3d8-614b-4582-923b-2dcb39969ae2",
+    "akus": [
+      [
+        "Amazon S3",
+        "CREATES",
+        "default checksum"
       ],
       [
-        "No Rule",
-        "specify",
-        "the Object Lock rule for the specified"
+        "Amazon S3",
+        "CREATES",
+        "uploaded object"
       ],
       [
         "Bucket settings",
-        "require",
-        "both a mode and a period"
+        "REQUIRES",
+        "both a mode"
       ]
     ]
   },
   {
-    "chunk_id": "c123",
+    "chunk_id": "818063df-eed4-4540-9a10-24e0ca6c8b9f",
     "akus": [
       [
-        "Amazon S3",
-        "block",
-        "public bucket policies for this bucket"
+        "S3",
+        "RETRIEVE",
+        "S3 location"
+      ],
+      [
+        "Directory buckets",
+        "USES",
+        "bucket owner enforced setting"
       ],
       [
         "Amazon S3",
-        "reject",
-        "calls to PUT Bucket policy"
+        "CREATES",
+        "default checksum"
       ],
       [
         "Amazon S3",
-        "ignore",
-        "public ACLs for this bucket and objects"
+        "CREATES",
+        "uploaded object"
       ],
       [
-        "Amazon S3",
-        "restrict",
-        "public bucket policies for this bucket"
+        "objects",
+        "UPLOAD",
+        "bucket owner full control canned ACL"
       ],
       [
-        "Amazon S3",
-        "block",
-        "public access control lists ACLs for this"
+        "Objects",
+        "UPDATES",
+        "bucket owner"
       ]
     ]
   },
   {
-    "chunk_id": "c124",
+    "chunk_id": "a9feb9ee-0112-4969-94f9-6caf0b55e2e9",
     "akus": [
+      [
+        "Amazon S3",
+        "IGNORE",
+        "all public ACLs"
+      ],
+      [
+        "Amazon S3",
+        "IGNORE",
+        "public ACLs"
+      ],
+      [
+        "Amazon S3",
+        "BLOCKS",
+        "public bucket policies"
+      ],
+      [
+        "Amazon S3",
+        "RESTRICTS",
+        "public bucket policies"
+      ],
+      [
+        "Amazon S3",
+        "BLOCKS",
+        "public access control lists"
+      ],
       [
         "S3 Select",
-        "split",
-        "the same record"
+        "SPLIT",
+        "multiple record frames"
       ],
       [
         "Amazon S3",
-        "replicate",
-        "modifications on replicas"
+        "DETECT",
+        "specified events"
+      ],
+      [
+        "S3 Select",
+        "SPLIT",
+        "same record"
       ]
     ]
   },
   {
-    "chunk_id": "c125",
+    "chunk_id": "54b27ffd-aabc-4633-aa4f-aae938fb5ae4",
     "akus": [
       [
         "Amazon S3",
-        "support",
-        "only the filter that you can specify"
+        "REPLICATE",
+        "replica modifications"
       ],
       [
-        "the header",
-        "return",
-        "the value TRUE"
+        "RedirectAllRequestsTo",
+        "SPECIFIES",
+        "redirect behavior"
       ],
       [
-        "the header",
-        "return",
-        "the value FALSE"
+        "Filter",
+        "SPECIFIES",
+        "exactly one Prefix"
       ]
     ]
   },
   {
-    "chunk_id": "c127",
+    "chunk_id": "e37aa0d8-afce-49ab-809b-3df72484fdb1",
     "akus": [
       [
-        "a PUT Object request",
-        "specify",
-        "any server side encryption"
+        "Directory buckets",
+        "SUPPORTS",
+        "Availability Zones"
+      ],
+      [
+        "Amazon S3",
+        "SUPPORTS",
+        "only the filter"
+      ],
+      [
+        "Filter",
+        "SPECIFIES",
+        "exactly one Prefix"
       ]
     ]
   },
   {
-    "chunk_id": "c128",
+    "chunk_id": "4b7f95ff-b1e0-4b43-8296-2cf3fae7bbb2",
     "akus": [
       [
         "Amazon S3",
-        "replicate",
-        "objects created with server side encryption using"
-      ]
-    ]
-  },
-  {
-    "chunk_id": "c131",
-    "akus": [
-      [
-        "S3 on Outposts",
-        "store",
-        "the replication results"
+        "DELETES",
+        "noncurrent object versions"
       ],
       [
-        "the filter",
-        "return",
-        "objects that are encrypted by the specified"
+        "Amazon S3",
+        "TRANSITION",
+        "noncurrent object versions"
+      ],
+      [
+        "Amazon S3",
+        "TRANSITION",
+        "specific period"
       ]
     ]
   },
   {
-    "chunk_id": "c132",
+    "chunk_id": "64bbdea1-eb79-4118-8fda-97d17ac93e6d",
     "akus": [
       [
         "Amazon S3",
-        "support",
+        "CREATES",
+        "AWS KMS key"
+      ],
+      [
+        "Amazon S3",
+        "USES",
+        "KMS key"
+      ],
+      [
+        "SSE-KMS configuration",
+        "SUPPORTS",
+        "1 customer managed. key"
+      ],
+      [
+        "Amazon S3",
+        "CREATES",
+        "AWS account"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "86d95c5e-c6c0-41d9-9603-4a9ad51178a4",
+    "akus": [
+      [
+        "Amazon S3",
+        "USES",
+        "S3 Bucket Key"
+      ],
+      [
+        "Amazon S3",
+        "SUPPORTS",
+        "symmetric encryption KMS keys"
+      ],
+      [
+        "Amazon S3",
+        "USES",
+        "new objects"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "b3382fd2-6e94-417d-925b-774aca36e92f",
+    "akus": [
+      [
+        "Amazon S3",
+        "USES",
+        "S3 Bucket Key"
+      ],
+      [
+        "Amazon S3",
+        "USES",
+        "object encryption"
+      ],
+      [
+        "Amazon S3",
+        "REPLICATE",
+        "replica modifications"
+      ],
+      [
+        "Amazon S3",
+        "SUPPORTS",
+        "only the filter"
+      ],
+      [
+        "Temporary security credentials",
+        "EXPIRE",
+        "specified interval"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "aec02fd9-44a8-41ff-bf06-69241e974835",
+    "akus": [
+      [
+        "Buckets",
+        "SUPPORTS",
+        "target grants"
+      ],
+      [
+        "Amazon S3",
+        "DETECT",
+        "specified events"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "341bf69a-ad76-4717-810e-4b1fb4311dbf",
+    "akus": [
+      [
+        "Amazon S3",
+        "ABORT",
+        "incomplete multipart upload"
+      ],
+      [
+        "Valid Values",
+        "RETRIEVE",
+        "versioning state"
+      ],
+      [
+        "VpcConfiguration",
+        "SPECIFIES",
+        "access point"
+      ],
+      [
+        "Amazon S3",
+        "DETECT",
+        "specified events"
+      ],
+      [
+        "WebsiteConfiguration",
+        "SPECIFIES",
+        "website configuration parameters"
+      ],
+      [
+        "S3SubPrefix",
+        "APPEND",
+        "location scope"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "1e9d7089-a9a8-49ba-ac1c-767a4cf02bc8",
+    "akus": [
+      [
+        "VpcConfiguration",
+        "SPECIFIES",
+        "access point"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "0c37aa35-3fbd-4175-9601-18df2943d4d0",
+    "akus": [
+      [
+        "All objects",
+        "STORES",
+        "OUTPOSTS storage class"
+      ],
+      [
+        "S3",
+        "USES",
+        "OUTPOSTS storage class"
+      ],
+      [
+        "S3 Access",
+        "GRANTS",
+        "vends to grantees"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "b0220474-ce01-4944-a69b-188cfba361c9",
+    "akus": [
+      [
+        "Amazon S3",
+        "USES",
+        "KMS key"
+      ],
+      [
+        "Amazon S3",
+        "REPLICATE",
+        "existing source bucket objects"
+      ],
+      [
+        "Amazon S3",
+        "SUPPORTS",
         "only symmetric encryption KMS keys"
+      ],
+      [
+        "ID",
+        "IS",
+        "either the Amazon Resource Name"
+      ],
+      [
+        "identifier",
+        "IS",
+        "IAM Amazon Resource Name"
       ]
     ]
   },
   {
-    "chunk_id": "c133",
+    "chunk_id": "8cad49ef-19c0-41bb-b0a7-2c3221e44523",
     "akus": [
       [
-        "whose object keys",
-        "match",
-        "the string constraints specified for MatchAnyPrefix MatchAnySuffix"
+        "Manifests",
+        "IMPORT",
+        "directory buckets"
+      ],
+      [
+        "ProgressSummary",
+        "RETRIEVE",
+        "total number"
+      ],
+      [
+        "JobListDescriptor",
+        "CONTAINS",
+        "configuration and status information"
+      ],
+      [
+        "JobManifest",
+        "CONTAINS",
+        "configuration information"
       ]
     ]
   },
   {
-    "chunk_id": "c134",
+    "chunk_id": "4fb35b17-af1d-4d71-b14a-f24b8d079574",
     "akus": [
       [
-        "the specified job",
-        "invoke",
-        "an AWS Lambda function"
+        "S3 Batch Operations job",
+        "PASS",
+        "every object"
       ],
       [
-        "the specified job",
-        "execute",
-        "a DELETE Object tagging call"
+        "S3 Batch Operations job",
+        "PASS",
+        "underlying PutObjectLegalHold API operation"
       ],
       [
-        "Amazon S3 Control",
-        "direct",
-        "the specified job"
+        "Manifests",
+        "IMPORT",
+        "directory buckets"
       ],
       [
-        "the specified job",
-        "run",
-        "a PUT Copy object call"
+        "specified job",
+        "INVOKES",
+        "AWS Lambda function"
       ],
       [
-        "the specified job",
-        "run",
-        "a PUT Object tagging call"
+        "Batch Operations",
+        "PASS",
+        "every object"
       ]
     ]
   },
   {
-    "chunk_id": "c136",
+    "chunk_id": "3b75a5b7-d94f-4dd9-92ed-053a01e66da1",
     "akus": [
       [
-        "S3 Access Grants",
-        "assign",
-        "the ID default"
+        "ExpectedBucketOwner",
+        "RETRIEVE",
+        "AWS account ID"
+      ],
+      [
+        "Valid Range",
+        "INCLUDES",
+        "only source bucket objects"
+      ],
+      [
+        "Batch Operations",
+        "STORES",
+        "job completion reports"
+      ],
+      [
+        "Valid Values",
+        "INDICATE",
+        "elapsed time"
       ]
     ]
   },
   {
-    "chunk_id": "c138",
+    "chunk_id": "d240c3ff-6a6e-4822-839e-ad24c1a091c3",
     "akus": [
       [
-        "The UpdateObjectEncryption operation",
-        "support",
-        "the SSE KMS encryption type"
+        "Amazon S3",
+        "TRANSITION",
+        "noncurrent object versions"
+      ],
+      [
+        "Amazon S3",
+        "TRANSITION",
+        "specific storage class"
+      ],
+      [
+        "Amazon S3",
+        "TRANSITION",
+        "set period"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "076115c2-2864-4671-a3e4-cb125577cad9",
+    "akus": [
+      [
+        "Each entry",
+        "CONTAINS",
+        "Storage Lens group"
+      ],
+      [
+        "Each entry",
+        "INCLUDES",
+        "permission level"
+      ],
+      [
+        "grant",
+        "INCLUDES",
+        "application ARN"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "3f45fba2-aed4-4213-897d-f7d6561acd78",
+    "akus": [
+      [
+        "DaysLessThan",
+        "SPECIFIES",
+        "minimum object age"
+      ],
+      [
+        "BytesGreaterThan",
+        "SPECIFIES",
+        "minimum object size"
+      ],
+      [
+        "BytesLessThan",
+        "SPECIFIES",
+        "maximum object size"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "dc8b3a65-3387-48f6-b9b6-a5070a151c50",
+    "akus": [
+      [
+        "Each route",
+        "CONTAINS",
+        "Amazon S3 bucket name"
       ],
       [
         "Active routes",
-        "process",
+        "PROCESSES",
         "Amazon S3 requests"
       ],
       [
-        "S3 on Outposts",
-        "retain",
+        "Active routes",
+        "PROCESSES",
+        "Multi-Region Access Point"
+      ],
+      [
+        "S3",
+        "RETAIN",
         "how many noncurrent versions"
       ],
       [
-        "S3 on Outposts",
-        "take",
-        "the associated action"
+        "Amazon S3",
+        "PERFORM",
+        "associated action"
+      ],
+      [
+        "route",
+        "INCLUDES",
+        "TrafficDialPercentage value"
+      ],
+      [
+        "S3",
+        "TAKE",
+        "associated action"
       ]
     ]
   },
   {
-    "chunk_id": "c139",
+    "chunk_id": "9c94ba8b-8a10-4e49-9e83-bb24cb348dbf",
+    "akus": [
+      [
+        "S3",
+        "REPLICATE",
+        "source objects"
+      ],
+      [
+        "Amazon S3",
+        "IGNORE",
+        "all public ACLs"
+      ],
+      [
+        "Amazon S3",
+        "IGNORE",
+        "public ACLs"
+      ],
+      [
+        "Amazon S3",
+        "BLOCKS",
+        "public bucket policies"
+      ],
+      [
+        "Amazon S3",
+        "RESTRICTS",
+        "public bucket policies"
+      ],
+      [
+        "S3",
+        "REPLICATE",
+        "metadata changes"
+      ],
+      [
+        "Amazon S3",
+        "BLOCKS",
+        "public access control lists"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "899d8445-f556-4aa6-81bf-3a27c4ff2664",
     "akus": [
       [
         "Amazon S3",
-        "block",
-        "public access control lists ACLs for buckets"
+        "USES",
+        "S3 Bucket Key"
       ],
       [
         "Amazon S3",
-        "block",
-        "public bucket policies for buckets in this"
+        "COPY",
+        "original objects"
+      ],
+      [
+        "S3 Batch Operations",
+        "PASS",
+        "every object"
       ],
       [
         "Amazon S3",
-        "ignore",
-        "public ACLs for buckets in this account"
+        "USES",
+        "object encryption"
       ],
       [
         "Amazon S3",
-        "ignore",
-        "all public ACLs on buckets in this"
+        "ASSIGN",
+        "new objects"
       ],
       [
         "Amazon S3",
-        "restrict",
-        "public bucket policies for buckets in this"
+        "MAKE",
+        "Valid Values"
+      ],
+      [
+        "Amazon S3",
+        "COPY",
+        "all the metadata"
+      ],
+      [
+        "Amazon S3",
+        "ASSIGN",
+        "supplied tags"
       ]
     ]
   },
   {
-    "chunk_id": "c140",
+    "chunk_id": "2b8461cd-e90a-4db8-a214-ef3bd2988d61",
     "akus": [
       [
-        "S3 on Outposts",
-        "replicate",
-        "modifications to object metadata on replicas"
+        "RequesterPays",
+        "SPECIFIES",
+        "AWS KMS key ID"
       ],
       [
-        "S3 on Outposts",
-        "replicate",
-        "the objects from"
+        "SSE- KMS configuration",
+        "SUPPORTS",
+        "1 customer managed key"
       ],
       [
-        "S3 on Outposts",
-        "replicate",
-        "metadata changes made to the replica copies"
+        "Manifests",
+        "IMPORT",
+        "directory buckets"
       ],
       [
-        "The filters",
-        "determine",
-        "the subset of objects the rule applies"
+        "KMS key",
+        "EXIST",
+        "same account"
+      ],
+      [
+        "source and destination buckets",
+        "HAS",
+        "same parent AWS Region"
+      ],
+      [
+        "Valid Values",
+        "SPECIFIES",
+        "x amz website redirect location"
+      ],
+      [
+        "Valid Values",
+        "SPECIFIES",
+        "optional metadata property"
+      ],
+      [
+        "Valid Values",
+        "SPECIFIES",
+        "folder prefix"
       ]
     ]
   },
   {
-    "chunk_id": "c141",
+    "chunk_id": "0a37513a-5015-41f7-b5b6-7b5caf95abd3",
+    "akus": [
+      [
+        "S3 Batch Operations jobs",
+        "OPERATE",
+        "S3 Glacier and S3 Glacier Deep Archive storage class objects"
+      ],
+      [
+        "Object Lock legal hold status",
+        "APPLY",
+        "all objects"
+      ],
+      [
+        "Object Lock retention mode",
+        "APPLY",
+        "all objects"
+      ],
+      [
+        "S3Retention",
+        "CONTAINS",
+        "S3 Object Lock retention mode"
+      ],
+      [
+        "EnableManifestOutput",
+        "DETERMINE",
+        "AWS account ID"
+      ],
+      [
+        "Batch Operations",
+        "SUPPORTS",
+        "STANDARD and BULK retrieval tiers"
+      ],
+      [
+        "Manifests",
+        "WRITES",
+        "directory buckets"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "26caea8a-d6ad-483b-aa06-a8b65c4436dd",
     "akus": [
       [
         "Amazon S3",
-        "assign",
-        "the supplied tags"
-      ]
-    ]
-  },
-  {
-    "chunk_id": "c142",
-    "akus": [
-      [
-        "Your SSE- KMS configuration",
-        "support",
-        "1 customer managed key per directory bucket"
+        "USES",
+        "S3 Bucket Key"
       ],
       [
-        "S3 Initiate Restore Object jobs that target",
-        "require",
-        "ExpirationInDays set to 1 or greater"
+        "Object Lock legal hold status",
+        "APPLY",
+        "all objects"
+      ],
+      [
+        "Object Lock retention mode",
+        "APPLY",
+        "all objects"
+      ],
+      [
+        "S3 Batch Operations job",
+        "PASS",
+        "every object"
+      ],
+      [
+        "S3 Batch Operations",
+        "PASS",
+        "every object"
+      ],
+      [
+        "S3 Batch Operations job",
+        "PASS",
+        "underlying PutObjectLegalHold API operation"
+      ],
+      [
+        "applied Object Lock retention",
+        "EXPIRE",
+        "all objects"
+      ],
+      [
+        "Batch Operations",
+        "PASS",
+        "every object"
       ]
     ]
   },
   {
-    "chunk_id": "c144",
+    "chunk_id": "4b37e0e3-3a40-4383-b29c-519e5c3a17c0",
     "akus": [
       [
-        "S3 on Outposts",
-        "replicate",
-        "metadata from the source objects"
+        "S3",
+        "REPLICATE",
+        "source objects"
+      ],
+      [
+        "S3",
+        "REPLICATE",
+        "metadata changes"
+      ],
+      [
+        "KeyId",
+        "SPECIFIES",
+        "side encryption"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "0a47d9ae-070c-4e1c-8129-b578c699b51d",
+    "akus": [
+      [
+        "enhanced prefix metrics report",
+        "INCLUDES",
+        "all S3 Storage Lens storage and activity data"
+      ],
+      [
+        "S3 Storage Lens",
+        "COUNT",
+        "prefix depth"
       ],
       [
         "Amazon S3",
-        "replicate",
-        "objects that are created with server side"
+        "USES",
+        "the. delimiter"
+      ],
+      [
+        "S3",
+        "USES",
+        "the. default delimiter"
+      ],
+      [
+        "AND or OR logical operator",
+        "USES",
+        "multiple filter conditions"
       ]
     ]
   },
   {
-    "chunk_id": "c147",
+    "chunk_id": "9f3bf5e5-edb0-4d1c-a161-b3a60ef800b5",
     "akus": [
       [
-        "No OwnerId",
-        "return",
-        "the AWS account ID of the outpost"
+        "Contains DaysGreaterThan",
+        "DEFINES",
+        "object age range"
+      ],
+      [
+        "MatchObjectAge",
+        "DEFINES",
+        "object age range"
+      ],
+      [
+        "Storage Lens groups",
+        "INCLUDES",
+        "Storage Lens group aggregation"
+      ],
+      [
+        "Objects",
+        "MATCH",
+        "all of the listed filter conditions"
+      ],
+      [
+        "Objects",
+        "MATCH",
+        "any of the listed filter conditions"
+      ],
+      [
+        "AND or OR logical operator",
+        "USES",
+        "multiple filter conditions"
       ]
     ]
   },
   {
-    "chunk_id": "c148",
+    "chunk_id": "18753684-afee-4e16-88d3-80c85de0e688",
+    "akus": [
+      [
+        "export",
+        "ENABLES",
+        "S3 Storage Lens configuration"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "f3962615-2eb3-4e5a-bb86-c7f7038b0f41",
+    "akus": [
+      [
+        "Valid Values",
+        "RETRIEVE",
+        "versioning state"
+      ],
+      [
+        "key",
+        "CREATES",
+        "AWS resource"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "1178215b-5398-4156-b9eb-dacadda938f7",
     "akus": [
       [
         "S3 Tables",
-        "assign",
-        "a field ID"
+        "ASSIGN",
+        "field ID"
+      ],
+      [
+        "Partitioning",
+        "ORGANIZE",
+        "separate files"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "54399103-d0c9-408b-a6d9-3ee5df3052e8",
+    "akus": [
+      [
+        "tables",
+        "REPLICATE",
+        "IAM role"
       ],
       [
         "S3 Tables",
-        "support",
+        "SUPPORTS",
         "all Apache Iceberg primitive types"
-      ]
-    ]
-  },
-  {
-    "chunk_id": "c152",
-    "akus": [
-      [
-        "The access key ID",
-        "identify",
-        "an AWS account"
       ],
       [
-        "The parent account",
-        "control",
-        "a user 's ability to access AWS"
+        "S3 Tables",
+        "ASSIGN",
+        "field IDs"
       ],
       [
-        "The API libraries",
-        "compute",
-        "the necessary signature value"
-      ]
-    ]
-  },
-  {
-    "chunk_id": "c153",
-    "akus": [
-      [
-        "Amazon S3 dual stack endpoints",
-        "support",
-        "requests to S3 buckets"
+        "Valid values",
+        "INCLUDES",
+        "storage classes"
       ],
       [
-        "Any IP addresses outside of this range",
-        "deny",
-        "access to the bucket examplebucket"
+        "ReplicationDestinationStatusModel",
+        "CONTAINS",
+        "status information"
       ]
     ]
   },
   {
-    "chunk_id": "c154",
+    "chunk_id": "84702d37-76ee-4753-8b34-874ea3274700",
     "akus": [
       [
-        "Amazon S3",
-        "support",
-        "only regional dual stack endpoint names"
+        "all new vectors",
+        "USES",
+        "Amazon S3 managed keys"
       ]
     ]
   },
   {
-    "chunk_id": "c162",
+    "chunk_id": "b6a9c7be-ea68-4c7f-b195-ab0dd318d910",
     "akus": [
       [
-        "An IAM user or an AWS account",
-        "request",
+        "Vector dimensions",
+        "MATCH",
+        "dimension count"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "a6ab8dbe-b5e8-481f-acc6-c118b23463ec",
+    "akus": [
+      [
+        "Authenticated requests",
+        "INCLUDES",
+        "signature value"
+      ],
+      [
+        "IAM users",
+        "SENDS",
+        "authenticated requests"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "3cba9488-cc77-4a5d-b552-dbdf8eba6de9",
+    "akus": [
+      [
+        "IAM",
+        "PROVIDES",
+        "AWS Security Token Service API"
+      ],
+      [
+        "IAM user",
+        "REQUEST",
+        "temporary security credentials"
+      ],
+      [
+        "API libraries",
+        "COMPUTE",
+        "necessary signature value"
+      ],
+      [
+        "API",
+        "RETURNS",
         "temporary security credentials"
       ]
     ]
   },
   {
-    "chunk_id": "c180",
+    "chunk_id": "ca12dc5e-5db0-490a-b830-7fdc3714291d",
     "akus": [
       [
-        "a federated user with a limited set",
-        "lists",
-        "keys in the specified bucket"
-      ]
-    ]
-  },
-  {
-    "chunk_id": "c186",
-    "akus": [
-      [
-        "Facility B",
-        "return",
-        "a copy of the object"
+        "server access log files",
+        "OUTPUT",
+        "IPv6 format"
       ],
       [
-        "Facility B",
-        "return",
-        "a redirect indicating the object is available"
+        "Both virtual hosted-style and path style requests",
+        "SUPPORTS",
+        "IPv6 access"
       ],
       [
-        "Facility C",
-        "return",
-        "a copy of the object"
-      ]
-    ]
-  },
-  {
-    "chunk_id": "c242",
-    "akus": [
-      [
-        "Bash AWS CLI with Bash script",
-        "find",
-        "the complete example"
-      ]
-    ]
-  },
-  {
-    "chunk_id": "c243",
-    "akus": [
-      [
-        "Bash AWS CLI with Bash script",
-        "find",
-        "the complete example"
-      ]
-    ]
-  },
-  {
-    "chunk_id": "c246",
-    "akus": [
-      [
-        "API Reference Bash AWS CLI with Bash",
-        "find",
-        "the complete example"
-      ]
-    ]
-  },
-  {
-    "chunk_id": "c274",
-    "akus": [
-      [
-        "The method",
-        "return",
-        "a list of the Amazon S3 objects"
-      ]
-    ]
-  },
-  {
-    "chunk_id": "c275",
-    "akus": [
-      [
-        "The DeleteObjectsAsync method",
-        "add",
-        "a delete marker for each object deleted"
-      ]
-    ]
-  },
-  {
-    "chunk_id": "c279",
-    "akus": [
-      [
-        "Get S3Object",
-        "return",
-        "a collection of Amazon S3.Model S3Object instances"
-      ]
-    ]
-  },
-  {
-    "chunk_id": "c280",
-    "akus": [
-      [
-        "Get S3Object",
-        "return",
-        "a collection of Basics Amazon Simple Storage"
-      ]
-    ]
-  },
-  {
-    "chunk_id": "c307",
-    "akus": [
-      [
-        "The sample",
-        "return",
-        "the tags associated with the object present"
-      ]
-    ]
-  },
-  {
-    "chunk_id": "c329",
-    "akus": [
-      [
-        "Most Amazon S3 use cases",
-        "require",
-        "the use of access control lists ACLs"
+        "IAM policies",
+        "USES",
+        "IP Address Condition Operators"
       ],
       [
-        "The entity tag",
-        "represent",
-        "a specific version of the object"
-      ]
-    ]
-  },
-  {
-    "chunk_id": "c333",
-    "akus": [
+        "policy",
+        "PREVENT",
+        "IPv6 addresses"
+      ],
       [
-        "The second rule",
-        "move",
-        "old object versions"
+        "server access log files",
+        "OUTPUT",
+        "IP addresses"
       ]
     ]
   },
   {
-    "chunk_id": "c334",
-    "akus": [
-      [
-        "all users",
-        "retrieve",
-        "any object in amzn s3 demo bucket"
-      ]
-    ]
-  },
-  {
-    "chunk_id": "c340",
-    "akus": [
-      [
-        "The bucket",
-        "exist",
-        "if caught instanceof S3ServiceException"
-      ]
-    ]
-  },
-  {
-    "chunk_id": "c399",
+    "chunk_id": "d62dd47b-0fc8-45e1-b1ec-40a882b25afe",
     "akus": [
       [
         "Amazon S3",
-        "accept",
-        "a Range header to specify the start"
+        "SUPPORTS",
+        "only regional dual-stack endpoint names"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "a6a29acc-46b5-4e92-b462-f0673d087531",
+    "akus": [
+      [
+        "Each of these AWS SDKs",
+        "USES",
+        "SDK-specific credentials provider chain"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "dd517cb5-ea79-4bf3-b52a-ddcdeb9200b3",
+    "akus": [
+      [
+        "Each of these AWS SDKs",
+        "USES",
+        "SDK-specific credentials provider chain"
+      ],
+      [
+        ".NET Developer Guide",
+        "GET",
+        "AWS SDK"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "6b2e572e-d81a-4ad4-8eca-82368023a0da",
+    "akus": [
+      [
+        "object.key",
+        "CREATES",
+        "No objects"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "4a9dd836-66f8-4f65-a3d8-aa18700bd394",
+    "akus": [
+      [
+        "IAM user",
+        "REQUEST",
+        "temporary security credentials"
+      ],
+      [
+        "AWS account",
+        "REQUEST",
+        "temporary security credentials"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "6bf1becd-5f06-44a0-9117-434b6cb173d2",
+    "akus": [
+      [
+        "IAM user",
+        "REQUEST",
+        "temporary security credentials"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "f6c85804-2f6f-44e6-ad43-a0dc265365ed",
+    "akus": [
+      [
+        "IAM user",
+        "REQUEST",
+        "temporary security credentials"
+      ],
+      [
+        "Credentials",
+        "USES",
+        "default AWS SDK"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "c9c96db7-610d-4268-b962-4e712f0b36c8",
+    "akus": [
+      [
+        "IAM user",
+        "REQUEST",
+        "temporary security credentials"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "ac3ed241-dfc5-47b7-8bfa-e9a0c3725ce0",
+    "akus": [
+      [
+        "only an IAM user",
+        "REQUEST",
+        "temporary credentials"
+      ],
+      [
+        "only an IAM user",
+        "REQUEST",
+        "added security"
+      ],
+      [
+        "Both the AWS account",
+        "REQUEST",
+        "temporary security credentials"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "728b3af8-2671-4e3b-8e32-17d8aeb23f57",
+    "akus": [
+      [
+        "IAM user",
+        "REQUEST",
+        "temporary security credentials"
+      ],
+      [
+        "Credentials",
+        "USES",
+        "default AWS SDK"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "1450107c-0bb2-469b-ace4-3f2cd2fd3f73",
+    "akus": [
+      [
+        "IAM user",
+        "GRANTS",
+        "only the minimum application-specific permissions"
+      ],
+      [
+        "code",
+        "SENDS",
+        "Amazon S3"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "9a77b519-f150-49f4-bdd8-62b2ce6eed65",
+    "akus": [
+      [
+        "Amazon S3 access points endpoints",
+        "FOLLOW",
+        "standard structure"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "5f5e1e1a-99e6-4f24-9d77-7f5fc075663d",
+    "akus": [
+      [
+        "Programs",
+        "HANDLES",
+        "application layer"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "7c023e12-3dff-4193-a7cd-9fcf51239fcf",
+    "akus": [
+      [
+        "Amazon S3",
+        "RETURNS",
+        "final response"
       ],
       [
         "Amazon S3",
-        "encrypt",
-        "the object at rest"
-      ],
-      [
-        "import boto3 from boto3.s3.transfer import TransferConfig MB",
-        "handle",
-        "callbacks from the transfer manager"
-      ]
-    ]
-  },
-  {
-    "chunk_id": "c404",
-    "akus": [
-      [
-        "The function",
-        "retrieve",
-        "the S3 bucket name and object key"
-      ],
-      [
-        "Your metadata headers",
-        "exceed",
-        "the maximum allowed metadata size"
-      ]
-    ]
-  },
-  {
-    "chunk_id": "c405",
-    "akus": [
-      [
-        "Your request",
-        "miss",
-        "a required header"
-      ],
-      [
-        "A header that you provided",
-        "imply",
-        "functionality that is not implement ed"
-      ],
-      [
-        "The tag policy",
-        "allow",
-        "the specified value for the following tag"
-      ],
-      [
-        "The version ID specified in the request",
-        "match",
-        "an existing version"
-      ]
-    ]
-  },
-  {
-    "chunk_id": "c407",
-    "akus": [
-      [
-        "The SelectRequest entity",
-        "miss",
-        "a required parameter"
-      ]
-    ]
-  },
-  {
-    "chunk_id": "c409",
-    "akus": [
-      [
-        "The AWS Region in the resource ARN",
-        "match",
-        "the Region that 's specified in this"
-      ]
-    ]
-  },
-  {
-    "chunk_id": "c410",
-    "akus": [
-      [
-        "The name specified in the request",
-        "match",
-        "the Storage Lens group name"
-      ]
-    ]
-  },
-  {
-    "chunk_id": "c411",
-    "akus": [
-      [
-        "the functi on",
-        "call",
-        "this API operation"
-      ],
-      [
-        "another request",
-        "modify",
-        "the specified resource"
-      ]
-    ]
-  },
-  {
-    "chunk_id": "c412",
-    "akus": [
-      [
-        "a high request rate",
-        "trigger",
-        "one of these mechanisms"
-      ]
-    ]
-  },
-  {
-    "chunk_id": "c413",
-    "akus": [
-      [
-        "Amazon S3",
-        "store",
-        "the last write request"
+        "USES",
+        "permanent redirects"
       ],
       [
         "Amazon S3",
-        "receive",
-        "multiple Operations on Objects SOAP API Amazon"
+        "RESPOND",
+        "temporary redirect"
       ],
       [
-        "the Data parameter",
-        "encode",
-        "an object larger than 1 MB"
-      ],
-      [
-        "The ETag",
-        "reflect",
-        "changes to the contents of an object"
+        "Request redirection",
+        "USES",
+        "Domain Name System"
       ]
     ]
   },
   {
-    "chunk_id": "c415",
+    "chunk_id": "675a9abb-5aae-492a-8bd0-327143f8bf39",
     "akus": [
       [
-        "The DeleteObject operation",
-        "remove",
-        "the specified object"
+        "DNS routing",
+        "ROUT",
+        "appropriate Amazon S3 facilities"
       ],
       [
         "Amazon S3",
+        "RETURNS",
+        "all Regions"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "3ddc3746-4013-4ac5-bf5b-5a91c1199731",
+    "akus": [
+      [
+        "client",
+        "RESEND",
+        "Facility C."
+      ]
+    ]
+  },
+  {
+    "chunk_id": "1725a7e8-13e7-45bc-8259-96e37348518a",
+    "akus": [
+      [
+        "Sun's JVM",
+        "CACHES",
+        "DNS lookups"
+      ],
+      [
+        "Amazon S3 AWS CLI commands",
+        "ORGANIZE",
+        "diﬀerent sets"
+      ],
+      [
+        "AWS account",
+        "ACCESSES",
+        "AWS CLI"
+      ],
+      [
+        "commands",
+        "CORRESPOND",
+        "Amazon S3 Control API operations"
+      ],
+      [
+        "commands",
+        "CORRESPOND",
+        "Amazon S3 API operations"
+      ],
+      [
+        "Amplify Storage",
+        "INTEGRATE",
+        "file storage and management capabilities"
+      ],
+      [
+        "Amplify Storage",
+        "INTEGRATE",
+        "frontend web and mobile apps"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "e0c0e98e-82eb-4b73-9203-73f66405ebd3",
+    "akus": [
+      [
+        "Amazon S3",
+        "SUPPORTS",
+        "only AWS Signature Version"
+      ],
+      [
+        "Amazon S3",
+        "SUPPORTS",
+        "both Signature Version"
+      ],
+      [
+        "AWS SDKs",
+        "USES",
+        "Signature Version"
+      ],
+      [
+        "Amazon S3",
+        "SUPPORTS",
+        "some of the older AWS Regions"
+      ],
+      [
+        "Amazon S3",
+        "SUPPORTS",
+        "most AWS Regions"
+      ],
+      [
+        "Each AWS SDK",
+        "PROVIDES",
+        "one or more programmatic interfaces"
+      ],
+      [
+        "AWS SDKs",
+        "USES",
+        "all AWS Regions"
+      ],
+      [
+        "Low-level API operations",
+        "ALLOWS",
+        "greater control"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "8180f5df-a50d-492b-8975-cddccb83ba0b",
+    "akus": [
+      [
+        "Signing requests",
+        "ENABLES",
+        "Amazon S3"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "5498a233-80cb-4806-ad30-7d816150b4f7",
+    "akus": [
+      [
+        "Signature Version",
+        "SUPPORTS",
+        "all AWS Regions"
+      ],
+      [
+        "Signature Version",
+        "PROVIDES",
+        "improved security"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "cf34df20-3acc-42e5-8d2b-fd9d210bb754",
+    "akus": [
+      [
+        "Support",
+        "END",
+        "Signature Version"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "1350f984-1383-4a00-a422-91430b8f525a",
+    "akus": [
+      [
+        "Amazon S3 bucket",
+        "PROVIDES",
+        "detailed information"
+      ],
+      [
+        "Amazon S3 bucket",
+        "PROVIDES",
+        "detailed records"
+      ],
+      [
+        "AWS Support",
+        "USES",
+        "request IDs"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "139d395e-19e9-4319-b053-676782b1e8c1",
+    "akus": [
+      [
+        "Most web browsers",
+        "HAS",
+        "developer tools"
+      ],
+      [
+        "AWS SDK",
+        "HAS",
+        "built-in logger"
+      ],
+      [
+        "pair",
+        "LOOK",
+        "AWS SDK requests"
+      ],
+      [
+        "pair",
+        "LOOK",
+        "Status Code"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "c24cbc43-f013-4e1f-bf3b-53ba1466c132",
+    "akus": [
+      [
+        "Wire logging",
+        "INCLUDES",
+        "sensitive information"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "6eca8ddc-c0d9-47fa-abe6-a806363205b6",
+    "akus": [
+      [
+        "tracing-subscriber",
+        "INITIALIZE",
+        "Rust code"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "166eba0f-c4b0-4fc6-a82f-2a778f35ec02",
+    "akus": [
+      [
+        "CMake",
+        "FIND",
+        "installed libraries"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "4fd890da-2062-4649-aeb2-bb1ff135271c",
+    "akus": [
+      [
+        "ListBuckets",
+        "THROW",
+        "any modeled errors"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "1f76e152-bcff-433b-967b-18dcf71bfdf0",
+    "akus": [
+      [
+        "AWS",
+        "REPORT",
+        "s3api delete-bucket"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "767f81c4-11cf-4d8b-972d-cf4baadb7e63",
+    "akus": [
+      [
+        "ListBuckets",
+        "RETRIEVE",
+        "current account"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "2acca3ef-8f8e-4969-aa14-ba94b8e3187a",
+    "akus": [
+      [
+        "Simple Storage Service Amazon S3",
+        "CREATES",
+        "S3 bucket"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "37309981-da8f-453c-99aa-d5e5316af018",
+    "akus": [
+      [
+        "excerpts",
+        "INVOKES",
+        "Amazon S3 API"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "e1d3b927-75fb-41d3-8aa6-4363447491b8",
+    "akus": [
+      [
+        "upload_part_res",
+        "USES",
+        "AWS SDK"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "c87eeaf4-e612-4a7f-b100-6d3923e837f4",
+    "akus": [
+      [
+        "AWS",
+        "REPORT",
+        "s3api delete-bucket"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "a3b0eee4-e5cd-4ee5-91d7-f83ef71ca1d3",
+    "akus": [
+      [
+        "object keys collection",
+        "INCLUDES",
+        "null version IDs"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "764ccfb2-c0f3-4354-8dfe-0a65d388e639",
+    "akus": [
+      [
+        "GetBucketAclCommand",
+        "RETRIEVE",
+        "Access Control List"
+      ],
+      [
+        "String objectKey",
+        "RETRIEVE",
+        "Access Control List"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "e5537451-6b13-45cf-a723-039f97fa9589",
+    "akus": [
+      [
+        "String path",
+        "RETRIEVE",
+        "local file"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "02c206e9-e223-46d4-8d07-aa32992f578c",
+    "akus": [
+      [
+        "def",
+        "INSTANTIATE",
+        "Boto3 client"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "b5bc7802-c108-4341-a46e-ec7ac33e98d9",
+    "akus": [
+      [
+        "GetObjectLegalHold",
+        "RETRIEVE",
+        "legal hold status"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "ce77e283-2b65-4085-99eb-a29c2b2a8688",
+    "akus": [
+      [
+        "Object lock configuration",
+        "ENABLES",
+        "given S3 bucket"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "1587c863-762a-4a12-af35-6fc3af07bafb",
+    "akus": [
+      [
+        "GetObjectRetention",
+        "RETRIEVE",
+        "object retention configuration"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "82b9b18e-97f8-4679-bce6-bb48ca4b9169",
+    "akus": [
+      [
+        "ListBuckets",
+        "RETRIEVE",
+        "current account"
+      ],
+      [
+        "command",
+        "RETURNS",
+        "all S3 buckets"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "28685f3a-12e7-41d4-929d-18f311c42c7a",
+    "akus": [
+      [
+        "public func",
+        "USES",
+        "AWS SDK"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "ff33514c-25f2-444f-8204-0e7310332978",
+    "akus": [
+      [
+        "Console",
+        "FOREACH",
+        "var entry"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "888cc523-32dd-40ed-8768-323c5bf83b51",
+    "akus": [
+      [
+        "s3api ACL commands",
+        "USES",
+        "same shorthand argument notation"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "82a2ac0f-ee52-4c27-9899-0e0a3c7f91c1",
+    "akus": [
+      [
+        "String accountId",
+        "DELETES",
+        "Amazon S3 bucket"
+      ],
+      [
+        "bucketCorsRequest",
+        "RETRIEVE",
+        "CORS Cross Origin Resource Sharing configuration for the specified"
+      ],
+      [
+        "String accountId",
+        "DELETES",
+        "CORS Cross Origin Resource Sharing configuration"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "883d65f8-21b4-4941-bad5-ff3f2e365dfb",
+    "akus": [
+      [
+        "ETag header",
+        "REPRESENT",
+        "specific version"
+      ],
+      [
+        "PutBucketCorsCommand",
+        "ALLOWS",
+        "cross-origin requests"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "1a9f21ed-7ba4-4e6b-b298-468cb008fb2c",
+    "akus": [
+      [
+        "String accountId",
+        "SET",
+        "lifecycle configuration"
+      ],
+      [
+        "command",
+        "ENABLES",
+        "default AES256 server side encryption"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "781379cf-fdd4-4396-ac82-4c855366092c",
+    "akus": [
+      [
+        "SNS topic",
+        "HAS",
+        "IAM policy"
+      ],
+      [
+        "AWS user",
+        "HAS",
+        "full control"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "cbe275de-77bf-42ed-afb0-c639715da77a",
+    "akus": [
+      [
+        "SNS topic",
+        "HAS",
+        "IAM policy"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "34473ed0-7993-48b1-ba0e-7a68ade4c474",
+    "akus": [
+      [
+        "Policies",
+        "CONTROLS",
+        "users' ability"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "5a0568ca-5cc3-4abb-80ff-a8f354656015",
+    "akus": [
+      [
+        "command",
+        "PIP",
+        "Write-S3BucketTagging cmdlet"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "e879812e-633c-420f-8ae3-c14c0b94d3c0",
+    "akus": [
+      [
+        "command",
+        "PIP",
+        "Write-S3BucketTagging cmdlet"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "4b56eb86-3c3f-41bf-9881-abe7a7047fb6",
+    "akus": [
+      [
+        "String indexDoc",
+        "SET",
+        "website configuration"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "24ed26cc-1d58-469a-bf1a-1f49022103bc",
+    "akus": [
+      [
+        "String indexDoc",
+        "SET",
+        "website configuration"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "edd1e53a-a77c-4c0f-9b9d-2c4b968e6636",
+    "akus": [
+      [
+        "UploadObject",
+        "USES",
+        "S3 upload manager"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "b255b14c-cdd9-4258-a096-c961deb298ab",
+    "akus": [
+      [
+        "String objectKey",
+        "UPLOAD",
+        "Amazon S3 bucket"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "eb0a36a0-25be-4abf-89ab-811926847fe8",
+    "akus": [
+      [
+        "command",
+        "UPLOAD",
+        "Amazon S3"
+      ],
+      [
+        "String key",
+        "SET",
+        "retention period"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "7dd91196-4118-484a-806f-763a1db8ed58",
+    "akus": [
+      [
+        "command",
+        "UPLOAD",
+        "Amazon S3"
+      ],
+      [
+        "filename",
+        "USES",
+        "S3 object key"
+      ],
+      [
+        "command",
+        "CREATES",
+        "new S3 object"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "f9dc40eb-7c8f-439d-873a-cb8d94e23910",
+    "akus": [
+      [
+        "command",
+        "UPLOAD",
+        "Amazon S3"
+      ],
+      [
+        "def",
+        "UPLOAD",
+        "Amazon S3"
+      ],
+      [
+        "filename",
+        "USES",
+        "S3 object key"
+      ],
+      [
+        "command",
+        "CREATES",
+        "new S3 object"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "809c3706-5448-410e-beac-9b596cd125cb",
+    "akus": [
+      [
+        "s3api ACL commands",
+        "USES",
+        "same shorthand argument notation"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "16e47900-e3d4-4069-98e5-e698b4b9153a",
+    "akus": [
+      [
+        "PutObjectLegalHold",
+        "SET",
+        "legal hold configuration"
+      ],
+      [
+        "Console",
+        "SET",
+        "default retention period"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "714398b6-4ad9-4fee-a08f-0a731e5e6712",
+    "akus": [
+      [
+        "ObjectLockRule lockRule",
+        "SET",
+        "object lock configuration"
+      ],
+      [
+        "EnableObjectLockOnBucket",
+        "ENABLES",
+        "object locking"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "025ff14c-0785-4097-b1e0-327bf913ce5e",
+    "akus": [
+      [
+        "Bucket settings",
+        "REQUIRES",
+        "both a mode"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "2327d732-984b-4bb1-89b4-9a32efc3d410",
+    "akus": [
+      [
+        "PutObjectRetention",
+        "SET",
+        "object retention configuration"
+      ],
+      [
+        "ObjectLockRetention retention",
+        "PRINT",
+        "formatted date string"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "4bd6edba-9d45-4ae6-8204-7c35f278932d",
+    "akus": [
+      [
+        "Scenarios",
+        "TARGET",
+        "intermediate level"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "1f008b5e-47a0-4c60-bb6b-492757315f17",
+    "akus": [
+      [
+        "Amazon S3 buckets",
+        "NAME",
+        "a. global namespace"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "499bf5ec-e072-48d3-b834-d31f8771d324",
+    "akus": [
+      [
+        "Region us-east-1",
+        "DEFAULT",
+        "Signature Version"
+      ],
+      [
+        "double timeoutDuration",
+        "SPECIFIES",
+        "AWS Region"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "971c43e6-0d91-4fd3-8e67-e1707a3c0715",
+    "akus": [
+      [
+        "Presigned requests",
+        "CONTAINS",
+        "temporary credentials"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "7a4c7e67-6e51-4d39-81d6-6a17dcd05dfd",
+    "akus": [
+      [
+        "local credentials",
+        "CREATES",
+        "GetObject presigned request"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "c1d9e6a1-3cc2-4335-88c8-4b2440b3d1f9",
+    "akus": [
+      [
+        "runnable version",
+        "FIND",
+        "preceding GitHub link"
+      ],
+      [
+        "URL",
+        "EXPIRE",
+        "10 minutes"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "5ce166e1-8786-43b5-9e98-1623fb6ebb7c",
+    "akus": [
+      [
+        "input image",
+        "SHOW",
+        "Tkinter application"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "c038766b-7104-4fa5-b797-e47e1565f1c1",
+    "akus": [
+      [
+        "S3",
+        "PROVIDES",
+        "standard buckets"
+      ],
+      [
+        "webpage",
+        "INVOKES",
+        "REST service"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "75cc9acf-d426-487d-8592-3d8a8036ea85",
+    "akus": [
+      [
+        "NewObjectLockScenario",
+        "CONSTRUCT",
+        "new ObjectLockScenario instance"
+      ],
+      [
+        "EnableLockOnBucket",
+        "ENABLES",
+        "object locking"
+      ],
+      [
+        "'s",
+        "CREATES",
+        "some S3 buckets"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "75008c9d-418c-4bff-a4cb-309c9ba21f62",
+    "akus": [
+      [
+        "UploadTestObjects",
+        "UPLOAD",
+        "S3 buckets"
+      ],
+      [
+        "SetObjectLockConfigurations",
+        "SET",
+        "test func"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "6410218d-9261-4998-91ca-9fdae393f826",
+    "akus": [
+      [
+        "GetAllObjects",
+        "GET",
+        "object versions"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "8956307e-d08e-4892-bcfb-acce65498f8b",
+    "akus": [
+      [
+        "GetObjectLegalHold",
+        "RETRIEVE",
+        "legal hold status"
+      ],
+      [
+        "PutObjectLegalHold",
+        "SET",
+        "legal hold configuration"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "17d0e5aa-2705-499d-a89f-2e5388851eed",
+    "akus": [
+      [
+        "UploadObject",
+        "USES",
+        "S3 upload manager"
+      ],
+      [
+        "PutObjectRetention",
+        "SET",
+        "object retention configuration"
+      ],
+      [
+        "EnableObjectLockOnBucket",
+        "ENABLES",
+        "object locking"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "9e028672-0699-4a1d-9155-d960aa55125e",
+    "akus": [
+      [
+        "If-None-Match",
+        "USES",
+        "object's ETag"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "a112e2f9-a2fb-41d2-84b0-e7cb7e28f07e",
+    "akus": [
+      [
+        "If-None-Match",
+        "USES",
+        "object's ETag"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "ae128f21-e5dd-472b-ba58-180fbd19994f",
+    "akus": [
+      [
+        "Permission",
+        "SPECIFIES",
+        "log delivery group"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "6442b1f5-4eea-4050-aa59-06a30d61cb54",
+    "akus": [
+      [
+        "SDK",
+        "RETURNS",
+        "decoded URI values"
+      ],
+      [
+        "URI",
+        "CONTAINS",
+        "no query parameters"
+      ],
+      [
+        "SDK",
+        "RETURNS",
+        "empty map"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "ef7062ef-dcb7-4df4-85a0-79b1af50984d",
+    "akus": [
+      [
+        "AWS CloudFormation stack",
+        "SET",
+        "bucket, queue, topic"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "be163d29-7ac8-4b03-8596-ce5ac0c20172",
+    "akus": [
+      [
+        "SDK",
+        "PROVIDES",
+        "LoggingTransferListener implementation"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "2c2186a1-7b65-4e24-af76-58b4fdd72cad",
+    "akus": [
+      [
+        "'s",
+        "DOWNLOAD",
+        "%v MiB object"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "7aafe584-3ae5-4d77-bbcf-7e66b4eb9ca8",
+    "akus": [
+      [
+        "Amazon S3",
+        "ACCEPTS",
+        "Range header"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "f05035ca-542c-4c33-9a08-5b530f7fd855",
+    "akus": [
+      [
+        "config",
+        "DOWNLOAD",
+        "Amazon S3 bucket"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "8270ee92-52fd-4257-882c-62612de0a65c",
+    "akus": [
+      [
+        "SDK",
+        "USES",
+        "CRC32 algorithm"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "1c909740-a4f9-4b78-a16e-2b730876dd35",
+    "akus": [
+      [
+        "demonstration",
+        "UPLOAD",
+        "Amazon \" \"S3 bucket"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "c3de24e3-1220-4f4b-9ba7-298e417fc2f5",
+    "akus": [
+      [
+        "Java program",
+        "WALK",
+        "Amazon S3 Batch operations"
+      ],
+      [
+        "Users",
+        "LEVERAGE",
+        "S3 Batch"
+      ],
+      [
+        "Scanner scanner",
+        "ENABLES",
+        "efficient and cost-effective processing"
+      ],
+      [
+        "Only jobs",
+        "ALLOWS",
+        "priority updates"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "aab88417-ea2e-4c32-9aba-3722fb1dfcdd",
+    "akus": [
+      [
+        "public class",
+        "RETRIEVE",
+        "asynchronous S3 Control client instance"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "773a6656-2a5c-438b-9a3e-68aa72321d97",
+    "akus": [
+      [
+        "JobReport report",
+        "CREATES",
+        "asynchronous S3 job"
+      ],
+      [
+        "CompletableFuture",
+        "RETURNS",
+        "job ID"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "10dc8ab2-cd3e-41cf-83b7-46096add9605",
+    "akus": [
+      [
+        "CompletableFuture",
+        "RETURNS",
+        "job ID"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "993addf0-8897-488b-8075-4df53009ff29",
+    "akus": [
+      [
+        "files",
+        "PLACE",
+        "S3 bucket"
+      ],
+      [
+        "None",
+        "INITIALIZE",
+        "AWS service clients"
+      ],
+      [
+        "I/O error",
+        "OCCUR",
+        "file deletion"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "027304df-4ad5-4418-b118-13ad395a38f9",
+    "akus": [
+      [
+        "Job",
+        "REQUIRES",
+        "manual activation"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "43ec0958-ff1b-4280-ad17-5a89af846346",
+    "akus": [
+      [
+        "CompletableFuture",
+        "RETURNS",
+        "job ID"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "1a8971aa-595a-4267-bd4d-a7d7e7bc027e",
+    "akus": [
+      [
+        "Job",
+        "REQUIRES",
+        "manual activation"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "ace3bbeb-4d6c-4a18-b370-0febab755093",
+    "akus": [
+      [
+        "S3 Directory Buckets",
+        "USES",
+        "AWS SDK"
+      ],
+      [
+        "runtime environment",
+        "CONFIGURES",
+        "Java SDK"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "115cd407-2442-477f-a748-15cd8c307818",
+    "akus": [
+      [
+        "program",
+        "EXECUTES",
+        "EC2 instance"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "04b4e62b-dcb9-42b5-9849-f2853f9cd515",
+    "akus": [
+      [
+        "Reason",
+        "CREATES",
+        "new S3 directory bucket"
+      ],
+      [
+        "Reason",
+        "CREATES",
+        "specified S3 bucket"
+      ],
+      [
+        "Reason",
+        "CREATES",
+        "specified Zone"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "f3031c9f-ce18-4652-9cc0-0b92243f2462",
+    "akus": [
+      [
+        "program",
+        "EXECUTES",
+        "EC2 instance"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "af7d56fe-78c0-45dc-bf73-a379722a8019",
+    "akus": [
+      [
+        "program",
+        "EXECUTES",
+        "EC2 instance"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "0155f190-bccd-439f-838f-4c89b016ab3e",
+    "akus": [
+      [
+        "Directory buckets",
+        "UTILIZE",
+        "user credentials"
+      ],
+      [
+        "'s",
+        "CREATES",
+        "actual Directory bucket"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "0299159b-558c-46ce-a703-f28833f21724",
+    "akus": [
+      [
+        "Directory buckets",
+        "STORES",
+        "different manner"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "23c6f834-6e87-4412-9901-1cec660b55a2",
+    "akus": [
+      [
+        "program",
+        "EXECUTES",
+        "EC2 instance"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "ef2c6600-2f88-4898-857c-a08e49f77328",
+    "akus": [
+      [
+        "Directory buckets",
+        "BEHAVE",
+        "different ways"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "7951fb4d-8a64-44d1-b594-9be31baaab43",
+    "akus": [
+      [
+        "Directory buckets",
+        "UTILIZE",
+        "user credentials"
+      ],
+      [
+        "copy operations",
+        "RESTRICTS",
+        "Directory buckets"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "d25b8e18-a3e2-4246-acd7-89cff1f8ced1",
+    "akus": [
+      [
+        "Directory buckets",
+        "STORES",
+        "different manner"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "5ab6c630-3092-4252-a49a-419804a71d08",
+    "akus": [
+      [
+        "resources",
+        "DEFINES",
+        "associated `cfn_template.yaml` AWS CloudFormation script"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "1f906d14-801c-428b-a59a-eabdd159cfa1",
+    "akus": [
+      [
+        "excerpts",
+        "INVOKES",
+        "S3 Directory Buckets API"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "fb2436b1-25e6-4ab3-b18a-40d0c8833b12",
+    "akus": [
+      [
+        "AWS managed KMS keys",
+        "SUPPORTS",
+        "directory // buckets"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "516d044a-688b-4914-9683-1c6e9208bfdb",
+    "akus": [
+      [
+        "policy",
+        "GRANTS",
+        "all S3 directory bucket actions"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "f655a7a3-9a13-4bef-a481-e58bfb772133",
+    "akus": [
+      [
+        "Scenarios",
+        "TARGET",
+        "intermediate level"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "d85cf5c5-6e54-4cb1-9831-6ce4cd121257",
+    "akus": [
+      [
+        "Amazon S3",
+        "SUPPORTS",
+        "Signature Version"
+      ],
+      [
+        "Any new Regions",
+        "SUPPORTS",
+        "only Signature Version"
+      ],
+      [
+        "Amazon S3",
+        "SUPPORTS",
+        "all AWS Regions"
+      ],
+      [
+        "all requests",
+        "MAKE",
+        "Signature Version"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "4e9ea5ca-3ce1-4c8c-b2d5-c7808a9ec816",
+    "akus": [
+      [
+        "string",
+        "SPECIFIES",
+        "AWS Signature Version"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "6df12aa9-5e12-4802-b45c-f43a190de587",
+    "akus": [
+      [
+        "signature",
+        "INCLUDES",
+        "AWS Signature Version"
+      ],
+      [
+        "signature",
+        "INCLUDES",
+        "Region-specific information"
+      ],
+      [
+        "All trailing headers",
+        "WRITES",
+        "final chunk"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "943609b9-9166-4d59-8c8e-54a4fa1fbe62",
+    "akus": [
+      [
+        "UriEncode",
+        "ENCODE",
+        "every byte"
+      ],
+      [
+        "URI",
+        "ENCODE",
+        "every byte"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "1f7b4d3f-c030-46a8-b700-4395da5d3452",
+    "akus": [
+      [
+        "CanonicalQueryString",
+        "SPECIFIES",
+        "URI-encoded query string parameters"
+      ],
+      [
+        "x amz content sha256 header",
+        "REQUIRES",
+        "all AWS Signature Version"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "3504771c-520f-41ee-8468-b394c9baf96f",
+    "akus": [
+      [
+        "Signing Key calculations",
+        "USES",
+        "Region specifier"
+      ],
+      [
+        "Some use cases",
+        "PROCESSES",
+        "signature keys"
+      ],
+      [
+        "Signing Key calculations",
+        "USES",
+        "us east-1"
+      ],
+      [
+        "Scope",
+        "BIND",
+        "resulting signature"
+      ],
+      [
+        "resulting signature",
+        "WORK",
+        "specific Region"
+      ],
+      [
+        "Some use cases",
+        "PROCESSES",
+        "up to 7 days"
+      ],
+      [
+        "Scope",
+        "BIND",
+        "specific date"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "0bf06a47-7ddb-4121-9294-4823095b1fc9",
+    "akus": [
+      [
+        "Amazon S3",
+        "SUPPORTS",
+        "multiple content encoding values"
+      ],
+      [
+        "UriEncode",
+        "ENCODE",
+        "every byte"
+      ],
+      [
+        "header",
+        "REQUIRES",
+        "all AWS Signature Version 4 requests"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "29efdfa4-3a4e-4e48-b36d-4a9c7f4d972f",
+    "akus": [
+      [
+        "Amazon S3",
+        "STORES",
+        "resulting object"
+      ],
+      [
+        "Signing Key calculations",
+        "USES",
+        "Region specifier"
+      ],
+      [
+        "## Version 4 streaming API",
+        "STORES",
+        "resulting object"
+      ],
+      [
+        "Signing Key calculations",
+        "USES",
+        "us east-1"
+      ],
+      [
+        "Amazon S3",
+        "STORES",
+        "aws-chunked value"
+      ],
+      [
+        "All examples",
+        "USES",
+        "bucket name"
+      ],
+      [
+        "## Version 4 streaming API",
+        "STORES",
+        "aws-chunked value"
+      ],
+      [
+        "All chunks",
+        "INCLUDES",
+        "some metadata"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "ac495e95-ea67-4e36-a88a-8ea84f85b811",
+    "akus": [
+      [
+        "Signing Key calculations",
+        "USES",
+        "Region specifier"
+      ],
+      [
+        "All examples",
+        "USES",
+        "bucket name"
+      ],
+      [
+        "transfer",
+        "INCLUDES",
+        "CRC32C checksum value"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "381b7cc4-4ec4-4467-b66b-5622b88e6500",
+    "akus": [
+      [
+        "string",
+        "IDENTIFY",
+        "AWS Signature"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "0e66ab0d-2c40-4ef3-b943-37bfb2abe845",
+    "akus": [
+      [
+        "X-Amz-Expires",
+        "PROVIDES",
+        "time period"
+      ],
+      [
+        "date and time format",
+        "FOLLOW",
+        "ISO 8601 standard"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "e66092d4-8400-4bf2-97ab-464ca4b3cd14",
+    "akus": [
+      [
+        "Key calculations",
+        "USES",
+        "us east-1"
+      ],
+      [
+        "Key calculations",
+        "USES",
+        "region specifier"
+      ],
+      [
+        "UriEncode",
+        "ENCODE",
+        "every byte"
+      ],
+      [
+        "Canonical Query String",
+        "INCLUDES",
+        "all the query parameters"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "b9d2a923-d31b-43e1-9c0a-8bc0144cb071",
+    "akus": [
+      [
+        "Users",
+        "PASTE",
+        "presigned URL"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "7c949749-4baa-4011-acb4-792def0cf58d",
+    "akus": [
+      [
+        "Amazon S3",
+        "SUPPORTS",
+        "both Signature Version"
+      ],
+      [
+        "\"AWS",
+        "IDENTIFY",
+        "Signature Version"
+      ],
+      [
+        "Amazon S3",
+        "SUPPORTS",
+        "authenticated requests"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "460d10b8-5370-4e1b-8651-67d82800c57a",
+    "akus": [
+      [
+        "Amazon S3",
+        "SUPPORTS",
+        "Version 4 s3 authType"
+      ],
+      [
+        "Amazon S3",
+        "SUPPORTS",
+        "various methods"
+      ],
+      [
+        "condition",
+        "WORK",
+        "Presigned URLs"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "c0b99371-fb3a-4877-8597-b1108a9255fb",
+    "akus": [
+      [
+        "Amazon S3",
+        "USES",
+        "corresponding KMS key"
+      ],
+      [
+        "Amazon S3",
+        "USES",
+        "version ID"
+      ],
+      [
+        "Amazon S3",
+        "ENCRYPTS",
+        "all new objects"
+      ],
+      [
+        "Amazon S3",
+        "STORES",
+        "partial objects"
+      ],
+      [
+        "Amazon S3",
+        "VALIDATES",
+        "provided MD5 value"
+      ],
+      [
+        "Amazon S3",
+        "RECEIVES",
+        "multiple write requests"
+      ],
+      [
+        "ETag",
+        "REFLECT",
+        "only changes"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "af300f4d-bc41-48db-b2ec-367d460ab941",
+    "akus": [
+      [
+        "Amazon S3",
+        "USES",
+        "default storage class"
+      ],
+      [
+        "Amazon S3",
+        "SUPPORTS",
+        "other storage classes"
+      ],
+      [
+        "Amazon S3",
+        "RETURNS",
+        "XML document"
+      ],
+      [
+        "Amazon S3",
+        "RETURNS",
+        "empty document type"
+      ],
+      [
+        "Amazon S3",
+        "RETURNS",
+        "empty document"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "b45ca931-bc4a-4343-b2ae-6a4816270020",
+    "akus": [
+      [
+        "Amazon S3",
+        "STORES",
+        "object metadata"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "8bb545fc-a931-474a-907b-ef93daf14636",
+    "akus": [
+      [
+        "Amazon S3",
+        "USES",
+        "S3 Bucket Key"
+      ],
+      [
+        "Amazon S3",
+        "USES",
+        "object encryption"
+      ],
+      [
+        "SSE-S3",
+        "ENCRYPTS",
+        "root key"
+      ],
+      [
+        "Server-side encryption",
+        "PROVIDES",
+        "an. integration"
+      ],
+      [
+        "SSE-S3",
+        "USES",
+        "one of the strongest block ciphers available 256 bit Advanced"
+      ],
+      [
+        "SSE-S3",
+        "ENCRYPTS",
+        "additional safeguard"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "788900ca-1e7b-44f5-91b9-2eaa21e0d4ee",
+    "akus": [
+      [
+        "Amazon S3",
+        "USES",
+        "AWS managed key"
+      ],
+      [
+        "Amazon S3",
+        "USES",
+        "message-integrity check"
+      ],
+      [
+        "Amazon",
+        "STORES",
+        "encryption key"
+      ],
+      [
+        "key-MD5",
+        "SPECIFIES",
+        "base64-encoded 128-bit MD5 digest"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "2aa09b82-7508-48a1-a040-1f284be47cc5",
+    "akus": [
+      [
+        "Amazon S3",
+        "ACCEPTS",
+        "select request"
+      ],
+      [
+        "archived objects",
+        "FORMAT",
+        "uncompressed comma- separated values CSV files"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "2170aac6-e3a0-41c2-9f8b-bb86a94347e3",
+    "akus": [
+      [
+        "Amazon S3",
+        "RESTORE",
+        "current version"
+      ],
+      [
+        "Amazon S3",
+        "PROCESSES",
+        "current restore request"
+      ],
+      [
+        "Standard retrievals",
+        "COMPLETE",
+        "GLACIER storage class"
+      ],
+      [
+        "Bulk retrievals",
+        "COMPLETE",
+        "GLACIER storage class"
+      ],
+      [
+        "Amazon S3",
+        "DELETES",
+        "temporary copy"
+      ],
+      [
+        "Amazon S3",
+        "UPDATES",
+        "restoration period"
+      ],
+      [
+        "Amazon S3",
+        "DELETES",
+        "specified period"
+      ],
+      [
+        "Standard retrievals",
+        "COMPLETE",
+        "3-5 hours"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "75ba9bb1-8567-4e20-a185-9d0e0eb80749",
+    "akus": [
+      [
+        "Valid values",
+        "RETRIEVE",
+        "serialization format"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "9abe4aed-b793-4ce8-ac7f-06c11067f593",
+    "akus": [
+      [
+        "Amazon S3",
+        "RETURNS",
+        "202 Accepted"
+      ],
+      [
+        "Amazon S3",
+        "RETURNS",
+        "200 OK"
+      ],
+      [
+        "Valid values",
+        "CONTAINS",
+        "encryption information"
+      ],
+      [
+        "error",
+        "APPLY",
+        "SELECT type requests"
+      ],
+      [
+        "error",
+        "APPLY",
+        "Expedited retrievals"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "67c2d91c-d3ea-4763-8e85-10273cacf447",
+    "akus": [
+      [
+        "user",
+        "UPLOAD",
+        "Amazon S3"
+      ],
+      [
+        "Amazon S3",
+        "RETURNS",
+        "200 OK response"
+      ],
+      [
+        "error",
+        "APPLY",
+        "Expedited retrievals"
+      ],
+      [
+        "HTML form",
+        "INCLUDES",
+        "authenticated requests"
+      ],
+      [
+        "webpage",
+        "CONTAINS",
+        "HTML form"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "1121b0b0-719e-4a6c-abf2-7ef04fac3361",
+    "akus": [
+      [
+        "HTML form",
+        "INCLUDES",
+        "authenticated requests"
+      ],
+      [
+        "HTML forms",
+        "CONSIST",
+        "form declaration"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "937723ba-742c-43b2-83c4-2d78c3a0c448",
+    "akus": [
+      [
+        "Amazon S3",
+        "RETURNS",
+        "XML document"
+      ],
+      [
+        "Amazon S3",
+        "RETURNS",
+        "empty document type"
+      ],
+      [
+        "Amazon S3",
+        "RETURNS",
+        "empty document"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "3eb14efb-604d-4347-89e2-915bff3ca507",
+    "akus": [
+      [
+        "Conditional items",
+        "REQUIRES",
+        "authenticated requests"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "d06431a4-89e7-458b-b898-b447e68102f2",
+    "akus": [
+      [
+        "acl",
+        "SPECIFIES",
+        "ACL value"
+      ],
+      [
+        "Object key name",
+        "HAS",
+        "user/eric prefix"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "ec30cb53-916e-43da-92e5-3babff2be651",
+    "akus": [
+      [
+        "AWS Amplify library Storage module",
+        "GIVE",
+        "simple browser-based upload mechanism"
+      ],
+      [
+        "default implementation",
+        "USES",
+        "Amazon S3"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "0d12f829-f8e4-46cc-bd52-b7744331e87f",
+    "akus": [
+      [
+        "Amazon S3",
+        "RECEIVES",
+        "authenticated request"
+      ],
+      [
+        "Date h eader",
+        "SPECIFIES",
+        "ISO 8601 basic format"
+      ],
+      [
+        "Improperly formatted multi-value headers",
+        "CAUSE",
+        "authentication issues"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "784cbf1c-9b20-4c5a-b93e-161a238880ae",
+    "akus": [
+      [
+        "Amazon S3",
+        "SENDS",
+        "Access- Control Allow Origin response header"
+      ],
+      [
+        "Amazon S3",
+        "ALLOWS",
+        "CORS requests"
+      ],
+      [
+        "Access Co ntrol Allow Headers response header",
+        "RETURNS",
+        "successful CORS evaluations"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "a9b45745-b5a1-4487-ba62-325eb88a40c5",
+    "akus": [
+      [
+        "Amazon S3",
+        "CREATES",
+        "random number"
+      ],
+      [
+        "Many error responses",
+        "CONTAINS",
+        "additional structured data"
+      ],
+      [
+        "Valid Values",
+        "PROVIDES",
+        "reference information"
+      ],
+      [
+        "Simple programs",
+        "DISPLAY",
+        "end user"
+      ],
+      [
+        "Support",
+        "USES",
+        "request IDs"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "ad79232e-25d2-41e9-be7b-d27482143e14",
+    "akus": [
+      [
+        "Amazon S3",
+        "RETURNS",
+        "all AWS Regions"
+      ],
+      [
+        "Amazon S3",
+        "RETURNS",
+        "200 OK"
+      ],
+      [
+        "Multi-Region Access Point idempotency token",
+        "USES",
+        "diﬀerent request"
+      ],
+      [
+        "Amazon S3",
+        "RETURNS",
+        "legacy compatibility"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "9ef73f65-1fa4-4d46-b4f1-d0bd9f539be9",
+    "akus": [
+      [
+        "exception",
+        "REPRESENT",
+        "KMS keys"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "510aae94-b7b3-4066-9d91-48211abefe80",
+    "akus": [
+      [
+        "No transformation",
+        "FIND",
+        "Object Lambda Access Point"
+      ],
+      [
+        "version ID",
+        "MATCH",
+        "existing version"
+      ],
+      [
+        "account",
+        "SIGN",
+        "Amazon S3 service"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "a6bca7fa-0a36-4f2a-ab92-65cfaa417b36",
+    "akus": [
+      [
+        "EvaluatorInvalidTi",
+        "CONTAINS",
+        "valid format symbol"
+      ],
+      [
+        "integer overflow",
+        "OCCUR",
+        "SQL expression"
+      ],
+      [
+        "attempt",
+        "FAIL",
+        "SQL expression"
+      ],
+      [
+        "provided",
+        "EXIST",
+        "SQL expression"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "a4b681e6-b026-476a-885c-7225be9a6fa7",
+    "akus": [
+      [
+        "ObjectSerializatio",
+        "SPECIFIES",
+        "more than one format"
+      ],
+      [
+        "OutputSerialization",
+        "SPECIFIES",
+        "more than one format"
+      ],
+      [
+        "SQL expression",
+        "CONTAINS",
+        "empty SELECT clause"
+      ],
+      [
+        "SQL expression",
+        "CONTAINS",
+        "data type"
+      ],
+      [
+        "SQL expression",
+        "HAS",
+        "incorrect arity"
+      ],
+      [
+        "integer overflow",
+        "OCCUR",
+        "SQL expression"
+      ],
+      [
+        "attempt",
+        "FAIL",
+        "SQL expression"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "b5b25090-9094-43e3-95e7-5ccf64427e9b",
+    "akus": [
+      [
+        "ParseMalformedJoin JOIN",
+        "SUPPORTS",
+        "SQL expression"
+      ],
+      [
+        "llWithStar",
+        "SUPPORTS",
+        "SQL expression"
+      ],
+      [
+        "ias unsupported use",
+        "SUPPORTS",
+        "SQL expression"
+      ],
+      [
+        "timestamp parse failure",
+        "OCCUR",
+        "SQL expression"
+      ],
+      [
+        "SQL expression",
+        "CONTAINS",
+        "unsupported use"
+      ],
+      [
+        "SQL expression",
+        "CONTAINS",
+        "unexpected term"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "04729251-d7d3-421e-ad50-ff5a39cd17fb",
+    "akus": [
+      [
+        "User- defined tag keys",
+        "START",
+        "Error Code Description"
+      ],
+      [
+        "S3 Replication Time Control",
+        "SUPPORTS",
+        "AWS Region"
+      ],
+      [
+        "InvalidBucketFilter Organization-level configurations",
+        "SUPPORTS",
+        "bucket filters"
+      ],
+      [
+        "Tag keys",
+        "CONTAINS",
+        "up to 128 characters"
+      ],
+      [
+        "InvalidFilterForDe",
+        "INCLUDES",
+        "any filters"
+      ],
+      [
+        "Tag values",
+        "CONTAINS",
+        "up to 256 characters"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "a17f4ce2-61f7-4a99-a5bb-31835e7eedb7",
+    "akus": [
+      [
+        "Activity metrics",
+        "ENABLES",
+        "bucket level"
+      ],
+      [
+        "Activity metrics",
+        "ENABLES",
+        "account level"
+      ],
+      [
+        "InvalidFilterForDe",
+        "INCLUDES",
+        "any filters"
+      ],
+      [
+        "filter",
+        "INCLUDES",
+        "MatchObje ctSize"
+      ],
+      [
+        "MissingAccountLeve",
+        "ENABLES",
+        "account level"
+      ],
+      [
+        "Regions container",
+        "HAS",
+        "more than 50 Regions"
+      ],
+      [
+        "Or logical operator",
+        "INCLUDES",
+        "duplicate tags"
+      ],
+      [
+        "Logical operator",
+        "INCLUDES",
+        "duplicate prefixes"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "12062770-b22c-4293-81d5-068b6326d124",
+    "akus": [
+      [
+        "WriteGetObjectResp onse",
+        "RESPOND",
+        "AWS Lambda"
+      ],
+      [
+        "S3 Object Lambda Access Point configuration",
+        "POINT",
+        "correct Lambda function"
+      ],
+      [
+        "Amazon CloudWatch logs",
+        "PROVIDES",
+        "more insight"
+      ],
+      [
+        "WriteGetObjectResp onse",
+        "RESPOND",
+        "Validatio nError"
+      ],
+      [
+        "explicit error",
+        "RECEIVES",
+        "Lambda function"
+      ],
+      [
+        "LambdaInvalidResponse",
+        "RETURNS",
+        "original caller"
+      ],
+      [
+        "LambdaInvalidResponse",
+        "RETURNS",
+        "more details"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "55ba6fdc-a9a5-4ba0-a406-5282f3965949",
+    "akus": [
+      [
+        "ValidationError Validation errors",
+        "RETURNS",
+        "WriteGetObjectResp onse API operation"
+      ],
+      [
+        "Tag keys",
+        "CONTAINS",
+        "up to 128 characters"
+      ],
+      [
+        "Tag values",
+        "CONTAINS",
+        "up to 256 characters"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "f48c5e06-702b-431f-94f7-c5c262e517b7",
+    "akus": [
+      [
+        "Tag keys",
+        "START",
+        "AWS reserved prefix"
+      ],
+      [
+        "Amazon S3",
+        "RETURNS",
+        "InternalError response"
+      ],
+      [
+        "S3",
+        "HAS",
+        "protection mechanisms"
+      ],
+      [
+        "Many error responses",
+        "CONTAINS",
+        "additional structured data"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "743ccab7-00b1-4918-81b2-4ac67ad8cd5e",
+    "akus": [
+      [
+        "SOAP API",
+        "RETURNS",
+        "standard Amazon S3 error codes"
+      ],
+      [
+        "March 27, 2019 Support",
+        "SUPPORTS",
+        "Apache Parquet Parquet format"
+      ],
+      [
+        "Release Notes",
+        "GIVE",
+        "high-level overview"
+      ],
+      [
+        "FAQ",
+        "COVER",
+        "top 20 questions"
+      ],
+      [
+        "class",
+        "OFFER",
+        "Latest documentation update"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "02585182-608a-4e70-bd85-86d95af8ea3d",
+    "akus": [
+      [
+        "Amazon S3",
+        "SUPPORTS",
+        "Apache optimized row columnar ORC format"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "c097b6a8-26f9-4458-a2cf-14079e7340ca",
+    "akus": [
+      [
+        "Amazon S3",
+        "SUPPORTS",
+        "CloudWatch metrics"
+      ],
+      [
+        "Amazon S3 inventory",
+        "PROVIDES",
+        "S3 bucket"
+      ],
+      [
+        "S3 lifecycle",
+        "SUPPORTS",
+        "object tag based filter"
+      ],
+      [
+        "Amazon S3",
+        "SUPPORTS",
+        "object tagging"
+      ],
+      [
+        "Amazon S3",
+        "SUPPORTS",
+        "lifecycle configuration"
+      ],
+      [
+        "Amazon S3",
+        "SUPPORTS",
+        "Expedited and Bulk data retrievals"
+      ],
+      [
+        "Amazon S3 Inventory Amazon S3",
+        "SUPPORTS",
+        "storage inventory"
+      ],
+      [
+        "Amazon S3 inventory",
+        "PROVIDES",
+        "daily or weekly basis"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "b9ba8f1b-b009-4635-ba78-391049bc5a20",
+    "akus": [
+      [
+        "Transfer Acceleration",
+        "TAKE",
+        "Amazon CloudFront’s globally distributed edge locations"
+      ],
+      [
+        "Amazon S3 Transfer Acceleration",
+        "ENABLES",
+        "fast, easy, and secure transfers"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "28859792-45ab-4f05-b0c7-d22cb5708031",
+    "akus": [
+      [
+        "Bucket lifecycle configuration",
+        "SUPPORTS",
+        "AbortIncompleteMultipartUpload action"
+      ],
+      [
+        "Amazon S3",
+        "DELETES",
+        "any uploaded parts"
+      ],
+      [
+        "Both of these API operations",
+        "RETURNS",
+        "two additional response"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "e35360ec-7e75-4846-92b0-327904af2cd7",
+    "akus": [
+      [
+        "Amazon S3",
+        "SUPPORTS",
+        "only the s3 Reduce dRedundancyLostObject event type"
+      ],
+      [
+        "Amazon S3",
+        "ENCRYPTS",
+        "custom encryptio n keys"
+      ],
+      [
+        "Amazon S3",
+        "SUPPORTS",
+        "server-side encryption"
+      ],
+      [
+        "Amazon S3 Signature Version",
+        "SUPPORTS",
+        "unsigned payloads"
+      ],
+      [
+        "March",
+        "SUPPORTS",
+        "new event types"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "047dca8c-6f51-40cb-bab6-98468516b77d",
+    "akus": [
+      [
+        "Amazon S3",
+        "SUPPORTS",
+        "Signature Version"
+      ],
+      [
+        "Amazon S3 list actions",
+        "SUPPORTS",
+        "encoding-type request parameter"
+      ],
+      [
+        "Amazon S3",
+        "SUPPORTS",
+        "all regions"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "fd864e53-7588-4366-a74f-dbedcb91323f",
+    "akus": [
+      [
+        "Amazon S3",
+        "ARCHIVE",
+        "Amazon Glacier"
+      ],
+      [
+        "Amazon S3",
+        "SUPPORTS",
+        "South America São Paulo region"
+      ],
+      [
+        "Amazon S3",
+        "SUPPORTS",
+        "Cross-Origin Resource Sharing"
+      ],
+      [
+        "Many customers",
+        "HOST",
+        "Amazon S3"
+      ],
+      [
+        "Amazon S3",
+        "OFFER",
+        "new API"
+      ],
+      [
+        "Amazon S3",
+        "SUPPORTS",
+        "cost allocation tagging"
+      ],
+      [
+        "Amazon S3",
+        "SUPPORTS",
+        "storage option"
+      ],
+      [
+        "object key",
+        "CONTAINS",
+        "any Unicode character"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "9e2a6102-1b2c-4921-abde-a8749766116f",
+    "akus": [
+      [
+        "Server-side encryptio n support Amazon S3",
+        "SUPPORTS",
+        "server-side encryption"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "afcce02a-96f0-4d67-9ec2-c09980ec3fc0",
+    "akus": [
+      [
+        "Amazon S3",
+        "EXTEND",
+        "multipart upload API"
+      ],
+      [
+        "Authenticated and anonymous SOAP requests",
+        "SENDS",
+        "Amazon S3"
+      ],
+      [
+        "Large Object Support Amazon S3",
+        "INCREASE",
+        "maximum size"
+      ],
+      [
+        "Amazon S3",
+        "RETURNS",
+        "custom error message"
+      ],
+      [
+        "Amazon S3",
+        "EXTEND",
+        "new operation"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "f0c74d0b-299b-4839-8a58-bb89b4217051",
+    "akus": [
+      [
+        "Amazon S3",
+        "GIVE",
+        "unique version ID"
+      ],
+      [
+        "Amazon S3",
+        "PUBLISHES",
+        "Amazon Simple Notification Service SNS topic"
+      ],
+      [
+        "Amazon S3",
+        "SUPPORTS",
+        "US West Northern California region"
+      ],
+      [
+        "Amazon S3",
+        "SUPPORTS",
+        "Asia Pacific Singapore region"
+      ],
+      [
+        "AWS",
+        "PROVIDES",
+        "Amazon S3 C# libraries"
+      ],
+      [
+        "when Amazon S3",
+        "DETECT",
+        "key event"
+      ],
+      [
+        "release",
+        "INTRODUCE",
+        "object Versioning"
+      ],
+      [
+        "AWS",
+        "PROVIDES",
+        "software developers"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "2bf9f951-b247-48c8-a323-e9b807574a3f",
+    "akus": [
+      [
+        "Messages",
+        "HAS",
+        "multiple headers"
+      ],
+      [
+        "Headers",
+        "APPEAR",
+        "any order"
+      ],
+      [
+        "Headers",
+        "APPEAR",
+        "headers portion"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "c4535600-25bc-4f5c-8c78-a55cef3b8d85",
+    "akus": [
+      [
+        "Amazon S3",
+        "SENDS",
+        "RequestLevelError message"
+      ],
+      [
+        "client",
+        "RECEIVES",
+        "End message"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "e423348f-29f0-4f73-9881-3a494bd7500b",
+    "akus": [
+      [
+        "Amazon S3",
+        "RETURNS",
+        "403 Forbidden response"
+      ],
+      [
+        "Amazon S3",
+        "SUPPORTS",
+        "cross-origin resource sharing"
+      ],
+      [
+        "header",
+        "PROVIDES",
+        "JavaScript client"
+      ],
+      [
+        "Request Level Error Message",
+        "CONTAINS",
+        "three headers"
+      ],
+      [
+        "Records message payloads",
+        "CONTAINS",
+        "single record"
+      ],
+      [
+        "Request-level error messages",
+        "CONTAINS",
+        "three headers"
+      ],
+      [
+        "Request-level error messages",
+        "HAS",
+        "no payload"
+      ],
+      [
+        "Records messages",
+        "CONTAINS",
+        "three headers"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "06102621-3e2d-4fc7-96b3-9dc353f8266c",
+    "akus": [
+      [
+        "Not every string",
+        "IS",
+        "acceptable bucket name"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "9d6dd090-01e4-4f90-9c24-95d7d3908889",
+    "akus": [
+      [
+        "Replacement",
+        "MAKE",
+        "object keys"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "52cae5c8-4c24-48e2-a5ea-b3250b7c7283",
+    "akus": [
+      [
+        "Amazon S3",
+        "PROVIDES",
+        "object locking"
+      ],
+      [
+        "Amazon S3",
+        "STORES",
+        "last write request"
+      ],
+      [
+        "Amazon S3",
+        "RECEIVES",
+        "multiple write requests"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "37943b73-ce29-4e85-b35c-292667d24bc4",
+    "akus": [
+      [
+        "PutObjectInline",
+        "FAIL",
+        "InlineDataTooLargeError status code"
+      ],
+      [
+        "requester",
+        "GIVE",
+        "FULL_CONTROL access"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "91024aaf-cca2-4960-82a3-beb649884027",
+    "akus": [
+      [
+        "Amazon S3",
+        "PROVIDES",
+        "object locking"
+      ],
+      [
+        "Amazon S3",
+        "STORES",
+        "last write request"
+      ],
+      [
+        "Amazon S3",
+        "RECEIVES",
+        "multiple write requests"
+      ],
+      [
+        "AccessControlList",
+        "GRANTS",
+        "e-mail addresses"
+      ],
+      [
+        "Metadata",
+        "SPECIFIES",
+        "metadata name-value pairs"
+      ],
+      [
+        "requester",
+        "GIVE",
+        "FULL_CONTROL access"
+      ],
+      [
+        "Values",
+        "RESULT",
+        "immediate error"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "5a51c5e1-6011-48d1-b25c-bdd130da6641",
+    "akus": [
+      [
+        "Object key names",
+        "SUPPORTS",
+        "virtual-hosted-style requests"
+      ],
+      [
+        "path-style URL",
+        "USES",
+        "object key name values"
+      ],
+      [
+        "SOAP API",
+        "RETURNS",
+        "extra whitespace"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "18ff9f2b-53a6-4164-bb8d-de5cc5308326",
+    "akus": [
+      [
+        "Amazon S3",
+        "RETURNS",
+        "first megabyte"
+      ],
+      [
+        "Replacement",
+        "MAKE",
+        "object keys"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "f213b644-12f2-4e7d-bdab-f5094b6dfd92",
+    "akus": [
+      [
+        "Amazon S3",
+        "ACCEPTS",
+        "API requests"
+      ],
+      [
+        "any of your workflows",
+        "UTILIZE",
+        "Signature Version 2 signing"
+      ],
+      [
+        "Signature Version",
+        "SUPPORTS",
+        "all AWS Regions"
+      ],
+      [
+        "Simple programs",
+        "DISPLAY",
+        "end user"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "d41149d3-84cd-47eb-b22f-ded6309603ce",
+    "akus": [
+      [
+        "Amazon S3",
+        "USES",
+        "access key ID"
+      ],
+      [
+        "Amazon S3",
+        "SUPPORTS",
+        "latest Signature Version"
+      ],
+      [
+        "Amazon S3 REST API",
+        "USES",
+        "custom HTTP scheme"
+      ],
+      [
+        "Amazon S3",
+        "RETURNS",
+        "error response"
+      ],
+      [
+        "any new regions",
+        "SUPPORTS",
+        "only Signature Version"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "8f8bcd96-7b9e-43fd-b9e2-8fadada78ab1",
+    "akus": [
+      [
+        "Authorization header",
+        "HAS",
+        "Amazon S3 authentication scheme"
+      ],
+      [
+        "Developers",
+        "ISSUE",
+        "AWS access key ID"
+      ],
+      [
+        "Amazon S3 REST API",
+        "USES",
+        "standard HTTP Authorization header"
+      ],
+      [
+        "\\n",
+        "MEAN",
+        "Unicode code point"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "173906cb-5483-4d7d-aa9d-4844f775a392",
+    "akus": [
+      [
+        "Elements",
+        "SIGN",
+        "URL-Encoding meta characters"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "5e9c6544-c891-4e53-a8f9-47d206f1fe1b",
+    "akus": [
+      [
+        "\\n",
+        "MEAN",
+        "Unicode code point"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "aca4ae0a-bd94-431f-8bec-55e73943c07e",
+    "akus": [
+      [
+        "CanonicalizedResource",
+        "INCLUDES",
+        "bucket name"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "9cd9f42e-cbff-42a6-b6fb-aaf579f881a1",
+    "akus": [
+      [
+        "users",
+        "UPLOAD",
+        "Amazon S3"
+      ],
+      [
+        "Base64 encoding",
+        "CONVERT",
+        "simple ASCII string"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "f2d5d52e-715e-4658-a208-4cd0bfde6bcf",
+    "akus": [
+      [
+        "Amazon S3",
+        "SUPPORTS",
+        "Signature Version"
+      ],
+      [
+        "users",
+        "UPLOAD",
+        "Amazon S3"
+      ],
+      [
+        "user",
+        "UPLOAD",
+        "Amazon S3"
+      ],
+      [
+        "Any new regions",
+        "SUPPORTS",
+        "only Signature Version"
+      ],
+      [
+        "Amazon S3",
+        "SUPPORTS",
+        "all AWS Regions"
+      ],
+      [
+        "request authentication",
+        "BASE",
+        "AWS Signature Version"
+      ],
+      [
+        "all requests",
+        "MAKE",
+        "Signature Version"
+      ],
+      [
+        "user",
+        "UPLOAD",
+        "HTML form declaration"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "53e0af62-1c6e-423b-a3f6-b42cbc0229db",
+    "akus": [
+      [
+        "Amazon S3",
+        "APPEND",
+        "bucket, key, and etag values"
+      ],
+      [
+        "Amazon S3",
+        "RETURNS",
+        "XML document"
+      ],
+      [
+        "Amazon S3",
+        "RETURNS",
+        "empty document type"
+      ],
+      [
+        "Amazon S3",
+        "APPEND",
+        "query string parameters"
+      ],
+      [
+        "Amazon S3",
+        "RETURNS",
+        "empty document"
+      ],
+      [
         "support",
-        "chunked and resumable downloads"
+        "DELETES",
+        "Field name Description"
       ]
     ]
   },
   {
-    "chunk_id": "c416",
-    "akus": [
-      [
-        "The GetObjectAccessControlPolicy operation",
-        "fetch",
-        "the access control policy for an object"
-      ]
-    ]
-  },
-  {
-    "chunk_id": "c417",
+    "chunk_id": "e31b0ab0-9c8b-4d5e-b304-be45086dfa85",
     "akus": [
       [
         "Amazon S3",
-        "offer",
-        "the ability to identify what API signature"
+        "RETURNS",
+        "empty document type"
       ],
       [
-        "the signature generated by Amazon S3",
-        "match",
-        "the one you sent in the request"
-      ],
-      [
-        "the system",
-        "receive",
-        "an authenticated request"
-      ],
-      [
-        "the AWSAccessKeyId element",
-        "identify",
-        "the access key ID that was used"
+        "Cache-Control",
+        "EXPIRE",
+        "REST-specific headers"
       ]
     ]
   },
   {
-    "chunk_id": "c419",
-    "akus": [
-      [
-        "the system",
-        "ignore",
-        "any Date header"
-      ],
-      [
-        "Some toolkits",
-        "insert",
-        "headers you do not know that about"
-      ],
-      [
-        "the header x amz meta- username fred",
-        "become",
-        "meta username fred barney"
-      ]
-    ]
-  },
-  {
-    "chunk_id": "c420",
+    "chunk_id": "cca52e36-77e1-41ef-aeb8-1a3fad7bb756",
     "akus": [
       [
         "Amazon S3",
-        "support",
-        "Signature Version 4 a protocol for authenticating"
+        "SUPPORTS",
+        "Signature Version"
+      ],
+      [
+        "Any new regions",
+        "SUPPORTS",
+        "only Signature Version"
       ],
       [
         "Amazon S3",
-        "cancel",
-        "the incomplete multipart upload"
+        "SUPPORTS",
+        "all AWS Regions"
       ],
       [
-        "Browser based uploads using POST AWS signature",
-        "open",
-        "a web browser"
+        "Amazon S3",
+        "RETURNS",
+        "empty document type"
+      ],
+      [
+        "request authentication",
+        "BASE",
+        "AWS Signature Version"
+      ],
+      [
+        "all requests",
+        "MAKE",
+        "Signature Version"
+      ],
+      [
+        "upload",
+        "OCCUR",
+        "12:00 UTC"
       ]
     ]
   },
   {
-    "chunk_id": "c422",
+    "chunk_id": "8ec67d2e-b155-4cec-809b-cf3bbba04959",
     "akus": [
       [
-        "the parent tag",
-        "specify",
-        "GET Bucket lifecycle Deprecated Amazon Simple Storage"
+        "Amazon S3",
+        "RETURNS",
+        "XML document"
+      ],
+      [
+        "Adobe Flash Player security model",
+        "PROHIBIT",
+        "Adobe Flash Players"
+      ],
+      [
+        "Explicit denial",
+        "SUPERSEDE",
+        "any other permissions"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "4c3e5110-9506-490f-8285-f051ef8da4e6",
+    "akus": [
+      [
+        "Amazon S3",
+        "CANCEL",
+        "incomplete multipart upload"
+      ],
+      [
+        "Amazon S3",
+        "CANCEL",
+        "multipart upload"
+      ],
+      [
+        "Amazon S3",
+        "TAKE",
+        "appropriate expiration action"
+      ],
+      [
+        "Amazon S3",
+        "DELETES",
+        "only copy"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "6e6cd0ed-819e-4159-832b-baa31221dbd8",
+    "akus": [
+      [
+        "Amazon S3",
+        "TRANSITION",
+        "STANDARD_IA, ONEZONE_IA, or GLACIER storage class"
+      ],
+      [
+        "Amazon S3",
+        "CALCULATE",
+        "Amazon Simple Type"
+      ],
+      [
+        "noncurrent objects",
+        "TRANSITIO",
+        "STANDARD_IA, ONEZONE_IA, or GLACIER storage class"
+      ],
+      [
+        "Amazon S3",
+        "TRANSITION",
+        "only the current versions"
+      ],
+      [
+        "Amazon S3",
+        "DELETES",
+        "noncurrent object versions"
+      ],
+      [
+        "Amazon S3",
+        "TRANSITION",
+        "specified storage class"
+      ],
+      [
+        "Enabled, Disabled",
+        "SPECIFIES",
+        "Amazon S3 storage class"
+      ],
+      [
+        "Amazon S3",
+        "PERFORM",
+        "associated action"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "48a6c691-db0e-42d7-9ae3-d999ed82fa54",
+    "akus": [
+      [
+        "Amazon S3",
+        "CANCEL",
+        "incomplete multipart upload"
+      ],
+      [
+        "Amazon S3",
+        "DELETES",
+        "noncurrent object versions"
+      ],
+      [
+        "Valid values",
+        "SPECIFIES",
+        "Amazon S3 storage class"
+      ],
+      [
+        "Amazon S3",
+        "PERFORM",
+        "associated action"
+      ],
+      [
+        "Buckets",
+        "HAS",
+        "many versions"
+      ],
+      [
+        "Amazon S3",
+        "TAKE",
+        "appropriate expiration action"
+      ],
+      [
+        "Amazon S3",
+        "DELETES",
+        "only copy"
+      ],
+      [
+        "parent tag",
+        "SPECIFIES",
+        "version ID null"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "c9f8a628-049f-4d21-b98d-ecd261407d2d",
+    "akus": [
+      [
+        "Amazon S3",
+        "TRANSITION",
+        "STANDARD_IA, ONEZONE_IA, or GLACIER storage class"
+      ],
+      [
+        "Amazon S3",
+        "TRANSITION",
+        "only the current versions"
+      ],
+      [
+        "Amazon S3",
+        "TRANSITION",
+        "specified storage class"
+      ],
+      [
+        "Amazon S3",
+        "TRANSITION",
+        "only copy"
       ]
     ]
   }

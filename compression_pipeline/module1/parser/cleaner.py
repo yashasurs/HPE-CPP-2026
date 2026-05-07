@@ -1,19 +1,9 @@
-import os
 import re
-import sys
-
-NOISE_PATTERNS = [
-    r"Table of Contents",
-    r"Amazon Simple Storage Service API Reference",
-    r"API Reference",
-    r"Copyright © .*",
-    r"Amazon's trademarks.*",
-    r"All other trademarks.*",
-    r"API Version \d{4}-\d{2}-\d{2}",
-]
-
-REPEATED_LINE_THRESHOLD = 5
-
+from pathlib import Path
+from config import (
+    NOISE_PATTERNS, REPEATED_LINE_THRESHOLD, TECHNICAL_PATTERNS,
+    TECHNICAL_PREFIXES, ENCODING_FIXES
+)
 
 def protect_code_blocks(text):
     mapping = {}
@@ -27,7 +17,6 @@ def protect_code_blocks(text):
         return key
 
     text = re.sub(r"```.*?```", replacer, text, flags=re.DOTALL)
-
     return text, mapping
 
 
@@ -38,13 +27,7 @@ def restore_code_blocks(text, mapping):
 
 
 def fix_encoding(text):
-    replacements = {
-        "\ufb01": "fi",
-        "\ufb02": "fl",
-        "\u2013": "-",
-        "\u2014": "-",
-    }
-    for k, v in replacements.items():
+    for k, v in ENCODING_FIXES.items():
         text = text.replace(k, v)
     return text
 
@@ -127,33 +110,7 @@ def normalize_bullets(text):
     return re.sub(r"^\s*[-\*\•]\s+(.*)", r"\1.", text, flags=re.MULTILINE)
 
 
-TECHNICAL_PREFIXES = (
-    "x-amz-",
-    "GET ",
-    "PUT ",
-    "POST ",
-    "DELETE ",
-    "HEAD ",
-    "PATCH ",
-    "HTTP/",
-    "AWS",
-    "IAM",
-    "S3",
-    "KMS",
-    "ARN",
-    "--",
-    "#{",
-    "${",
-)
 
-TECHNICAL_PATTERNS = re.compile(
-    r"^([A-Z][a-z]+[A-Z]|"  # CamelCase (PutObject)
-    r"[a-z]+-[a-z]+"  # kebab-case (x-amz-*)
-    r"|\d+(\.\d+)+"  # version numbers (1.0.2)
-    r"|[A-Z]{2,}"  # acronyms (IAM, KMS)
-    r"|[a-z]+:[A-Z]"  # namespaced (s3:GetObject)
-    r'|\S+=["\'\w])'  # key=value pairs
-)
 
 
 def fix_punctuation(text):
@@ -373,31 +330,3 @@ def clean_markdown(text):
     print("[END] Final cleaned length:", len(text))
 
     return text
-
-
-def process_file(input_path, out_dir="cleaned"):
-    with open(input_path, "r", encoding="utf-8") as f:
-        raw = f.read()
-
-    cleaned = clean_markdown(raw)
-
-    filename = os.path.basename(input_path)
-    os.makedirs(out_dir, exist_ok=True)
-
-    out_path = os.path.join(out_dir, filename)
-
-    with open(out_path, "w", encoding="utf-8") as f:
-        f.write(cleaned)
-
-    print(f"Cleaned file written to: {out_path}")
-
-
-if __name__ == "__main__":
-    if len(sys.argv) < 2:
-        print("Usage: python cleaner.py <input_md_path> <optional_output_dir>")
-        sys.exit(1)
-
-    if len(sys.argv) > 2:
-        process_file(sys.argv[1], sys.argv[2])
-    else:
-        process_file(sys.argv[1])

@@ -2,10 +2,6 @@ import re
 import spacy
 import tiktoken
 
-
-# MODEL
-
-# Transformer parsing is used for AKU extraction. Chunking uses a blank sentencizer
 NLP = spacy.load("en_core_web_trf", disable=["ner"])
 NLP.max_length = 2_000_000
 
@@ -15,20 +11,127 @@ SENT_NLP.max_length = 2_000_000
 
 TOKENIZER = tiktoken.get_encoding("cl100k_base")
 
-# CONFIG
-
 MIN_SENT_WORDS = 4
 MAX_SENT_WORDS = 120
 MIN_CHUNK_TOKENS = 120
 TARGET_CHUNK_TOKENS = 650
 MAX_CHUNK_TOKENS = 850
 OVERLAP_TOKENS = 120
+
+MARKDOWN_HEADERS = [("#", "H1"), ("##", "H2"), ("###", "H3")]
+CHUNK_SIZE = 1000
+CHUNK_OVERLAP = 100
+MIN_TOKEN_COUNT = 75
+
 AKU_BATCH_SIZE = 8
-MAX_AKUS_PER_CHUNK = 12
+MAX_AKUS_PER_CHUNK = 8
 
+ENCODING_FIXES = {
+    "\ufb01": "fi",
+    "\ufb02": "fl",
+    "\u2013": "-",
+    "\u2014": "-",
+}
 
-# FILTER RULES
+NOISE_PATTERNS = [
+    r"Table of Contents",
+    r"Amazon Simple Storage Service API Reference",
+    r"API Reference",
+    r"Copyright © .*",
+    r"Amazon's trademarks.*",
+    r"All other trademarks.*",
+    r"API Version \d{4}-\d{2}-\d{2}",
+]
 
+REPEATED_LINE_THRESHOLD = 5
+
+TECHNICAL_PREFIXES = (
+    "x-amz-",
+    "GET ",
+    "PUT ",
+    "POST ",
+    "DELETE ",
+    "HEAD ",
+    "PATCH ",
+    "HTTP/",
+    "AWS",
+    "IAM",
+    "S3",
+    "KMS",
+    "ARN",
+    "--",
+    "#{",
+    "${",
+)
+
+TECHNICAL_PATTERNS = re.compile(
+    r"^([A-Z][a-z]+[A-Z]|"
+    r"[a-z]+-[a-z]+"
+    r"|\d+(\.\d+)+"
+    r"|[A-Z]{2,}"
+    r"|[a-z]+:[A-Z]"
+    r'|\S+=["\'\w])'
+)
+
+MAX_NP_WORDS = 10
+
+VERB_MAP = {
+    "have": "HAS", "require": "REQUIRES", "need": "REQUIRES",
+    "use": "USES", "store": "STORES", "create": "CREATES",
+    "generate": "CREATES", "allow": "ALLOWS", "grant": "GRANTS",
+    "enable": "ENABLES", "disable": "DISABLES", "send": "SENDS",
+    "receive": "RECEIVES", "define": "DEFINES", "specify": "SPECIFIES",
+    "limit": "LIMITS", "provide": "PROVIDES", "authenticate": "AUTHENTICATES",
+    "authorize": "AUTHORIZES", "validate": "VALIDATES", "deploy": "DEPLOYS",
+    "configure": "CONFIGURES", "manage": "MANAGES", "monitor": "MONITORS",
+    "access": "ACCESSES", "execute": "EXECUTES", "run": "EXECUTES",
+    "connect": "CONNECTS", "trigger": "TRIGGERS", "invoke": "INVOKES",
+    "support": "SUPPORTS", "contain": "CONTAINS", "include": "INCLUDES",
+    "expose": "EXPOSES", "route": "ROUTES", "encrypt": "ENCRYPTS",
+    "handle": "HANDLES", "process": "PROCESSES", "return": "RETURNS",
+    "call": "INVOKES", "attach": "ATTACHES", "associate": "ASSOCIATES",
+    "block": "BLOCKS", "restrict": "RESTRICTS", "enforce": "ENFORCES",
+    "register": "REGISTERS", "publish": "PUBLISHES", "subscribe": "SUBSCRIBES",
+    "read": "READS", "write": "WRITES", "delete": "DELETES", "update": "UPDATES",
+    "list": "LISTS", "scale": "SCALES", "cache": "CACHES", "log": "LOGS",
+    "tag": "TAGS", "filter": "FILTERS", "transform": "TRANSFORMS",
+    "control": "CONTROLS", "accept": "ACCEPTS",
+}
+
+COPULA_LEMMAS = {"be", "become", "remain", "represent", "constitute"}
+
+INVALID_ENTITIES = {
+    "this", "that", "it", "which", "example", "following", "section",
+    "guide", "both", "all", "each", "above", "below", "here", "there",
+    "note", "however", "therefore", "otherwise", "those", "these",
+    "they", "them", "their", "we", "our", "you", "your", "he", "she",
+    "reference", "table", "document", "topic", "page", "overview",
+}
+
+GENERIC_HEAD_NOUNS = {
+    "system", "service", "feature", "data", "value", "field",
+    "request", "response", "object", "resource", "result", "item",
+    "type", "list", "set", "way", "method", "approach", "option",
+    "information", "content", "detail", "thing", "entity", "element",
+    "functionality", "behavior", "action", "process", "operation",
+    "component", "part", "aspect", "property", "attribute", "parameter",
+}
+
+GENERIC_OBJECTS = {
+    "data", "value", "object", "request", "response", "result",
+    "information", "functionality", "behavior", "content", "detail",
+    "thing", "entity", "items", "properties", "attributes", "parameters",
+    "options", "settings", "resources", "elements", "components", "things",
+}
+
+NP_NOISE_PREFIXES = re.compile(
+    r"^(valid values for|type of|types of|list of|set of|number of|example of|examples of|use of|part of|name of)\s+",
+    flags=re.I,
+)
+
+LEADING_PREPS = {"of", "in", "to", "for", "by", "on", "at", "from", "with", "about"}
+STOP_LAST_WORDS = {"that", "which", "of", "in", "to", "the", "a", "an", "and", "or", "with", "by", "for"}
+JUNK_RE = re.compile(r"[=\{\}\(\)<>]|https?://|^\d+$")
 
 BAD_SUBJECTS = {
     "you", "your", "we", "our", "it", "its", "they", "them", "this",
@@ -60,7 +163,7 @@ WEAK_ENTITY_HEADS = {
 }
 
 BAD_VERBS = {
-    "be", "have", "do", "make", "use", "is", "are", "was", "were",
+    "be", "have", "do", "make", "is", "are", "was", "were",
     "has", "had", "can", "could", "will", "would", "should", "may",
     "might", "get", "see", "show",
 }
@@ -78,7 +181,7 @@ GOOD_VERBS = {
     "record", "replicate", "require", "resolve", "restore", "retrieve",
     "route", "run", "scale", "schedule", "send", "sign", "specify",
     "start", "stop", "store", "stream", "submit", "support", "tag",
-    "track", "trigger", "update", "upload", "validate", "verify",
+    "track", "trigger", "update", "upload", "use", "validate", "verify",
 }
 
 VERB_NORMALIZATION = {
@@ -182,6 +285,7 @@ RESOURCE_QUALIFIERS = {
     "layer version": "Lambda layer version resource",
     "log group": "CloudWatch log group resource",
     "log stream": "CloudWatch log stream resource",
+    "metric alarm": "CloudWatch metric alarm resource",
     "network interface": "EC2 network interface resource",
     "object": "S3 object resource",
     "policy": "IAM policy resource",
@@ -201,7 +305,6 @@ RESOURCE_QUALIFIERS = {
 }
 
 DOMAIN_TERMS = {
-    # AWS-wide
     "aws", "amazon web services", "account", "accounts", "action",
     "actions", "region",
     "regions", "availability zone", "availability zones", "resource",
@@ -216,16 +319,12 @@ DOMAIN_TERMS = {
     "session", "sessions", "token", "tokens", "security", "encryption",
     "kms", "key", "keys", "certificate", "certificates", "secret",
     "secrets", "signature", "condition", "conditions",
-
-    # S3 / Glacier
     "s3", "amazon s3", "simple storage service", "bucket", "buckets",
     "object", "objects", "acl", "acls", "access point", "access points",
     "versioning", "lifecycle", "multipart", "upload", "uploads",
     "replication", "storage class", "storage classes", "checksum",
     "checksums", "glacier", "vault", "vaults", "archive", "archives",
     "outposts",
-
-    # EC2
     "ec2", "amazon ec2", "instance", "instances", "ami", "amis",
     "image", "images", "volume", "volumes", "snapshot", "snapshots",
     "ebs", "elastic block store", "security group", "security groups",
@@ -233,8 +332,6 @@ DOMAIN_TERMS = {
     "elastic ip", "elastic ips", "placement group", "placement groups",
     "launch template", "launch templates", "auto scaling", "enclave",
     "enclaves",
-
-    # VPC / networking
     "vpc", "vpcs", "subnet", "subnets", "route table", "route tables",
     "route", "routes", "internet gateway", "internet gateways",
     "nat gateway", "nat gateways", "transit gateway", "transit gateways",
@@ -245,16 +342,12 @@ DOMAIN_TERMS = {
     "network firewall", "load balancer", "load balancers", "elb", "alb",
     "nlb", "target group", "target groups", "listener", "listeners",
     "dns", "hosted zone",
-
-    # IAM / STS / Access Analyzer / Roles Anywhere
     "iam", "sts", "access analyzer", "roles anywhere", "trust policy",
     "trust policies", "identity policy", "identity policies",
     "resource policy", "resource policies", "managed policy",
     "managed policies", "inline policy", "inline policies", "assume role",
     "federation", "saml", "oidc", "mfa", "access key", "access keys",
     "temporary credentials", "permission set", "service principal",
-
-    # Lambda / serverless
     "lambda", "aws lambda", "function", "functions", "runtime",
     "runtimes", "handler", "handlers", "layer", "layers", "alias",
     "aliases", "version", "versions", "event source", "event sources",
@@ -262,8 +355,6 @@ DOMAIN_TERMS = {
     "triggers", "concurrency", "provisioned concurrency", "execution role",
     "destination", "destinations", "dead-letter queue", "snapstart",
     "serverless",
-
-    # RDS / Aurora / databases
     "rds", "amazon rds", "aurora", "database", "databases",
     "db instance", "db instances", "db cluster", "db clusters",
     "db engine", "db engines", "parameter group", "parameter groups",
@@ -272,8 +363,6 @@ DOMAIN_TERMS = {
     "restore", "snapshot", "snapshots", "performance insights",
     "postgresql", "mysql", "mariadb", "oracle", "sql server",
     "rds data api",
-
-    # CloudWatch / EventBridge / observability
     "cloudwatch", "amazon cloudwatch", "cloudwatch logs",
     "log group", "log groups", "log stream", "log streams",
     "metric alarm", "metric alarms", "composite alarm",
@@ -283,8 +372,6 @@ DOMAIN_TERMS = {
     "synthetics", "canary", "canaries", "rum", "application signals",
     "app insights", "internet monitor", "network flow monitor",
     "observability", "aiops", "trace", "traces",
-
-    # CloudFormation / IaC
     "cloudformation", "aws cloudformation", "stack", "stacks",
     "stack set", "stack sets", "template", "templates", "change set",
     "change sets", "resource type", "resource types", "drift",
@@ -313,7 +400,7 @@ LOW_VALUE_SECTION_TITLES = {
     "response elements", "uri request parameters", "errors", "see also",
 }
 
-NOISE_PATTERNS = [
+NOISE_PATTERNS_COMPILED = [
     re.compile(r".*\.{10,}.*\n"),
     re.compile(r"API Version \d{4}-\d{2}-\d{2}.*\n"),
     re.compile(r"Copyright.*\n", re.IGNORECASE),
@@ -337,3 +424,103 @@ SPECIFIC_DOMAIN_RE = re.compile(
     + r")\b",
     re.IGNORECASE,
 )
+
+# ── Sentence-level rejection patterns ──────────────────────────────────────────
+SENT_REJECT_HTTP = re.compile(
+    r"\b(GET|PUT|POST|DELETE|HEAD|PATCH|OPTIONS)\s+[/\w]|HTTP/\d",
+    re.IGNORECASE,
+)
+SENT_REJECT_TIMESTAMP = re.compile(
+    r"\b\d{1,2}\s+\w{3}\s+\d{4}\s+\d{2}:\d{2}:\d{2}|\d{4}-\d{2}-\d{2}T\d{2}:\d{2}",
+)
+SENT_REJECT_XML = re.compile(r"<\w[\w:]*[\s/>]|</\w[\w:]*>")
+SENT_REJECT_PATH = re.compile(r"(?:^|[\s\"'])/[\w./%-]{4,}")
+SENT_REJECT_SYMBOLS = re.compile(r"[=<>{}\[\]]{2,}|\?\w+=")
+SENT_REJECT_ELLIPSIS = re.compile(r"\.{4,}|_{4,}")
+SENT_REJECT_CONTINUATION = re.compile(
+    r"^\s*(for example|for instance|see also|note that|the following|as shown|as described|refer to|see the)",
+    re.IGNORECASE,
+)
+SENT_REJECT_PROCEDURAL = re.compile(
+    r"^\s*(step\s+\d|click\s+|navigate\s+to\s+|go\s+to\s+the\s+console|open\s+the\s+console|"
+    r"in\s+the\s+(aws\s+)?console|from\s+the\s+(left\s+)?navigation|"
+    r"to\s+\w+,?\s+(you\s+must\s+first|you\s+need\s+to|scroll|click|select\s+from))",
+    re.IGNORECASE,
+)
+
+# ── Phrase-level rejection patterns ────────────────────────────────────────────
+PHRASE_REJECT_DANGLING_PREP = re.compile(
+    r"\b(of|in|to|for|by|on|at|from|with|about|that|which|when|where|whose|if)\s*$",
+    re.IGNORECASE,
+)
+PHRASE_REJECT_DATE_FRAG = re.compile(
+    r"\b\d{1,2}\s+(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\b|\bGMT\b",
+    re.IGNORECASE,
+)
+PHRASE_REJECT_HTTP_VERB = re.compile(
+    r"^(?:GET|PUT|POST|DELETE|HEAD|PATCH|OPTIONS|HTTP)\b",
+    re.IGNORECASE,
+)
+PHRASE_REJECT_SLASH = re.compile(r"/\w+/|^\?|&\w+=")
+PHRASE_REJECT_REL_CLAUSE = re.compile(r"\b(that|which|who|whom|whose)\s*$", re.IGNORECASE)
+PHRASE_REJECT_AUX_CHAIN = re.compile(
+    r"\b(is|are|was|were|be|been|being|have|has|had|will|would|shall|should|may|might|must|can|could)\s+"
+    r"(is|are|was|were|be|been|being|have|has|had|will|would|shall|should|may|might|must|can|could)\b",
+    re.IGNORECASE,
+)
+
+# ── Copula-allowed definitional verbs (only strong definitional copulas kept) ──
+COPULA_STRONG_HEADS = {
+    "type", "format", "mechanism", "protocol", "standard", "algorithm",
+    "identifier", "name", "structure", "class", "category",
+}
+
+# ── Confidence scoring weights ─────────────────────────────────────────────────
+CONFIDENCE_WEIGHTS = {
+    "subject_capitalized": 2,
+    "object_capitalized": 2,
+    "subject_domain_specific": 3,
+    "object_domain_specific": 3,
+    "verb_in_good_verbs": 2,
+    "subject_multiword": 1,
+    "object_multiword": 1,
+    "subject_has_camelcase": 2,
+    "object_has_camelcase": 2,
+    "subject_xamz": 3,
+}
+CONFIDENCE_THRESHOLD = 3
+
+MAX_AKUS = 8
+
+NARRATIVE_TOKENS = {
+    "example", "section", "step", "steps", "following", "above", "below",
+    "table", "figure", "diagram", "line", "note", "summary", "overview",
+    "process", "procedure", "case", "scenario", "situation", "context",
+}
+
+GENERIC_SHORT_SUBJECTS = {
+    "system", "service", "function", "data", "value", "object",
+    "request", "response", "result", "bucket", "resource", "feature",
+    "component", "module", "item", "element", "entity", "operation",
+}
+
+NARRATIVE_OBJECT_PHRASES = {
+    "following", "example", "steps", "process", "procedure",
+    "above", "below", "section", "figure", "table", "diagram",
+}
+
+
+def is_code_noise(text):
+    return bool(CODE_RE.search(text))
+
+
+def is_http_noise(text):
+    return bool(HTTP_RE.search(text))
+
+
+def is_domain_phrase(text):
+    return bool(DOMAIN_RE.search(text))
+
+
+def is_specific_domain_phrase(text):
+    return bool(SPECIFIC_DOMAIN_RE.search(text))
