@@ -67,12 +67,6 @@ def _collect_source_text(documents: List[Dict[str, Any]]) -> str:
             for chunk in section.get("chunks", []):
                 parts.append(chunk.get("text", ""))
     return " ".join(parts)
-
-
-# ---------------------------------------------------------------------------
-# Public API
-# ---------------------------------------------------------------------------
-
 def run_pipeline(
     input_data: Dict[str, Any],
     *,
@@ -145,9 +139,9 @@ def run_pipeline(
         validation_reports[f"L3_{doc_sum.get('doc_id', '')}"] = vr
 
     # ---- Level 2: Topic summaries ----
-    logger.info("=" * 60)
+
+    
     logger.info("LEVEL 2 — Topic Summaries (abstractive, ≤%d tokens)", level_2_max_tokens)
-    logger.info("=" * 60)
     t0 = time.time()
     level_2 = summarize_topics(topics_input, level_3, max_tokens=level_2_max_tokens)
     timing["level_2"] = round(time.time() - t0, 3)
