@@ -1,0 +1,2897 @@
+{
+  "level_4_sections": [
+    {
+      "section_id": "sec_master",
+      "summary": "## Actions Simple Storage Service (Amazon S3) application programming interface (API). You can use any toolkit that supports HTTP to use the REST API. You can even use a browser to fetch objects, as long as they are anonymously readable. The REST API uses the standard HTTP headers and status codes, so that standard browsers and toolkits work as expected. ## Version The current version of the Amazon S3 API is 2006-03-01. Amazon S3 supports the REST API. However, new Amazon S3 features will not be supported for SOAP. We recommend that you use either this REST API or the AWS SDKs at the following link: Headers - Common request headers and Common response headers. Error responses. Requests to Amazon S3 can be authenticated or anonymous. ## API call recommendations Making REST API calls directly from your code can be cumbersome. Use the AWS CLI to make Amazon S3 API calls. example Amazon S3 commands see the following topics: Set Up the AWS CLI in the Amazon Simple Storage Service User Guide. Using Amazon S3 with the AWS Command Line Interface in the AWS Command Line Interface Making direct REST API calls The PUT request header is limited to 8 KB in size. If you'd like to make your own REST API calls instead of using one of the above alternatives, there are some things to keep in mind. To make direct REST API calls from your code, create a signature using valid credentials and. The REST API uses standard HTTP headers and status codes, so standard browsers and toolkits. You can have valid credentials to authenticate your requests, but unless you have S3 permissions from the account owner or bucket owner you cannot create or access Amazon S3 resources. For a complete list of S3 permissions, see Actions, resources, and condition keys for Amazon S3. For more information about the permissions to S3 API operations by S3 resource types, see Required permissions for Amazon S3 API operations in the Amazon Simple Storage Service User If you use the root user credentials of your AWS account, you have all the permissions. S3 Control, and Amazon S3 on Outposts. ## Actions Amazon S3 - API operations that apply bucket-level and object-level actions. Amazon S3 Control - API operations for managing all other S3 resources. Amazon S3 on Outposts - API operations for use with Amazon S3 on Outposts. Amazon S3 Tables - API operations for use with Amazon S3 Tables. Amazon S3 Vectors - API operations for use with Amazon S3 Vectors. ## Data types Amazon S3 - Data types of API operations that apply bucket-level and object-level actions. Amazon S3 Control - Data types of API operations for managing all other S3 resources. Amazon S3 on Outposts - Data types of API operations for use with Amazon S3 on Outposts. Amazon S3 Tables - Data types of API operations for use with Amazon S3 Tables. Amazon S3 Vectors - Data types of API operations for use with Amazon S3 Vectors.",
+      "preserved_entities": [
+        "rest api",
+        "amazon s3"
+      ],
+      "preserved_akus": [
+        {
+          "subject": "REST API",
+          "predicate": "USES",
+          "object": "standard HTTP headers"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "SUPPORTS",
+          "object": "REST API"
+        },
+        {
+          "subject": "REST API",
+          "predicate": "USES",
+          "object": "standard HTTP headers"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "CONCATENATE",
+          "object": "all the parts"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "SENDS",
+          "object": "white space characters"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "CONCATENATE",
+          "object": "ascending order"
+        },
+        {
+          "subject": "SDKs",
+          "predicate": "DETECT",
+          "object": "embedded error"
+        },
+        {
+          "subject": "S3",
+          "predicate": "RETURNS",
+          "object": "409 ConditionalRequestConflict response"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "RETURNS",
+          "object": "412 Precondition Failed error"
+        },
+        {
+          "subject": "header",
+          "predicate": "SPECIFIES",
+          "object": "Base64 encoded, 32-bit CRC32 checksum data"
+        },
+        {
+          "subject": "header",
+          "predicate": "SPECIFIES",
+          "object": "Base64 encoded, 32-bit CRC32C checksum"
+        },
+        {
+          "subject": "header",
+          "predicate": "SPECIFIES",
+          "object": "Base64 encoded, 160-bit SHA1 digest"
+        },
+        {
+          "subject": "header",
+          "predicate": "SPECIFIES",
+          "object": "Base64 encoded, 256-bit SHA256 digest"
+        }
+      ],
+      "token_count": 500,
+      "doc_id": "AWS-Document"
+    }
+  ],
+  "level_3_documents": [
+    {
+      "doc_id": "AWS-Document",
+      "summary": " The current version of the Amazon S3 API is 2006-03-01 . The REST API uses the standard HTTP headers and status codes, so standard browsers and toolkits work as expected . The PUT request header is limited to 8 KB in size . Use the AWS Command Line Interface to make direct API calls from your code .",
+      "top_entities": [
+        "rest api",
+        "amazon s3"
+      ],
+      "top_relationships": [
+        {
+          "source": "rest api",
+          "relation": "USES",
+          "target": "standard http headers"
+        },
+        {
+          "source": "amazon s3",
+          "relation": "SUPPORTS",
+          "target": "rest api"
+        },
+        {
+          "source": "rest api",
+          "relation": "USES",
+          "target": "standard http headers"
+        }
+      ],
+      "token_count": 58
+    }
+  ],
+  "level_2_topics": [
+    {
+      "topic_id": "t0",
+      "label": "1 - If an error occurred.",
+      "summary": " The current version of the Amazon S3 API is 2006-03-01 . The REST API uses the standard HTTP headers and status codes . The PUT request header is limited to 8 KB in size . Use the AWS Command Line Interface to make direct API calls from your code .",
+      "token_count": 50
+    },
+    {
+      "topic_id": "t1",
+      "label": "3. Create an additional client using the credentials with S3 Express",
+      "summary": " The current version of the Amazon S3 API is 2006-03-01 . The REST API uses the standard HTTP headers and status codes, so standard browsers and toolkits work as expected . Use the AWS Command Line Interface to make direct API calls from your code .",
+      "token_count": 46
+    },
+    {
+      "topic_id": "t2",
+      "label": "4. Create two buckets.",
+      "summary": " The current version of the Amazon S3 API is 2006-03-01 . The REST API uses the standard HTTP headers and status codes . The PUT request header is limited to 8 KB in size . Use the AWS Command Line Interface to make direct API calls from your code .",
+      "token_count": 50
+    },
+    {
+      "topic_id": "t3",
+      "label": "A location constraint for \"us-east-1\" returns an error.",
+      "summary": " The current version of the Amazon S3 API is 2006-03-01 . The REST API uses the standard HTTP headers and status codes, so standard browsers and toolkits work as expected . The PUT request header is limited to 8 KB in size .",
+      "token_count": 43
+    },
+    {
+      "topic_id": "t4",
+      "label": "API call recommendations",
+      "summary": " The current version of the Amazon S3 API is 2006-03-01 . The REST API uses the standard HTTP headers and status codes, so standard browsers and toolkits work as expected . The PUT request header is limited to 8 KB in size .",
+      "token_count": 43
+    },
+    {
+      "topic_id": "t5",
+      "label": "AWS Region.",
+      "summary": " The current version of the Amazon S3 API is 2006-03-01 . The REST API uses the standard HTTP headers and status codes . The PUT request header is limited to 8 KB in size . Use the AWS Command Line Interface to make direct API calls from your code .",
+      "token_count": 50
+    },
+    {
+      "topic_id": "t6",
+      "label": "About access keys",
+      "summary": " The current version of the Amazon S3 API is 2006-03-01 . The REST API uses the standard HTTP headers and status codes, so standard browsers and toolkits work as expected . The PUT request header is limited to 8 KB in size .",
+      "token_count": 43
+    },
+    {
+      "topic_id": "t7",
+      "label": "Actions",
+      "summary": " The current version of the Amazon S3 API is 2006-03-01 . The REST API uses the standard HTTP headers and status codes, so standard browsers and toolkits work as expected . The PUT request header is limited to 8 KB in size .",
+      "token_count": 43
+    },
+    {
+      "topic_id": "t8",
+      "label": "AbortMultipartUpload",
+      "summary": " The current version of the Amazon S3 API is 2006-03-01 . The REST API uses the standard HTTP headers and status codes, so standard browsers and toolkits work as expected . The PUT request header is limited to 8 KB in size .",
+      "token_count": 43
+    },
+    {
+      "topic_id": "t9",
+      "label": "Add the first stanza and revise it a few times.",
+      "summary": " The current version of the Amazon S3 API is 2006-03-01 . The REST API uses the standard HTTP headers and status codes . The PUT request header is limited to 8 KB in size . Use the AWS Command Line Interface to make direct API calls from your code .",
+      "token_count": 50
+    },
+    {
+      "topic_id": "t10",
+      "label": "Amazon S3",
+      "summary": " Current version of the Amazon S3 API is 2006-03-01 . The REST API uses the standard HTTP headers and status codes . The PUT request header is limited to 8 KB in size . Use the AWS Command Line Interface to make direct API calls from your code .",
+      "token_count": 49
+    },
+    {
+      "topic_id": "t11",
+      "label": "<CompleteMultipartUploadResult> </CompleteMultipartUploadResult",
+      "summary": " Current version of Amazon S3 API is 2006-03-01 . The REST API uses the standard HTTP headers and status codes . The PUT request header is limited to 8 KB in size . Use the AWS Command Line Interface to make direct API calls from your code .",
+      "token_count": 48
+    },
+    {
+      "topic_id": "t12",
+      "label": "AbortMultipartUpload",
+      "summary": " The current version of the Amazon S3 API is 2006-03-01 . The REST API uses the standard HTTP headers and status codes, so standard browsers and toolkits work as expected . The PUT request header is limited to 8 KB in size .",
+      "token_count": 43
+    },
+    {
+      "topic_id": "t13",
+      "label": "CompleteMultipartUpload",
+      "summary": " The current version of the Amazon S3 API is 2006-03-01 . The REST API uses the standard HTTP headers and status codes, so standard browsers and toolkits work as expected . The PUT request header is limited to 8 KB in size .",
+      "token_count": 43
+    },
+    {
+      "topic_id": "t14",
+      "label": "CompletedMultipartUpload",
+      "summary": " The current version of the Amazon S3 API is 2006-03-01 . The REST API uses the standard HTTP headers and status codes, so standard browsers and toolkits work as expected . The PUT request header is limited to 8 KB in size .",
+      "token_count": 43
+    },
+    {
+      "topic_id": "t15",
+      "label": "NoSuchUpload",
+      "summary": " The current version of the Amazon S3 API is 2006-03-01 . The REST API uses the standard HTTP headers and status codes, so standard browsers and toolkits work as expected . The PUT request header is limited to 8 KB in size .",
+      "token_count": 43
+    },
+    {
+      "topic_id": "t16",
+      "label": "This example illustrates one usage of AbortMultipartUpload.",
+      "summary": " The current version of the Amazon S3 API is 2006-03-01 . The REST API uses the standard HTTP headers and status codes . The PUT request header is limited to 8 KB in size . Use the AWS Command Line Interface to make direct API calls from your code .",
+      "token_count": 50
+    },
+    {
+      "topic_id": "t17",
+      "label": "Amazon S3 Control",
+      "summary": " Current version of the Amazon S3 API is 2006-03-01 . The REST API uses the standard HTTP headers and status codes . The PUT request header is limited to 8 KB in size . Use the AWS Command Line Interface to make direct API calls from your code .",
+      "token_count": 49
+    },
+    {
+      "topic_id": "t18",
+      "label": "Amazon S3 Files",
+      "summary": " Current version of the Amazon S3 API is 2006-03-01 . The REST API uses the standard HTTP headers and status codes . The PUT request header is limited to 8 KB in size . Use the AWS Command Line Interface to make direct API calls from your code .",
+      "token_count": 49
+    },
+    {
+      "topic_id": "t19",
+      "label": "Amazon S3 Tables",
+      "summary": " Current version of the Amazon S3 API is 2006-03-01 . The REST API uses the standard HTTP headers and status codes . The PUT request header is limited to 8 KB in size . Use the AWS Command Line Interface to make direct API calls from your code .",
+      "token_count": 49
+    },
+    {
+      "topic_id": "t20",
+      "label": "Amazon S3 Vectors",
+      "summary": " Current version of the Amazon S3 API is 2006-03-01 . The REST API uses the standard HTTP headers and status codes . The PUT request header is limited to 8 KB in size . Use the AWS Command Line Interface to make direct API calls from your code .",
+      "token_count": 49
+    },
+    {
+      "topic_id": "t21",
+      "label": "Amazon S3 on Outposts",
+      "summary": " Current version of the Amazon S3 API is 2006-03-01 . The REST API uses the standard HTTP headers and status codes . The PUT request header is limited to 8 KB in size . Use the AWS Command Line Interface to make direct API calls from your code .",
+      "token_count": 49
+    },
+    {
+      "topic_id": "t22",
+      "label": "And:",
+      "summary": " The current version of the Amazon S3 API is 2006-03-01 . The REST API uses the standard HTTP headers and status codes, so standard browsers and toolkits work as expected . The PUT request header is limited to 8 KB in size .",
+      "token_count": 43
+    },
+    {
+      "topic_id": "t23",
+      "label": "Check if any objects were created",
+      "summary": " The current version of the Amazon S3 API is 2006-03-01 . The REST API uses the standard HTTP headers and status codes, so standard browsers and toolkits work as expected . The PUT request header is limited to 8 KB in size .",
+      "token_count": 43
+    },
+    {
+      "topic_id": "t24",
+      "label": "Checks whether the object exists.",
+      "summary": " The current version of the Amazon S3 API is 2006-03-01 . The REST API uses the standard HTTP headers and status codes, so standard browsers and toolkits work as expected . The PUT request header is limited to 8 KB in size .",
+      "token_count": 43
+    },
+    {
+      "topic_id": "t25",
+      "label": "Configure logging",
+      "summary": " The current version of the Amazon S3 API is 2006-03-01 . The REST API uses the standard HTTP headers and status codes, so standard browsers and toolkits work as expected . The PUT request header is limited to 8 KB in size .",
+      "token_count": 43
+    },
+    {
+      "topic_id": "t26",
+      "label": "AbortMultipartUploadRequest",
+      "summary": " The current version of the Amazon S3 API is 2006-03-01 . The REST API uses the standard HTTP headers and status codes, so standard browsers and toolkits work as expected . The PUT request header is limited to 8 KB in size .",
+      "token_count": 43
+    },
+    {
+      "topic_id": "t27",
+      "label": "CompleteMultipartUploadRequest",
+      "summary": " The current version of the Amazon S3 API is 2006-03-01 . The REST API uses the standard HTTP headers and status codes, so standard browsers and toolkits work as expected . The PUT request header is limited to 8 KB in size .",
+      "token_count": 43
+    },
+    {
+      "topic_id": "t28",
+      "label": "InitiateMultipartUploadRequest",
+      "summary": " The current version of the Amazon S3 API is 2006-03-01 . The REST API uses the standard HTTP headers and status codes, so standard browsers and toolkits work as expected . The PUT request header is limited to 8 KB in size .",
+      "token_count": 43
+    },
+    {
+      "topic_id": "t29",
+      "label": "Constants",
+      "summary": " The current version of the Amazon S3 API is 2006-03-01 . The REST API uses the standard HTTP headers and status codes, so standard browsers and toolkits work as expected . The PUT request header is limited to 8 KB in size .",
+      "token_count": 43
+    },
+    {
+      "topic_id": "t30",
+      "label": "Construct the parts of a directory bucket name that is made unique",
+      "summary": " The current version of the Amazon S3 API is 2006-03-01 . The REST API uses the standard HTTP headers and status codes, so standard browsers and toolkits work as expected . The PUT request header is limited to 8 KB in size .",
+      "token_count": 43
+    },
+    {
+      "topic_id": "t31",
+      "label": "Copies an Amazon S3 object to a subfolder within the same bucket.",
+      "summary": " The current version of the Amazon S3 API is 2006-03-01 . The REST API uses the standard HTTP headers and status codes . The PUT request header is limited to 8 KB in size . Use the AWS Command Line Interface to make direct API calls from your code .",
+      "token_count": 50
+    },
+    {
+      "topic_id": "t32",
+      "label": "Copy the source object to the specified target bucket and rename it with the",
+      "summary": " Current version of the Amazon S3 API is 2006-03-01 . The REST API uses the standard HTTP headers and status codes . The PUT request header is limited to 8 KB in size . Use the AWS Command Line Interface to make direct API calls from your code .",
+      "token_count": 49
+    },
+    {
+      "topic_id": "t33",
+      "label": "Copy the source object to the specified target bucket, rename it with the",
+      "summary": " Current version of the Amazon S3 API is 2006-03-01 . The REST API uses the standard HTTP headers and status codes . The PUT request header is limited to 8 KB in size . Use the AWS Command Line Interface to make direct API calls from your code .",
+      "token_count": 49
+    },
+    {
+      "topic_id": "t34",
+      "label": "Create the JSON for the items to delete.",
+      "summary": " The current version of the Amazon S3 API is 2006-03-01 . The REST API uses the standard HTTP headers and status codes . The PUT request header is limited to 8 KB in size . Use the AWS Command Line Interface to make direct API calls from your code .",
+      "token_count": 50
+    },
+    {
+      "topic_id": "t35",
+      "label": "Creates a presigned URL that can be used to upload content to an object.",
+      "summary": " The current version of the Amazon S3 API is 2006-03-01 . The REST API uses the standard HTTP headers and status codes . The PUT request header is limited to 8 KB in size . Use the AWS Command Line Interface to make direct API calls from your code .",
+      "token_count": 50
+    },
+    {
+      "topic_id": "t36",
+      "label": "Data Types",
+      "summary": " The current version of the Amazon S3 API is 2006-03-01 . The REST API uses the standard HTTP headers and status codes, so standard browsers and toolkits work as expected . The PUT request header is limited to 8 KB in size .",
+      "token_count": 43
+    },
+    {
+      "topic_id": "t37",
+      "label": "Data types",
+      "summary": " The current version of the Amazon S3 API is 2006-03-01 . The REST API uses the standard HTTP headers and status codes, so standard browsers and toolkits work as expected . The PUT request header is limited to 8 KB in size .",
+      "token_count": 43
+    },
+    {
+      "topic_id": "t38",
+      "label": "Delete the objects in the bucket first. This is required for a",
+      "summary": " The current version of the Amazon S3 API is 2006-03-01 . The REST API uses the standard HTTP headers and status codes . The PUT request header is limited to 8 KB in size . Use the AWS Command Line Interface to make direct API calls from your code .",
+      "token_count": 50
+    },
+    {
+      "topic_id": "t39",
+      "label": "Actions for S3 Directory Buckets using AWS SDKs",
+      "summary": " Current version of Amazon S3 API is 2006-03-01 . The REST API uses the standard HTTP headers and status codes . The PUT request header is limited to 8 KB in size . Use the AWS Command Line Interface to make direct API calls from your code .",
+      "token_count": 48
+    },
+    {
+      "topic_id": "t40",
+      "label": "Version 4",
+      "summary": " The current version of the Amazon S3 API is 2006-03-01 . The REST API uses the standard HTTP headers and status codes, so standard browsers and toolkits work as expected . The PUT request header is limited to 8 KB in size .",
+      "token_count": 43
+    },
+    {
+      "topic_id": "t41",
+      "label": "ListMultipartUploads",
+      "summary": " The current version of the Amazon S3 API is 2006-03-01 . The REST API uses the standard HTTP headers and status codes, so standard browsers and toolkits work as expected . The PUT request header is limited to 8 KB in size .",
+      "token_count": 43
+    },
+    {
+      "topic_id": "t42",
+      "label": "Version 4 (AWS4) and the HMAC-SHA256 algorithm (HMAC-",
+      "summary": " The current version of the Amazon S3 API is 2006-03-01 . The REST API uses the standard HTTP headers and status codes . The PUT request header is limited to 8 KB in size . Use the AWS Command Line Interface to make direct API calls from your code .",
+      "token_count": 50
+    },
+    {
+      "topic_id": "t43",
+      "label": "Version 4 now",
+      "summary": " Current version of the Amazon S3 API is 2006-03-01 . The REST API uses the standard HTTP headers and status codes . The PUT request header is limited to 8 KB in size . Use the AWS Command Line Interface to make direct API calls from your code .",
+      "token_count": 49
+    },
+    {
+      "topic_id": "t44",
+      "label": "Version 4 streaming API.",
+      "summary": " Current version of the Amazon S3 API is 2006-03-01 . The REST API uses the standard HTTP headers and status codes . The PUT request header is limited to 8 KB in size . Use the AWS Command Line Interface to make direct API calls from your code .",
+      "token_count": 49
+    },
+    {
+      "topic_id": "t45",
+      "label": "Version 4)",
+      "summary": " The current version of the Amazon S3 API is 2006-03-01 . The REST API uses the standard HTTP headers and status codes . The PUT request header is limited to 8 KB in size . Use the AWS Command Line Interface to make direct API calls from your code .",
+      "token_count": 50
+    },
+    {
+      "topic_id": "t46",
+      "label": "Version 4).",
+      "summary": " The current version of the Amazon S3 API is 2006-03-01 . The REST API uses the standard HTTP headers and status codes . The PUT request header is limited to 8 KB in size . Use the AWS Command Line Interface to make direct API calls from your code .",
+      "token_count": 50
+    },
+    {
+      "topic_id": "t47",
+      "label": "CreateMultipartUpload",
+      "summary": " The current version of the Amazon S3 API is 2006-03-01 . The REST API uses the standard HTTP headers and status codes, so standard browsers and toolkits work as expected . The PUT request header is limited to 8 KB in size .",
+      "token_count": 43
+    },
+    {
+      "topic_id": "t48",
+      "label": "Version 4, the value is AWS4-HMAC-SHA256.",
+      "summary": " The current version of the Amazon S3 API is 2006-03-01 . The REST API uses the standard HTTP headers and status codes, so standard browsers and toolkits work as expected . The PUT request header is limited to 8 KB in size .",
+      "token_count": 43
+    },
+    {
+      "topic_id": "t49",
+      "label": "Deletes the CORS configuration of a bucket.",
+      "summary": " The current version of the Amazon S3 API is 2006-03-01 . The REST API uses the standard HTTP headers and status codes . The PUT request header is limited to 8 KB in size . Use the AWS Command Line Interface to make direct API calls from your code .",
+      "token_count": 50
+    },
+    {
+      "topic_id": "t50",
+      "label": "Deletes the objects in an Amazon S3 bucket and deletes the bucket.",
+      "summary": " The current version of the Amazon S3 API is 2006-03-01 . The REST API uses the standard HTTP headers and status codes . The PUT request header is limited to 8 KB in size . Use the AWS Command Line Interface to make direct API calls from your code .",
+      "token_count": 50
+    },
+    {
+      "topic_id": "t51",
+      "label": "Download the object 'downloads' times from each bucket and time it to",
+      "summary": " The current version of the Amazon S3 API is 2006-03-01 . The REST API uses the standard HTTP headers and status codes, so standard browsers and toolkits work as expected . The PUT request header is limited to 8 KB in size .",
+      "token_count": 43
+    },
+    {
+      "topic_id": "t52",
+      "label": "Download with a single thread.",
+      "summary": " The current version of the Amazon S3 API is 2006-03-01 . The REST API uses the standard HTTP headers and status codes, so standard browsers and toolkits work as expected . Use the AWS Command Line Interface to make direct API calls from your code .",
+      "token_count": 46
+    },
+    {
+      "topic_id": "t53",
+      "label": "Downloads an Amazon S3 object to a file.",
+      "summary": " Current version of the Amazon S3 API is 2006-03-01 . The REST API uses the standard HTTP headers and status codes . The PUT request header is limited to 8 KB in size . Use the AWS Command Line Interface to make direct API calls from your code .",
+      "token_count": 49
+    },
+    {
+      "topic_id": "t54",
+      "label": "Execute the main function",
+      "summary": " The current version of the Amazon S3 API is 2006-03-01 . The REST API uses the standard HTTP headers and status codes, so standard browsers and toolkits work as expected . The PUT request header is limited to 8 KB in size .",
+      "token_count": 43
+    },
+    {
+      "topic_id": "t55",
+      "label": "Finding the request ID from a successful call:",
+      "summary": " The current version of the Amazon S3 API is 2006-03-01 . The REST API uses the standard HTTP headers and status codes, so standard browsers and toolkits work as expected . The PUT request header is limited to 8 KB in size .",
+      "token_count": 43
+    },
+    {
+      "topic_id": "t56",
+      "label": "Generate a 256-bit key from a passphrase.",
+      "summary": " The current version of the Amazon S3 API is 2006-03-01 . The REST API uses the standard HTTP headers and status codes . The PUT request header is limited to 8 KB in size . Use the AWS Command Line Interface to make direct API calls from your code .",
+      "token_count": 50
+    },
+    {
+      "topic_id": "t57",
+      "label": "Get and delete all delete markers",
+      "summary": " The current version of the Amazon S3 API is 2006-03-01 . The REST API uses the standard HTTP headers and status codes, so standard browsers and toolkits work as expected . Use the AWS Command Line Interface to make direct API calls from your code .",
+      "token_count": 46
+    },
+    {
+      "topic_id": "t58",
+      "label": "Get and delete all versions",
+      "summary": " The current version of the Amazon S3 API is 2006-03-01 . The REST API uses the standard HTTP headers and status codes, so standard browsers and toolkits work as expected . Use the AWS Command Line Interface to make direct API calls from your code .",
+      "token_count": 46
+    },
+    {
+      "topic_id": "t59",
+      "label": "Get list of all objects in the bucket.",
+      "summary": " The current version of the Amazon S3 API is 2006-03-01 . The REST API uses the standard HTTP headers and status codes . The PUT request header is limited to 8 KB in size . Use the AWS Command Line Interface to make direct API calls from your code .",
+      "token_count": 50
+    },
+    {
+      "topic_id": "t60",
+      "label": "Get region from the client for bucket creation logic",
+      "summary": " The current version of the Amazon S3 API is 2006-03-01 . The REST API uses the standard HTTP headers and status codes . The PUT request header is limited to 8 KB in size . Use the AWS Command Line Interface to make direct API calls from your code .",
+      "token_count": 50
+    },
+    {
+      "topic_id": "t61",
+      "label": "Actions for Amazon S3 Control using AWS SDKs",
+      "summary": " Current version of Amazon S3 API is 2006-03-01 . The REST API uses the standard HTTP headers and status codes . The PUT request header is limited to 8 KB in size . Use the AWS Command Line Interface to make direct API calls from your code .",
+      "token_count": 48
+    },
+    {
+      "topic_id": "t62",
+      "label": "Get the current region or default to us-east-1",
+      "summary": " The current version of the Amazon S3 API is 2006-03-01 . The REST API uses the standard HTTP headers and status codes, so standard browsers and toolkits work as expected . The PUT request header is limited to 8 KB in size .",
+      "token_count": 43
+    },
+    {
+      "topic_id": "t63",
+      "label": "Get the latest version for the object.",
+      "summary": " The current version of the Amazon S3 API is 2006-03-01 . The REST API uses the standard HTTP headers and status codes, so standard browsers and toolkits work as expected . The PUT request header is limited to 8 KB in size .",
+      "token_count": 43
+    },
+    {
+      "topic_id": "t64",
+      "label": "Get the object from the event and show its content type",
+      "summary": " Current version of Amazon S3 API is 2006-03-01 . The REST API uses the standard HTTP headers and status codes . The PUT request header is limited to 8 KB in size . Use the AWS Command Line Interface to make direct API calls from your code .",
+      "token_count": 48
+    },
+    {
+      "topic_id": "t65",
+      "label": "Gets credentials for a role in IAM.",
+      "summary": " The current version of the Amazon S3 API is 2006-03-01 . The REST API uses the standard HTTP headers and status codes . The PUT request header is limited to 8 KB in size . Use the AWS Command Line Interface to make direct API calls from your code .",
+      "token_count": 50
+    },
+    {
+      "topic_id": "t66",
+      "label": "Gets temporary AWS credentials for an IAM user with the specified permissions.",
+      "summary": " The current version of the Amazon S3 API is 2006-03-01 . The REST API uses the standard HTTP headers and status codes . The PUT request header is limited to 8 KB in size . Use the AWS Command Line Interface to make direct API calls from your code .",
+      "token_count": 50
+    },
+    {
+      "topic_id": "t67",
+      "label": "Gets the CORS configuration of a bucket.",
+      "summary": " The current version of the Amazon S3 API is 2006-03-01 . The REST API uses the standard HTTP headers and status codes . The PUT request header is limited to 8 KB in size . Use the AWS Command Line Interface to make direct API calls from your code .",
+      "token_count": 50
+    },
+    {
+      "topic_id": "t68",
+      "label": "Gets the Region where the bucket is located.",
+      "summary": " The current version of the Amazon S3 API is 2006-03-01 . The REST API uses the standard HTTP headers and status codes . The PUT request header is limited to 8 KB in size . Use the AWS Command Line Interface to make direct API calls from your code .",
+      "token_count": 50
+    },
+    {
+      "topic_id": "t69",
+      "label": "Gets the object directly to a file.",
+      "summary": " Current version of Amazon S3 API is 2006-03-01 . The REST API uses the standard HTTP headers and status codes . The PUT request header is limited to 8 KB in size . Use the AWS Command Line Interface to make direct API calls from your code .",
+      "token_count": 48
+    },
+    {
+      "topic_id": "t70",
+      "label": "Gets the object into memory.",
+      "summary": " The current version of the Amazon S3 API is 2006-03-01 . The REST API uses the standard HTTP headers and status codes . The PUT request header is limited to 8 KB in size . Use the AWS Command Line Interface to make direct API calls from your code .",
+      "token_count": 50
+    },
+    {
+      "topic_id": "t71",
+      "label": "Gets the policy of a bucket.",
+      "summary": " The current version of the Amazon S3 API is 2006-03-01 . The REST API uses the standard HTTP headers and status codes . The PUT request header is limited to 8 KB in size . Use the AWS Command Line Interface to make direct API calls from your code .",
+      "token_count": 50
+    },
+    {
+      "topic_id": "t72",
+      "label": "If the user doesn't exist, create them.",
+      "summary": " The current version of the Amazon S3 API is 2006-03-01 . The REST API uses the standard HTTP headers and status codes, so standard browsers and toolkits work as expected . Use the AWS Command Line Interface to make direct API calls from your code .",
+      "token_count": 46
+    },
+    {
+      "topic_id": "t73",
+      "label": "Iterate through the pages of the response.",
+      "summary": " The current version of the Amazon S3 API is 2006-03-01 . The REST API uses the standard HTTP headers and status codes . The PUT request header is limited to 8 KB in size . Use the AWS Command Line Interface to make direct API calls from your code .",
+      "token_count": 50
+    },
+    {
+      "topic_id": "t74",
+      "label": "Lists and prints all S3 buckets in the current AWS account.",
+      "summary": " The current version of the Amazon S3 API is 2006-03-01 . The REST API uses the standard HTTP headers and status codes . The PUT request header is limited to 8 KB in size . Use the AWS Command Line Interface to make direct API calls from your code .",
+      "token_count": 50
+    },
+    {
+      "topic_id": "t75",
+      "label": "Lists buckets for the current account.",
+      "summary": " The current version of the Amazon S3 API is 2006-03-01 . The REST API uses the standard HTTP headers and status codes . The PUT request header is limited to 8 KB in size . Use the AWS Command Line Interface to make direct API calls from your code .",
+      "token_count": 50
+    },
+    {
+      "topic_id": "t76",
+      "label": "Lists object in a bucket.",
+      "summary": " Current version of Amazon S3 API is 2006-03-01 . The REST API uses the standard HTTP headers and status codes . The PUT request header is limited to 8 KB in size . Use the AWS Command Line Interface to make direct API calls from your code .",
+      "token_count": 48
+    },
+    {
+      "topic_id": "t77",
+      "label": "Making requests over IPv6",
+      "summary": " The current version of the Amazon S3 API is 2006-03-01 . The REST API uses the standard HTTP headers and status codes, so standard browsers and toolkits work as expected . The PUT request header is limited to 8 KB in size .",
+      "token_count": 43
+    },
+    {
+      "topic_id": "t78",
+      "label": "Making requests using the AWS SDKs",
+      "summary": " The current version of the Amazon S3 API is 2006-03-01 . The REST API uses the standard HTTP headers and status codes, so standard browsers and toolkits work as expected . The PUT request header is limited to 8 KB in size .",
+      "token_count": 43
+    },
+    {
+      "topic_id": "t79",
+      "label": "Mark all other exceptions as permanent failures.",
+      "summary": " The current version of the Amazon S3 API is 2006-03-01 . The REST API uses the standard HTTP headers and status codes, so standard browsers and toolkits work as expected . The PUT request header is limited to 8 KB in size .",
+      "token_count": 43
+    },
+    {
+      "topic_id": "t80",
+      "label": "Mark request timeout as a temporary failure so it will be",
+      "summary": " The current version of the Amazon S3 API is 2006-03-01 . The REST API uses the standard HTTP headers and status codes, so standard browsers and toolkits work as expected . The PUT request header is limited to 8 KB in size .",
+      "token_count": 43
+    },
+    {
+      "topic_id": "t81",
+      "label": "Parse job parameters from Amazon S3 batch operations",
+      "summary": " The current version of the Amazon S3 API is 2006-03-01 . The REST API uses the standard HTTP headers and status codes, so standard browsers and toolkits work as expected . The PUT request header is limited to 8 KB in size .",
+      "token_count": 43
+    },
+    {
+      "topic_id": "t82",
+      "label": "Permanently delete all versions of the object. This cannot be undone!",
+      "summary": " The current version of the Amazon S3 API is 2006-03-01 . The REST API uses the standard HTTP headers and status codes, so standard browsers and toolkits work as expected . The PUT request header is limited to 8 KB in size .",
+      "token_count": 43
+    },
+    {
+      "topic_id": "t83",
+      "label": "Populate a few more files in each bucket so that we can use ListObjects",
+      "summary": " The current version of the Amazon S3 API is 2006-03-01 . The REST API uses the standard HTTP headers and status codes . The PUT request header is limited to 8 KB in size . Use the AWS Command Line Interface to make direct API calls from your code .",
+      "token_count": 50
+    },
+    {
+      "topic_id": "t84",
+      "label": "Populate the buckets to show the lexicographical difference between",
+      "summary": " The current version of the Amazon S3 API is 2006-03-01 . The REST API uses the standard HTTP headers and status codes, so standard browsers and toolkits work as expected . The PUT request header is limited to 8 KB in size .",
+      "token_count": 43
+    },
+    {
+      "topic_id": "t85",
+      "label": "Retrieve the calling parameters.",
+      "summary": " Current version of Amazon S3 API is 2006-03-01 . The REST API uses the standard HTTP headers and status codes . The PUT request header is limited to 8 KB in size . Use the AWS Command Line Interface to make direct API calls from your code .",
+      "token_count": 48
+    },
+    {
+      "topic_id": "t86",
+      "label": "Runs the Amazon S3 getting started scenario.",
+      "summary": " The current version of the Amazon S3 API is 2006-03-01 . The REST API uses the standard HTTP headers and status codes . The PUT request header is limited to 8 KB in size . Use the AWS Command Line Interface to make direct API calls from your code .",
+      "token_count": 50
+    },
+    {
+      "topic_id": "t87",
+      "label": "Actions for Amazon S3 using AWS SDKs",
+      "summary": " The current version of the Amazon S3 API is 2006-03-01 . The REST API uses the standard HTTP headers and status codes . The PUT request header is limited to 8 KB in size . Use the AWS Command Line Interface to make direct API calls from your code .",
+      "token_count": 50
+    },
+    {
+      "topic_id": "t88",
+      "label": "S3 storage.",
+      "summary": " The current version of the Amazon S3 API is 2006-03-01 . The REST API uses the standard HTTP headers and status codes . The PUT request header is limited to 8 KB in size . Use the AWS Command Line Interface to make direct API calls from your code .",
+      "token_count": 50
+    },
+    {
+      "topic_id": "t89",
+      "label": "Sets CORS rules on a bucket.",
+      "summary": " The current version of the Amazon S3 API is 2006-03-01 . The REST API uses the standard HTTP headers and status codes, so standard browsers and toolkits work as expected . The PUT request header is limited to 8 KB in size .",
+      "token_count": 43
+    },
+    {
+      "topic_id": "t90",
+      "label": "Version: \"2012-10-17\",",
+      "summary": " The current version of the Amazon S3 API is 2006-03-01 . The REST API uses the standard HTTP headers and status codes, so standard browsers and toolkits work as expected . The PUT request header is limited to 8 KB in size .",
+      "token_count": 43
+    },
+    {
+      "topic_id": "t91",
+      "label": "Sets a bucket as a static website.",
+      "summary": " The current version of the Amazon S3 API is 2006-03-01 . The REST API uses the standard HTTP headers and status codes . The PUT request header is limited to 8 KB in size . Use the AWS Command Line Interface to make direct API calls from your code .",
+      "token_count": 50
+    },
+    {
+      "topic_id": "t92",
+      "label": "Sets a policy on a bucket.",
+      "summary": " The current version of the Amazon S3 API is 2006-03-01 . The REST API uses the standard HTTP headers and status codes . The PUT request header is limited to 8 KB in size . Use the AWS Command Line Interface to make direct API calls from your code .",
+      "token_count": 50
+    },
+    {
+      "topic_id": "t93",
+      "label": "These configuration attributes affect only downloads.",
+      "summary": " The current version of the Amazon S3 API is 2006-03-01 . The REST API uses the standard HTTP headers and status codes, so standard browsers and toolkits work as expected . The PUT request header is limited to 8 KB in size .",
+      "token_count": 43
+    },
+    {
+      "topic_id": "t94",
+      "label": "This function creates a copy of the specified file in the same bucket.",
+      "summary": " The current version of the Amazon S3 API is 2006-03-01 . The REST API uses the standard HTTP headers and status codes . The PUT request header is limited to 8 KB in size . Use the AWS Command Line Interface to make direct API calls from your code .",
+      "token_count": 50
+    },
+    {
+      "topic_id": "t95",
+      "label": "This function creates a file in the specified bucket.",
+      "summary": " Current version of Amazon S3 API is 2006-03-01 . The REST API uses the standard HTTP headers and status codes . The PUT request header is limited to 8 KB in size . Use the AWS Command Line Interface to make direct API calls from your code .",
+      "token_count": 48
+    },
+    {
+      "topic_id": "t96",
+      "label": "This function deletes the specified bucket.",
+      "summary": " The current version of the Amazon S3 API is 2006-03-01 . The REST API uses the standard HTTP headers and status codes . The PUT request header is limited to 8 KB in size . Use the AWS Command Line Interface to make direct API calls from your code .",
+      "token_count": 50
+    },
+    {
+      "topic_id": "t97",
+      "label": "CompleteMultipartUploadRequest",
+      "summary": " The current version of the Amazon S3 API is 2006-03-01 . The REST API uses the standard HTTP headers and status codes, so standard browsers and toolkits work as expected . The PUT request header is limited to 8 KB in size .",
+      "token_count": 43
+    },
+    {
+      "topic_id": "t98",
+      "label": "This function deletes the specified file from the specified bucket.",
+      "summary": " The current version of the Amazon S3 API is 2006-03-01 . The REST API uses the standard HTTP headers and status codes . The PUT request header is limited to 8 KB in size . Use the AWS Command Line Interface to make direct API calls from your code .",
+      "token_count": 50
+    },
+    {
+      "topic_id": "t99",
+      "label": "This function downloads an object in a bucket to a file.",
+      "summary": " The current version of the Amazon S3 API is 2006-03-01 . The REST API uses the standard HTTP headers and status codes . The PUT request header is limited to 8 KB in size . Use the AWS Command Line Interface to make direct API calls from your code .",
+      "token_count": 50
+    },
+    {
+      "topic_id": "t100",
+      "label": "Upload test file into the source bucket.",
+      "summary": " The current version of the Amazon S3 API is 2006-03-01 . The REST API uses the standard HTTP headers and status codes . The PUT request header is limited to 8 KB in size . Use the AWS Command Line Interface to make direct API calls from your code .",
+      "token_count": 50
+    },
+    {
+      "topic_id": "t101",
+      "label": "Upload with metadata",
+      "summary": " The current version of the Amazon S3 API is 2006-03-01 . The REST API uses the standard HTTP headers and status codes . The PUT request header is limited to 8 KB in size . Use the AWS Command Line Interface to make direct API calls from your code .",
+      "token_count": 50
+    },
+    {
+      "topic_id": "t102",
+      "label": "Uploads a file to an Amazon S3 bucket.",
+      "summary": " The current version of the Amazon S3 API is 2006-03-01 . The REST API uses the standard HTTP headers and status codes . The PUT request header is limited to 8 KB in size . Use the AWS Command Line Interface to make direct API calls from your code .",
+      "token_count": 50
+    },
+    {
+      "topic_id": "t103",
+      "label": "Uploads a file to an Amazon S3 object by using a managed uploader.",
+      "summary": " Current version of Amazon S3 API is 2006-03-01 . The REST API uses the standard HTTP headers and status codes . The PUT request header is limited to 8 KB in size . Use the AWS Command Line Interface to make direct API calls from your code .",
+      "token_count": 48
+    },
+    {
+      "topic_id": "t104",
+      "label": "Use the MSVC variable to determine if this is a Windows build.",
+      "summary": " The current version of the Amazon S3 API is 2006-03-01 . The REST API uses the standard HTTP headers and status codes . The PUT request header is limited to 8 KB in size . Use the AWS Command Line Interface to make direct API calls from your code .",
+      "token_count": 50
+    },
+    {
+      "topic_id": "t105",
+      "label": "Version",
+      "summary": " The current version of the Amazon S3 API is 2006-03-01 . The REST API uses the standard HTTP headers and status codes, so standard browsers and toolkits work as expected . The PUT request header is limited to 8 KB in size .",
+      "token_count": 43
+    },
+    {
+      "topic_id": "t106",
+      "label": "Version ID for the specific version of the object to delete.",
+      "summary": " The current version of the Amazon S3 API is 2006-03-01 . The REST API uses the standard HTTP headers and status codes, so standard browsers and toolkits work as expected . The PUT request header is limited to 8 KB in size .",
+      "token_count": 43
+    },
+    {
+      "topic_id": "t107",
+      "label": "Version ID of an object.",
+      "summary": " The current version of the Amazon S3 API is 2006-03-01 . The REST API uses the standard HTTP headers and status codes . The PUT request header is limited to 8 KB in size . Use the AWS Command Line Interface to make direct API calls from your code .",
+      "token_count": 50
+    },
+    {
+      "topic_id": "t108",
+      "label": "MultipartUpload",
+      "summary": " The current version of the Amazon S3 API is 2006-03-01 . The REST API uses the standard HTTP headers and status codes, so standard browsers and toolkits work as expected . The PUT request header is limited to 8 KB in size .",
+      "token_count": 43
+    },
+    {
+      "topic_id": "t109",
+      "label": "Version ID of the newly created copy.",
+      "summary": " The current version of the Amazon S3 API is 2006-03-01 . The REST API uses the standard HTTP headers and status codes . The PUT request header is limited to 8 KB in size . Use the AWS Command Line Interface to make direct API calls from your code .",
+      "token_count": 50
+    },
+    {
+      "topic_id": "t110",
+      "label": "<InitiateMultipartUploadResult xmlns=\" <UploadId>EXAMPLEJZ6e0YupT2h66iePQCc9IEbYbDUy4RTpMeoSMLPRp8Z5o1u8feSRonpvnWsKKG35tI2LB9VDPiCgTy.Gq2VxQLYjrue4Nq.NBdqI- </UploadId> </InitiateMultipartUploadResult",
+      "summary": " The current version of the Amazon S3 API is 2006-03-01 . The REST API uses the standard HTTP headers and status codes . The PUT request header is limited to 8 KB in size . Use the AWS Command Line Interface to make direct API calls from your code .",
+      "token_count": 50
+    },
+    {
+      "topic_id": "t111",
+      "label": "<InitiateMultipartUploadResult> </InitiateMultipartUploadResult",
+      "summary": " Current version of the Amazon S3 API is 2006-03-01 . The REST API uses the standard HTTP headers and status codes . The PUT request header is limited to 8 KB in size . Use the AWS Command Line Interface to make direct API calls from your code .",
+      "token_count": 49
+    },
+    {
+      "topic_id": "t112",
+      "label": "CreateMultipartUpload",
+      "summary": " The current version of the Amazon S3 API is 2006-03-01 . The REST API uses the standard HTTP headers and status codes, so standard browsers and toolkits work as expected . The PUT request header is limited to 8 KB in size .",
+      "token_count": 43
+    },
+    {
+      "topic_id": "t113",
+      "label": "InitiateMultipartUploadResult",
+      "summary": " The current version of the Amazon S3 API is 2006-03-01 . The REST API uses the standard HTTP headers and status codes, so standard browsers and toolkits work as expected . The PUT request header is limited to 8 KB in size .",
+      "token_count": 43
+    },
+    {
+      "topic_id": "t114",
+      "label": "CompleteMultipartUploadResult",
+      "summary": " The current version of the Amazon S3 API is 2006-03-01 . The REST API uses the standard HTTP headers and status codes, so standard browsers and toolkits work as expected . The PUT request header is limited to 8 KB in size .",
+      "token_count": 43
+    },
+    {
+      "topic_id": "t115",
+      "label": "Version ID of the object.",
+      "summary": " The current version of the Amazon S3 API is 2006-03-01 . The REST API uses the standard HTTP headers and status codes, so standard browsers and toolkits work as expected . The PUT request header is limited to 8 KB in size .",
+      "token_count": 43
+    },
+    {
+      "topic_id": "t116",
+      "label": "ListMultipartUploads",
+      "summary": " The current version of the Amazon S3 API is 2006-03-01 . The REST API uses the standard HTTP headers and status codes, so standard browsers and toolkits work as expected . The PUT request header is limited to 8 KB in size .",
+      "token_count": 43
+    },
+    {
+      "topic_id": "t117",
+      "label": "ListMultipartUploadsResult",
+      "summary": " The current version of the Amazon S3 API is 2006-03-01 . The REST API uses the standard HTTP headers and status codes, so standard browsers and toolkits work as expected . The PUT request header is limited to 8 KB in size .",
+      "token_count": 43
+    },
+    {
+      "topic_id": "t118",
+      "label": "Version ID of the source object that was copied.",
+      "summary": " The current version of the Amazon S3 API is 2006-03-01 . The REST API uses the standard HTTP headers and status codes . The PUT request header is limited to 8 KB in size . Use the AWS Command Line Interface to make direct API calls from your code .",
+      "token_count": 50
+    },
+    {
+      "topic_id": "t119",
+      "label": "Version ID used to reference a specific version of the object.",
+      "summary": " The current version of the Amazon S3 API is 2006-03-01 . The REST API uses the standard HTTP headers and status codes . The PUT request header is limited to 8 KB in size . Use the AWS Command Line Interface to make direct API calls from your code .",
+      "token_count": 50
+    },
+    {
+      "topic_id": "t120",
+      "label": "We suppress all output - we're interested only in the return code.",
+      "summary": " The current version of the Amazon S3 API is 2006-03-01 . The REST API uses the standard HTTP headers and status codes, so standard browsers and toolkits work as expected . The PUT request header is limited to 8 KB in size .",
+      "token_count": 43
+    },
+    {
+      "topic_id": "t121",
+      "label": "Wraps an Amazon S3 bucket policy.",
+      "summary": " The current version of the Amazon S3 API is 2006-03-01 . The REST API uses the standard HTTP headers and status codes . The PUT request header is limited to 8 KB in size . Use the AWS Command Line Interface to make direct API calls from your code .",
+      "token_count": 50
+    },
+    {
+      "topic_id": "t122",
+      "label": "and set the proper subdirectory to the executables' location.",
+      "summary": " Current version of Amazon S3 API is 2006-03-01 . The REST API uses the standard HTTP headers and status codes . The PUT request header is limited to 8 KB in size . Use the AWS Command Line Interface to make direct API calls from your code .",
+      "token_count": 48
+    },
+    {
+      "topic_id": "t123",
+      "label": "at the end of the list even when they are interspersed in time.",
+      "summary": " The current version of the Amazon S3 API is 2006-03-01 . The REST API uses the standard HTTP headers and status codes . The PUT request header is limited to 8 KB in size . Use the AWS Command Line Interface to make direct API calls from your code .",
+      "token_count": 50
+    },
+    {
+      "topic_id": "t124",
+      "label": "encryption key must be included to download an encrypted object.",
+      "summary": " Current version of Amazon S3 API is 2006-03-01 . The REST API uses the standard HTTP headers and status codes . The PUT request header is limited to 8 KB in size . Use the AWS Command Line Interface to make direct API calls from your code .",
+      "token_count": 48
+    },
+    {
+      "topic_id": "t125",
+      "label": "existing grants, append new grants to the list of existing grants.",
+      "summary": " Current version of the Amazon S3 API is 2006-03-01 . The REST API uses the standard HTTP headers and status codes . The PUT request header is limited to 8 KB in size . Use the AWS Command Line Interface to make direct API calls from your code .",
+      "token_count": 49
+    },
+    {
+      "topic_id": "t126",
+      "label": "exit 1 unless bucket_exists?(s3_client, 'amzn-s3-demo-bucket')",
+      "summary": " The current version of the Amazon S3 API is 2006-03-01 . The REST API uses the standard HTTP headers and status codes . The PUT request header is limited to 8 KB in size . Use the AWS Command Line Interface to make direct API calls from your code .",
+      "token_count": 50
+    },
+    {
+      "topic_id": "t127",
+      "label": "exit 1 unless list_bucket_objects?(s3_client, 'amzn-s3-demo-bucket')",
+      "summary": " The current version of the Amazon S3 API is 2006-03-01 . The REST API uses the standard HTTP headers and status codes . The PUT request header is limited to 8 KB in size . Use the AWS Command Line Interface to make direct API calls from your code .",
+      "token_count": 50
+    },
+    {
+      "topic_id": "t128",
+      "label": "exit 1 unless list_objects_in_bucket?(s3_client, 'amzn-s3-demo-bucket')",
+      "summary": " The current version of the Amazon S3 API is 2006-03-01 . The REST API uses the standard HTTP headers and status codes . The PUT request header is limited to 8 KB in size . Use the AWS Command Line Interface to make direct API calls from your code .",
+      "token_count": 50
+    },
+    {
+      "topic_id": "t129",
+      "label": "Developing with AWS SDKs",
+      "summary": " The current version of the Amazon S3 API is 2006-03-01 . The REST API uses the standard HTTP headers and status codes, so standard browsers and toolkits work as expected . The PUT request header is limited to 8 KB in size .",
+      "token_count": 43
+    },
+    {
+      "topic_id": "t130",
+      "label": "Get Amazon S3 request IDs for Support",
+      "summary": " The current version of the Amazon S3 API is 2006-03-01 . The REST API uses the standard HTTP headers and status codes, so standard browsers and toolkits work as expected . Use the AWS Command Line Interface to make direct API calls from your code .",
+      "token_count": 46
+    },
+    {
+      "topic_id": "t131",
+      "label": "Learn more about the AWS CLI",
+      "summary": " The current version of the Amazon S3 API is 2006-03-01 . The REST API uses the standard HTTP headers and status codes so standard browsers and toolkits work as expected . The PUT request header is limited to 8 KB in size .",
+      "token_count": 43
+    },
+    {
+      "topic_id": "t132",
+      "label": "Making requests using the REST API",
+      "summary": " The current version of the Amazon S3 API is 2006-03-01 . The REST API uses the standard HTTP headers and status codes . Use the AWS Command Line Interface to make direct API calls from your code .",
+      "token_count": 38
+    },
+    {
+      "topic_id": "t133",
+      "label": "Specifying the Signature Version in request authentication",
+      "summary": " The current version of the Amazon S3 API is 2006-03-01 . The REST API uses the standard HTTP headers and status codes, so standard browsers and toolkits work as expected . The PUT request header is limited to 8 KB in size .",
+      "token_count": 43
+    },
+    {
+      "topic_id": "t134",
+      "label": "Using HTTP to obtain request IDs",
+      "summary": " The current version of the Amazon S3 API is 2006-03-01 . The REST API uses the standard HTTP headers and status codes, so standard browsers and toolkits work as expected . The PUT request header is limited to 8 KB in size .",
+      "token_count": 43
+    },
+    {
+      "topic_id": "t135",
+      "label": "Using Windows PowerShell to obtain request IDs",
+      "summary": " The current version of the Amazon S3 API is 2006-03-01 . The REST API uses the standard HTTP headers and status codes, so standard browsers and toolkits work as expected . The PUT request header is limited to 8 KB in size .",
+      "token_count": 43
+    },
+    {
+      "topic_id": "t136",
+      "label": "Version 2 traﬃc on.",
+      "summary": " The current version of the Amazon S3 API is 2006-03-01 . The REST API uses the standard HTTP headers and status codes . The PUT request header is limited to 8 KB in size . Use the AWS Command Line Interface to make direct API calls from your code .",
+      "token_count": 50
+    },
+    {
+      "topic_id": "t137",
+      "label": "Version 2.",
+      "summary": " The current version of the Amazon S3 API is 2006-03-01 . The REST API uses the standard HTTP headers and status codes . The PUT request header is limited to 8 KB in size . Use the AWS Command Line Interface to make direct API calls from your code .",
+      "token_count": 50
+    },
+    {
+      "topic_id": "t138",
+      "label": "Version 4, as shown in the following table.",
+      "summary": " The current version of the Amazon S3 API is 2006-03-01 . The REST API uses the standard HTTP headers and status codes . The PUT request header is limited to 8 KB in size . Use the AWS Command Line Interface to make direct API calls from your code .",
+      "token_count": 50
+    },
+    {
+      "topic_id": "t139",
+      "label": "Version 4.",
+      "summary": " The current version of the Amazon S3 API is 2006-03-01 . The REST API uses the standard HTTP headers and status codes . The PUT request header is limited to 8 KB in size . Use the AWS Command Line Interface to make direct API calls from your code .",
+      "token_count": 50
+    },
+    {
+      "topic_id": "t140",
+      "label": "if you want to preserve existing grants.",
+      "summary": " The current version of the Amazon S3 API is 2006-03-01 . The REST API uses the standard HTTP headers and status codes . The PUT request header is limited to 8 KB in size . Use the AWS Command Line Interface to make direct API calls from your code .",
+      "token_count": 50
+    },
+    {
+      "topic_id": "t141",
+      "label": "marker and should not be deleted.",
+      "summary": " The current version of the Amazon S3 API is 2006-03-01 . The REST API uses the standard HTTP headers and status codes . The PUT request header is limited to 8 KB in size . Use the AWS Command Line Interface to make direct API calls from your code .",
+      "token_count": 50
+    },
+    {
+      "topic_id": "t142",
+      "label": "shellcheck disable=SC2086",
+      "summary": " The current version of the Amazon S3 API is 2006-03-01 . The REST API uses the standard HTTP headers and status codes, so standard browsers and toolkits work as expected . The PUT request header is limited to 8 KB in size .",
+      "token_count": 43
+    },
+    {
+      "topic_id": "t143",
+      "label": "the need to pass through an internet gateway or NAT device.",
+      "summary": " The current version of the Amazon S3 API is 2006-03-01 . The REST API uses the standard HTTP headers and status codes, so standard browsers and toolkits work as expected . The PUT request header is limited to 8 KB in size .",
+      "token_count": 43
+    }
+  ],
+  "level_1_categories": [
+    {
+      "category": "Storage",
+      "summary": "Storage includes services such as 1 - If an error occurred., 3. Create an additional client using the credentials with S3 Express, 4. Create two buckets., A location constraint for \"us-east-1\" returns an error., API call recommendations. Key functionalities include The current version of the Amazon S3 API is 2006-03-01.",
+      "token_count": 50
+    }
+  ],
+  "level_0_global": "The current version of the Amazon S3 API is 2006-03-01 .",
+  "validation_reports": {
+    "L4_sec_master": {
+      "entity_coverage": {
+        "passed": true,
+        "coverage": 1.0,
+        "found": [
+          "rest api",
+          "amazon s3"
+        ],
+        "missing": []
+      },
+      "aku_fact_check": {
+        "passed": false,
+        "preservation": 0.2308,
+        "preserved": [
+          {
+            "subject": "REST API",
+            "predicate": "USES",
+            "object": "standard HTTP headers"
+          },
+          {
+            "subject": "Amazon S3",
+            "predicate": "SUPPORTS",
+            "object": "REST API"
+          },
+          {
+            "subject": "REST API",
+            "predicate": "USES",
+            "object": "standard HTTP headers"
+          }
+        ],
+        "missing": [
+          {
+            "subject": "Amazon S3",
+            "predicate": "CONCATENATE",
+            "object": "all the parts"
+          },
+          {
+            "subject": "Amazon S3",
+            "predicate": "SENDS",
+            "object": "white space characters"
+          },
+          {
+            "subject": "Amazon S3",
+            "predicate": "CONCATENATE",
+            "object": "ascending order"
+          },
+          {
+            "subject": "SDKs",
+            "predicate": "DETECT",
+            "object": "embedded error"
+          },
+          {
+            "subject": "S3",
+            "predicate": "RETURNS",
+            "object": "409 ConditionalRequestConflict response"
+          },
+          {
+            "subject": "Amazon S3",
+            "predicate": "RETURNS",
+            "object": "412 Precondition Failed error"
+          },
+          {
+            "subject": "header",
+            "predicate": "SPECIFIES",
+            "object": "Base64 encoded, 32-bit CRC32 checksum data"
+          },
+          {
+            "subject": "header",
+            "predicate": "SPECIFIES",
+            "object": "Base64 encoded, 32-bit CRC32C checksum"
+          },
+          {
+            "subject": "header",
+            "predicate": "SPECIFIES",
+            "object": "Base64 encoded, 160-bit SHA1 digest"
+          },
+          {
+            "subject": "header",
+            "predicate": "SPECIFIES",
+            "object": "Base64 encoded, 256-bit SHA256 digest"
+          }
+        ]
+      },
+      "numerical_accuracy": {
+        "passed": true,
+        "accuracy": 1.0,
+        "verified": [
+          "01",
+          "03",
+          "2006",
+          "8"
+        ],
+        "suspect": []
+      },
+      "overall_passed": false
+    },
+    "L3_AWS-Document": {
+      "entity_coverage": {
+        "passed": true,
+        "coverage": 1.0,
+        "found": [
+          "rest api",
+          "amazon s3"
+        ],
+        "missing": []
+      },
+      "relationship_consistency": {
+        "passed": true,
+        "consistency": 1.0,
+        "reflected": [
+          {
+            "source": "rest api",
+            "relation": "USES",
+            "target": "standard http headers"
+          },
+          {
+            "source": "amazon s3",
+            "relation": "SUPPORTS",
+            "target": "rest api"
+          },
+          {
+            "source": "rest api",
+            "relation": "USES",
+            "target": "standard http headers"
+          }
+        ],
+        "missing": []
+      },
+      "numerical_accuracy": {
+        "passed": true,
+        "accuracy": 1.0,
+        "verified": [
+          "01",
+          "03",
+          "2006",
+          "8"
+        ],
+        "suspect": []
+      },
+      "overall_passed": true
+    },
+    "L2_t0": {
+      "entity_coverage": {
+        "passed": true,
+        "coverage": 1.0,
+        "found": [
+          "rest api",
+          "amazon s3"
+        ],
+        "missing": []
+      },
+      "overall_passed": true
+    },
+    "L2_t1": {
+      "entity_coverage": {
+        "passed": true,
+        "coverage": 1.0,
+        "found": [
+          "rest api",
+          "amazon s3"
+        ],
+        "missing": []
+      },
+      "overall_passed": true
+    },
+    "L2_t2": {
+      "entity_coverage": {
+        "passed": true,
+        "coverage": 1.0,
+        "found": [
+          "rest api",
+          "amazon s3"
+        ],
+        "missing": []
+      },
+      "overall_passed": true
+    },
+    "L2_t3": {
+      "entity_coverage": {
+        "passed": true,
+        "coverage": 1.0,
+        "found": [
+          "rest api",
+          "amazon s3"
+        ],
+        "missing": []
+      },
+      "overall_passed": true
+    },
+    "L2_t4": {
+      "entity_coverage": {
+        "passed": true,
+        "coverage": 1.0,
+        "found": [
+          "rest api",
+          "amazon s3"
+        ],
+        "missing": []
+      },
+      "overall_passed": true
+    },
+    "L2_t5": {
+      "entity_coverage": {
+        "passed": true,
+        "coverage": 1.0,
+        "found": [
+          "rest api",
+          "amazon s3"
+        ],
+        "missing": []
+      },
+      "overall_passed": true
+    },
+    "L2_t6": {
+      "entity_coverage": {
+        "passed": true,
+        "coverage": 1.0,
+        "found": [
+          "rest api",
+          "amazon s3"
+        ],
+        "missing": []
+      },
+      "overall_passed": true
+    },
+    "L2_t7": {
+      "entity_coverage": {
+        "passed": true,
+        "coverage": 1.0,
+        "found": [
+          "rest api",
+          "amazon s3"
+        ],
+        "missing": []
+      },
+      "overall_passed": true
+    },
+    "L2_t8": {
+      "entity_coverage": {
+        "passed": true,
+        "coverage": 1.0,
+        "found": [
+          "rest api",
+          "amazon s3"
+        ],
+        "missing": []
+      },
+      "overall_passed": true
+    },
+    "L2_t9": {
+      "entity_coverage": {
+        "passed": true,
+        "coverage": 1.0,
+        "found": [
+          "rest api",
+          "amazon s3"
+        ],
+        "missing": []
+      },
+      "overall_passed": true
+    },
+    "L2_t10": {
+      "entity_coverage": {
+        "passed": true,
+        "coverage": 1.0,
+        "found": [
+          "rest api",
+          "amazon s3"
+        ],
+        "missing": []
+      },
+      "overall_passed": true
+    },
+    "L2_t11": {
+      "entity_coverage": {
+        "passed": true,
+        "coverage": 1.0,
+        "found": [
+          "rest api",
+          "amazon s3"
+        ],
+        "missing": []
+      },
+      "overall_passed": true
+    },
+    "L2_t12": {
+      "entity_coverage": {
+        "passed": true,
+        "coverage": 1.0,
+        "found": [
+          "rest api",
+          "amazon s3"
+        ],
+        "missing": []
+      },
+      "overall_passed": true
+    },
+    "L2_t13": {
+      "entity_coverage": {
+        "passed": true,
+        "coverage": 1.0,
+        "found": [
+          "rest api",
+          "amazon s3"
+        ],
+        "missing": []
+      },
+      "overall_passed": true
+    },
+    "L2_t14": {
+      "entity_coverage": {
+        "passed": true,
+        "coverage": 1.0,
+        "found": [
+          "rest api",
+          "amazon s3"
+        ],
+        "missing": []
+      },
+      "overall_passed": true
+    },
+    "L2_t15": {
+      "entity_coverage": {
+        "passed": true,
+        "coverage": 1.0,
+        "found": [
+          "rest api",
+          "amazon s3"
+        ],
+        "missing": []
+      },
+      "overall_passed": true
+    },
+    "L2_t16": {
+      "entity_coverage": {
+        "passed": true,
+        "coverage": 1.0,
+        "found": [
+          "rest api",
+          "amazon s3"
+        ],
+        "missing": []
+      },
+      "overall_passed": true
+    },
+    "L2_t17": {
+      "entity_coverage": {
+        "passed": true,
+        "coverage": 1.0,
+        "found": [
+          "rest api",
+          "amazon s3"
+        ],
+        "missing": []
+      },
+      "overall_passed": true
+    },
+    "L2_t18": {
+      "entity_coverage": {
+        "passed": true,
+        "coverage": 1.0,
+        "found": [
+          "rest api",
+          "amazon s3"
+        ],
+        "missing": []
+      },
+      "overall_passed": true
+    },
+    "L2_t19": {
+      "entity_coverage": {
+        "passed": true,
+        "coverage": 1.0,
+        "found": [
+          "rest api",
+          "amazon s3"
+        ],
+        "missing": []
+      },
+      "overall_passed": true
+    },
+    "L2_t20": {
+      "entity_coverage": {
+        "passed": true,
+        "coverage": 1.0,
+        "found": [
+          "rest api",
+          "amazon s3"
+        ],
+        "missing": []
+      },
+      "overall_passed": true
+    },
+    "L2_t21": {
+      "entity_coverage": {
+        "passed": true,
+        "coverage": 1.0,
+        "found": [
+          "rest api",
+          "amazon s3"
+        ],
+        "missing": []
+      },
+      "overall_passed": true
+    },
+    "L2_t22": {
+      "entity_coverage": {
+        "passed": true,
+        "coverage": 1.0,
+        "found": [
+          "rest api",
+          "amazon s3"
+        ],
+        "missing": []
+      },
+      "overall_passed": true
+    },
+    "L2_t23": {
+      "entity_coverage": {
+        "passed": true,
+        "coverage": 1.0,
+        "found": [
+          "rest api",
+          "amazon s3"
+        ],
+        "missing": []
+      },
+      "overall_passed": true
+    },
+    "L2_t24": {
+      "entity_coverage": {
+        "passed": true,
+        "coverage": 1.0,
+        "found": [
+          "rest api",
+          "amazon s3"
+        ],
+        "missing": []
+      },
+      "overall_passed": true
+    },
+    "L2_t25": {
+      "entity_coverage": {
+        "passed": true,
+        "coverage": 1.0,
+        "found": [
+          "rest api",
+          "amazon s3"
+        ],
+        "missing": []
+      },
+      "overall_passed": true
+    },
+    "L2_t26": {
+      "entity_coverage": {
+        "passed": true,
+        "coverage": 1.0,
+        "found": [
+          "rest api",
+          "amazon s3"
+        ],
+        "missing": []
+      },
+      "overall_passed": true
+    },
+    "L2_t27": {
+      "entity_coverage": {
+        "passed": true,
+        "coverage": 1.0,
+        "found": [
+          "rest api",
+          "amazon s3"
+        ],
+        "missing": []
+      },
+      "overall_passed": true
+    },
+    "L2_t28": {
+      "entity_coverage": {
+        "passed": true,
+        "coverage": 1.0,
+        "found": [
+          "rest api",
+          "amazon s3"
+        ],
+        "missing": []
+      },
+      "overall_passed": true
+    },
+    "L2_t29": {
+      "entity_coverage": {
+        "passed": true,
+        "coverage": 1.0,
+        "found": [
+          "rest api",
+          "amazon s3"
+        ],
+        "missing": []
+      },
+      "overall_passed": true
+    },
+    "L2_t30": {
+      "entity_coverage": {
+        "passed": true,
+        "coverage": 1.0,
+        "found": [
+          "rest api",
+          "amazon s3"
+        ],
+        "missing": []
+      },
+      "overall_passed": true
+    },
+    "L2_t31": {
+      "entity_coverage": {
+        "passed": true,
+        "coverage": 1.0,
+        "found": [
+          "rest api",
+          "amazon s3"
+        ],
+        "missing": []
+      },
+      "overall_passed": true
+    },
+    "L2_t32": {
+      "entity_coverage": {
+        "passed": true,
+        "coverage": 1.0,
+        "found": [
+          "rest api",
+          "amazon s3"
+        ],
+        "missing": []
+      },
+      "overall_passed": true
+    },
+    "L2_t33": {
+      "entity_coverage": {
+        "passed": true,
+        "coverage": 1.0,
+        "found": [
+          "rest api",
+          "amazon s3"
+        ],
+        "missing": []
+      },
+      "overall_passed": true
+    },
+    "L2_t34": {
+      "entity_coverage": {
+        "passed": true,
+        "coverage": 1.0,
+        "found": [
+          "rest api",
+          "amazon s3"
+        ],
+        "missing": []
+      },
+      "overall_passed": true
+    },
+    "L2_t35": {
+      "entity_coverage": {
+        "passed": true,
+        "coverage": 1.0,
+        "found": [
+          "rest api",
+          "amazon s3"
+        ],
+        "missing": []
+      },
+      "overall_passed": true
+    },
+    "L2_t36": {
+      "entity_coverage": {
+        "passed": true,
+        "coverage": 1.0,
+        "found": [
+          "rest api",
+          "amazon s3"
+        ],
+        "missing": []
+      },
+      "overall_passed": true
+    },
+    "L2_t37": {
+      "entity_coverage": {
+        "passed": true,
+        "coverage": 1.0,
+        "found": [
+          "rest api",
+          "amazon s3"
+        ],
+        "missing": []
+      },
+      "overall_passed": true
+    },
+    "L2_t38": {
+      "entity_coverage": {
+        "passed": true,
+        "coverage": 1.0,
+        "found": [
+          "rest api",
+          "amazon s3"
+        ],
+        "missing": []
+      },
+      "overall_passed": true
+    },
+    "L2_t39": {
+      "entity_coverage": {
+        "passed": true,
+        "coverage": 1.0,
+        "found": [
+          "rest api",
+          "amazon s3"
+        ],
+        "missing": []
+      },
+      "overall_passed": true
+    },
+    "L2_t40": {
+      "entity_coverage": {
+        "passed": true,
+        "coverage": 1.0,
+        "found": [
+          "rest api",
+          "amazon s3"
+        ],
+        "missing": []
+      },
+      "overall_passed": true
+    },
+    "L2_t41": {
+      "entity_coverage": {
+        "passed": true,
+        "coverage": 1.0,
+        "found": [
+          "rest api",
+          "amazon s3"
+        ],
+        "missing": []
+      },
+      "overall_passed": true
+    },
+    "L2_t42": {
+      "entity_coverage": {
+        "passed": true,
+        "coverage": 1.0,
+        "found": [
+          "rest api",
+          "amazon s3"
+        ],
+        "missing": []
+      },
+      "overall_passed": true
+    },
+    "L2_t43": {
+      "entity_coverage": {
+        "passed": true,
+        "coverage": 1.0,
+        "found": [
+          "rest api",
+          "amazon s3"
+        ],
+        "missing": []
+      },
+      "overall_passed": true
+    },
+    "L2_t44": {
+      "entity_coverage": {
+        "passed": true,
+        "coverage": 1.0,
+        "found": [
+          "rest api",
+          "amazon s3"
+        ],
+        "missing": []
+      },
+      "overall_passed": true
+    },
+    "L2_t45": {
+      "entity_coverage": {
+        "passed": true,
+        "coverage": 1.0,
+        "found": [
+          "rest api",
+          "amazon s3"
+        ],
+        "missing": []
+      },
+      "overall_passed": true
+    },
+    "L2_t46": {
+      "entity_coverage": {
+        "passed": true,
+        "coverage": 1.0,
+        "found": [
+          "rest api",
+          "amazon s3"
+        ],
+        "missing": []
+      },
+      "overall_passed": true
+    },
+    "L2_t47": {
+      "entity_coverage": {
+        "passed": true,
+        "coverage": 1.0,
+        "found": [
+          "rest api",
+          "amazon s3"
+        ],
+        "missing": []
+      },
+      "overall_passed": true
+    },
+    "L2_t48": {
+      "entity_coverage": {
+        "passed": true,
+        "coverage": 1.0,
+        "found": [
+          "rest api",
+          "amazon s3"
+        ],
+        "missing": []
+      },
+      "overall_passed": true
+    },
+    "L2_t49": {
+      "entity_coverage": {
+        "passed": true,
+        "coverage": 1.0,
+        "found": [
+          "rest api",
+          "amazon s3"
+        ],
+        "missing": []
+      },
+      "overall_passed": true
+    },
+    "L2_t50": {
+      "entity_coverage": {
+        "passed": true,
+        "coverage": 1.0,
+        "found": [
+          "rest api",
+          "amazon s3"
+        ],
+        "missing": []
+      },
+      "overall_passed": true
+    },
+    "L2_t51": {
+      "entity_coverage": {
+        "passed": true,
+        "coverage": 1.0,
+        "found": [
+          "rest api",
+          "amazon s3"
+        ],
+        "missing": []
+      },
+      "overall_passed": true
+    },
+    "L2_t52": {
+      "entity_coverage": {
+        "passed": true,
+        "coverage": 1.0,
+        "found": [
+          "rest api",
+          "amazon s3"
+        ],
+        "missing": []
+      },
+      "overall_passed": true
+    },
+    "L2_t53": {
+      "entity_coverage": {
+        "passed": true,
+        "coverage": 1.0,
+        "found": [
+          "rest api",
+          "amazon s3"
+        ],
+        "missing": []
+      },
+      "overall_passed": true
+    },
+    "L2_t54": {
+      "entity_coverage": {
+        "passed": true,
+        "coverage": 1.0,
+        "found": [
+          "rest api",
+          "amazon s3"
+        ],
+        "missing": []
+      },
+      "overall_passed": true
+    },
+    "L2_t55": {
+      "entity_coverage": {
+        "passed": true,
+        "coverage": 1.0,
+        "found": [
+          "rest api",
+          "amazon s3"
+        ],
+        "missing": []
+      },
+      "overall_passed": true
+    },
+    "L2_t56": {
+      "entity_coverage": {
+        "passed": true,
+        "coverage": 1.0,
+        "found": [
+          "rest api",
+          "amazon s3"
+        ],
+        "missing": []
+      },
+      "overall_passed": true
+    },
+    "L2_t57": {
+      "entity_coverage": {
+        "passed": true,
+        "coverage": 1.0,
+        "found": [
+          "rest api",
+          "amazon s3"
+        ],
+        "missing": []
+      },
+      "overall_passed": true
+    },
+    "L2_t58": {
+      "entity_coverage": {
+        "passed": true,
+        "coverage": 1.0,
+        "found": [
+          "rest api",
+          "amazon s3"
+        ],
+        "missing": []
+      },
+      "overall_passed": true
+    },
+    "L2_t59": {
+      "entity_coverage": {
+        "passed": true,
+        "coverage": 1.0,
+        "found": [
+          "rest api",
+          "amazon s3"
+        ],
+        "missing": []
+      },
+      "overall_passed": true
+    },
+    "L2_t60": {
+      "entity_coverage": {
+        "passed": true,
+        "coverage": 1.0,
+        "found": [
+          "rest api",
+          "amazon s3"
+        ],
+        "missing": []
+      },
+      "overall_passed": true
+    },
+    "L2_t61": {
+      "entity_coverage": {
+        "passed": true,
+        "coverage": 1.0,
+        "found": [
+          "rest api",
+          "amazon s3"
+        ],
+        "missing": []
+      },
+      "overall_passed": true
+    },
+    "L2_t62": {
+      "entity_coverage": {
+        "passed": true,
+        "coverage": 1.0,
+        "found": [
+          "rest api",
+          "amazon s3"
+        ],
+        "missing": []
+      },
+      "overall_passed": true
+    },
+    "L2_t63": {
+      "entity_coverage": {
+        "passed": true,
+        "coverage": 1.0,
+        "found": [
+          "rest api",
+          "amazon s3"
+        ],
+        "missing": []
+      },
+      "overall_passed": true
+    },
+    "L2_t64": {
+      "entity_coverage": {
+        "passed": true,
+        "coverage": 1.0,
+        "found": [
+          "rest api",
+          "amazon s3"
+        ],
+        "missing": []
+      },
+      "overall_passed": true
+    },
+    "L2_t65": {
+      "entity_coverage": {
+        "passed": true,
+        "coverage": 1.0,
+        "found": [
+          "rest api",
+          "amazon s3"
+        ],
+        "missing": []
+      },
+      "overall_passed": true
+    },
+    "L2_t66": {
+      "entity_coverage": {
+        "passed": true,
+        "coverage": 1.0,
+        "found": [
+          "rest api",
+          "amazon s3"
+        ],
+        "missing": []
+      },
+      "overall_passed": true
+    },
+    "L2_t67": {
+      "entity_coverage": {
+        "passed": true,
+        "coverage": 1.0,
+        "found": [
+          "rest api",
+          "amazon s3"
+        ],
+        "missing": []
+      },
+      "overall_passed": true
+    },
+    "L2_t68": {
+      "entity_coverage": {
+        "passed": true,
+        "coverage": 1.0,
+        "found": [
+          "rest api",
+          "amazon s3"
+        ],
+        "missing": []
+      },
+      "overall_passed": true
+    },
+    "L2_t69": {
+      "entity_coverage": {
+        "passed": true,
+        "coverage": 1.0,
+        "found": [
+          "rest api",
+          "amazon s3"
+        ],
+        "missing": []
+      },
+      "overall_passed": true
+    },
+    "L2_t70": {
+      "entity_coverage": {
+        "passed": true,
+        "coverage": 1.0,
+        "found": [
+          "rest api",
+          "amazon s3"
+        ],
+        "missing": []
+      },
+      "overall_passed": true
+    },
+    "L2_t71": {
+      "entity_coverage": {
+        "passed": true,
+        "coverage": 1.0,
+        "found": [
+          "rest api",
+          "amazon s3"
+        ],
+        "missing": []
+      },
+      "overall_passed": true
+    },
+    "L2_t72": {
+      "entity_coverage": {
+        "passed": true,
+        "coverage": 1.0,
+        "found": [
+          "rest api",
+          "amazon s3"
+        ],
+        "missing": []
+      },
+      "overall_passed": true
+    },
+    "L2_t73": {
+      "entity_coverage": {
+        "passed": true,
+        "coverage": 1.0,
+        "found": [
+          "rest api",
+          "amazon s3"
+        ],
+        "missing": []
+      },
+      "overall_passed": true
+    },
+    "L2_t74": {
+      "entity_coverage": {
+        "passed": true,
+        "coverage": 1.0,
+        "found": [
+          "rest api",
+          "amazon s3"
+        ],
+        "missing": []
+      },
+      "overall_passed": true
+    },
+    "L2_t75": {
+      "entity_coverage": {
+        "passed": true,
+        "coverage": 1.0,
+        "found": [
+          "rest api",
+          "amazon s3"
+        ],
+        "missing": []
+      },
+      "overall_passed": true
+    },
+    "L2_t76": {
+      "entity_coverage": {
+        "passed": true,
+        "coverage": 1.0,
+        "found": [
+          "rest api",
+          "amazon s3"
+        ],
+        "missing": []
+      },
+      "overall_passed": true
+    },
+    "L2_t77": {
+      "entity_coverage": {
+        "passed": true,
+        "coverage": 1.0,
+        "found": [
+          "rest api",
+          "amazon s3"
+        ],
+        "missing": []
+      },
+      "overall_passed": true
+    },
+    "L2_t78": {
+      "entity_coverage": {
+        "passed": true,
+        "coverage": 1.0,
+        "found": [
+          "rest api",
+          "amazon s3"
+        ],
+        "missing": []
+      },
+      "overall_passed": true
+    },
+    "L2_t79": {
+      "entity_coverage": {
+        "passed": true,
+        "coverage": 1.0,
+        "found": [
+          "rest api",
+          "amazon s3"
+        ],
+        "missing": []
+      },
+      "overall_passed": true
+    },
+    "L2_t80": {
+      "entity_coverage": {
+        "passed": true,
+        "coverage": 1.0,
+        "found": [
+          "rest api",
+          "amazon s3"
+        ],
+        "missing": []
+      },
+      "overall_passed": true
+    },
+    "L2_t81": {
+      "entity_coverage": {
+        "passed": true,
+        "coverage": 1.0,
+        "found": [
+          "rest api",
+          "amazon s3"
+        ],
+        "missing": []
+      },
+      "overall_passed": true
+    },
+    "L2_t82": {
+      "entity_coverage": {
+        "passed": true,
+        "coverage": 1.0,
+        "found": [
+          "rest api",
+          "amazon s3"
+        ],
+        "missing": []
+      },
+      "overall_passed": true
+    },
+    "L2_t83": {
+      "entity_coverage": {
+        "passed": true,
+        "coverage": 1.0,
+        "found": [
+          "rest api",
+          "amazon s3"
+        ],
+        "missing": []
+      },
+      "overall_passed": true
+    },
+    "L2_t84": {
+      "entity_coverage": {
+        "passed": true,
+        "coverage": 1.0,
+        "found": [
+          "rest api",
+          "amazon s3"
+        ],
+        "missing": []
+      },
+      "overall_passed": true
+    },
+    "L2_t85": {
+      "entity_coverage": {
+        "passed": true,
+        "coverage": 1.0,
+        "found": [
+          "rest api",
+          "amazon s3"
+        ],
+        "missing": []
+      },
+      "overall_passed": true
+    },
+    "L2_t86": {
+      "entity_coverage": {
+        "passed": true,
+        "coverage": 1.0,
+        "found": [
+          "rest api",
+          "amazon s3"
+        ],
+        "missing": []
+      },
+      "overall_passed": true
+    },
+    "L2_t87": {
+      "entity_coverage": {
+        "passed": true,
+        "coverage": 1.0,
+        "found": [
+          "rest api",
+          "amazon s3"
+        ],
+        "missing": []
+      },
+      "overall_passed": true
+    },
+    "L2_t88": {
+      "entity_coverage": {
+        "passed": true,
+        "coverage": 1.0,
+        "found": [
+          "rest api",
+          "amazon s3"
+        ],
+        "missing": []
+      },
+      "overall_passed": true
+    },
+    "L2_t89": {
+      "entity_coverage": {
+        "passed": true,
+        "coverage": 1.0,
+        "found": [
+          "rest api",
+          "amazon s3"
+        ],
+        "missing": []
+      },
+      "overall_passed": true
+    },
+    "L2_t90": {
+      "entity_coverage": {
+        "passed": true,
+        "coverage": 1.0,
+        "found": [
+          "rest api",
+          "amazon s3"
+        ],
+        "missing": []
+      },
+      "overall_passed": true
+    },
+    "L2_t91": {
+      "entity_coverage": {
+        "passed": true,
+        "coverage": 1.0,
+        "found": [
+          "rest api",
+          "amazon s3"
+        ],
+        "missing": []
+      },
+      "overall_passed": true
+    },
+    "L2_t92": {
+      "entity_coverage": {
+        "passed": true,
+        "coverage": 1.0,
+        "found": [
+          "rest api",
+          "amazon s3"
+        ],
+        "missing": []
+      },
+      "overall_passed": true
+    },
+    "L2_t93": {
+      "entity_coverage": {
+        "passed": true,
+        "coverage": 1.0,
+        "found": [
+          "rest api",
+          "amazon s3"
+        ],
+        "missing": []
+      },
+      "overall_passed": true
+    },
+    "L2_t94": {
+      "entity_coverage": {
+        "passed": true,
+        "coverage": 1.0,
+        "found": [
+          "rest api",
+          "amazon s3"
+        ],
+        "missing": []
+      },
+      "overall_passed": true
+    },
+    "L2_t95": {
+      "entity_coverage": {
+        "passed": true,
+        "coverage": 1.0,
+        "found": [
+          "rest api",
+          "amazon s3"
+        ],
+        "missing": []
+      },
+      "overall_passed": true
+    },
+    "L2_t96": {
+      "entity_coverage": {
+        "passed": true,
+        "coverage": 1.0,
+        "found": [
+          "rest api",
+          "amazon s3"
+        ],
+        "missing": []
+      },
+      "overall_passed": true
+    },
+    "L2_t97": {
+      "entity_coverage": {
+        "passed": true,
+        "coverage": 1.0,
+        "found": [
+          "rest api",
+          "amazon s3"
+        ],
+        "missing": []
+      },
+      "overall_passed": true
+    },
+    "L2_t98": {
+      "entity_coverage": {
+        "passed": true,
+        "coverage": 1.0,
+        "found": [
+          "rest api",
+          "amazon s3"
+        ],
+        "missing": []
+      },
+      "overall_passed": true
+    },
+    "L2_t99": {
+      "entity_coverage": {
+        "passed": true,
+        "coverage": 1.0,
+        "found": [
+          "rest api",
+          "amazon s3"
+        ],
+        "missing": []
+      },
+      "overall_passed": true
+    },
+    "L2_t100": {
+      "entity_coverage": {
+        "passed": true,
+        "coverage": 1.0,
+        "found": [
+          "rest api",
+          "amazon s3"
+        ],
+        "missing": []
+      },
+      "overall_passed": true
+    },
+    "L2_t101": {
+      "entity_coverage": {
+        "passed": true,
+        "coverage": 1.0,
+        "found": [
+          "rest api",
+          "amazon s3"
+        ],
+        "missing": []
+      },
+      "overall_passed": true
+    },
+    "L2_t102": {
+      "entity_coverage": {
+        "passed": true,
+        "coverage": 1.0,
+        "found": [
+          "rest api",
+          "amazon s3"
+        ],
+        "missing": []
+      },
+      "overall_passed": true
+    },
+    "L2_t103": {
+      "entity_coverage": {
+        "passed": true,
+        "coverage": 1.0,
+        "found": [
+          "rest api",
+          "amazon s3"
+        ],
+        "missing": []
+      },
+      "overall_passed": true
+    },
+    "L2_t104": {
+      "entity_coverage": {
+        "passed": true,
+        "coverage": 1.0,
+        "found": [
+          "rest api",
+          "amazon s3"
+        ],
+        "missing": []
+      },
+      "overall_passed": true
+    },
+    "L2_t105": {
+      "entity_coverage": {
+        "passed": true,
+        "coverage": 1.0,
+        "found": [
+          "rest api",
+          "amazon s3"
+        ],
+        "missing": []
+      },
+      "overall_passed": true
+    },
+    "L2_t106": {
+      "entity_coverage": {
+        "passed": true,
+        "coverage": 1.0,
+        "found": [
+          "rest api",
+          "amazon s3"
+        ],
+        "missing": []
+      },
+      "overall_passed": true
+    },
+    "L2_t107": {
+      "entity_coverage": {
+        "passed": true,
+        "coverage": 1.0,
+        "found": [
+          "rest api",
+          "amazon s3"
+        ],
+        "missing": []
+      },
+      "overall_passed": true
+    },
+    "L2_t108": {
+      "entity_coverage": {
+        "passed": true,
+        "coverage": 1.0,
+        "found": [
+          "rest api",
+          "amazon s3"
+        ],
+        "missing": []
+      },
+      "overall_passed": true
+    },
+    "L2_t109": {
+      "entity_coverage": {
+        "passed": true,
+        "coverage": 1.0,
+        "found": [
+          "rest api",
+          "amazon s3"
+        ],
+        "missing": []
+      },
+      "overall_passed": true
+    },
+    "L2_t110": {
+      "entity_coverage": {
+        "passed": true,
+        "coverage": 1.0,
+        "found": [
+          "rest api",
+          "amazon s3"
+        ],
+        "missing": []
+      },
+      "overall_passed": true
+    },
+    "L2_t111": {
+      "entity_coverage": {
+        "passed": true,
+        "coverage": 1.0,
+        "found": [
+          "rest api",
+          "amazon s3"
+        ],
+        "missing": []
+      },
+      "overall_passed": true
+    },
+    "L2_t112": {
+      "entity_coverage": {
+        "passed": true,
+        "coverage": 1.0,
+        "found": [
+          "rest api",
+          "amazon s3"
+        ],
+        "missing": []
+      },
+      "overall_passed": true
+    },
+    "L2_t113": {
+      "entity_coverage": {
+        "passed": true,
+        "coverage": 1.0,
+        "found": [
+          "rest api",
+          "amazon s3"
+        ],
+        "missing": []
+      },
+      "overall_passed": true
+    },
+    "L2_t114": {
+      "entity_coverage": {
+        "passed": true,
+        "coverage": 1.0,
+        "found": [
+          "rest api",
+          "amazon s3"
+        ],
+        "missing": []
+      },
+      "overall_passed": true
+    },
+    "L2_t115": {
+      "entity_coverage": {
+        "passed": true,
+        "coverage": 1.0,
+        "found": [
+          "rest api",
+          "amazon s3"
+        ],
+        "missing": []
+      },
+      "overall_passed": true
+    },
+    "L2_t116": {
+      "entity_coverage": {
+        "passed": true,
+        "coverage": 1.0,
+        "found": [
+          "rest api",
+          "amazon s3"
+        ],
+        "missing": []
+      },
+      "overall_passed": true
+    },
+    "L2_t117": {
+      "entity_coverage": {
+        "passed": true,
+        "coverage": 1.0,
+        "found": [
+          "rest api",
+          "amazon s3"
+        ],
+        "missing": []
+      },
+      "overall_passed": true
+    },
+    "L2_t118": {
+      "entity_coverage": {
+        "passed": true,
+        "coverage": 1.0,
+        "found": [
+          "rest api",
+          "amazon s3"
+        ],
+        "missing": []
+      },
+      "overall_passed": true
+    },
+    "L2_t119": {
+      "entity_coverage": {
+        "passed": true,
+        "coverage": 1.0,
+        "found": [
+          "rest api",
+          "amazon s3"
+        ],
+        "missing": []
+      },
+      "overall_passed": true
+    },
+    "L2_t120": {
+      "entity_coverage": {
+        "passed": true,
+        "coverage": 1.0,
+        "found": [
+          "rest api",
+          "amazon s3"
+        ],
+        "missing": []
+      },
+      "overall_passed": true
+    },
+    "L2_t121": {
+      "entity_coverage": {
+        "passed": true,
+        "coverage": 1.0,
+        "found": [
+          "rest api",
+          "amazon s3"
+        ],
+        "missing": []
+      },
+      "overall_passed": true
+    },
+    "L2_t122": {
+      "entity_coverage": {
+        "passed": true,
+        "coverage": 1.0,
+        "found": [
+          "rest api",
+          "amazon s3"
+        ],
+        "missing": []
+      },
+      "overall_passed": true
+    },
+    "L2_t123": {
+      "entity_coverage": {
+        "passed": true,
+        "coverage": 1.0,
+        "found": [
+          "rest api",
+          "amazon s3"
+        ],
+        "missing": []
+      },
+      "overall_passed": true
+    },
+    "L2_t124": {
+      "entity_coverage": {
+        "passed": true,
+        "coverage": 1.0,
+        "found": [
+          "rest api",
+          "amazon s3"
+        ],
+        "missing": []
+      },
+      "overall_passed": true
+    },
+    "L2_t125": {
+      "entity_coverage": {
+        "passed": true,
+        "coverage": 1.0,
+        "found": [
+          "rest api",
+          "amazon s3"
+        ],
+        "missing": []
+      },
+      "overall_passed": true
+    },
+    "L2_t126": {
+      "entity_coverage": {
+        "passed": true,
+        "coverage": 1.0,
+        "found": [
+          "rest api",
+          "amazon s3"
+        ],
+        "missing": []
+      },
+      "overall_passed": true
+    },
+    "L2_t127": {
+      "entity_coverage": {
+        "passed": true,
+        "coverage": 1.0,
+        "found": [
+          "rest api",
+          "amazon s3"
+        ],
+        "missing": []
+      },
+      "overall_passed": true
+    },
+    "L2_t128": {
+      "entity_coverage": {
+        "passed": true,
+        "coverage": 1.0,
+        "found": [
+          "rest api",
+          "amazon s3"
+        ],
+        "missing": []
+      },
+      "overall_passed": true
+    },
+    "L2_t129": {
+      "entity_coverage": {
+        "passed": true,
+        "coverage": 1.0,
+        "found": [
+          "rest api",
+          "amazon s3"
+        ],
+        "missing": []
+      },
+      "overall_passed": true
+    },
+    "L2_t130": {
+      "entity_coverage": {
+        "passed": true,
+        "coverage": 1.0,
+        "found": [
+          "rest api",
+          "amazon s3"
+        ],
+        "missing": []
+      },
+      "overall_passed": true
+    },
+    "L2_t131": {
+      "entity_coverage": {
+        "passed": true,
+        "coverage": 1.0,
+        "found": [
+          "rest api",
+          "amazon s3"
+        ],
+        "missing": []
+      },
+      "overall_passed": true
+    },
+    "L2_t132": {
+      "entity_coverage": {
+        "passed": true,
+        "coverage": 1.0,
+        "found": [
+          "rest api",
+          "amazon s3"
+        ],
+        "missing": []
+      },
+      "overall_passed": true
+    },
+    "L2_t133": {
+      "entity_coverage": {
+        "passed": true,
+        "coverage": 1.0,
+        "found": [
+          "rest api",
+          "amazon s3"
+        ],
+        "missing": []
+      },
+      "overall_passed": true
+    },
+    "L2_t134": {
+      "entity_coverage": {
+        "passed": true,
+        "coverage": 1.0,
+        "found": [
+          "rest api",
+          "amazon s3"
+        ],
+        "missing": []
+      },
+      "overall_passed": true
+    },
+    "L2_t135": {
+      "entity_coverage": {
+        "passed": true,
+        "coverage": 1.0,
+        "found": [
+          "rest api",
+          "amazon s3"
+        ],
+        "missing": []
+      },
+      "overall_passed": true
+    },
+    "L2_t136": {
+      "entity_coverage": {
+        "passed": true,
+        "coverage": 1.0,
+        "found": [
+          "rest api",
+          "amazon s3"
+        ],
+        "missing": []
+      },
+      "overall_passed": true
+    },
+    "L2_t137": {
+      "entity_coverage": {
+        "passed": true,
+        "coverage": 1.0,
+        "found": [
+          "rest api",
+          "amazon s3"
+        ],
+        "missing": []
+      },
+      "overall_passed": true
+    },
+    "L2_t138": {
+      "entity_coverage": {
+        "passed": true,
+        "coverage": 1.0,
+        "found": [
+          "rest api",
+          "amazon s3"
+        ],
+        "missing": []
+      },
+      "overall_passed": true
+    },
+    "L2_t139": {
+      "entity_coverage": {
+        "passed": true,
+        "coverage": 1.0,
+        "found": [
+          "rest api",
+          "amazon s3"
+        ],
+        "missing": []
+      },
+      "overall_passed": true
+    },
+    "L2_t140": {
+      "entity_coverage": {
+        "passed": true,
+        "coverage": 1.0,
+        "found": [
+          "rest api",
+          "amazon s3"
+        ],
+        "missing": []
+      },
+      "overall_passed": true
+    },
+    "L2_t141": {
+      "entity_coverage": {
+        "passed": true,
+        "coverage": 1.0,
+        "found": [
+          "rest api",
+          "amazon s3"
+        ],
+        "missing": []
+      },
+      "overall_passed": true
+    },
+    "L2_t142": {
+      "entity_coverage": {
+        "passed": true,
+        "coverage": 1.0,
+        "found": [
+          "rest api",
+          "amazon s3"
+        ],
+        "missing": []
+      },
+      "overall_passed": true
+    },
+    "L2_t143": {
+      "entity_coverage": {
+        "passed": true,
+        "coverage": 1.0,
+        "found": [
+          "rest api",
+          "amazon s3"
+        ],
+        "missing": []
+      },
+      "overall_passed": true
+    },
+    "L1_Storage": {
+      "entity_coverage": {
+        "passed": false,
+        "coverage": 0.5,
+        "found": [
+          "amazon s3"
+        ],
+        "missing": [
+          "rest api"
+        ]
+      },
+      "overall_passed": false
+    },
+    "L0_global": {
+      "entity_coverage": {
+        "passed": false,
+        "coverage": 0.5,
+        "found": [
+          "amazon s3"
+        ],
+        "missing": [
+          "rest api"
+        ]
+      },
+      "numerical_accuracy": {
+        "passed": true,
+        "accuracy": 1.0,
+        "verified": [
+          "01",
+          "03",
+          "2006"
+        ],
+        "suspect": []
+      },
+      "overall_passed": false
+    }
+  },
+  "timing": {
+    "level_4": 0.275,
+    "level_3": 18.56,
+    "level_2": 900.802,
+    "level_1": 0.001,
+    "level_0": 2.767
+  }
+}

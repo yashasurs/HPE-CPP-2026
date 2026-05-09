@@ -1,0 +1,36 @@
+{
+  "level_4": [
+    {
+      "summary_id": "6e280c3c-4b5e-4ac1-afb2-007ccdf3d59a",
+      "level": 4,
+      "level_name": "section",
+      "text": "## Actions Simple Storage Service (Amazon S3) application programming interface (API). You can use any toolkit that supports HTTP to use the REST API. You can even use a browser to fetch objects, as long as they are anonymously readable. The REST API uses the standard HTTP headers and status codes, so that standard browsers and toolkits work as expected. ## Version The current version of the Amazon S3 API is 2006-03-01. Amazon S3 supports the REST API. However, new Amazon S3 features will not be supported for SOAP. We recommend that you use either this REST API or the AWS SDKs at the following link: Headers - Common request headers and Common response headers. Requests to Amazon S3 can be authenticated or anonymous. ## API call recommendations Making REST API calls directly from your code can be cumbersome. Use the AWS CLI to make Amazon S3 API calls. example Amazon S3 commands see the following topics: Set Up the AWS CLI in the Amazon Simple Storage Service User Guide. Using Amazon S3 with the AWS Command Line Interface in the AWS Command Line Interface Making direct REST API calls The PUT request header is limited to 8 KB in size. If you'd like to make your own REST API calls instead of using one of the above alternatives, there are some things to keep in mind. To make direct REST API calls from your code, create a signature using valid credentials and. The REST API uses standard HTTP headers and status codes, so standard browsers and toolkits. You can have valid credentials to authenticate your requests, but unless you have S3 permissions from the account owner or bucket owner you cannot create or access Amazon S3 resources. For a complete list of S3 permissions, see Actions, resources, and condition keys for Amazon S3. For more information about the permissions to S3 API operations by S3 resource types, see Required permissions for Amazon S3 API operations in the Amazon Simple Storage Service User If you use the root user credentials of your AWS account, you have all the permissions. S3 Control, and Amazon S3 on Outposts. ## Data types Amazon S3 - Data types of API operations that apply bucket-level and object-level actions. Amazon S3 Control - Data types of API operations for managing all other S3 resources. Amazon S3 on Outposts - Data types of API operations for use with Amazon S3 on Outposts. Amazon S3 Vectors - Data types of API operations for use with Amazon S3 Vectors.",
+      "token_count": 504,
+      "source_chunk_ids": [],
+      "source_document": "AWS-Document",
+      "heading_path": [],
+      "category": "api",
+      "preserved_akus": [
+        "aku_0",
+        "aku_1",
+        "aku_2",
+        "aku_3",
+        "aku_4",
+        "aku_5",
+        "aku_6",
+        "aku_7",
+        "aku_8",
+        "aku_9",
+        "aku_10",
+        "aku_11"
+      ],
+      "preserved_entities": [
+        "ent_rest_api",
+        "ent_amazon_s3"
+      ],
+      "compression_ratio": 0.84,
+      "parent_summary_id": "bcd0f329-4e31-4926-9dd5-fc4ee681ff6c",
+      "child_summary_ids": []
+    }
+  ]
+}
