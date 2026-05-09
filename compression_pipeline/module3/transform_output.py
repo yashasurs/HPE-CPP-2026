@@ -18,6 +18,7 @@ import json
 import uuid
 import re
 import argparse
+import tiktoken
 import os
 from typing import Any, Dict, List
 
@@ -52,6 +53,7 @@ CATEGORY_KEYWORDS = {
     "contextual": [],  # default fallback
 }
 
+_ENCODER = tiktoken.encoding_for_model("gpt-3.5-turbo")
 
 # ---------------------------------------------------------------------------
 # Text cleaning helpers
@@ -254,10 +256,11 @@ def transform_section(
         if sec_num:
             chunk_ids = [f"chunk_{int(sec_num.group()):03d}"]
 
+
     # Compression ratio
-    original_len = len(raw_summary)
-    cleaned_len = len(cleaned_text)
-    compression_ratio = round(cleaned_len / original_len, 3) if original_len > 0 else 0.0
+    original_tokens = len(_ENCODER.encode(raw_summary))
+    cleaned_tokens = len(_ENCODER.encode(cleaned_text))
+    compression_ratio = round(cleaned_tokens / original_tokens, 3) if original_tokens > 0 else 0.0
 
     # Classify category
     category = _classify_category(cleaned_text)
@@ -272,7 +275,7 @@ def transform_section(
         "level": 4,
         "level_name": "section",
         "text": cleaned_text,
-        "token_count": len(cleaned_text.split()),
+        "token_count": cleaned_tokens,
         "source_chunk_ids": chunk_ids,
         "source_document": doc_name,
         "heading_path": [],
