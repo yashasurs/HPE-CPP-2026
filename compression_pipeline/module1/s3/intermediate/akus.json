@@ -1,6 +1,6 @@
 [
   {
-    "chunk_id": "d300b802-d8c3-4342-8cb8-2f618e452391",
+    "chunk_id": "55269f3a-d383-44a1-b11b-9fe4b8622707",
     "akus": [
       [
         "REST API",
@@ -10,7 +10,7 @@
     ]
   },
   {
-    "chunk_id": "30692bd6-62c2-40a3-8a3e-6f6fd4ad7a11",
+    "chunk_id": "7565e687-93ab-4e74-8a8c-3a88a86fb1d5",
     "akus": [
       [
         "Amazon S3",
@@ -20,7 +20,7 @@
     ]
   },
   {
-    "chunk_id": "90a54d80-6866-407b-b1e6-16d487139187",
+    "chunk_id": "fe316b8d-0246-432f-a63e-53120062dee3",
     "akus": [
       [
         "REST API",
@@ -30,7 +30,7 @@
     ]
   },
   {
-    "chunk_id": "8e167a70-c775-4370-851f-1a9c29682eeb",
+    "chunk_id": "2d854fcf-e359-4578-816c-05da87bc530a",
     "akus": [
       [
         "Amazon S3",
@@ -60,7 +60,7 @@
     ]
   },
   {
-    "chunk_id": "311393c8-e66b-450c-b7a2-29055217af12",
+    "chunk_id": "8208b7f0-8a36-4552-a858-65e5132e022d",
     "akus": [
       [
         "S3",
@@ -95,7 +95,7 @@
     ]
   },
   {
-    "chunk_id": "1c3cafe9-c3aa-4122-aa61-53583d54e692",
+    "chunk_id": "4d08b068-2a74-4ae7-9d62-876062fe9f6a",
     "akus": [
       [
         "multipart upload",
@@ -105,17 +105,7 @@
     ]
   },
   {
-    "chunk_id": "8dba664e-388a-4217-bb6c-b6f52200845c",
-    "akus": [
-      [
-        "Objects",
-        "HAS",
-        "diﬀerent entity tags"
-      ]
-    ]
-  },
-  {
-    "chunk_id": "6142a7da-5d2a-42d2-bcda-8729c9c69c54",
+    "chunk_id": "aa55ec17-06dd-43c5-ad20-fb6461df23ad",
     "akus": [
       [
         "Amazon S3 transfer acceleration",
@@ -131,11 +121,16 @@
         "VPC endpoints",
         "SUPPORTS",
         "cross-Region requests"
+      ],
+      [
+        "Objects",
+        "HAS",
+        "diﬀerent entity tags"
       ]
     ]
   },
   {
-    "chunk_id": "40d38cf8-c210-4b8b-ae03-922b53fc4073",
+    "chunk_id": "e57fc1a2-de78-4246-9086-2a3ad5c417a0",
     "akus": [
       [
         "Amazon S3",
@@ -150,7 +145,7 @@
     ]
   },
   {
-    "chunk_id": "1f73179f-dbc4-4383-a531-b87a907122e6",
+    "chunk_id": "250d014e-b530-413f-ac1b-d315256598f2",
     "akus": [
       [
         "S3",
@@ -175,7 +170,7 @@
     ]
   },
   {
-    "chunk_id": "869c353f-7029-423c-90c8-9e696ccfec66",
+    "chunk_id": "2728adf7-b952-425c-b76a-22b52eda070c",
     "akus": [
       [
         "Amazon S3",
@@ -199,16 +194,6 @@
       ],
       [
         "Amazon S3",
-        "CREATES",
-        "copied object"
-      ],
-      [
-        "Amazon S3",
-        "RETURNS",
-        "200 OK"
-      ],
-      [
-        "Amazon S3",
         "SUPPORTS",
         "copy operations"
       ],
@@ -220,8 +205,23 @@
     ]
   },
   {
-    "chunk_id": "3f3f2a83-2d1e-4ace-8d26-b6a4241f77f2",
+    "chunk_id": "c3a004c5-c9a4-4948-a679-4f1cd2964c93",
     "akus": [
+      [
+        "Amazon S3",
+        "RETURNS",
+        "x amz copy source server side encryption customer algorithm"
+      ],
+      [
+        "Amazon S3",
+        "CREATES",
+        "x amz version id response header"
+      ],
+      [
+        "Amazon S3",
+        "RETURNS",
+        "version ID"
+      ],
       [
         "Amazon S3",
         "RETURNS",
@@ -231,21 +231,11 @@
         "Amazon S3",
         "RETURNS",
         "200 OK"
-      ],
-      [
-        "Amazon S3",
-        "RETURNS",
-        "412 Precondition"
-      ],
-      [
-        "grantee",
-        "RETRIEVE",
-        "object ACL"
       ]
     ]
   },
   {
-    "chunk_id": "eb29cbfb-eb31-42fa-83c3-e74bfcaf006d",
+    "chunk_id": "2edbcb75-1ebe-48db-b0fc-37e9f8e4d051",
     "akus": [
       [
         "Amazon S3",
@@ -280,7 +270,7 @@
     ]
   },
   {
-    "chunk_id": "ecdebde7-4031-4e61-a9a6-3ad9323d6851",
+    "chunk_id": "84f68bb2-d03e-4c4b-a7e2-66b80d752acf",
     "akus": [
       [
         "Amazon S3",
@@ -320,7 +310,7 @@
     ]
   },
   {
-    "chunk_id": "ca3046f6-4adc-49cc-8ce0-692fcf63c051",
+    "chunk_id": "5bd0240d-4398-40b8-9ada-cd893ff73fc3",
     "akus": [
       [
         "Amazon",
@@ -345,7 +335,7 @@
     ]
   },
   {
-    "chunk_id": "49166da5-8c3e-4f36-8476-46cb4ac17ac8",
+    "chunk_id": "9017ff2c-8947-4c74-b72e-58f00f9daa52",
     "akus": [
       [
         "Amazon S3",
@@ -355,7 +345,7 @@
     ]
   },
   {
-    "chunk_id": "1dec78d9-79e8-4316-bdff-1e2238c24680",
+    "chunk_id": "46d5d76a-b075-40b9-9e2c-aa7457a628c4",
     "akus": [
       [
         "Amazon S3",
@@ -375,7 +365,7 @@
     ]
   },
   {
-    "chunk_id": "a94780d9-f61f-4547-a481-73a53f87f806",
+    "chunk_id": "d2512ed2-ae74-4413-b616-65b38dd6794d",
     "akus": [
       [
         "only the s3:CreateBucket permission",
@@ -395,7 +385,7 @@
     ]
   },
   {
-    "chunk_id": "b46a1ad5-1ba7-4f26-81e4-342230ec166d",
+    "chunk_id": "243d4eb4-5ec6-4256-ad2c-6564efd3740f",
     "akus": [
       [
         "S3 Object Ownership",
@@ -430,7 +420,7 @@
     ]
   },
   {
-    "chunk_id": "02919ed7-58af-442c-bed9-4db9d89afcb7",
+    "chunk_id": "b817608a-7b47-4ed1-9471-a6d44c6ba12a",
     "akus": [
       [
         "Directory buckets",
@@ -465,7 +455,7 @@
     ]
   },
   {
-    "chunk_id": "e566fc50-c8c1-4433-afad-80d071ce3286",
+    "chunk_id": "0d01f3ea-130a-44f0-8c50-b3f97542086f",
     "akus": [
       [
         "Amazon S3",
@@ -495,23 +485,8 @@
     ]
   },
   {
-    "chunk_id": "3812fdbd-2e3d-409e-b365-3313cde7013a",
+    "chunk_id": "92d20f94-cb0c-41ab-98fb-18fdead2c9e2",
     "akus": [
-      [
-        "Amazon S3",
-        "ABORT",
-        "multipart upload"
-      ]
-    ]
-  },
-  {
-    "chunk_id": "2e3aadb9-9d7e-4e7c-a8d7-b8240a1e5710",
-    "akus": [
-      [
-        "General purpose bucket permissions",
-        "PERFORM",
-        "multipart upload"
-      ],
       [
         "Amazon S3",
         "USES",
@@ -526,21 +501,16 @@
         "Amazon S3",
         "ENCRYPTS",
         "diﬀerent encryption key"
-      ]
-    ]
-  },
-  {
-    "chunk_id": "a85ad8fa-7360-4a5d-90cc-7e6be87c31bf",
-    "akus": [
+      ],
       [
-        "encryption request headers",
-        "MATCH",
-        "Zonal endpoint API calls"
+        "Amazon S3",
+        "ABORT",
+        "multipart upload"
       ]
     ]
   },
   {
-    "chunk_id": "fac31e81-6662-4ce8-af2d-3987f852ea33",
+    "chunk_id": "bf6b6dbb-e2f9-4db0-9b2f-9df58a2c9661",
     "akus": [
       [
         "Amazon S3",
@@ -553,14 +523,24 @@
         "Zonal endpoint API calls"
       ],
       [
-        "Each canned ACL",
-        "HAS",
-        "predefined set"
+        "CLI",
+        "USES",
+        "CreateSession request"
       ],
       [
         "CLI",
         "USES",
         "bucket's default encryption configuration"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "6117fbdf-b93f-4bae-a073-ebbf68e18100",
+    "akus": [
+      [
+        "Each canned ACL",
+        "HAS",
+        "predefined set"
       ],
       [
         "Only the owner",
@@ -570,8 +550,13 @@
     ]
   },
   {
-    "chunk_id": "5fad39e0-d8b2-4b33-9d73-d1bbf2fa28c4",
+    "chunk_id": "171be85c-7b90-4e54-8ecb-0b3f8b6d6c1e",
     "akus": [
+      [
+        "Amazon S3",
+        "USES",
+        "AWS managed key"
+      ],
       [
         "Amazon S3",
         "USES",
@@ -605,13 +590,8 @@
     ]
   },
   {
-    "chunk_id": "f9117e7d-ed4b-4ccb-a74f-2ce3849e5ca7",
+    "chunk_id": "635a47a6-d569-4ec2-aa83-e0835bc66dc9",
     "akus": [
-      [
-        "Amazon S3",
-        "USES",
-        "AWS managed key"
-      ],
       [
         "Amazon S3",
         "USES",
@@ -638,19 +618,24 @@
         "1 customer managed key"
       ],
       [
-        "Amazon S3",
-        "STORES",
-        "object metadata"
-      ],
-      [
         "STANDARD storage class",
         "PROVIDES",
         "high durability"
+      ],
+      [
+        "Amazon S3",
+        "USES",
+        "message integrity check"
+      ],
+      [
+        "tag-set",
+        "ENCODE",
+        "URL Query parameters"
       ]
     ]
   },
   {
-    "chunk_id": "f74e0edc-61cf-4c03-aef7-c81244156e72",
+    "chunk_id": "8b37a4d4-6acc-417f-96ef-b69f086c401a",
     "akus": [
       [
         "multipart upload",
@@ -660,18 +645,13 @@
     ]
   },
   {
-    "chunk_id": "d2ee6e91-5ea4-4ead-9bbc-ab4fea232650",
+    "chunk_id": "22d16bac-6cd2-4545-9c5c-427b32c5392c",
     "akus": [
       [
         "Access points",
         "SUPPORTS",
         "initiated multipart upload"
-      ]
-    ]
-  },
-  {
-    "chunk_id": "5b2fcbeb-4a9f-4291-bed7-141e6eb91661",
-    "akus": [
+      ],
       [
         "Amazon S3",
         "RETURNS",
@@ -680,7 +660,7 @@
     ]
   },
   {
-    "chunk_id": "16a9dc65-7122-48ed-83f8-59f805e89cbd",
+    "chunk_id": "29d50b4f-bc34-42fb-b7bb-bf12378a1773",
     "akus": [
       [
         "SDKs",
@@ -690,7 +670,7 @@
     ]
   },
   {
-    "chunk_id": "9ea09c29-b7f6-4c30-a5da-4287d7bc0be6",
+    "chunk_id": "9e4ce79b-2835-46fc-be8a-ad95bcde9230",
     "akus": [
       [
         "Only 1 customer managed key",
@@ -720,7 +700,7 @@
     ]
   },
   {
-    "chunk_id": "dc5fc65f-390f-4790-aea1-eeb795aa530d",
+    "chunk_id": "03a993fd-7295-4946-86a2-fdc8b2d5fdbf",
     "akus": [
       [
         "SSE-KMS configuration",
@@ -735,22 +715,7 @@
     ]
   },
   {
-    "chunk_id": "65a3d47a-615f-4a68-a4ed-80c4ec2e6945",
-    "akus": [
-      [
-        "S3 Intelligent-Tiering",
-        "DELIVER",
-        "three low latency and high throughput access tiers"
-      ],
-      [
-        "S3 Intelligent-Tiering",
-        "DELIVER",
-        "automatic cost savings"
-      ]
-    ]
-  },
-  {
-    "chunk_id": "1ed9abba-fc15-44cc-b3e9-eb58a7caa46e",
+    "chunk_id": "5a01d20c-a302-4c52-b34c-3ffb7a86ff53",
     "akus": [
       [
         "Amazon S3",
@@ -761,11 +726,16 @@
         "Amazon S3",
         "DELETES",
         "any objects"
+      ],
+      [
+        "S3 Intelligent-Tiering",
+        "DELIVER",
+        "automatic cost savings"
       ]
     ]
   },
   {
-    "chunk_id": "f70e60bc-df49-49dd-a050-731ae31b928b",
+    "chunk_id": "15e8be8d-dbb3-4cfb-8b4d-3d2409a52dbc",
     "akus": [
       [
         "root principal",
@@ -780,6 +750,11 @@
       [
         "Amazon S3",
         "RETURNS",
+        "204 No Content response"
+      ],
+      [
+        "Amazon S3",
+        "RETURNS",
         "405 Method Not"
       ],
       [
@@ -790,8 +765,13 @@
     ]
   },
   {
-    "chunk_id": "6c1d2d39-5435-4453-936a-62e339bf00b5",
+    "chunk_id": "109ce75f-0b02-46bc-a160-48d70eb5a145",
     "akus": [
+      [
+        "Amazon S3",
+        "RETURNS",
+        "204 No Content response"
+      ],
       [
         "Amazon S3",
         "RETURNS",
@@ -805,7 +785,7 @@
     ]
   },
   {
-    "chunk_id": "95dd1fb0-5859-41f0-a04b-1db9d2c1f0e5",
+    "chunk_id": "484aa0f6-6d01-40cf-a73e-c837d5d5af35",
     "akus": [
       [
         "IfMatchLastModifiedTime",
@@ -813,14 +793,14 @@
         "directory buckets"
       ],
       [
-        "If-Match header",
-        "SUPPORTS",
-        "both general purpose and directory buckets"
+        "If-Match",
+        "ACCEPTS",
+        "string value"
       ]
     ]
   },
   {
-    "chunk_id": "97464cdc-86d0-47f4-8424-f9b3ca2ff17e",
+    "chunk_id": "30ae3208-ecf7-49ce-a77b-454316f0f64d",
     "akus": [
       [
         "S3 Object Lock",
@@ -830,7 +810,7 @@
     ]
   },
   {
-    "chunk_id": "a7971f86-65e4-4adf-8154-7fe46627528e",
+    "chunk_id": "82be77d3-2740-44a7-9f70-64658d97ef7c",
     "akus": [
       [
         "Amazon S3",
@@ -845,7 +825,7 @@
     ]
   },
   {
-    "chunk_id": "1f7dc7ca-bb0c-40b0-843a-42540a1d9030",
+    "chunk_id": "e0622505-ea6b-4cb2-986f-9ed7140ee89a",
     "akus": [
       [
         "Amazon S3",
@@ -860,7 +840,7 @@
     ]
   },
   {
-    "chunk_id": "fe6717bb-3610-4220-87e6-3c9c0afee6e4",
+    "chunk_id": "2c9961a2-99b2-4707-8f44-8b3b7d3b1302",
     "akus": [
       [
         "transfer acceleration state",
@@ -870,7 +850,7 @@
     ]
   },
   {
-    "chunk_id": "1f756625-8359-4df3-8cc7-39e60c7a24e7",
+    "chunk_id": "1515b520-5d9c-4cdb-8856-5712b04ec2f8",
     "akus": [
       [
         "S3 Intelligent-Tiering",
@@ -880,7 +860,7 @@
     ]
   },
   {
-    "chunk_id": "53109b2d-df83-427e-b615-0e8d4f71eb33",
+    "chunk_id": "a14cda3c-909c-43f2-a14f-bc0022ae2032",
     "akus": [
       [
         "Objects",
@@ -895,7 +875,7 @@
     ]
   },
   {
-    "chunk_id": "af9bd5c3-c290-4078-b56c-705062da0899",
+    "chunk_id": "22e8c8b4-0faf-44e5-9b08-e311bee14b65",
     "akus": [
       [
         "Amazon S3",
@@ -915,7 +895,7 @@
     ]
   },
   {
-    "chunk_id": "abe0abdd-9e62-46ba-8358-7dfa6dfc3588",
+    "chunk_id": "82e984b8-ad79-4717-9c67-db26a243cfb2",
     "akus": [
       [
         "Amazon S3",
@@ -930,7 +910,7 @@
     ]
   },
   {
-    "chunk_id": "eabce91a-a167-4f00-bcff-2e73d8c31039",
+    "chunk_id": "dc38b7d8-33dd-4a37-9be8-8d10bc6f1071",
     "akus": [
       [
         "root principal",
@@ -955,7 +935,7 @@
     ]
   },
   {
-    "chunk_id": "46bf1f1f-190f-46ff-a75b-cc9ee7086bc5",
+    "chunk_id": "97868350-ed07-40b0-87b8-da068ef6b035",
     "akus": [
       [
         "Amazon S3",
@@ -975,7 +955,7 @@
     ]
   },
   {
-    "chunk_id": "c9e8d39c-e3c9-4d45-96f2-6a92a2d88d28",
+    "chunk_id": "4e9ce62e-15f8-4e5d-b8e0-89851f245fef",
     "akus": [
       [
         "Directory buckets",
@@ -1000,7 +980,7 @@
     ]
   },
   {
-    "chunk_id": "406d4cf3-7f8a-4814-84cd-9cc9c48855e9",
+    "chunk_id": "c3c2a16e-35db-4029-b4d6-b84f69b7d655",
     "akus": [
       [
         "S3",
@@ -1045,7 +1025,7 @@
     ]
   },
   {
-    "chunk_id": "295d01b2-6434-4d92-9ee9-a4fc298865d3",
+    "chunk_id": "83ce9386-c45a-4895-a7d2-29dfd95d0562",
     "akus": [
       [
         "Amazon S3",
@@ -1055,7 +1035,7 @@
     ]
   },
   {
-    "chunk_id": "0f340a08-3205-45f3-8904-d8610194efea",
+    "chunk_id": "874f6eba-aeba-498b-9e60-1e65bf7dff6f",
     "akus": [
       [
         "Directory buckets",
@@ -1070,17 +1050,7 @@
     ]
   },
   {
-    "chunk_id": "7dd12009-4bc5-45d5-aa7f-17d5d9085d30",
-    "akus": [
-      [
-        "Amazon S3",
-        "RETURNS",
-        "all objects"
-      ]
-    ]
-  },
-  {
-    "chunk_id": "af3dc711-7b57-4cca-9601-4dcd0370e8b6",
+    "chunk_id": "f971a2c0-be40-443f-a721-79beadd559bd",
     "akus": [
       [
         "Amazon S3",
@@ -1095,7 +1065,7 @@
     ]
   },
   {
-    "chunk_id": "b3d80886-e106-465d-81a7-c47c0b536f76",
+    "chunk_id": "3eab5203-ce16-4b86-a36f-f01584838fee",
     "akus": [
       [
         "General purpose bucket permissions",
@@ -1110,7 +1080,7 @@
     ]
   },
   {
-    "chunk_id": "4e3497f5-fb74-4668-9b74-adda7fa1666e",
+    "chunk_id": "0d913070-5964-490a-ad44-8b56b7db2777",
     "akus": [
       [
         "Amazon S3",
@@ -1125,7 +1095,7 @@
     ]
   },
   {
-    "chunk_id": "bf4546a2-e184-4573-b7ce-09bf9701631b",
+    "chunk_id": "11073ac7-b87a-43b1-b77a-c6679bed00d6",
     "akus": [
       [
         "Valid Values",
@@ -1145,7 +1115,7 @@
     ]
   },
   {
-    "chunk_id": "81d28ae6-5067-4eb4-bac4-5a50aac38040",
+    "chunk_id": "d65ebffb-0612-4c96-b47e-c0fa5031bca5",
     "akus": [
       [
         "Amazon S3",
@@ -1190,7 +1160,7 @@
     ]
   },
   {
-    "chunk_id": "dcad6ff2-4609-4f0e-85b3-941eb409b4e9",
+    "chunk_id": "cf70c4a1-ccaf-4456-88b4-473b6c5513fd",
     "akus": [
       [
         "ARNs",
@@ -1205,7 +1175,7 @@
     ]
   },
   {
-    "chunk_id": "3b6dbaa0-5417-4c6e-859a-d9ef50c582cd",
+    "chunk_id": "84179b16-7fc0-4c92-8d59-d02930bc321d",
     "akus": [
       [
         "Amazon S3",
@@ -1215,7 +1185,7 @@
     ]
   },
   {
-    "chunk_id": "213b5b39-263e-49ea-a304-88a6392f9d3c",
+    "chunk_id": "aa3d5ae4-a219-41cc-ab09-e53726ccaac5",
     "akus": [
       [
         "Amazon S3",
@@ -1260,8 +1230,13 @@
     ]
   },
   {
-    "chunk_id": "d0442e0d-4f37-45ad-92e6-a7d47bd86054",
+    "chunk_id": "d7c2dd4e-17ef-4cfb-8caa-43ce233744d6",
     "akus": [
+      [
+        "Directory buckets",
+        "SUPPORTS",
+        "Availability Zones"
+      ],
       [
         "Amazon S3",
         "RETURNS",
@@ -1276,16 +1251,6 @@
         "Amazon S3",
         "STORES",
         "object replicas"
-      ]
-    ]
-  },
-  {
-    "chunk_id": "38890310-30ea-46e4-8819-6549cbd7af60",
-    "akus": [
-      [
-        "Directory buckets",
-        "SUPPORTS",
-        "Availability Zones"
       ],
       [
         "Amazon S3",
@@ -1295,7 +1260,7 @@
     ]
   },
   {
-    "chunk_id": "039a8e49-5eda-48e3-b3df-34b0b780ec38",
+    "chunk_id": "3300e57b-2a84-4011-95ad-3dad4eaa133e",
     "akus": [
       [
         "Amazon S3",
@@ -1305,7 +1270,7 @@
     ]
   },
   {
-    "chunk_id": "553af029-9a45-4a30-8aec-8278168222f6",
+    "chunk_id": "3ab022ac-7838-4aa6-aa23-9bed67d4b8ef",
     "akus": [
       [
         "S3 Intelligent-Tiering",
@@ -1325,7 +1290,7 @@
     ]
   },
   {
-    "chunk_id": "4c4f7cfe-1f12-4d3f-bca8-500a86ad15cc",
+    "chunk_id": "31c8f037-cedf-48e2-aeb3-b8e7c38cba50",
     "akus": [
       [
         "NextContinuationToken",
@@ -1335,7 +1300,7 @@
     ]
   },
   {
-    "chunk_id": "fe0983d7-efe1-48f9-8f92-f2839ca44c84",
+    "chunk_id": "066c9774-4ad9-454e-8ab6-72a521736983",
     "akus": [
       [
         "ContinuationToken",
@@ -1370,7 +1335,7 @@
     ]
   },
   {
-    "chunk_id": "4fee8120-c9c3-43b2-a432-432fa5c7168a",
+    "chunk_id": "245c0a97-84cb-4c8a-af7f-fa85e3cb7e22",
     "akus": [
       [
         "All bucket names",
@@ -1385,7 +1350,7 @@
     ]
   },
   {
-    "chunk_id": "df5beb1f-774b-4c17-89ea-3c3bbc7938d5",
+    "chunk_id": "a11c3c7a-065a-45b9-b784-0f0025d827a4",
     "akus": [
       [
         "multipart uploads",
@@ -1400,7 +1365,7 @@
     ]
   },
   {
-    "chunk_id": "55ba71fa-3fc9-4653-ac6f-9b619c76ef7f",
+    "chunk_id": "5a74fcd5-27ad-4395-a135-228000e00667",
     "akus": [
       [
         "multipart uploads",
@@ -1425,7 +1390,7 @@
     ]
   },
   {
-    "chunk_id": "1365d9c4-ab6d-4e55-a3ef-4971f9a0499b",
+    "chunk_id": "35d06e31-8b5b-4310-8691-3c232858c972",
     "akus": [
       [
         "distinct key prefixes",
@@ -1435,27 +1400,12 @@
     ]
   },
   {
-    "chunk_id": "4559d8bb-e74f-4f26-aef8-af8ea38c562c",
+    "chunk_id": "bbaa789b-1dbf-41e6-9092-825d04048764",
     "akus": [
       [
         "Amazon S3",
         "START",
         "specified key"
-      ],
-      [
-        "All of the keys up to 1,000",
-        "ROLL",
-        "common prefix count"
-      ],
-      [
-        "All of the keys up to 1,000",
-        "ROLL",
-        "single return"
-      ],
-      [
-        "Limits the response to keys",
-        "SPECIFIES",
-        "optional fields"
       ],
       [
         "Amazon S3",
@@ -1475,7 +1425,7 @@
     ]
   },
   {
-    "chunk_id": "4ee4a443-0068-4001-9dd6-2f2e88885a1d",
+    "chunk_id": "153480ca-7cc2-446e-bbc5-c0a9934aa7fa",
     "akus": [
       [
         "Amazon S3",
@@ -1500,7 +1450,7 @@
     ]
   },
   {
-    "chunk_id": "1846d3ed-3ad0-45a4-803b-63a2ec44476d",
+    "chunk_id": "43d107a4-da4a-4af3-97a1-ba3c1fb5da52",
     "akus": [
       [
         "Amazon S3",
@@ -1545,8 +1495,13 @@
     ]
   },
   {
-    "chunk_id": "8113f5ee-88e3-48ec-8cf0-9b85b2de90d1",
+    "chunk_id": "a1a924fa-687c-4d67-8835-a8e158e56d9d",
     "akus": [
+      [
+        "Amazon S3",
+        "START",
+        "specified key"
+      ],
       [
         "ContinuationToken",
         "INDICATE",
@@ -1565,7 +1520,17 @@
     ]
   },
   {
-    "chunk_id": "9fb60d2c-0f17-4d6e-b864-c0a32d3f53ad",
+    "chunk_id": "b915c6bf-def6-4f6e-84f5-a34acfd5359a",
+    "akus": [
+      [
+        "Amazon S3",
+        "RETURNS",
+        "Contents element"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "2fb0a71e-a8d6-4367-93c8-df5c6ff617b3",
     "akus": [
       [
         "Amazon S3",
@@ -1595,7 +1560,7 @@
     ]
   },
   {
-    "chunk_id": "459366b9-689e-4891-9bb6-550743cccfe7",
+    "chunk_id": "ac6f5bda-f9af-4a8b-9a9a-1fb9dcb5559b",
     "akus": [
       [
         "Amazon S3",
@@ -1625,62 +1590,57 @@
     ]
   },
   {
-    "chunk_id": "6daa7571-caa7-4012-9a48-20a44b21071e",
+    "chunk_id": "aaaa06b8-2a2a-4f9b-8b22-d67ff26315f3",
     "akus": [
-      [
-        "Each canned ACL",
-        "HAS",
-        "predefined set"
-      ],
       [
         "Enabled",
         "ENABLES",
+        "accelerated data transfers"
+      ],
+      [
+        "Suspended",
+        "DISABLES",
         "accelerated data transfers"
       ]
     ]
   },
   {
-    "chunk_id": "c23c7c9c-55ef-4418-8ae9-e0d845925599",
+    "chunk_id": "89896226-ec8e-4264-8c23-ccb86980bb76",
     "akus": [
       [
-        "request's Origin header",
-        "MATCH",
-        "AllowedOrigin elements"
-      ],
+        "Each canned ACL",
+        "HAS",
+        "predefined set"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "0aa95ce6-584b-48b1-9876-60980df7b1cd",
+    "akus": [
       [
         "storage class analysis export analysis reports",
         "SENDS",
         "comma separated values CSV flat file"
-      ],
-      [
-        "PutBucketAnalyticsConfiguration",
-        "HAS",
-        "• HTTP Error"
       ]
     ]
   },
   {
-    "chunk_id": "e7b88650-50fc-45ba-a915-f333dd1dec9e",
+    "chunk_id": "98c0759b-e39e-4cf6-aee3-2d0b059a3e7f",
     "akus": [
-      [
-        "Amazon S3",
-        "VALIDATES",
-        "KMS key ID"
-      ],
-      [
-        "SSE-KMS configuration",
-        "SUPPORTS",
-        "1 customer managed key"
-      ],
       [
         "Every header",
         "MATCH",
         "AllowedHeader element"
+      ],
+      [
+        "request's Origin header",
+        "MATCH",
+        "AllowedOrigin elements"
       ]
     ]
   },
   {
-    "chunk_id": "4b81344a-e1fb-44b6-95be-f1ef238b9728",
+    "chunk_id": "0bf94887-bf5a-4604-862f-f4899d5c0016",
     "akus": [
       [
         "Amazon S3",
@@ -1691,16 +1651,11 @@
         "SSE-KMS configuration",
         "SUPPORTS",
         "1 customer managed key"
-      ],
-      [
-        "CRC32",
-        "IS",
-        "default checksum algorithm"
       ]
     ]
   },
   {
-    "chunk_id": "40f4c31d-1b91-4656-833f-929e42e68238",
+    "chunk_id": "419a4eb4-4411-42af-821d-1b693ba505f4",
     "akus": [
       [
         "S3 Intelligent-Tiering",
@@ -1711,11 +1666,16 @@
         "S3 Intelligent-Tiering",
         "DELIVER",
         "automatic cost savings"
+      ],
+      [
+        "CRC32",
+        "IS",
+        "default checksum algorithm"
       ]
     ]
   },
   {
-    "chunk_id": "03c1dd9b-ef76-423e-be2b-c6bb38069eaa",
+    "chunk_id": "9e36da8b-d9d6-4521-90de-e004a670cf5f",
     "akus": [
       [
         "Amazon S3 inventory",
@@ -1730,8 +1690,13 @@
     ]
   },
   {
-    "chunk_id": "cc99db93-1c18-4526-8b4a-9f6b63a80e4c",
+    "chunk_id": "3e1c6289-5cc6-4512-96ff-6077f6fe66ef",
     "akus": [
+      [
+        "lifecycle configuration",
+        "SPECIFIES",
+        "GLACIER storage class"
+      ],
       [
         "Amazon S3",
         "ABORT",
@@ -1745,7 +1710,7 @@
     ]
   },
   {
-    "chunk_id": "365e7f4d-816c-4b2e-91b5-5126734f4bfb",
+    "chunk_id": "aed0f9d4-608a-44cf-83bf-2ae9c33f6385",
     "akus": [
       [
         "Amazon S3 Lifecycle configuration",
@@ -1765,7 +1730,7 @@
     ]
   },
   {
-    "chunk_id": "024d57c3-d47b-4c7f-b99c-5b0554af826c",
+    "chunk_id": "30778085-615d-4a58-babe-adcf6a3a7108",
     "akus": [
       [
         "Objects",
@@ -1780,8 +1745,13 @@
     ]
   },
   {
-    "chunk_id": "d18671c8-d566-45fd-bd5f-40684df107b5",
+    "chunk_id": "e02d1fcb-ae76-4942-a07f-6eccf074fdd4",
     "akus": [
+      [
+        "Amazon S3",
+        "ASSIGN",
+        "all log object keys"
+      ],
       [
         "Buckets",
         "SUPPORTS",
@@ -1790,7 +1760,7 @@
     ]
   },
   {
-    "chunk_id": "e4f6e0b4-f5ec-4633-b486-e4bb98c014c9",
+    "chunk_id": "6d01985a-8965-4575-9c57-0cbf90cfddf0",
     "akus": [
       [
         "Amazon S3",
@@ -1805,7 +1775,7 @@
     ]
   },
   {
-    "chunk_id": "d6441792-e7b3-4c42-8c40-ba26561062ce",
+    "chunk_id": "cea61116-01da-4907-809c-d49c3c2b8846",
     "akus": [
       [
         "S3",
@@ -1840,7 +1810,7 @@
     ]
   },
   {
-    "chunk_id": "23bb32b3-98f3-4db9-ad36-79e474dd5f4c",
+    "chunk_id": "ad4ccfcc-ad01-49e4-b79a-d693068a349e",
     "akus": [
       [
         "Object Lock",
@@ -1850,7 +1820,7 @@
     ]
   },
   {
-    "chunk_id": "fc6ed36f-80f8-4664-80cd-eb81beb4b0b5",
+    "chunk_id": "8f50583e-5fa2-4e6b-a7dc-6d4be5b6b908",
     "akus": [
       [
         "S3 RTC",
@@ -1865,7 +1835,7 @@
     ]
   },
   {
-    "chunk_id": "afa70735-4f83-42ca-82a7-138994fe665c",
+    "chunk_id": "fd66c584-04d5-4905-a1c9-3581001bcd9a",
     "akus": [
       [
         "All objects",
@@ -1880,7 +1850,7 @@
     ]
   },
   {
-    "chunk_id": "10c3ecc3-eeee-4440-aed8-908ee5ee6cc2",
+    "chunk_id": "8272e65c-4a0b-4709-af10-35ff0208de51",
     "akus": [
       [
         "routing rule",
@@ -1890,7 +1860,7 @@
     ]
   },
   {
-    "chunk_id": "d2871f6a-eaf7-474d-98a6-59ccee331003",
+    "chunk_id": "66c740a3-dbb2-403c-acca-aa0c7ee5e292",
     "akus": [
       [
         "Amazon S3",
@@ -1935,7 +1905,7 @@
     ]
   },
   {
-    "chunk_id": "a8d1097d-e369-413a-bf94-332b84d419d0",
+    "chunk_id": "f3e847d8-4002-4e42-a54b-c733c4160b4f",
     "akus": [
       [
         "S3",
@@ -1960,7 +1930,7 @@
     ]
   },
   {
-    "chunk_id": "f4c98c27-7887-49ed-af5f-2892451bac9f",
+    "chunk_id": "e759d501-800e-468a-a134-c1671ba565a1",
     "akus": [
       [
         "S3",
@@ -2005,7 +1975,7 @@
     ]
   },
   {
-    "chunk_id": "72f86d20-7d53-489d-9712-5c28085d46cf",
+    "chunk_id": "209ca021-460c-425a-beab-eed81d494741",
     "akus": [
       [
         "Amazon S3",
@@ -2050,7 +2020,7 @@
     ]
   },
   {
-    "chunk_id": "a5bbc085-650b-4201-9f6a-82a6bb01cc22",
+    "chunk_id": "c93fadd3-92ef-4c3b-a319-8edce964819f",
     "akus": [
       [
         "Amazon S3",
@@ -2085,7 +2055,7 @@
     ]
   },
   {
-    "chunk_id": "92958134-e671-4880-bb0d-7f4fd9415250",
+    "chunk_id": "ab5dc883-ef1b-40fb-ad53-0030cf465f12",
     "akus": [
       [
         "Amazon S3",
@@ -2105,7 +2075,7 @@
     ]
   },
   {
-    "chunk_id": "946b3e8c-b1f1-48fa-95e2-6c5f8aec461e",
+    "chunk_id": "28473d6f-de09-4a04-843e-2b6aa04f9864",
     "akus": [
       [
         "Amazon S3",
@@ -2125,7 +2095,7 @@
     ]
   },
   {
-    "chunk_id": "49a2dba7-496c-45e6-b09b-171aa4018b73",
+    "chunk_id": "812b6d20-7b4b-473b-9f15-69a11ae0639a",
     "akus": [
       [
         "Amazon S3",
@@ -2145,7 +2115,7 @@
     ]
   },
   {
-    "chunk_id": "b0b4ad61-597a-4c3a-9833-ed7e77ec6b1b",
+    "chunk_id": "ff5ada9b-4a77-4dc3-b60a-5ac07e7283de",
     "akus": [
       [
         "Each canned ACL",
@@ -2155,7 +2125,7 @@
     ]
   },
   {
-    "chunk_id": "e4adbc20-42c7-449e-8b4a-80b409d828ca",
+    "chunk_id": "b313b905-0388-4fa2-912d-fef25eb86c13",
     "akus": [
       [
         "ACL",
@@ -2165,7 +2135,7 @@
     ]
   },
   {
-    "chunk_id": "9aed1fb7-e582-459b-afa4-8e92619f4c29",
+    "chunk_id": "e94a2c2a-6d7f-4ddd-ba6f-a60113d355c3",
     "akus": [
       [
         "Object Lock",
@@ -2190,7 +2160,7 @@
     ]
   },
   {
-    "chunk_id": "d71cbaa3-5837-4606-af54-37f1dd85f7c2",
+    "chunk_id": "f4152fa1-3039-459d-97d4-6fa0f1b3b80e",
     "akus": [
       [
         "Object Lock",
@@ -2215,7 +2185,7 @@
     ]
   },
   {
-    "chunk_id": "4ffc5d23-20bd-44b3-9f95-67ca561df3ef",
+    "chunk_id": "7c58d660-9a61-48f3-8ee5-cb9ebb73cda8",
     "akus": [
       [
         "Amazon S3",
@@ -2260,7 +2230,7 @@
     ]
   },
   {
-    "chunk_id": "25c7350c-8923-4496-8008-8166fe140c79",
+    "chunk_id": "6673eaca-d872-4bf7-aa53-5d6d2612ffa0",
     "akus": [
       [
         "Amazon S3",
@@ -2275,7 +2245,7 @@
     ]
   },
   {
-    "chunk_id": "6f0fb694-94bf-4666-bd76-912f589558ac",
+    "chunk_id": "81a6225b-ed5e-428e-b900-3a510762b408",
     "akus": [
       [
         "Pattern",
@@ -2285,7 +2255,7 @@
     ]
   },
   {
-    "chunk_id": "15f1b290-59b1-4cd4-a748-5524df721214",
+    "chunk_id": "d8fe5401-3e40-48f7-8094-8ae9600beda5",
     "akus": [
       [
         "Amazon S3",
@@ -2305,7 +2275,7 @@
     ]
   },
   {
-    "chunk_id": "0b43830b-81a2-4fae-a5c6-331b1dc23749",
+    "chunk_id": "6e965959-94bf-4304-a1c7-466c161e27eb",
     "akus": [
       [
         "Amazon S3",
@@ -2345,7 +2315,7 @@
     ]
   },
   {
-    "chunk_id": "dbafddfe-792b-49d6-b552-e77a1c6c4703",
+    "chunk_id": "ead5b096-d655-4065-b52b-f93acab8b6a0",
     "akus": [
       [
         "Amazon S3 Select",
@@ -2380,7 +2350,7 @@
     ]
   },
   {
-    "chunk_id": "143adf8d-1c3f-4fe2-a104-7308d307721a",
+    "chunk_id": "e107833d-f8d9-41ff-ac28-9cedc3a2b630",
     "akus": [
       [
         "OutputSerialization",
@@ -2390,7 +2360,7 @@
     ]
   },
   {
-    "chunk_id": "c9491e8c-d7bd-47f8-b67b-1a6eeda4692c",
+    "chunk_id": "8ed1104c-b19b-4c8f-97e7-21be38432699",
     "akus": [
       [
         "all UpdateObjectEncryption requests",
@@ -2420,7 +2390,7 @@
     ]
   },
   {
-    "chunk_id": "3cb9b991-0eb6-46ff-bcbd-6a37dbcc73bf",
+    "chunk_id": "05ec4a82-52d1-417e-ad98-a1f8e83827a9",
     "akus": [
       [
         "Amazon S3",
@@ -2450,22 +2420,37 @@
     ]
   },
   {
-    "chunk_id": "354c0720-815c-4d23-965f-365ac3f0b688",
+    "chunk_id": "ef018763-47f1-426d-a7c0-478511dd3959",
     "akus": [
       [
         "Amazon S3",
         "ENCRYPTS",
         "server-side encryption"
+      ],
+      [
+        "Amazon S3",
+        "VALIDATES",
+        "provided MD5 value"
+      ],
+      [
+        "AWS S3",
+        "USES",
+        "x amz content sha256"
+      ],
+      [
+        "Amazon S3",
+        "VALIDATES",
+        "part data"
       ]
     ]
   },
   {
-    "chunk_id": "7036959c-84a7-49f4-8c19-0793536e78d4",
+    "chunk_id": "f0ae3d5e-1e25-4562-8fa6-5b78f6bfe1f3",
     "akus": [
       [
-        "multipart upload",
-        "USES",
-        "S3 Bucket Key"
+        "Amazon S3",
+        "RETURNS",
+        "encryption-specific headers"
       ],
       [
         "header",
@@ -2490,8 +2475,13 @@
     ]
   },
   {
-    "chunk_id": "c7d61de2-a087-44d5-a8ff-1abd110ad823",
+    "chunk_id": "76f6cd7d-f1eb-43a5-b8cb-82708600950d",
     "akus": [
+      [
+        "Amazon S3",
+        "RETURNS",
+        "upload ID"
+      ],
       [
         "Amazon S3",
         "RETURNS",
@@ -2500,17 +2490,7 @@
     ]
   },
   {
-    "chunk_id": "f8c431ba-775b-4bc4-8733-b904d406e948",
-    "akus": [
-      [
-        "Amazon S3",
-        "RETURNS",
-        "upload ID"
-      ]
-    ]
-  },
-  {
-    "chunk_id": "4a59b6ec-4008-41e0-a892-de96f74ac5f7",
+    "chunk_id": "c9ded762-0933-46bc-af18-02c957b50575",
     "akus": [
       [
         "Amazon S3",
@@ -2530,7 +2510,7 @@
     ]
   },
   {
-    "chunk_id": "dfd2d6ee-5b2a-46dc-8c8f-2a80fc73c234",
+    "chunk_id": "6f03d59f-20eb-4d35-8f30-72255a70a9b7",
     "akus": [
       [
         "multipart upload",
@@ -2575,18 +2555,8 @@
     ]
   },
   {
-    "chunk_id": "7834b883-d8cd-4c2e-9c75-301706217642",
+    "chunk_id": "19aff038-488e-4459-82a9-99857fc9a047",
     "akus": [
-      [
-        "Passes",
-        "TRANSFORMS",
-        "GetObject operation"
-      ],
-      [
-        "AWS",
-        "PROVIDES",
-        "some prebuilt Lambda functions"
-      ],
       [
         "WriteGetObjectResponse caller",
         "PROVIDES",
@@ -2595,7 +2565,17 @@
     ]
   },
   {
-    "chunk_id": "9de4a9cd-4dd5-4956-a4d1-fcff2f3b1733",
+    "chunk_id": "d27cdfd3-5e7f-469b-a747-96a72615b551",
+    "akus": [
+      [
+        "AWS",
+        "PROVIDES",
+        "some prebuilt Lambda functions"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "dbe1c1b7-9353-4d33-8998-a7ce9246bcb6",
     "akus": [
       [
         "AssociateAccessGrantsIdentityCenter",
@@ -2615,7 +2595,7 @@
     ]
   },
   {
-    "chunk_id": "e8625829-ce88-4fc4-a735-3aa94ceaa435",
+    "chunk_id": "1655076f-807f-49bd-b820-5ea618710ed8",
     "akus": [
       [
         "grant",
@@ -2625,7 +2605,7 @@
     ]
   },
   {
-    "chunk_id": "88483a23-34b1-4d97-8ca0-ae0ca7e69ce8",
+    "chunk_id": "8db1de15-387e-4c2c-87b0-6fea5a77ad15",
     "akus": [
       [
         "S3",
@@ -2655,7 +2635,7 @@
     ]
   },
   {
-    "chunk_id": "ebd315a5-0945-4337-97c6-f76133acec90",
+    "chunk_id": "81609f7b-ea4c-4783-be62-fe101ddbac19",
     "akus": [
       [
         "S3 Object Lock",
@@ -2675,7 +2655,7 @@
     ]
   },
   {
-    "chunk_id": "52ef5124-d37c-4a49-b1be-694c2ac104b4",
+    "chunk_id": "979cb6c9-86df-497b-b151-9647c1778fab",
     "akus": [
       [
         "ID",
@@ -2690,7 +2670,7 @@
     ]
   },
   {
-    "chunk_id": "6896c32d-6b67-429c-94c4-43c4e6f55d10",
+    "chunk_id": "2b915828-0992-4fbd-be73-12f4898e701f",
     "akus": [
       [
         "Pattern",
@@ -2710,7 +2690,7 @@
     ]
   },
   {
-    "chunk_id": "4b391c7c-02cd-43ac-83a2-8bb2514cb63a",
+    "chunk_id": "d1a6dcfa-f470-4ec9-ada1-c91c6b7f592f",
     "akus": [
       [
         "S3 Access Grants",
@@ -2720,7 +2700,7 @@
     ]
   },
   {
-    "chunk_id": "c9046860-e682-4400-9dee-77c472bad9db",
+    "chunk_id": "c59e48cd-695b-47d6-bd27-52c515f05286",
     "akus": [
       [
         "Amazon S3",
@@ -2735,7 +2715,7 @@
     ]
   },
   {
-    "chunk_id": "cb2b6024-9941-4315-8e59-5772c58ac0ad",
+    "chunk_id": "6db471b0-dd57-4a8e-b907-6aa760ce2634",
     "akus": [
       [
         "Amazon S3",
@@ -2750,7 +2730,7 @@
     ]
   },
   {
-    "chunk_id": "88bcab06-18cb-4854-ba80-88695f37de90",
+    "chunk_id": "7b4376f6-e0a6-489e-80b5-5905361bac39",
     "akus": [
       [
         "DeleteStorageLensConfigurationTagging",
@@ -2765,7 +2745,7 @@
     ]
   },
   {
-    "chunk_id": "0319eef0-a832-4371-ac00-da19547007ee",
+    "chunk_id": "640a0ae9-5400-4812-8773-2e2f428dcad4",
     "akus": [
       [
         "grant",
@@ -2775,7 +2755,7 @@
     ]
   },
   {
-    "chunk_id": "cadf15f4-d9b4-4b69-86e1-a7380f89d999",
+    "chunk_id": "6e2ac160-163d-4c19-a06c-bf3fbfbabac7",
     "akus": [
       [
         "S3 Access Grants",
@@ -2790,7 +2770,7 @@
     ]
   },
   {
-    "chunk_id": "6cc270a4-e286-455e-8b7d-16844ec47aca",
+    "chunk_id": "60e1087e-212a-4950-8d4e-0e786d43c507",
     "akus": [
       [
         "VpcConfiguration",
@@ -2800,7 +2780,7 @@
     ]
   },
   {
-    "chunk_id": "a6b8bc83-d575-45fc-b098-c39f5a4636d4",
+    "chunk_id": "bb946cd4-4990-45da-af52-707222565114",
     "akus": [
       [
         "Root level tag",
@@ -2810,7 +2790,7 @@
     ]
   },
   {
-    "chunk_id": "b66227e0-ffa8-4d7e-9365-33bcbe3ae243",
+    "chunk_id": "174ba24f-e67f-413e-ac90-e5783b74145e",
     "akus": [
       [
         "Only users",
@@ -2825,7 +2805,7 @@
     ]
   },
   {
-    "chunk_id": "20cf8938-763a-428f-a075-2ca50186c94c",
+    "chunk_id": "42cfcba1-baa2-4b3c-956a-9271535aa243",
     "akus": [
       [
         "Only users",
@@ -2845,7 +2825,7 @@
     ]
   },
   {
-    "chunk_id": "0dd68228-67ab-4f34-972c-a49454fb9898",
+    "chunk_id": "86e160ec-6e08-4045-b72d-266fd720bb26",
     "akus": [
       [
         "tag",
@@ -2855,7 +2835,7 @@
     ]
   },
   {
-    "chunk_id": "35c4e01d-470f-454f-8ff7-4bb1bd326b30",
+    "chunk_id": "3945ca90-5112-4b35-89ee-4de269cdc36d",
     "akus": [
       [
         "S3 Access Grants",
@@ -2870,7 +2850,7 @@
     ]
   },
   {
-    "chunk_id": "bb273ab2-1bf8-4ede-8a54-7aca86eb5406",
+    "chunk_id": "ee5abc48-795e-49f8-99e8-21ed9199a1c4",
     "akus": [
       [
         "Amazon S3",
@@ -2890,7 +2870,7 @@
     ]
   },
   {
-    "chunk_id": "f5ab11b5-c48c-48e1-a0ec-f1d6ac714a1a",
+    "chunk_id": "f0851867-5d98-40a1-bfb9-d921f2a54bed",
     "akus": [
       [
         "Amazon S3",
@@ -2925,7 +2905,7 @@
     ]
   },
   {
-    "chunk_id": "f4658df5-399b-4ce7-808b-012ca857ff5e",
+    "chunk_id": "8ed0dd75-245a-48d0-bb9d-3fa5f5478fb8",
     "akus": [
       [
         "AND or OR logical operator",
@@ -2935,7 +2915,7 @@
     ]
   },
   {
-    "chunk_id": "ad38e72b-90c2-4da5-b4cb-cead6d832284",
+    "chunk_id": "ced17c92-4f81-42fb-81be-55605c18b7fa",
     "akus": [
       [
         "S3 Access Grants instance",
@@ -2960,7 +2940,7 @@
     ]
   },
   {
-    "chunk_id": "4001f690-9c18-4c16-b2e7-3c19e770d632",
+    "chunk_id": "e55e65cc-1784-44e1-8e01-810c177fb736",
     "akus": [
       [
         "Amazon S3",
@@ -2985,7 +2965,7 @@
     ]
   },
   {
-    "chunk_id": "b6f927d4-ad19-41f8-907c-89afecb5f68a",
+    "chunk_id": "2e5e4b04-9de4-481b-aa99-4a938990e453",
     "akus": [
       [
         "maximum number",
@@ -3005,7 +2985,7 @@
     ]
   },
   {
-    "chunk_id": "e5e20b23-d9cc-413c-b606-c9bbccc0b070",
+    "chunk_id": "5a1a89ef-b6ab-49a3-839a-3d71d34e33a4",
     "akus": [
       [
         "Amazon S3",
@@ -3035,7 +3015,7 @@
     ]
   },
   {
-    "chunk_id": "e7a6e5c6-9a9d-419e-9879-ca1046bf0474",
+    "chunk_id": "64776407-0fd7-4cbf-b282-b232dcf0c9de",
     "akus": [
       [
         "ID",
@@ -3050,7 +3030,7 @@
     ]
   },
   {
-    "chunk_id": "97cc2b90-dd1d-4dc7-9b1e-978dde732195",
+    "chunk_id": "c2679815-e6c9-4414-96ac-20146bb505ff",
     "akus": [
       [
         "Each access point",
@@ -3060,7 +3040,7 @@
     ]
   },
   {
-    "chunk_id": "7a445e11-a04b-4b7f-a5e3-b5e7c2b6aa21",
+    "chunk_id": "04168c0a-82f9-483c-a3a0-3847d416f3e4",
     "akus": [
       [
         "Outposts buckets",
@@ -3090,7 +3070,7 @@
     ]
   },
   {
-    "chunk_id": "8b357fae-b9af-41e8-a6e0-dbad9a317df3",
+    "chunk_id": "b5d2b284-f17c-46c8-ab07-713ecce7489a",
     "akus": [
       [
         "Amazon S3",
@@ -3110,7 +3090,7 @@
     ]
   },
   {
-    "chunk_id": "494403da-af46-485a-b6a3-40d03f751d5d",
+    "chunk_id": "9d7bb777-9dfc-4e21-a237-4627df6435b5",
     "akus": [
       [
         "S3",
@@ -3130,7 +3110,7 @@
     ]
   },
   {
-    "chunk_id": "cd8441eb-155b-445a-a646-2abaadb32ca7",
+    "chunk_id": "1f317610-ac3c-4ca1-8860-ec72524cfdb5",
     "akus": [
       [
         "PutBucketTagging",
@@ -3140,7 +3120,7 @@
     ]
   },
   {
-    "chunk_id": "02a99314-ec0f-4286-9602-193323dfe252",
+    "chunk_id": "9a0cf8ce-6abd-47c2-bc48-934514971fc8",
     "akus": [
       [
         "Amazon S3",
@@ -3160,7 +3140,7 @@
     ]
   },
   {
-    "chunk_id": "85932b93-1d7d-4758-92e4-487459d58bb0",
+    "chunk_id": "252516a1-9219-4675-9d62-743d29adb9e9",
     "akus": [
       [
         "Amazon S3",
@@ -3205,7 +3185,7 @@
     ]
   },
   {
-    "chunk_id": "fa69fd14-8d7d-4546-8acf-b078d2696359",
+    "chunk_id": "264aafd1-3d5b-4cf2-94df-396580731b73",
     "akus": [
       [
         "S3 Access Grants",
@@ -3230,7 +3210,7 @@
     ]
   },
   {
-    "chunk_id": "b7cd57d7-6ca1-4e0a-b7ce-03185a2c2661",
+    "chunk_id": "be355cec-8a94-48c6-8089-09e6ed25ccab",
     "akus": [
       [
         "CreateFileSystem",
@@ -3240,7 +3220,7 @@
     ]
   },
   {
-    "chunk_id": "248fa431-d89d-4550-80e7-255b1bec42b2",
+    "chunk_id": "24739ceb-4e82-4492-ae04-a83637c5570c",
     "akus": [
       [
         "Amazon Resource Name",
@@ -3255,7 +3235,7 @@
     ]
   },
   {
-    "chunk_id": "05848b7f-2608-4d5e-990c-a174aa467b3f",
+    "chunk_id": "0bf1faa1-987c-46fa-bba1-8e22787593e7",
     "akus": [
       [
         "All security groups",
@@ -3285,7 +3265,7 @@
     ]
   },
   {
-    "chunk_id": "61cad857-2858-4104-90ba-79a1b5d7e44d",
+    "chunk_id": "56d5eae1-be65-477c-970a-99b500a878bc",
     "akus": [
       [
         "JSON-formatted resource policy",
@@ -3295,7 +3275,7 @@
     ]
   },
   {
-    "chunk_id": "6a07d80e-87ca-456e-81d1-5dcecfc053ec",
+    "chunk_id": "38b3f123-711d-4037-bd5d-ddd13baae430",
     "akus": [
       [
         "All security groups",
@@ -3305,7 +3285,7 @@
     ]
   },
   {
-    "chunk_id": "df78a560-90c5-4bd2-92eb-6c0408e6a220",
+    "chunk_id": "8c08b922-98f1-4a70-834e-b20093ee3d40",
     "akus": [
       [
         "Amazon Resource Name",
@@ -3315,7 +3295,7 @@
     ]
   },
   {
-    "chunk_id": "53327a30-402b-4793-ae92-3dfaebccd3a2",
+    "chunk_id": "bdd5f3e8-3d2e-46ad-bf8e-f19953b9709b",
     "akus": [
       [
         "GetTableRecordExpirationConfiguration",
@@ -3325,7 +3305,7 @@
     ]
   },
   {
-    "chunk_id": "9ca30d3b-e409-47ec-adb4-5c1449838af2",
+    "chunk_id": "0f1cab3c-4626-471d-ac0c-1d3ce7f22cb5",
     "akus": [
       [
         "GetTableStorageClass",
@@ -3335,7 +3315,7 @@
     ]
   },
   {
-    "chunk_id": "df5bb244-3c58-4e9e-9a73-6b9873cb3467",
+    "chunk_id": "ce8a3b21-6021-488c-8aa0-8e5bcb14efec",
     "akus": [
       [
         "TagResource",
@@ -3345,7 +3325,7 @@
     ]
   },
   {
-    "chunk_id": "073a47c0-f7ef-47e1-9292-771f45322423",
+    "chunk_id": "9d13c4f4-9390-4332-a9a8-738ed3e21642",
     "akus": [
       [
         "UntagResource",
@@ -3355,7 +3335,7 @@
     ]
   },
   {
-    "chunk_id": "351cf351-cbb9-4792-bbbb-1bcb18fc61e6",
+    "chunk_id": "def2fa04-849c-4b78-8fbc-7b6307df6f44",
     "akus": [
       [
         "applications",
@@ -3365,7 +3345,7 @@
     ]
   },
   {
-    "chunk_id": "37d826db-59d2-4bac-a10b-51b515611621",
+    "chunk_id": "97fcf3cb-4c4b-4270-95fa-d29d599b9f51",
     "akus": [
       [
         "S3 Vectors",
@@ -3390,7 +3370,7 @@
     ]
   },
   {
-    "chunk_id": "a91c5be7-6d35-4f96-938e-affdb82bfaca",
+    "chunk_id": "dbc3132e-f06a-4ccb-bb38-f1df6173e8dc",
     "akus": [
       [
         "Amazon S3",
@@ -3415,8 +3395,13 @@
     ]
   },
   {
-    "chunk_id": "6456890e-d5d1-4527-8c29-5969e02b50b0",
+    "chunk_id": "78353fc3-633f-4db5-b45a-4f99d8aaf932",
     "akus": [
+      [
+        "Amazon S3",
+        "ASSIGN",
+        "Type LoggingEnabled data type"
+      ],
       [
         "Amazon S3",
         "ASSIGN",
@@ -3445,17 +3430,7 @@
     ]
   },
   {
-    "chunk_id": "6c607c76-ecf9-43ba-af12-b3fb96211634",
-    "akus": [
-      [
-        "General purpose buckets",
-        "APPLY",
-        "each part"
-      ]
-    ]
-  },
-  {
-    "chunk_id": "a1b9a455-d00a-4645-aa57-3ba8866837d4",
+    "chunk_id": "bef32625-5d04-4c08-b380-4e7cf741a04a",
     "akus": [
       [
         "Amazon S3",
@@ -3467,6 +3442,16 @@
         "CREATES",
         "uploaded object"
       ],
+      [
+        "ETag",
+        "REFLECT",
+        "only changes"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "e350c00e-fbf1-4f20-a680-f6cdc84f3d20",
+    "akus": [
       [
         "header",
         "SPECIFIES",
@@ -3483,6 +3468,11 @@
         "Base64 encoded, 160-bit SHA1 checksum"
       ],
       [
+        "Date",
+        "RETRIEVE",
+        "cross-origin access configuration"
+      ],
+      [
         "header",
         "SPECIFIES",
         "Base64 encoded, 256-bit SHA256 Entity tag"
@@ -3491,16 +3481,11 @@
         "header",
         "SPECIFIES",
         "Base64 encoded, 32-bit CRC32C"
-      ],
-      [
-        "ETag",
-        "REFLECT",
-        "only changes"
       ]
     ]
   },
   {
-    "chunk_id": "ad0111c4-2173-4d06-938c-d613737a9df7",
+    "chunk_id": "371bb405-3bcf-4936-bf93-94c64d69c83f",
     "akus": [
       [
         "CSV field values",
@@ -3515,7 +3500,7 @@
     ]
   },
   {
-    "chunk_id": "c606f4bd-2a31-471d-8710-3059c6956363",
+    "chunk_id": "b2b91eca-9f0b-492d-97c8-bcb24ed91951",
     "akus": [
       [
         "DefaultRetention settings",
@@ -3525,7 +3510,7 @@
     ]
   },
   {
-    "chunk_id": "fce48fde-e381-4f13-b556-1bccfe4bb22d",
+    "chunk_id": "2cec4354-d035-4e47-bb69-e2f4cc5b0ad7",
     "akus": [
       [
         "Amazon S3",
@@ -3540,7 +3525,7 @@
     ]
   },
   {
-    "chunk_id": "21191e13-fa21-47ea-9985-1caebbd51faf",
+    "chunk_id": "21550a76-2197-46a3-9a25-9572d02a2659",
     "akus": [
       [
         "Amazon S3",
@@ -3565,7 +3550,7 @@
     ]
   },
   {
-    "chunk_id": "61bdd73b-b438-4df7-957a-0597dc518fff",
+    "chunk_id": "ab0887cb-bdf7-4df5-820b-525e24d2fe4d",
     "akus": [
       [
         "account",
@@ -3580,7 +3565,7 @@
     ]
   },
   {
-    "chunk_id": "d24e6d62-0c83-41d7-9826-1265a3eb42f4",
+    "chunk_id": "9d8034b7-2f9b-4f71-93e3-904afc9ec555",
     "akus": [
       [
         "Amazon S3",
@@ -3590,7 +3575,7 @@
     ]
   },
   {
-    "chunk_id": "aed10812-568f-4e26-875c-b85dcaacc499",
+    "chunk_id": "8cbbfddb-3f37-4ff6-a006-9698b364c6ab",
     "akus": [
       [
         "Amazon S3",
@@ -3610,8 +3595,18 @@
     ]
   },
   {
-    "chunk_id": "3fe1720a-00a3-4b01-87c7-4d9c681cefc1",
+    "chunk_id": "f163cc12-d703-4ca0-bc87-8ea198c79f3f",
     "akus": [
+      [
+        "Valid Values",
+        "SPECIFIES",
+        "S3 Inventory configuration"
+      ],
+      [
+        "S3BucketDestination",
+        "CONTAINS",
+        "bucket name"
+      ],
       [
         "All of these tags",
         "EXIST",
@@ -3625,17 +3620,17 @@
     ]
   },
   {
-    "chunk_id": "202d6d21-bc09-451c-8227-8cb5e98ea82e",
+    "chunk_id": "3908a4a5-2fd2-400f-910a-af5d9270b405",
     "akus": [
+      [
+        "InventoryDestination",
+        "SPECIFIES",
+        "S3 Inventory configuration"
+      ],
       [
         "Amazon S3",
         "SCAN",
         "general purpose bucket"
-      ],
-      [
-        "Valid Values",
-        "SPECIFIES",
-        "S3 Inventory configuration"
       ],
       [
         "S3BucketDestination",
@@ -3650,17 +3645,27 @@
     ]
   },
   {
-    "chunk_id": "2a6df7cb-0a8f-4ff2-96b6-83975c463eba",
+    "chunk_id": "b9cc0b16-b302-46ab-8a42-f39f52813806",
     "akus": [
+      [
+        "LifecycleRule",
+        "CONTAINS",
+        "Prefix element"
+      ],
       [
         "Amazon S3",
         "USES",
         "newline character"
+      ],
+      [
+        "Filter",
+        "HAS",
+        "exactly one of Prefix"
       ]
     ]
   },
   {
-    "chunk_id": "70856450-d3f3-41d0-b74c-81d60841f306",
+    "chunk_id": "ec72a551-959c-4bc8-943f-c28cc391110a",
     "akus": [
       [
         "Lifecycle Rule",
@@ -3698,21 +3703,6 @@
         "specific storage class"
       ],
       [
-        "LifecycleRule",
-        "CONTAINS",
-        "Prefix element"
-      ]
-    ]
-  },
-  {
-    "chunk_id": "0474004b-d317-4371-bfea-84685ebf020f",
-    "akus": [
-      [
-        "Amazon S3",
-        "STORES",
-        "server access logs"
-      ],
-      [
         "Buckets",
         "SUPPORTS",
         "target grants"
@@ -3720,7 +3710,7 @@
     ]
   },
   {
-    "chunk_id": "e2edc9c4-1a65-42bf-aebf-366e40e25c03",
+    "chunk_id": "c4c123be-f75e-4a22-a38b-a7d10f46d0a0",
     "akus": [
       [
         "Amazon S3",
@@ -3765,7 +3755,7 @@
     ]
   },
   {
-    "chunk_id": "4e99bc71-1ae3-43ce-9e90-ebf3ec8e7ed8",
+    "chunk_id": "6b0687cf-812e-47f4-a23a-b9a14be607ed",
     "akus": [
       [
         "Directory buckets",
@@ -3775,7 +3765,7 @@
     ]
   },
   {
-    "chunk_id": "1947e3d8-614b-4582-923b-2dcb39969ae2",
+    "chunk_id": "ecabcc18-e13f-494e-a1f1-444140d787ee",
     "akus": [
       [
         "Amazon S3",
@@ -3795,7 +3785,7 @@
     ]
   },
   {
-    "chunk_id": "818063df-eed4-4540-9a10-24e0ca6c8b9f",
+    "chunk_id": "0ac9b263-ba7b-4d8b-b72b-cc018c915c47",
     "akus": [
       [
         "S3",
@@ -3830,7 +3820,7 @@
     ]
   },
   {
-    "chunk_id": "a9feb9ee-0112-4969-94f9-6caf0b55e2e9",
+    "chunk_id": "10df2a28-9735-416a-8f41-6607436b9322",
     "akus": [
       [
         "Amazon S3",
@@ -3875,7 +3865,7 @@
     ]
   },
   {
-    "chunk_id": "54b27ffd-aabc-4633-aa4f-aae938fb5ae4",
+    "chunk_id": "37b4b179-73d2-40b1-86b2-0e20b763f02b",
     "akus": [
       [
         "Amazon S3",
@@ -3895,7 +3885,7 @@
     ]
   },
   {
-    "chunk_id": "e37aa0d8-afce-49ab-809b-3df72484fdb1",
+    "chunk_id": "704d8c54-39ea-4b9e-9711-22cd5cd14ff4",
     "akus": [
       [
         "Directory buckets",
@@ -3915,7 +3905,7 @@
     ]
   },
   {
-    "chunk_id": "4b7f95ff-b1e0-4b43-8296-2cf3fae7bbb2",
+    "chunk_id": "e39c7fc9-5404-4405-848c-3cf2237c7983",
     "akus": [
       [
         "Amazon S3",
@@ -3935,7 +3925,7 @@
     ]
   },
   {
-    "chunk_id": "64bbdea1-eb79-4118-8fda-97d17ac93e6d",
+    "chunk_id": "efcc1d14-dfc0-4434-97f2-8b1d415d711d",
     "akus": [
       [
         "Amazon S3",
@@ -3960,7 +3950,7 @@
     ]
   },
   {
-    "chunk_id": "86d95c5e-c6c0-41d9-9603-4a9ad51178a4",
+    "chunk_id": "0aead597-acbe-4c3f-a91f-8bd7a3b395b1",
     "akus": [
       [
         "Amazon S3",
@@ -3980,7 +3970,7 @@
     ]
   },
   {
-    "chunk_id": "b3382fd2-6e94-417d-925b-774aca36e92f",
+    "chunk_id": "f207638c-f02b-4a67-8e39-ef63688b0161",
     "akus": [
       [
         "Amazon S3",
@@ -4010,7 +4000,7 @@
     ]
   },
   {
-    "chunk_id": "aec02fd9-44a8-41ff-bf06-69241e974835",
+    "chunk_id": "2fec823b-4018-4aaa-ba99-51c8dbcd122a",
     "akus": [
       [
         "Buckets",
@@ -4025,7 +4015,7 @@
     ]
   },
   {
-    "chunk_id": "341bf69a-ad76-4717-810e-4b1fb4311dbf",
+    "chunk_id": "103df9a0-5d6a-4a13-b84c-b487cace8401",
     "akus": [
       [
         "Amazon S3",
@@ -4060,7 +4050,7 @@
     ]
   },
   {
-    "chunk_id": "1e9d7089-a9a8-49ba-ac1c-767a4cf02bc8",
+    "chunk_id": "2ce73a7a-e986-4076-a868-be51fa484c7c",
     "akus": [
       [
         "VpcConfiguration",
@@ -4070,7 +4060,7 @@
     ]
   },
   {
-    "chunk_id": "0c37aa35-3fbd-4175-9601-18df2943d4d0",
+    "chunk_id": "8a4c4fd3-3986-4f05-8449-a71a7bd0efa6",
     "akus": [
       [
         "All objects",
@@ -4090,7 +4080,7 @@
     ]
   },
   {
-    "chunk_id": "b0220474-ce01-4944-a69b-188cfba361c9",
+    "chunk_id": "143851a9-a623-4781-9ed3-f8bbcce22da6",
     "akus": [
       [
         "Amazon S3",
@@ -4120,7 +4110,7 @@
     ]
   },
   {
-    "chunk_id": "8cad49ef-19c0-41bb-b0a7-2c3221e44523",
+    "chunk_id": "76f85f55-b766-4a44-9077-2bb3a437dd35",
     "akus": [
       [
         "Manifests",
@@ -4145,7 +4135,7 @@
     ]
   },
   {
-    "chunk_id": "4fb35b17-af1d-4d71-b14a-f24b8d079574",
+    "chunk_id": "2ca3ff99-a6b5-483e-a298-d835cdc0b267",
     "akus": [
       [
         "S3 Batch Operations job",
@@ -4175,7 +4165,7 @@
     ]
   },
   {
-    "chunk_id": "3b75a5b7-d94f-4dd9-92ed-053a01e66da1",
+    "chunk_id": "f8ac9bff-2394-4719-9fb1-5fc59a41ac8a",
     "akus": [
       [
         "ExpectedBucketOwner",
@@ -4200,7 +4190,7 @@
     ]
   },
   {
-    "chunk_id": "d240c3ff-6a6e-4822-839e-ad24c1a091c3",
+    "chunk_id": "02c9d829-efff-43ba-a5b0-f15a76c3de09",
     "akus": [
       [
         "Amazon S3",
@@ -4220,13 +4210,8 @@
     ]
   },
   {
-    "chunk_id": "076115c2-2864-4671-a3e4-cb125577cad9",
+    "chunk_id": "42dee67a-55cf-4535-8a9f-27b89f176f32",
     "akus": [
-      [
-        "Each entry",
-        "CONTAINS",
-        "Storage Lens group"
-      ],
       [
         "Each entry",
         "INCLUDES",
@@ -4240,27 +4225,17 @@
     ]
   },
   {
-    "chunk_id": "3f45fba2-aed4-4213-897d-f7d6561acd78",
+    "chunk_id": "e7728804-7e22-4185-b2d6-6ecfcee61f1b",
     "akus": [
       [
-        "DaysLessThan",
-        "SPECIFIES",
-        "minimum object age"
-      ],
-      [
-        "BytesGreaterThan",
-        "SPECIFIES",
-        "minimum object size"
-      ],
-      [
-        "BytesLessThan",
-        "SPECIFIES",
-        "maximum object size"
+        "Each entry",
+        "CONTAINS",
+        "Storage Lens group"
       ]
     ]
   },
   {
-    "chunk_id": "dc8b3a65-3387-48f6-b9b6-a5070a151c50",
+    "chunk_id": "86530d99-1049-4ade-84d2-24e66cb23cf7",
     "akus": [
       [
         "Each route",
@@ -4300,7 +4275,7 @@
     ]
   },
   {
-    "chunk_id": "9c94ba8b-8a10-4e49-9e83-bb24cb348dbf",
+    "chunk_id": "d435ca88-3de2-40ca-b6c8-b3db2067e0fd",
     "akus": [
       [
         "S3",
@@ -4340,7 +4315,7 @@
     ]
   },
   {
-    "chunk_id": "899d8445-f556-4aa6-81bf-3a27c4ff2664",
+    "chunk_id": "4e94e259-1c1d-4aa1-970e-0f65648d29ba",
     "akus": [
       [
         "Amazon S3",
@@ -4385,7 +4360,7 @@
     ]
   },
   {
-    "chunk_id": "2b8461cd-e90a-4db8-a214-ef3bd2988d61",
+    "chunk_id": "286a2f82-e597-473a-85fa-ad54acfaad59",
     "akus": [
       [
         "RequesterPays",
@@ -4430,7 +4405,7 @@
     ]
   },
   {
-    "chunk_id": "0a37513a-5015-41f7-b5b6-7b5caf95abd3",
+    "chunk_id": "b8546291-c062-4ff7-8fb7-2663932514ec",
     "akus": [
       [
         "S3 Batch Operations jobs",
@@ -4470,7 +4445,7 @@
     ]
   },
   {
-    "chunk_id": "26caea8a-d6ad-483b-aa06-a8b65c4436dd",
+    "chunk_id": "09b60f59-ea69-4430-9209-e084f5b6c075",
     "akus": [
       [
         "Amazon S3",
@@ -4515,7 +4490,7 @@
     ]
   },
   {
-    "chunk_id": "4b37e0e3-3a40-4383-b29c-519e5c3a17c0",
+    "chunk_id": "e6bb4d58-22eb-4952-9cc0-5936ea00eb40",
     "akus": [
       [
         "S3",
@@ -4535,7 +4510,7 @@
     ]
   },
   {
-    "chunk_id": "0a47d9ae-070c-4e1c-8129-b578c699b51d",
+    "chunk_id": "4d8ef9b7-ff23-49eb-a234-86a78a48f2ea",
     "akus": [
       [
         "enhanced prefix metrics report",
@@ -4565,7 +4540,7 @@
     ]
   },
   {
-    "chunk_id": "9f3bf5e5-edb0-4d1c-a161-b3a60ef800b5",
+    "chunk_id": "e3380ba4-42dd-4a8d-b9ed-48ffb10e7a9b",
     "akus": [
       [
         "Contains DaysGreaterThan",
@@ -4600,7 +4575,7 @@
     ]
   },
   {
-    "chunk_id": "18753684-afee-4e16-88d3-80c85de0e688",
+    "chunk_id": "292c1f2d-0384-444c-a5f1-133447c73124",
     "akus": [
       [
         "export",
@@ -4610,7 +4585,7 @@
     ]
   },
   {
-    "chunk_id": "f3962615-2eb3-4e5a-bb86-c7f7038b0f41",
+    "chunk_id": "9452251c-383b-46b2-8cea-a0644504d2a3",
     "akus": [
       [
         "Valid Values",
@@ -4625,7 +4600,7 @@
     ]
   },
   {
-    "chunk_id": "1178215b-5398-4156-b9eb-dacadda938f7",
+    "chunk_id": "8edc3076-7f33-41c9-8413-02df9b5ef493",
     "akus": [
       [
         "S3 Tables",
@@ -4640,7 +4615,7 @@
     ]
   },
   {
-    "chunk_id": "54399103-d0c9-408b-a6d9-3ee5df3052e8",
+    "chunk_id": "1fd51cec-3cff-466d-8b91-5e9702f465bf",
     "akus": [
       [
         "tables",
@@ -4670,7 +4645,7 @@
     ]
   },
   {
-    "chunk_id": "84702d37-76ee-4753-8b34-874ea3274700",
+    "chunk_id": "cb214b3f-9030-4ac0-9f15-d2a647f50cbd",
     "akus": [
       [
         "all new vectors",
@@ -4680,7 +4655,7 @@
     ]
   },
   {
-    "chunk_id": "b6a9c7be-ea68-4c7f-b195-ab0dd318d910",
+    "chunk_id": "399ea89a-3ea1-4ae7-8c6d-50e772565505",
     "akus": [
       [
         "Vector dimensions",
@@ -4690,7 +4665,7 @@
     ]
   },
   {
-    "chunk_id": "a6ab8dbe-b5e8-481f-acc6-c118b23463ec",
+    "chunk_id": "1efa5e4a-44b2-4346-8ed8-7fb2a03fb4fb",
     "akus": [
       [
         "Authenticated requests",
@@ -4705,7 +4680,7 @@
     ]
   },
   {
-    "chunk_id": "3cba9488-cc77-4a5d-b552-dbdf8eba6de9",
+    "chunk_id": "32a0d42e-2e98-4961-81e0-36b7c8d4eca8",
     "akus": [
       [
         "IAM",
@@ -4730,7 +4705,7 @@
     ]
   },
   {
-    "chunk_id": "ca12dc5e-5db0-490a-b830-7fdc3714291d",
+    "chunk_id": "ec67a216-b835-4342-8ebb-1bcff6d624a2",
     "akus": [
       [
         "server access log files",
@@ -4760,7 +4735,7 @@
     ]
   },
   {
-    "chunk_id": "d62dd47b-0fc8-45e1-b1ec-40a882b25afe",
+    "chunk_id": "0b4d032c-9600-43ae-86e5-a245809b2dd5",
     "akus": [
       [
         "Amazon S3",
@@ -4770,7 +4745,7 @@
     ]
   },
   {
-    "chunk_id": "a6a29acc-46b5-4e92-b462-f0673d087531",
+    "chunk_id": "3a6d21cd-6cf1-442a-9976-1f8b6860f8ed",
     "akus": [
       [
         "Each of these AWS SDKs",
@@ -4780,7 +4755,7 @@
     ]
   },
   {
-    "chunk_id": "dd517cb5-ea79-4bf3-b52a-ddcdeb9200b3",
+    "chunk_id": "b478fb48-2bf5-4c28-a4a2-d7c7e032f5f9",
     "akus": [
       [
         "Each of these AWS SDKs",
@@ -4795,7 +4770,7 @@
     ]
   },
   {
-    "chunk_id": "6b2e572e-d81a-4ad4-8eca-82368023a0da",
+    "chunk_id": "80bd5be9-2bc4-421e-8dac-c5d943ccb93b",
     "akus": [
       [
         "object.key",
@@ -4805,7 +4780,7 @@
     ]
   },
   {
-    "chunk_id": "4a9dd836-66f8-4f65-a3d8-aa18700bd394",
+    "chunk_id": "aef6ef33-31f7-42f7-82da-e42d846a699a",
     "akus": [
       [
         "IAM user",
@@ -4820,7 +4795,7 @@
     ]
   },
   {
-    "chunk_id": "6bf1becd-5f06-44a0-9117-434b6cb173d2",
+    "chunk_id": "3d9a9038-d25f-49db-b20e-e683524894e8",
     "akus": [
       [
         "IAM user",
@@ -4830,7 +4805,7 @@
     ]
   },
   {
-    "chunk_id": "f6c85804-2f6f-44e6-ad43-a0dc265365ed",
+    "chunk_id": "319d9431-e38a-4660-8a70-c5fe4460984f",
     "akus": [
       [
         "IAM user",
@@ -4845,7 +4820,7 @@
     ]
   },
   {
-    "chunk_id": "c9c96db7-610d-4268-b962-4e712f0b36c8",
+    "chunk_id": "f5cd6696-9246-4cfc-9477-e22c8ad9debe",
     "akus": [
       [
         "IAM user",
@@ -4855,7 +4830,7 @@
     ]
   },
   {
-    "chunk_id": "ac3ed241-dfc5-47b7-8bfa-e9a0c3725ce0",
+    "chunk_id": "415588f8-2e9d-43af-88bc-37bff5c63149",
     "akus": [
       [
         "only an IAM user",
@@ -4875,7 +4850,7 @@
     ]
   },
   {
-    "chunk_id": "728b3af8-2671-4e3b-8e32-17d8aeb23f57",
+    "chunk_id": "180d45bd-89da-41de-b133-43de8c31cd2c",
     "akus": [
       [
         "IAM user",
@@ -4890,7 +4865,7 @@
     ]
   },
   {
-    "chunk_id": "1450107c-0bb2-469b-ace4-3f2cd2fd3f73",
+    "chunk_id": "2c52d0df-13e4-4cc4-9d9a-7baa082715d5",
     "akus": [
       [
         "IAM user",
@@ -4905,7 +4880,7 @@
     ]
   },
   {
-    "chunk_id": "9a77b519-f150-49f4-bdd8-62b2ce6eed65",
+    "chunk_id": "0ac6bfdf-cc58-4e9c-9da7-491abd82ba2f",
     "akus": [
       [
         "Amazon S3 access points endpoints",
@@ -4915,7 +4890,7 @@
     ]
   },
   {
-    "chunk_id": "5f5e1e1a-99e6-4f24-9d77-7f5fc075663d",
+    "chunk_id": "b1fc0b6f-1734-4b21-8687-3b747e768da6",
     "akus": [
       [
         "Programs",
@@ -4925,7 +4900,7 @@
     ]
   },
   {
-    "chunk_id": "7c023e12-3dff-4193-a7cd-9fcf51239fcf",
+    "chunk_id": "be4a6ac0-1985-49bb-84f8-c52f51853f73",
     "akus": [
       [
         "Amazon S3",
@@ -4950,7 +4925,7 @@
     ]
   },
   {
-    "chunk_id": "675a9abb-5aae-492a-8bd0-327143f8bf39",
+    "chunk_id": "1baee851-e0f1-441a-9cf2-fcbebad115b8",
     "akus": [
       [
         "DNS routing",
@@ -4965,7 +4940,7 @@
     ]
   },
   {
-    "chunk_id": "3ddc3746-4013-4ac5-bf5b-5a91c1199731",
+    "chunk_id": "0c94b77b-c88f-4873-9ecb-473bf84f1fee",
     "akus": [
       [
         "client",
@@ -4975,7 +4950,7 @@
     ]
   },
   {
-    "chunk_id": "1725a7e8-13e7-45bc-8259-96e37348518a",
+    "chunk_id": "2297648b-d348-419c-a504-221484863342",
     "akus": [
       [
         "Sun's JVM",
@@ -5015,7 +4990,7 @@
     ]
   },
   {
-    "chunk_id": "e0c0e98e-82eb-4b73-9203-73f66405ebd3",
+    "chunk_id": "73b02681-d0c6-4be9-b369-845175c06a8c",
     "akus": [
       [
         "Amazon S3",
@@ -5060,7 +5035,7 @@
     ]
   },
   {
-    "chunk_id": "8180f5df-a50d-492b-8975-cddccb83ba0b",
+    "chunk_id": "6cacf3b2-976c-4754-9405-2389ead50983",
     "akus": [
       [
         "Signing requests",
@@ -5070,7 +5045,7 @@
     ]
   },
   {
-    "chunk_id": "5498a233-80cb-4806-ad30-7d816150b4f7",
+    "chunk_id": "a0ae1d74-7b89-4cbd-94ff-82f5ca3adde0",
     "akus": [
       [
         "Signature Version",
@@ -5085,7 +5060,7 @@
     ]
   },
   {
-    "chunk_id": "cf34df20-3acc-42e5-8d2b-fd9d210bb754",
+    "chunk_id": "3a221cbb-bebd-449b-8374-318929a6d232",
     "akus": [
       [
         "Support",
@@ -5095,7 +5070,7 @@
     ]
   },
   {
-    "chunk_id": "1350f984-1383-4a00-a422-91430b8f525a",
+    "chunk_id": "06ff4f27-9045-44b0-9492-ade148b8a7d6",
     "akus": [
       [
         "Amazon S3 bucket",
@@ -5115,7 +5090,7 @@
     ]
   },
   {
-    "chunk_id": "139d395e-19e9-4319-b053-676782b1e8c1",
+    "chunk_id": "69cb5298-1c1f-4572-981a-8368bfc15079",
     "akus": [
       [
         "Most web browsers",
@@ -5140,7 +5115,7 @@
     ]
   },
   {
-    "chunk_id": "c24cbc43-f013-4e1f-bf3b-53ba1466c132",
+    "chunk_id": "2e5474c2-0f97-43cf-bf6b-b6d84c7c174f",
     "akus": [
       [
         "Wire logging",
@@ -5150,7 +5125,7 @@
     ]
   },
   {
-    "chunk_id": "6eca8ddc-c0d9-47fa-abe6-a806363205b6",
+    "chunk_id": "b77d4a52-21ea-42df-bb8e-10b0b4ba714b",
     "akus": [
       [
         "tracing-subscriber",
@@ -5160,7 +5135,7 @@
     ]
   },
   {
-    "chunk_id": "166eba0f-c4b0-4fc6-a82f-2a778f35ec02",
+    "chunk_id": "048b0391-1f3b-44db-a468-11fb13e2b7f4",
     "akus": [
       [
         "CMake",
@@ -5170,7 +5145,7 @@
     ]
   },
   {
-    "chunk_id": "4fd890da-2062-4649-aeb2-bb1ff135271c",
+    "chunk_id": "e129d9de-c1a6-447c-a4b8-c183fed8b6fc",
     "akus": [
       [
         "ListBuckets",
@@ -5180,7 +5155,7 @@
     ]
   },
   {
-    "chunk_id": "1f76e152-bcff-433b-967b-18dcf71bfdf0",
+    "chunk_id": "7def0b15-55e1-4cec-876e-0f460322dd20",
     "akus": [
       [
         "AWS",
@@ -5190,7 +5165,7 @@
     ]
   },
   {
-    "chunk_id": "767f81c4-11cf-4d8b-972d-cf4baadb7e63",
+    "chunk_id": "bac1d95b-2a12-4093-9f56-64e5b39ed4e3",
     "akus": [
       [
         "ListBuckets",
@@ -5200,17 +5175,7 @@
     ]
   },
   {
-    "chunk_id": "2acca3ef-8f8e-4969-aa14-ba94b8e3187a",
-    "akus": [
-      [
-        "Simple Storage Service Amazon S3",
-        "CREATES",
-        "S3 bucket"
-      ]
-    ]
-  },
-  {
-    "chunk_id": "37309981-da8f-453c-99aa-d5e5316af018",
+    "chunk_id": "5afcfc6c-bc8c-49d2-b020-649714fb5e68",
     "akus": [
       [
         "excerpts",
@@ -5220,7 +5185,7 @@
     ]
   },
   {
-    "chunk_id": "e1d3b927-75fb-41d3-8aa6-4363447491b8",
+    "chunk_id": "734bc281-01c4-4cb9-9b21-99307fa823df",
     "akus": [
       [
         "upload_part_res",
@@ -5230,7 +5195,7 @@
     ]
   },
   {
-    "chunk_id": "c87eeaf4-e612-4a7f-b100-6d3923e837f4",
+    "chunk_id": "76554535-1213-4201-bdb4-70be10627bd4",
     "akus": [
       [
         "AWS",
@@ -5240,7 +5205,7 @@
     ]
   },
   {
-    "chunk_id": "a3b0eee4-e5cd-4ee5-91d7-f83ef71ca1d3",
+    "chunk_id": "ee9753ce-9eca-4c4f-ae61-04eab4309a04",
     "akus": [
       [
         "object keys collection",
@@ -5250,7 +5215,7 @@
     ]
   },
   {
-    "chunk_id": "764ccfb2-c0f3-4354-8dfe-0a65d388e639",
+    "chunk_id": "b8a6a634-82ed-4470-ad6d-7853031be0bc",
     "akus": [
       [
         "GetBucketAclCommand",
@@ -5265,7 +5230,7 @@
     ]
   },
   {
-    "chunk_id": "e5537451-6b13-45cf-a723-039f97fa9589",
+    "chunk_id": "562ea04c-cffd-4ce5-837a-a51f4825d8b6",
     "akus": [
       [
         "String path",
@@ -5275,7 +5240,7 @@
     ]
   },
   {
-    "chunk_id": "02c206e9-e223-46d4-8d07-aa32992f578c",
+    "chunk_id": "b7d3e7fc-0a1e-40e9-be08-ef67a4ae7139",
     "akus": [
       [
         "def",
@@ -5285,7 +5250,7 @@
     ]
   },
   {
-    "chunk_id": "b5bc7802-c108-4341-a46e-ec7ac33e98d9",
+    "chunk_id": "bffc5f02-210f-4039-bc87-b9fc954a257c",
     "akus": [
       [
         "GetObjectLegalHold",
@@ -5295,7 +5260,7 @@
     ]
   },
   {
-    "chunk_id": "ce77e283-2b65-4085-99eb-a29c2b2a8688",
+    "chunk_id": "dd3b636a-d849-4d74-a90e-79b1db14ba8b",
     "akus": [
       [
         "Object lock configuration",
@@ -5305,7 +5270,7 @@
     ]
   },
   {
-    "chunk_id": "1587c863-762a-4a12-af35-6fc3af07bafb",
+    "chunk_id": "f922d97a-43ed-4b54-ba38-595f3fc4149b",
     "akus": [
       [
         "GetObjectRetention",
@@ -5315,7 +5280,7 @@
     ]
   },
   {
-    "chunk_id": "82b9b18e-97f8-4679-bce6-bb48ca4b9169",
+    "chunk_id": "63b0a9fa-16c6-4814-87ff-090e8555572b",
     "akus": [
       [
         "ListBuckets",
@@ -5330,8 +5295,18 @@
     ]
   },
   {
-    "chunk_id": "28685f3a-12e7-41d4-929d-18f311c42c7a",
+    "chunk_id": "fa954098-237d-4b19-b4d1-45ea63f37555",
     "akus": [
+      [
+        "multipart uploads",
+        "INCUR",
+        "Amazon S3"
+      ],
+      [
+        "count",
+        "CREATES",
+        "Could n't list buckets"
+      ],
       [
         "public func",
         "USES",
@@ -5340,7 +5315,7 @@
     ]
   },
   {
-    "chunk_id": "ff33514c-25f2-444f-8204-0e7310332978",
+    "chunk_id": "06312671-9592-4cbf-a8ba-d93746cbd575",
     "akus": [
       [
         "Console",
@@ -5350,7 +5325,17 @@
     ]
   },
   {
-    "chunk_id": "888cc523-32dd-40ed-8768-323c5bf83b51",
+    "chunk_id": "f3fe3b9d-95c8-4785-a18e-5bb5e2661ece",
+    "akus": [
+      [
+        "count",
+        "CREATES",
+        "Listed count objects"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "2bdcdbb8-2bbe-4977-ba13-75fa4c87f40a",
     "akus": [
       [
         "s3api ACL commands",
@@ -5360,7 +5345,7 @@
     ]
   },
   {
-    "chunk_id": "82a2ac0f-ee52-4c27-9899-0e0a3c7f91c1",
+    "chunk_id": "8a1e1c28-3579-4e1a-b5d8-446e8f07451d",
     "akus": [
       [
         "String accountId",
@@ -5380,7 +5365,7 @@
     ]
   },
   {
-    "chunk_id": "883d65f8-21b4-4941-bad5-ff3f2e365dfb",
+    "chunk_id": "f9d91561-d26c-4060-80a6-3c548bc3e6ba",
     "akus": [
       [
         "ETag header",
@@ -5395,7 +5380,7 @@
     ]
   },
   {
-    "chunk_id": "1a9f21ed-7ba4-4e6b-b298-468cb008fb2c",
+    "chunk_id": "18aa81fc-a173-4b92-821d-109500f7283f",
     "akus": [
       [
         "String accountId",
@@ -5410,7 +5395,7 @@
     ]
   },
   {
-    "chunk_id": "781379cf-fdd4-4396-ac82-4c855366092c",
+    "chunk_id": "86026e7b-2fb8-44aa-80c7-f2ceef83b02b",
     "akus": [
       [
         "SNS topic",
@@ -5425,7 +5410,7 @@
     ]
   },
   {
-    "chunk_id": "cbe275de-77bf-42ed-afb0-c639715da77a",
+    "chunk_id": "9c999a11-9faa-4d0a-a3f1-006d0d20eb49",
     "akus": [
       [
         "SNS topic",
@@ -5435,7 +5420,7 @@
     ]
   },
   {
-    "chunk_id": "34473ed0-7993-48b1-ba0e-7a68ade4c474",
+    "chunk_id": "3f476ab4-f45d-4c1b-853b-c5a83c87b0ac",
     "akus": [
       [
         "Policies",
@@ -5445,7 +5430,7 @@
     ]
   },
   {
-    "chunk_id": "5a0568ca-5cc3-4abb-80ff-a8f354656015",
+    "chunk_id": "4007b7d7-04e8-481a-a8d8-50d0c957ef0f",
     "akus": [
       [
         "command",
@@ -5455,7 +5440,7 @@
     ]
   },
   {
-    "chunk_id": "e879812e-633c-420f-8ae3-c14c0b94d3c0",
+    "chunk_id": "66273c05-7084-41a4-a57f-40122faa8ec9",
     "akus": [
       [
         "command",
@@ -5465,7 +5450,7 @@
     ]
   },
   {
-    "chunk_id": "4b56eb86-3c3f-41bf-9881-abe7a7047fb6",
+    "chunk_id": "7688c975-51f5-49ee-9536-32bca7935007",
     "akus": [
       [
         "String indexDoc",
@@ -5475,7 +5460,7 @@
     ]
   },
   {
-    "chunk_id": "24ed26cc-1d58-469a-bf1a-1f49022103bc",
+    "chunk_id": "45d1b181-4362-45e9-9166-3e80615c97f6",
     "akus": [
       [
         "String indexDoc",
@@ -5485,7 +5470,7 @@
     ]
   },
   {
-    "chunk_id": "edd1e53a-a77c-4c0f-9b9d-2c4b968e6636",
+    "chunk_id": "931b2fbc-0464-4b1f-8f82-797d573e951b",
     "akus": [
       [
         "UploadObject",
@@ -5495,7 +5480,7 @@
     ]
   },
   {
-    "chunk_id": "b255b14c-cdd9-4258-a096-c961deb298ab",
+    "chunk_id": "128b8cb5-80bc-483c-af0c-4d7e642fe2f0",
     "akus": [
       [
         "String objectKey",
@@ -5505,7 +5490,7 @@
     ]
   },
   {
-    "chunk_id": "eb0a36a0-25be-4abf-89ab-811926847fe8",
+    "chunk_id": "acdf1e15-ce10-4aab-b26c-1911c6f086de",
     "akus": [
       [
         "command",
@@ -5520,7 +5505,7 @@
     ]
   },
   {
-    "chunk_id": "7dd91196-4118-484a-806f-763a1db8ed58",
+    "chunk_id": "788d708b-4a66-41da-a3a3-713a7bcf0706",
     "akus": [
       [
         "command",
@@ -5540,7 +5525,7 @@
     ]
   },
   {
-    "chunk_id": "f9dc40eb-7c8f-439d-873a-cb8d94e23910",
+    "chunk_id": "a64c7d7a-e7c1-4041-8ff0-efef43830b72",
     "akus": [
       [
         "command",
@@ -5565,7 +5550,7 @@
     ]
   },
   {
-    "chunk_id": "809c3706-5448-410e-beac-9b596cd125cb",
+    "chunk_id": "85510687-e526-46df-a606-406c873308d5",
     "akus": [
       [
         "s3api ACL commands",
@@ -5575,7 +5560,7 @@
     ]
   },
   {
-    "chunk_id": "16e47900-e3d4-4069-98e5-e698b4b9153a",
+    "chunk_id": "273f0789-fde8-4fb4-b642-5afaf9f2e697",
     "akus": [
       [
         "PutObjectLegalHold",
@@ -5590,7 +5575,7 @@
     ]
   },
   {
-    "chunk_id": "714398b6-4ad9-4fee-a08f-0a731e5e6712",
+    "chunk_id": "77c81564-69ff-4caa-a908-8b07bed3df37",
     "akus": [
       [
         "ObjectLockRule lockRule",
@@ -5605,7 +5590,7 @@
     ]
   },
   {
-    "chunk_id": "025ff14c-0785-4097-b1e0-327bf913ce5e",
+    "chunk_id": "b7fc54af-c3c6-48de-bacc-abf3bee6f22c",
     "akus": [
       [
         "Bucket settings",
@@ -5615,7 +5600,7 @@
     ]
   },
   {
-    "chunk_id": "2327d732-984b-4bb1-89b4-9a32efc3d410",
+    "chunk_id": "a8f46001-9580-413b-a0be-5b8eefa7effe",
     "akus": [
       [
         "PutObjectRetention",
@@ -5630,7 +5615,7 @@
     ]
   },
   {
-    "chunk_id": "4bd6edba-9d45-4ae6-8204-7c35f278932d",
+    "chunk_id": "449d10de-bb60-4166-8883-e72361cf474c",
     "akus": [
       [
         "Scenarios",
@@ -5640,7 +5625,7 @@
     ]
   },
   {
-    "chunk_id": "1f008b5e-47a0-4c60-bb6b-492757315f17",
+    "chunk_id": "8feac410-d694-4ab5-833c-de3508620230",
     "akus": [
       [
         "Amazon S3 buckets",
@@ -5650,7 +5635,7 @@
     ]
   },
   {
-    "chunk_id": "499bf5ec-e072-48d3-b834-d31f8771d324",
+    "chunk_id": "1b25f63b-008a-4508-acb0-9ee6ce0c7431",
     "akus": [
       [
         "Region us-east-1",
@@ -5665,7 +5650,7 @@
     ]
   },
   {
-    "chunk_id": "971c43e6-0d91-4fd3-8e67-e1707a3c0715",
+    "chunk_id": "4a91b414-a39b-43ad-bfa9-836de031ec84",
     "akus": [
       [
         "Presigned requests",
@@ -5675,7 +5660,7 @@
     ]
   },
   {
-    "chunk_id": "7a4c7e67-6e51-4d39-81d6-6a17dcd05dfd",
+    "chunk_id": "4eedd8c1-7415-4734-b201-9ed682a4cc68",
     "akus": [
       [
         "local credentials",
@@ -5685,7 +5670,7 @@
     ]
   },
   {
-    "chunk_id": "c1d9e6a1-3cc2-4335-88c8-4b2440b3d1f9",
+    "chunk_id": "9a0f077f-82f1-4e41-9fd2-300a6d6c1296",
     "akus": [
       [
         "runnable version",
@@ -5700,7 +5685,7 @@
     ]
   },
   {
-    "chunk_id": "5ce166e1-8786-43b5-9e98-1623fb6ebb7c",
+    "chunk_id": "398fd679-858d-4bc4-a6de-6ceae8aa8f69",
     "akus": [
       [
         "input image",
@@ -5710,7 +5695,7 @@
     ]
   },
   {
-    "chunk_id": "c038766b-7104-4fa5-b797-e47e1565f1c1",
+    "chunk_id": "87713956-f4f0-44e9-8880-53bb22d96129",
     "akus": [
       [
         "S3",
@@ -5725,7 +5710,7 @@
     ]
   },
   {
-    "chunk_id": "75cc9acf-d426-487d-8592-3d8a8036ea85",
+    "chunk_id": "e6527f9a-8e7a-4ba9-af2f-f3309a6786ad",
     "akus": [
       [
         "NewObjectLockScenario",
@@ -5745,7 +5730,7 @@
     ]
   },
   {
-    "chunk_id": "75008c9d-418c-4bff-a4cb-309c9ba21f62",
+    "chunk_id": "440c87b2-606b-410e-8ed4-f0e4196a6f16",
     "akus": [
       [
         "UploadTestObjects",
@@ -5760,7 +5745,7 @@
     ]
   },
   {
-    "chunk_id": "6410218d-9261-4998-91ca-9fdae393f826",
+    "chunk_id": "fb3958dd-9c1a-478d-8f67-dc371c446eb6",
     "akus": [
       [
         "GetAllObjects",
@@ -5770,7 +5755,7 @@
     ]
   },
   {
-    "chunk_id": "8956307e-d08e-4892-bcfb-acce65498f8b",
+    "chunk_id": "fc4767de-76fb-46ac-be52-568ecba29f95",
     "akus": [
       [
         "GetObjectLegalHold",
@@ -5785,7 +5770,7 @@
     ]
   },
   {
-    "chunk_id": "17d0e5aa-2705-499d-a89f-2e5388851eed",
+    "chunk_id": "4bb7d69f-9dd9-4f71-ae0c-01c3a43ad638",
     "akus": [
       [
         "UploadObject",
@@ -5805,7 +5790,7 @@
     ]
   },
   {
-    "chunk_id": "9e028672-0699-4a1d-9155-d960aa55125e",
+    "chunk_id": "6d55e88e-5c6e-45aa-9e22-6a751abdfa6f",
     "akus": [
       [
         "If-None-Match",
@@ -5815,7 +5800,7 @@
     ]
   },
   {
-    "chunk_id": "a112e2f9-a2fb-41d2-84b0-e7cb7e28f07e",
+    "chunk_id": "2d317851-f37b-486f-8981-aebaf68e3640",
     "akus": [
       [
         "If-None-Match",
@@ -5825,7 +5810,7 @@
     ]
   },
   {
-    "chunk_id": "ae128f21-e5dd-472b-ba58-180fbd19994f",
+    "chunk_id": "b91dd9ee-4549-4332-a129-6e2b44b0eb60",
     "akus": [
       [
         "Permission",
@@ -5835,7 +5820,7 @@
     ]
   },
   {
-    "chunk_id": "6442b1f5-4eea-4050-aa59-06a30d61cb54",
+    "chunk_id": "e0ecc326-6f54-4669-bd54-0315c97e1940",
     "akus": [
       [
         "SDK",
@@ -5855,7 +5840,7 @@
     ]
   },
   {
-    "chunk_id": "ef7062ef-dcb7-4df4-85a0-79b1af50984d",
+    "chunk_id": "9c4e194d-afef-45d3-b216-5252e62c82b0",
     "akus": [
       [
         "AWS CloudFormation stack",
@@ -5865,7 +5850,7 @@
     ]
   },
   {
-    "chunk_id": "be163d29-7ac8-4b03-8596-ce5ac0c20172",
+    "chunk_id": "c33acef4-d5b7-4a39-9ab4-cb849d494710",
     "akus": [
       [
         "SDK",
@@ -5875,7 +5860,7 @@
     ]
   },
   {
-    "chunk_id": "2c2186a1-7b65-4e24-af76-58b4fdd72cad",
+    "chunk_id": "3934b9f3-9840-436b-9c73-0f4a0bf8849f",
     "akus": [
       [
         "'s",
@@ -5885,7 +5870,7 @@
     ]
   },
   {
-    "chunk_id": "7aafe584-3ae5-4d77-bbcf-7e66b4eb9ca8",
+    "chunk_id": "b7aac25e-ed50-47b9-bc39-b4fd7993d04c",
     "akus": [
       [
         "Amazon S3",
@@ -5895,7 +5880,7 @@
     ]
   },
   {
-    "chunk_id": "f05035ca-542c-4c33-9a08-5b530f7fd855",
+    "chunk_id": "a1fa6eac-a88d-4e2c-b475-2c3c35463147",
     "akus": [
       [
         "config",
@@ -5905,7 +5890,7 @@
     ]
   },
   {
-    "chunk_id": "8270ee92-52fd-4257-882c-62612de0a65c",
+    "chunk_id": "96f0cd40-aef3-48e7-b2d8-9a074775e6a6",
     "akus": [
       [
         "SDK",
@@ -5915,7 +5900,7 @@
     ]
   },
   {
-    "chunk_id": "1c909740-a4f9-4b78-a16e-2b730876dd35",
+    "chunk_id": "607d2eaf-a165-48cf-b1ab-b7b27e2d1882",
     "akus": [
       [
         "demonstration",
@@ -5925,7 +5910,7 @@
     ]
   },
   {
-    "chunk_id": "c3de24e3-1220-4f4b-9ba7-298e417fc2f5",
+    "chunk_id": "9a49e61b-6185-43c2-a919-f897a3b33cd5",
     "akus": [
       [
         "Java program",
@@ -5950,7 +5935,7 @@
     ]
   },
   {
-    "chunk_id": "aab88417-ea2e-4c32-9aba-3722fb1dfcdd",
+    "chunk_id": "b5895897-a179-48ad-8140-838396deed11",
     "akus": [
       [
         "public class",
@@ -5960,7 +5945,7 @@
     ]
   },
   {
-    "chunk_id": "773a6656-2a5c-438b-9a3e-68aa72321d97",
+    "chunk_id": "db27c1e1-3f0b-4210-81e9-0c61d612376c",
     "akus": [
       [
         "JobReport report",
@@ -5975,7 +5960,7 @@
     ]
   },
   {
-    "chunk_id": "10dc8ab2-cd3e-41cf-83b7-46096add9605",
+    "chunk_id": "0f253c68-f238-4417-9d7a-7e9d28e5b3c8",
     "akus": [
       [
         "CompletableFuture",
@@ -5985,7 +5970,7 @@
     ]
   },
   {
-    "chunk_id": "993addf0-8897-488b-8075-4df53009ff29",
+    "chunk_id": "4c4d5eb1-c708-45fb-9619-fb4397b69b2c",
     "akus": [
       [
         "files",
@@ -6005,7 +5990,7 @@
     ]
   },
   {
-    "chunk_id": "027304df-4ad5-4418-b118-13ad395a38f9",
+    "chunk_id": "1d154637-b1ba-45e8-8236-a24b6f9a4da3",
     "akus": [
       [
         "Job",
@@ -6015,7 +6000,7 @@
     ]
   },
   {
-    "chunk_id": "43ec0958-ff1b-4280-ad17-5a89af846346",
+    "chunk_id": "cee54ec2-f573-434a-950b-0a415f8788b0",
     "akus": [
       [
         "CompletableFuture",
@@ -6025,7 +6010,7 @@
     ]
   },
   {
-    "chunk_id": "1a8971aa-595a-4267-bd4d-a7d7e7bc027e",
+    "chunk_id": "d6319ee7-1fce-4695-9978-d6cce3404b01",
     "akus": [
       [
         "Job",
@@ -6035,7 +6020,7 @@
     ]
   },
   {
-    "chunk_id": "ace3bbeb-4d6c-4a18-b370-0febab755093",
+    "chunk_id": "08c271d6-e031-4c6f-9889-b3ad90c38f2b",
     "akus": [
       [
         "S3 Directory Buckets",
@@ -6050,7 +6035,7 @@
     ]
   },
   {
-    "chunk_id": "115cd407-2442-477f-a748-15cd8c307818",
+    "chunk_id": "378a9f1c-93cc-4920-becf-f8c3be99817d",
     "akus": [
       [
         "program",
@@ -6060,7 +6045,7 @@
     ]
   },
   {
-    "chunk_id": "04b4e62b-dcb9-42b5-9849-f2853f9cd515",
+    "chunk_id": "ec094506-00ce-4b00-bac5-d611e02dcca8",
     "akus": [
       [
         "Reason",
@@ -6080,7 +6065,7 @@
     ]
   },
   {
-    "chunk_id": "f3031c9f-ce18-4652-9cc0-0b92243f2462",
+    "chunk_id": "f7ba48b1-b684-4ab9-8da6-f262d4f5959e",
     "akus": [
       [
         "program",
@@ -6090,7 +6075,7 @@
     ]
   },
   {
-    "chunk_id": "af7d56fe-78c0-45dc-bf73-a379722a8019",
+    "chunk_id": "8debbc53-0aa0-4c99-88aa-7e3813db8732",
     "akus": [
       [
         "program",
@@ -6100,7 +6085,7 @@
     ]
   },
   {
-    "chunk_id": "0155f190-bccd-439f-838f-4c89b016ab3e",
+    "chunk_id": "9c8e7ae6-e0c9-43f6-9def-d44c4e9ca53b",
     "akus": [
       [
         "Directory buckets",
@@ -6115,7 +6100,7 @@
     ]
   },
   {
-    "chunk_id": "0299159b-558c-46ce-a703-f28833f21724",
+    "chunk_id": "c8512e30-3087-49c9-a7f9-6a12f20c1153",
     "akus": [
       [
         "Directory buckets",
@@ -6125,7 +6110,7 @@
     ]
   },
   {
-    "chunk_id": "23c6f834-6e87-4412-9901-1cec660b55a2",
+    "chunk_id": "d23dd0f0-e0de-4127-aad0-f117d1db42be",
     "akus": [
       [
         "program",
@@ -6135,7 +6120,7 @@
     ]
   },
   {
-    "chunk_id": "ef2c6600-2f88-4898-857c-a08e49f77328",
+    "chunk_id": "7fe63e80-fabb-45ed-b9bd-9a67ac00fe2b",
     "akus": [
       [
         "Directory buckets",
@@ -6145,7 +6130,7 @@
     ]
   },
   {
-    "chunk_id": "7951fb4d-8a64-44d1-b594-9be31baaab43",
+    "chunk_id": "f3b3beb9-762d-477d-86e5-f680a57543c0",
     "akus": [
       [
         "Directory buckets",
@@ -6160,7 +6145,7 @@
     ]
   },
   {
-    "chunk_id": "d25b8e18-a3e2-4246-acd7-89cff1f8ced1",
+    "chunk_id": "d6bb90ac-3672-455c-aabd-c5f48977adb4",
     "akus": [
       [
         "Directory buckets",
@@ -6170,7 +6155,7 @@
     ]
   },
   {
-    "chunk_id": "5ab6c630-3092-4252-a49a-419804a71d08",
+    "chunk_id": "f286d7f9-7224-4e29-a7b4-bdbffd114e65",
     "akus": [
       [
         "resources",
@@ -6180,7 +6165,7 @@
     ]
   },
   {
-    "chunk_id": "1f906d14-801c-428b-a59a-eabdd159cfa1",
+    "chunk_id": "6051b3b0-f44e-48cf-909d-f97f1d0ff84f",
     "akus": [
       [
         "excerpts",
@@ -6190,7 +6175,7 @@
     ]
   },
   {
-    "chunk_id": "fb2436b1-25e6-4ab3-b18a-40d0c8833b12",
+    "chunk_id": "fdb65524-9a89-4eef-9aae-1e6de9a1daa3",
     "akus": [
       [
         "AWS managed KMS keys",
@@ -6200,7 +6185,7 @@
     ]
   },
   {
-    "chunk_id": "516d044a-688b-4914-9683-1c6e9208bfdb",
+    "chunk_id": "7a1a2841-134b-4e05-9490-326a130649aa",
     "akus": [
       [
         "policy",
@@ -6210,7 +6195,7 @@
     ]
   },
   {
-    "chunk_id": "f655a7a3-9a13-4bef-a481-e58bfb772133",
+    "chunk_id": "6d673cd8-804d-4b87-bcc3-7bf6802f6ea9",
     "akus": [
       [
         "Scenarios",
@@ -6220,7 +6205,7 @@
     ]
   },
   {
-    "chunk_id": "d85cf5c5-6e54-4cb1-9831-6ce4cd121257",
+    "chunk_id": "e72eef1c-fe39-4fc1-853e-80c9d0e3ba82",
     "akus": [
       [
         "Amazon S3",
@@ -6245,7 +6230,7 @@
     ]
   },
   {
-    "chunk_id": "4e9ea5ca-3ce1-4c8c-b2d5-c7808a9ec816",
+    "chunk_id": "88cb15df-7240-47cd-83c5-40445bc2a29b",
     "akus": [
       [
         "string",
@@ -6255,7 +6240,7 @@
     ]
   },
   {
-    "chunk_id": "6df12aa9-5e12-4802-b45c-f43a190de587",
+    "chunk_id": "931ff703-306e-480f-9a0d-7d1218a1e8c6",
     "akus": [
       [
         "signature",
@@ -6275,7 +6260,7 @@
     ]
   },
   {
-    "chunk_id": "943609b9-9166-4d59-8c8e-54a4fa1fbe62",
+    "chunk_id": "1481b961-a5c0-41cf-ad05-31947f4c2312",
     "akus": [
       [
         "UriEncode",
@@ -6290,7 +6275,7 @@
     ]
   },
   {
-    "chunk_id": "1f7b4d3f-c030-46a8-b700-4395da5d3452",
+    "chunk_id": "67281e88-f9ae-483d-b1cf-1bc8efed6b3d",
     "akus": [
       [
         "CanonicalQueryString",
@@ -6305,7 +6290,7 @@
     ]
   },
   {
-    "chunk_id": "3504771c-520f-41ee-8468-b394c9baf96f",
+    "chunk_id": "05148d99-c336-4758-954d-78146b5bd2b7",
     "akus": [
       [
         "Signing Key calculations",
@@ -6345,7 +6330,7 @@
     ]
   },
   {
-    "chunk_id": "0bf06a47-7ddb-4121-9294-4823095b1fc9",
+    "chunk_id": "3ac735ca-7ac5-480f-937b-43a343386276",
     "akus": [
       [
         "Amazon S3",
@@ -6365,7 +6350,7 @@
     ]
   },
   {
-    "chunk_id": "29efdfa4-3a4e-4e48-b36d-4a9c7f4d972f",
+    "chunk_id": "5984d7b9-c4c9-474d-8c40-b7d3015f50f3",
     "akus": [
       [
         "Amazon S3",
@@ -6410,7 +6395,7 @@
     ]
   },
   {
-    "chunk_id": "ac495e95-ea67-4e36-a88a-8ea84f85b811",
+    "chunk_id": "f2f02e3b-6753-410c-b77a-0450fb95b9db",
     "akus": [
       [
         "Signing Key calculations",
@@ -6430,7 +6415,7 @@
     ]
   },
   {
-    "chunk_id": "381b7cc4-4ec4-4467-b66b-5622b88e6500",
+    "chunk_id": "2f683c22-4069-450e-a727-2936a5b17b4d",
     "akus": [
       [
         "string",
@@ -6440,7 +6425,7 @@
     ]
   },
   {
-    "chunk_id": "0e66ab0d-2c40-4ef3-b943-37bfb2abe845",
+    "chunk_id": "7e6d7634-bc54-4cf6-ba93-fcd3dd835c49",
     "akus": [
       [
         "X-Amz-Expires",
@@ -6455,7 +6440,7 @@
     ]
   },
   {
-    "chunk_id": "e66092d4-8400-4bf2-97ab-464ca4b3cd14",
+    "chunk_id": "c2176a90-4084-498e-8fa2-a99ecceccdbf",
     "akus": [
       [
         "Key calculations",
@@ -6480,7 +6465,7 @@
     ]
   },
   {
-    "chunk_id": "b9d2a923-d31b-43e1-9c0a-8bc0144cb071",
+    "chunk_id": "3098cad9-3bd6-484d-ab89-c6aa5fb4c68e",
     "akus": [
       [
         "Users",
@@ -6490,7 +6475,7 @@
     ]
   },
   {
-    "chunk_id": "7c949749-4baa-4011-acb4-792def0cf58d",
+    "chunk_id": "6aa847b2-77d4-4372-abb1-ba0dbfeea347",
     "akus": [
       [
         "Amazon S3",
@@ -6510,7 +6495,7 @@
     ]
   },
   {
-    "chunk_id": "460d10b8-5370-4e1b-8651-67d82800c57a",
+    "chunk_id": "5d66f24a-154b-42a2-87ac-2a7666a070a0",
     "akus": [
       [
         "Amazon S3",
@@ -6530,7 +6515,7 @@
     ]
   },
   {
-    "chunk_id": "c0b99371-fb3a-4877-8597-b1108a9255fb",
+    "chunk_id": "ff962117-10cc-40aa-9bb1-7ef597614993",
     "akus": [
       [
         "Amazon S3",
@@ -6570,7 +6555,7 @@
     ]
   },
   {
-    "chunk_id": "af300f4d-bc41-48db-b2ec-367d460ab941",
+    "chunk_id": "90807262-a6eb-425f-acbc-7f52041abeab",
     "akus": [
       [
         "Amazon S3",
@@ -6600,7 +6585,7 @@
     ]
   },
   {
-    "chunk_id": "b45ca931-bc4a-4343-b2ae-6a4816270020",
+    "chunk_id": "eb9d9dfb-1449-4a8d-8d80-1d6f678b435a",
     "akus": [
       [
         "Amazon S3",
@@ -6610,7 +6595,7 @@
     ]
   },
   {
-    "chunk_id": "8bb545fc-a931-474a-907b-ef93daf14636",
+    "chunk_id": "f18336ca-db52-4fb4-be3b-6f9f0c9c2a04",
     "akus": [
       [
         "Amazon S3",
@@ -6645,7 +6630,7 @@
     ]
   },
   {
-    "chunk_id": "788900ca-1e7b-44f5-91b9-2eaa21e0d4ee",
+    "chunk_id": "3fd5bd99-34dc-4185-9b74-a9c0cc753b14",
     "akus": [
       [
         "Amazon S3",
@@ -6670,7 +6655,7 @@
     ]
   },
   {
-    "chunk_id": "2aa09b82-7508-48a1-a040-1f284be47cc5",
+    "chunk_id": "25e1109f-e514-4b04-9abc-11f9b359f0f7",
     "akus": [
       [
         "Amazon S3",
@@ -6685,7 +6670,7 @@
     ]
   },
   {
-    "chunk_id": "2170aac6-e3a0-41c2-9f8b-bb86a94347e3",
+    "chunk_id": "851c266a-6f02-4609-b8f1-d2d628a4c7cd",
     "akus": [
       [
         "Amazon S3",
@@ -6730,7 +6715,7 @@
     ]
   },
   {
-    "chunk_id": "75ba9bb1-8567-4e20-a185-9d0e0eb80749",
+    "chunk_id": "34337c1c-3634-4bb2-a2c1-a11fadb4db99",
     "akus": [
       [
         "Valid values",
@@ -6740,7 +6725,7 @@
     ]
   },
   {
-    "chunk_id": "9abe4aed-b793-4ce8-ac7f-06c11067f593",
+    "chunk_id": "73b16f2b-fff7-4aa8-b401-16ffa07796a1",
     "akus": [
       [
         "Amazon S3",
@@ -6770,7 +6755,7 @@
     ]
   },
   {
-    "chunk_id": "67c2d91c-d3ea-4763-8e85-10273cacf447",
+    "chunk_id": "ea190445-8c65-4d7e-8984-3d1c10a6dc1a",
     "akus": [
       [
         "user",
@@ -6800,7 +6785,7 @@
     ]
   },
   {
-    "chunk_id": "1121b0b0-719e-4a6c-abf2-7ef04fac3361",
+    "chunk_id": "81287e59-f86e-4b00-98bf-445b1f4cbaf7",
     "akus": [
       [
         "HTML form",
@@ -6815,7 +6800,7 @@
     ]
   },
   {
-    "chunk_id": "937723ba-742c-43b2-83c4-2d78c3a0c448",
+    "chunk_id": "c8a8e246-645b-476c-b292-dcbf3716184a",
     "akus": [
       [
         "Amazon S3",
@@ -6835,7 +6820,7 @@
     ]
   },
   {
-    "chunk_id": "3eb14efb-604d-4347-89e2-915bff3ca507",
+    "chunk_id": "31c9c646-da0e-45dd-8510-f3e3eec626e8",
     "akus": [
       [
         "Conditional items",
@@ -6845,7 +6830,7 @@
     ]
   },
   {
-    "chunk_id": "d06431a4-89e7-458b-b898-b447e68102f2",
+    "chunk_id": "84acc5d9-5607-4330-bb92-ca85cfdfc4ec",
     "akus": [
       [
         "acl",
@@ -6860,7 +6845,7 @@
     ]
   },
   {
-    "chunk_id": "ec30cb53-916e-43da-92e5-3babff2be651",
+    "chunk_id": "00deb4ed-a6de-41c2-97ea-ff027fd37fb0",
     "akus": [
       [
         "AWS Amplify library Storage module",
@@ -6875,7 +6860,7 @@
     ]
   },
   {
-    "chunk_id": "0d12f829-f8e4-46cc-bd52-b7744331e87f",
+    "chunk_id": "b6f11323-6060-407b-8d7c-52fb6089534e",
     "akus": [
       [
         "Amazon S3",
@@ -6895,7 +6880,7 @@
     ]
   },
   {
-    "chunk_id": "784cbf1c-9b20-4c5a-b93e-161a238880ae",
+    "chunk_id": "d5d6a1b7-b85d-4e94-95a6-3108ac654c41",
     "akus": [
       [
         "Amazon S3",
@@ -6908,15 +6893,35 @@
         "CORS requests"
       ],
       [
+        "Amazon S3",
+        "CREATES",
+        "random number"
+      ],
+      [
         "Access Co ntrol Allow Headers response header",
         "RETURNS",
         "successful CORS evaluations"
+      ],
+      [
+        "Support",
+        "USES",
+        "request IDs"
       ]
     ]
   },
   {
-    "chunk_id": "a9b45745-b5a1-4487-ba62-325eb88a40c5",
+    "chunk_id": "24068bee-8148-45ec-a29f-7ad67a180dd8",
     "akus": [
+      [
+        "Amazon S3",
+        "RETURNS",
+        "all AWS Regions"
+      ],
+      [
+        "Amazon S3",
+        "RETURNS",
+        "200 OK"
+      ],
       [
         "Amazon S3",
         "CREATES",
@@ -6936,41 +6941,21 @@
         "Simple programs",
         "DISPLAY",
         "end user"
-      ],
-      [
-        "Support",
-        "USES",
-        "request IDs"
       ]
     ]
   },
   {
-    "chunk_id": "ad79232e-25d2-41e9-be7b-d27482143e14",
+    "chunk_id": "3cf5fb9b-5251-4236-a46c-637036d520db",
     "akus": [
-      [
-        "Amazon S3",
-        "RETURNS",
-        "all AWS Regions"
-      ],
-      [
-        "Amazon S3",
-        "RETURNS",
-        "200 OK"
-      ],
       [
         "Multi-Region Access Point idempotency token",
         "USES",
         "diﬀerent request"
-      ],
-      [
-        "Amazon S3",
-        "RETURNS",
-        "legacy compatibility"
       ]
     ]
   },
   {
-    "chunk_id": "9ef73f65-1fa4-4d46-b4f1-d0bd9f539be9",
+    "chunk_id": "8d0f4a4e-b453-4c9c-b1bd-4dc88445f676",
     "akus": [
       [
         "exception",
@@ -6980,7 +6965,7 @@
     ]
   },
   {
-    "chunk_id": "510aae94-b7b3-4066-9d91-48211abefe80",
+    "chunk_id": "57cdff78-374f-4464-a595-2fe407973e25",
     "akus": [
       [
         "No transformation",
@@ -7000,7 +6985,7 @@
     ]
   },
   {
-    "chunk_id": "a6bca7fa-0a36-4f2a-ab92-65cfaa417b36",
+    "chunk_id": "ab76b874-2b30-49e4-82cc-651e06de21ee",
     "akus": [
       [
         "EvaluatorInvalidTi",
@@ -7025,7 +7010,7 @@
     ]
   },
   {
-    "chunk_id": "a4b681e6-b026-476a-885c-7225be9a6fa7",
+    "chunk_id": "b1ca814c-2551-4f07-a514-f2aed2b3bd9c",
     "akus": [
       [
         "ObjectSerializatio",
@@ -7065,7 +7050,7 @@
     ]
   },
   {
-    "chunk_id": "b5b25090-9094-43e3-95e7-5ccf64427e9b",
+    "chunk_id": "c978533c-4354-4327-a1bc-29c8ec7290a8",
     "akus": [
       [
         "ParseMalformedJoin JOIN",
@@ -7100,7 +7085,7 @@
     ]
   },
   {
-    "chunk_id": "04729251-d7d3-421e-ad50-ff5a39cd17fb",
+    "chunk_id": "d991afed-f866-4e6f-9638-3d8d0f51f7bb",
     "akus": [
       [
         "User- defined tag keys",
@@ -7135,7 +7120,7 @@
     ]
   },
   {
-    "chunk_id": "a17f4ce2-61f7-4a99-a5bb-31835e7eedb7",
+    "chunk_id": "1bb70f30-3402-4b12-b0de-67bcdcf386d2",
     "akus": [
       [
         "Activity metrics",
@@ -7180,7 +7165,7 @@
     ]
   },
   {
-    "chunk_id": "12062770-b22c-4293-81d5-068b6326d124",
+    "chunk_id": "5c659006-d431-4a77-998e-156928543c38",
     "akus": [
       [
         "WriteGetObjectResp onse",
@@ -7220,7 +7205,7 @@
     ]
   },
   {
-    "chunk_id": "55ba6fdc-a9a5-4ba0-a406-5282f3965949",
+    "chunk_id": "964e67fd-67bd-47fc-88d6-2a329a1b0695",
     "akus": [
       [
         "ValidationError Validation errors",
@@ -7240,7 +7225,7 @@
     ]
   },
   {
-    "chunk_id": "f48c5e06-702b-431f-94f7-c5c262e517b7",
+    "chunk_id": "156be89b-2769-4c98-ac1b-74f0089abdab",
     "akus": [
       [
         "Tag keys",
@@ -7265,7 +7250,7 @@
     ]
   },
   {
-    "chunk_id": "743ccab7-00b1-4918-81b2-4ac67ad8cd5e",
+    "chunk_id": "04eee4f6-cd4d-4167-8127-1106ca5823c3",
     "akus": [
       [
         "SOAP API",
@@ -7295,7 +7280,7 @@
     ]
   },
   {
-    "chunk_id": "02585182-608a-4e70-bd85-86d95af8ea3d",
+    "chunk_id": "a58c0112-3d61-49de-a4aa-311369d27454",
     "akus": [
       [
         "Amazon S3",
@@ -7305,7 +7290,7 @@
     ]
   },
   {
-    "chunk_id": "c097b6a8-26f9-4458-a2cf-14079e7340ca",
+    "chunk_id": "71fd218a-9ea3-4bc7-958f-1e55a9e6c793",
     "akus": [
       [
         "Amazon S3",
@@ -7350,8 +7335,13 @@
     ]
   },
   {
-    "chunk_id": "b9ba8f1b-b009-4635-ba78-391049bc5a20",
+    "chunk_id": "32588377-6a04-42c4-9360-23d9578e5ec8",
     "akus": [
+      [
+        "Bucket lifecycle configuration",
+        "SUPPORTS",
+        "AbortIncompleteMultipartUpload action"
+      ],
       [
         "Transfer Acceleration",
         "TAKE",
@@ -7361,16 +7351,6 @@
         "Amazon S3 Transfer Acceleration",
         "ENABLES",
         "fast, easy, and secure transfers"
-      ]
-    ]
-  },
-  {
-    "chunk_id": "28859792-45ab-4f05-b0c7-d22cb5708031",
-    "akus": [
-      [
-        "Bucket lifecycle configuration",
-        "SUPPORTS",
-        "AbortIncompleteMultipartUpload action"
       ],
       [
         "Amazon S3",
@@ -7385,7 +7365,7 @@
     ]
   },
   {
-    "chunk_id": "e35360ec-7e75-4846-92b0-327904af2cd7",
+    "chunk_id": "4841c638-6c8e-42fa-aba6-c00943a632b4",
     "akus": [
       [
         "Amazon S3",
@@ -7415,7 +7395,7 @@
     ]
   },
   {
-    "chunk_id": "047dca8c-6f51-40cb-bab6-98468516b77d",
+    "chunk_id": "3f893041-5c66-4093-9f66-25e5b6a591b1",
     "akus": [
       [
         "Amazon S3",
@@ -7435,7 +7415,7 @@
     ]
   },
   {
-    "chunk_id": "fd864e53-7588-4366-a74f-dbedcb91323f",
+    "chunk_id": "83ec6a3c-e699-469f-9c48-0d0215deaa63",
     "akus": [
       [
         "Amazon S3",
@@ -7480,22 +7460,22 @@
     ]
   },
   {
-    "chunk_id": "9e2a6102-1b2c-4921-abde-a8749766116f",
+    "chunk_id": "e3fdd1ac-c06f-4ea3-97a0-82682d5ce84b",
     "akus": [
       [
         "Server-side encryptio n support Amazon S3",
         "SUPPORTS",
         "server-side encryption"
-      ]
-    ]
-  },
-  {
-    "chunk_id": "afcce02a-96f0-4d67-9ec2-c09980ec3fc0",
-    "akus": [
+      ],
       [
         "Amazon S3",
         "EXTEND",
         "multipart upload API"
+      ],
+      [
+        "Amazon S3",
+        "DETECT",
+        "key event"
       ],
       [
         "Authenticated and anonymous SOAP requests",
@@ -7503,9 +7483,9 @@
         "Amazon S3"
       ],
       [
-        "Large Object Support Amazon S3",
-        "INCREASE",
-        "maximum size"
+        "Amazon S3",
+        "SUPPORTS",
+        "Asia Pacific Singapore region"
       ],
       [
         "Amazon S3",
@@ -7513,24 +7493,24 @@
         "custom error message"
       ],
       [
+        "Large Object Support",
+        "INCREASE",
+        "maximum size"
+      ],
+      [
         "Amazon S3",
-        "EXTEND",
-        "new operation"
+        "INCREASE",
+        "maximum size"
       ]
     ]
   },
   {
-    "chunk_id": "f0c74d0b-299b-4839-8a58-bb89b4217051",
+    "chunk_id": "169bf714-6fc5-4923-b3d2-ad51a9dccdc4",
     "akus": [
       [
         "Amazon S3",
         "GIVE",
         "unique version ID"
-      ],
-      [
-        "Amazon S3",
-        "PUBLISHES",
-        "Amazon Simple Notification Service SNS topic"
       ],
       [
         "Amazon S3",
@@ -7541,16 +7521,6 @@
         "Amazon S3",
         "SUPPORTS",
         "Asia Pacific Singapore region"
-      ],
-      [
-        "AWS",
-        "PROVIDES",
-        "Amazon S3 C# libraries"
-      ],
-      [
-        "when Amazon S3",
-        "DETECT",
-        "key event"
       ],
       [
         "release",
@@ -7565,7 +7535,7 @@
     ]
   },
   {
-    "chunk_id": "2bf9f951-b247-48c8-a323-e9b807574a3f",
+    "chunk_id": "b95084df-dd15-42c1-9703-c2f68b7dbfd7",
     "akus": [
       [
         "Messages",
@@ -7585,7 +7555,7 @@
     ]
   },
   {
-    "chunk_id": "c4535600-25bc-4f5c-8c78-a55cef3b8d85",
+    "chunk_id": "01f23cd6-6f0f-45a5-a36e-c8c20101121d",
     "akus": [
       [
         "Amazon S3",
@@ -7600,7 +7570,7 @@
     ]
   },
   {
-    "chunk_id": "e423348f-29f0-4f73-9881-3a494bd7500b",
+    "chunk_id": "a90befad-a992-4869-971f-af9bce859890",
     "akus": [
       [
         "Amazon S3",
@@ -7645,7 +7615,7 @@
     ]
   },
   {
-    "chunk_id": "06102621-3e2d-4fc7-96b3-9dc353f8266c",
+    "chunk_id": "b29b1de6-5d27-4e3a-afe8-c8c1a29bbacc",
     "akus": [
       [
         "Not every string",
@@ -7655,7 +7625,7 @@
     ]
   },
   {
-    "chunk_id": "9d6dd090-01e4-4f90-9c24-95d7d3908889",
+    "chunk_id": "89846a87-2ca4-4e2d-ba94-f7001714f534",
     "akus": [
       [
         "Replacement",
@@ -7665,7 +7635,7 @@
     ]
   },
   {
-    "chunk_id": "52cae5c8-4c24-48e2-a5ea-b3250b7c7283",
+    "chunk_id": "dc36995e-bb54-4f38-a690-3071564c0ef7",
     "akus": [
       [
         "Amazon S3",
@@ -7685,7 +7655,7 @@
     ]
   },
   {
-    "chunk_id": "37943b73-ce29-4e85-b35c-292667d24bc4",
+    "chunk_id": "9464ee34-7f6b-4bbf-b7e3-33ed28f96c2d",
     "akus": [
       [
         "PutObjectInline",
@@ -7700,7 +7670,7 @@
     ]
   },
   {
-    "chunk_id": "91024aaf-cca2-4960-82a3-beb649884027",
+    "chunk_id": "852a37b2-3e77-4d44-a02f-50bf39cc9f86",
     "akus": [
       [
         "Amazon S3",
@@ -7740,7 +7710,7 @@
     ]
   },
   {
-    "chunk_id": "5a51c5e1-6011-48d1-b25c-bdd130da6641",
+    "chunk_id": "3fd693ca-e23a-4999-856d-a7c28c36e953",
     "akus": [
       [
         "Object key names",
@@ -7760,7 +7730,7 @@
     ]
   },
   {
-    "chunk_id": "18ff9f2b-53a6-4164-bb8d-de5cc5308326",
+    "chunk_id": "e3789b02-f6a4-4302-944a-bac5cd7b98db",
     "akus": [
       [
         "Amazon S3",
@@ -7775,7 +7745,7 @@
     ]
   },
   {
-    "chunk_id": "f213b644-12f2-4e7d-bdab-f5094b6dfd92",
+    "chunk_id": "1883d92f-3158-4039-98ad-250fa414d2ce",
     "akus": [
       [
         "Amazon S3",
@@ -7800,7 +7770,7 @@
     ]
   },
   {
-    "chunk_id": "d41149d3-84cd-47eb-b22f-ded6309603ce",
+    "chunk_id": "f37f6f8c-45b4-4fbc-bb6d-7573c59817ac",
     "akus": [
       [
         "Amazon S3",
@@ -7830,7 +7800,7 @@
     ]
   },
   {
-    "chunk_id": "8f8bcd96-7b9e-43fd-b9e2-8fadada78ab1",
+    "chunk_id": "cc02cf82-f0f1-42f6-acd9-7e0edfd6432c",
     "akus": [
       [
         "Authorization header",
@@ -7855,7 +7825,7 @@
     ]
   },
   {
-    "chunk_id": "173906cb-5483-4d7d-aa9d-4844f775a392",
+    "chunk_id": "b21933fb-0de9-4362-bd3c-bc5d9368a9ca",
     "akus": [
       [
         "Elements",
@@ -7865,7 +7835,7 @@
     ]
   },
   {
-    "chunk_id": "5e9c6544-c891-4e53-a8f9-47d206f1fe1b",
+    "chunk_id": "a6cef58f-e57d-4e5a-8a66-aaead1548f90",
     "akus": [
       [
         "\\n",
@@ -7875,7 +7845,7 @@
     ]
   },
   {
-    "chunk_id": "aca4ae0a-bd94-431f-8bec-55e73943c07e",
+    "chunk_id": "2020b996-2868-442c-a1ed-c19aad6c43e3",
     "akus": [
       [
         "CanonicalizedResource",
@@ -7885,7 +7855,7 @@
     ]
   },
   {
-    "chunk_id": "9cd9f42e-cbff-42a6-b6fb-aaf579f881a1",
+    "chunk_id": "c53bb270-7e72-4081-8e7e-9770c0a18acb",
     "akus": [
       [
         "users",
@@ -7900,7 +7870,7 @@
     ]
   },
   {
-    "chunk_id": "f2d5d52e-715e-4658-a208-4cd0bfde6bcf",
+    "chunk_id": "217830f0-a741-4c6f-8134-c3334fb9f014",
     "akus": [
       [
         "Amazon S3",
@@ -7945,7 +7915,7 @@
     ]
   },
   {
-    "chunk_id": "53e0af62-1c6e-423b-a3f6-b42cbc0229db",
+    "chunk_id": "5266d8a7-284e-4ae7-a6dd-a03128d57e77",
     "akus": [
       [
         "Amazon S3",
@@ -7980,7 +7950,7 @@
     ]
   },
   {
-    "chunk_id": "e31b0ab0-9c8b-4d5e-b304-be45086dfa85",
+    "chunk_id": "a9267db0-3e31-4e50-8eb7-ba99e6a3fecc",
     "akus": [
       [
         "Amazon S3",
@@ -7995,7 +7965,7 @@
     ]
   },
   {
-    "chunk_id": "cca52e36-77e1-41ef-aeb8-1a3fad7bb756",
+    "chunk_id": "9573eb67-50c0-45a4-85f7-8e5f38d5121b",
     "akus": [
       [
         "Amazon S3",
@@ -8035,7 +8005,7 @@
     ]
   },
   {
-    "chunk_id": "8ec67d2e-b155-4cec-809b-cf3bbba04959",
+    "chunk_id": "21f4523e-ebdb-45ee-a912-daf0c27be67f",
     "akus": [
       [
         "Amazon S3",
@@ -8055,7 +8025,7 @@
     ]
   },
   {
-    "chunk_id": "4c3e5110-9506-490f-8285-f051ef8da4e6",
+    "chunk_id": "03b156d9-284f-4ae4-9c76-3c49d409a612",
     "akus": [
       [
         "Amazon S3",
@@ -8080,7 +8050,7 @@
     ]
   },
   {
-    "chunk_id": "6e6cd0ed-819e-4159-832b-baa31221dbd8",
+    "chunk_id": "315ebfda-e476-481b-be3b-01fe74f4954e",
     "akus": [
       [
         "Amazon S3",
@@ -8125,7 +8095,17 @@
     ]
   },
   {
-    "chunk_id": "48a6c691-db0e-42d7-9ae3-d999ed82fa54",
+    "chunk_id": "5441ff8f-f8fa-41af-8d98-6c65a822a79e",
+    "akus": [
+      [
+        "Amazon S3",
+        "CANCEL",
+        "incomplete multipart upload"
+      ]
+    ]
+  },
+  {
+    "chunk_id": "f3a8383d-7971-4d6d-a14f-38becc330cc5",
     "akus": [
       [
         "Amazon S3",
@@ -8170,7 +8150,7 @@
     ]
   },
   {
-    "chunk_id": "c9f8a628-049f-4d21-b98d-ecd261407d2d",
+    "chunk_id": "82b8e1a8-a262-4ba3-9db3-813dd3b0ae7a",
     "akus": [
       [
         "Amazon S3",
