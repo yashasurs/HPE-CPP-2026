@@ -35,7 +35,7 @@ def normalize_markdown(text: str) -> str:
         if stripped.startswith("#"):
             content = stripped.lstrip("#").strip()
             if content.startswith(("$", "@", "-", "*", "•")) or len(content.split()) > 15:
-                out.append(content) # Save the text, but remove the '#' so LangChain ignores it
+                out.append(content)
                 continue
 
         out.append(line)
