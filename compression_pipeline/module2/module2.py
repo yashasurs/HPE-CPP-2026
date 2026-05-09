@@ -53,8 +53,15 @@ def minmax_normalize(values: list) -> list:
 
 def load_json(path: str):
     with open(path, encoding="utf-8") as f:
-        return json.load(f)
-
+        data = json.load(f)
+    if isinstance(data, dict):
+        processed_list = []
+        for key, val in data.items():
+            if isinstance(val, dict):
+                val["chunk_id"] = val.get("chunk_id", key)
+                processed_list.append(val)
+        return processed_list
+    return data
 
 # ──────────────────────────────────────────────────────────────────────────────
 # Topic extraction
@@ -66,9 +73,10 @@ def extract_topics(chunks: list) -> list:
     Returns a sorted list of topic dicts.
     """
     path_to_chunks = defaultdict(list)
-    for chunk in chunks:
-        path = tuple(chunk.get("heading_path") or [])
-        path_to_chunks[path].append(chunk["chunk_id"])
+    for i, chunk in enumerate(chunks):
+        path = tuple(chunk.get("heading_path", []))
+        c_id = chunk.get("chunk_id", f"chunk_{i}")
+        path_to_chunks[path].append(c_id)
 
     topics = []
     for idx, (path, chunk_ids) in enumerate(sorted(path_to_chunks.items())):
@@ -93,7 +101,7 @@ def build_graph(chunks: list, akus: list) -> tuple:
         edges  : dict  { (src, pred, tgt) -> {weight, source_chunks} }
         adj    : dict  { entity_key -> set of neighbour keys } (undirected view for degree)
     """
-    chunk_meta = {c["chunk_id"]: c for c in chunks}
+    chunk_meta = {c.get("chunk_id", f"chunk_{i}"): c for i, c in enumerate(chunks)}
 
     nodes = {}   # key -> attrs
     edges = {}   # (src, pred, tgt) -> {weight, source_chunks}
@@ -144,8 +152,8 @@ def build_graph(chunks: list, akus: list) -> tuple:
             adj[obj_key].add(subj_key)
 
     # Seed heading labels as entities
-    for chunk in chunks:
-        chunk_id = chunk["chunk_id"]
+    for i, chunk in enumerate(chunks):
+        chunk_id = chunk.get("chunk_id", f"chunk_{i}")
         for heading in (chunk.get("heading_path") or []):
             key = normalize_entity(heading)
             if key:
@@ -280,11 +288,11 @@ def parse_args() -> argparse.Namespace:
         description="Module 2 – Knowledge Graph Construction (stdlib-only).",
         formatter_class=argparse.RawDescriptionHelpFormatter,
     )
-    parser.add_argument("--chunks", default="../chunks.json",
+    parser.add_argument("--chunks", default="./compression_pipeline/module1/s3/intermediate/chunks.json",
                         help="Path to chunks.json  (default: %(default)s)")
-    parser.add_argument("--akus",   default="../akus.json",
+    parser.add_argument("--akus",   default="./compression_pipeline/module1/s3/intermediate/akus.json",
                         help="Path to akus.json    (default: %(default)s)")
-    parser.add_argument("--output", default="knowledge_graph.json",
+    parser.add_argument("--output", default="./compression_pipeline/module2/knowledge_graph.json",
                         help="Output file path     (default: %(default)s)")
     return parser.parse_args()
 
@@ -294,7 +302,14 @@ def main() -> None:
 
     # ── load inputs ───────────────────────────────────────────────────────────
     print(f"[Module 2] Loading chunks from:  {args.chunks}")
-    chunks = load_json(args.chunks)
+    raw_chunks = load_json(args.chunks)
+    chunks = []
+    for c in raw_chunks:
+        if isinstance(c, dict) and "metadata" in c:
+            flat_chunk = {**c, **c["metadata"]}
+            chunks.append(flat_chunk)
+        else:
+            chunks.append(c)
     print(f"           Loaded {len(chunks)} chunks")
 
     print(f"[Module 2] Loading AKUs from:    {args.akus}")
