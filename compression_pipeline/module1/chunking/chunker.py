@@ -23,15 +23,23 @@ def normalize_markdown(text: str) -> str:
     lines = text.split("\n")
     out = []
     for line in lines:
+        stripped = line.strip()
         if (
-            line.strip()
-            and not line.startswith("#")
-            and line.strip().endswith("Upload")
-            or "Multipart" in line
+            stripped
+            and not stripped.startswith("#")
+            and (stripped.endswith("Upload") or "Multipart" in stripped)
+            and len(stripped.split()) < 10
         ):
-            out.append(f"### {line.strip()}")
-        else:
-            out.append(line)
+            out.append(f"### {stripped}")
+            continue
+        if stripped.startswith("#"):
+            content = stripped.lstrip("#").strip()
+            if content.startswith(("$", "@", "-", "*", "•")) or len(content.split()) > 15:
+                out.append(content) # Save the text, but remove the '#' so LangChain ignores it
+                continue
+
+        out.append(line)
+        
     return "\n".join(out)
 
 
