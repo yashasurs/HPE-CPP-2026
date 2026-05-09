@@ -15,10 +15,6 @@ from typing import Any, Dict, List, Optional
 from transformers import AutoTokenizer, AutoModelForSeq2SeqLM
 
 logger = logging.getLogger(__name__)
-
-# ---------------------------------------------------------------------------
-# Lazy model singleton
-# ---------------------------------------------------------------------------
 _MODEL = None
 _TOKENIZER = None
 
@@ -107,12 +103,6 @@ def _build_relationship_hint(relationships: List[Dict[str, str]]) -> str:
     if not parts:
         return ""
     return "Important relationships: " + "; ".join(parts) + ". "
-
-
-# ---------------------------------------------------------------------------
-# Public API
-# ---------------------------------------------------------------------------
-
 def summarize_document(
     doc: Dict[str, Any],
     section_summaries: List[Dict[str, Any]],
