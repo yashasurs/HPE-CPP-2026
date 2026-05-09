@@ -67,13 +67,13 @@ def main() -> None:
     parser.add_argument(
         "input_file",
         nargs="?",
-        default="../../data/prototype/S3/L0/s3-api.md",
+        default="data/prototype/S3/L0/s3-api.md",
         help="Path to input markdown file",
     )
     parser.add_argument(
         "-o",
         "--output-dir",
-        default="s3/intermediate",
+        default="compression_pipeline/module1/s3/intermediate",
         help="Directory to write outputs",
     )
 
