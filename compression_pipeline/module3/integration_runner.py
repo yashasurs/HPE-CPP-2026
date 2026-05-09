@@ -14,60 +14,8 @@ from summarizer.pipeline import run_pipeline
 # ---------------------------------------------------------------------------
 # Configuration — tune these to control performance vs. quality
 # ---------------------------------------------------------------------------
-CHUNKS_PER_SECTION = 20   # Smaller = faster TextRank (O(n²) on sentences)
+CHUNKS_PER_SECTION = 20   
 AWS_DOMAIN_TERMS = ["aws", "s3", "bucket", "object", "api", "endpoint", "iam", "policy", "token", "credentials", "upload", "amazon"]
-
-
-# def build_bridge_input():
-#     """Reads Module 1 output and mocks Module 2 data for testing."""
-#     m1_dir = os.path.abspath("./compression_pipeline/module1/s3/intermediate/")
-#     chunks_path = os.path.join(m1_dir, "chunks.json")
-#     akus_path = os.path.join(m1_dir, "akus.json")
-
-#     print(f"Loading Module 1 data from: {m1_dir}")
-#     with open(chunks_path, 'r',encoding='utf-8') as f:
-#         m1_chunks = json.load(f)
-#     with open(akus_path, 'r',encoding='utf-8') as f:
-#         m1_akus = json.load(f)
-
-#     chunk_list = m1_chunks if isinstance(m1_chunks, list) else list(m1_chunks.values())
-#     aku_list = m1_akus if isinstance(m1_akus, list) else list(m1_akus.values())
-
-#     formatted_chunks = []
-#     for i, chunk_text in enumerate(chunk_list):
-#         text = chunk_text.get("text", str(chunk_text)) if isinstance(chunk_text, dict) else str(chunk_text)
-#         chunk_aku = aku_list[i].get("akus", []) if i < len(aku_list) and isinstance(aku_list[i], dict) else []
-
-#         entities = ["AWS"]
-#         lower = text.lower()
-#         if "s3" in lower: entities.extend(["AWS S3", "Amazon S3"])
-#         if "iam" in lower: entities.append("IAM Role")
-
-#         formatted_chunks.append({
-#             "chunk_id": f"chunk_{i:03d}",
-#             "text": text,
-#             "akus": chunk_aku,
-#             "entities": list(dict.fromkeys(entities)),
-#             "relationships": [],
-#             "importance_score": 0.8,
-#         })
-
-#     sections = []
-#     for start in range(0, len(formatted_chunks), CHUNKS_PER_SECTION):
-#         batch = formatted_chunks[start : start + CHUNKS_PER_SECTION]
-#         sec_idx = start // CHUNKS_PER_SECTION + 1
-#         sections.append({
-#             "section_id": f"sec_{sec_idx:03d}",
-#             "chunks": batch,
-#         })
-
-#     input_data = {
-#         "documents": [{"doc_id": "AWS-S3-Module1-Test", "sections": sections}],
-#         "topics": [{"topic_id": "topic_mock_01", "label": "Storage Operations", "related_docs": ["AWS-S3-Module1-Test"]}],
-#         "categories": {"Storage": ["topic_mock_01"]},
-#     }
-#     return input_data
-
 
 def build_production_input():
     """Reads REAL Module 1 and Module 2 outputs to feed into Module 3."""
