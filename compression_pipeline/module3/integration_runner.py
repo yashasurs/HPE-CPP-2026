@@ -157,16 +157,32 @@ def main():
         json.dump(structured, f, indent=2, ensure_ascii=False)
 
     # Summary stats
-    total_orig = sum(s.get("token_count", 0) for s in final_output.get("level_4_sections", []))
-    total_clean = sum(s["token_count"] for s in structured["level_4"])
-    avg_ratio = sum(s["compression_ratio"] for s in structured["level_4"]) / max(len(structured["level_4"]), 1)
+    # 1. Total Original Tokens (From the raw AWS Markdown chunks)
+    total_doc_tokens = 0
+    for doc in input_data.get("documents", []):
+        for sec in doc.get("sections", []):
+            for chunk in sec.get("chunks", []):
+                # Grab the token_count that tiktoken generated in Module 1
+                total_doc_tokens += chunk.get("token_count", 0)
+
+    # 2. Total Final Tokens (From the fully summarized, structured output)
+    total_final_tokens = sum(s["token_count"] for s in structured.get("level_4", []))
+
+    # 3. Overall Document Compression Ratio
+    if total_doc_tokens > 0:
+        overall_compression_ratio = total_final_tokens / total_doc_tokens
+        reduction_percentage = (1.0 - overall_compression_ratio) * 100
+    else:
+        overall_compression_ratio = 0.0
+        reduction_percentage = 0.0
 
     elapsed = round(time.time() - t_start, 1)
-    print(f"  Integration Test Complete!")
+    print(f"\n  Integration Test Complete!")
     print(f"  Raw output:        {os.path.abspath(raw_output_path)}")
     print(f"  Structured output: {os.path.abspath(structured_output_path)}")
-    print(f"  Sections: {len(structured['level_4'])}")
-    print(f"  Tokens: {total_orig} → {total_clean} (compression: {avg_ratio:.1%})")
+    print(f"  Sections Generated: {len(structured['level_4'])}")
+    print(f"  Tokens: {total_doc_tokens:,} (AWS Source) → {total_final_tokens:,} (Final Summary)")
+    print(f"  Total Document Compression: {reduction_percentage:.1f}% reduction (Final size is {overall_compression_ratio:.1%} of original)")
     print(f"  Total time: {elapsed}s")
     
 
