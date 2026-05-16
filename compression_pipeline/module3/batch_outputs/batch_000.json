@@ -1,0 +1,398 @@
+{
+  "level_4_sections": [
+    {
+      "section_id": "sec_batch_000",
+      "summary": "## Actions Simple Storage Service (Amazon S3) application programming interface (API). You can use any toolkit that supports HTTP to use the REST API. The REST API uses the standard HTTP headers and status codes, so that standard browsers and toolkits work as expected. Amazon S3 supports the REST API. However, new Amazon S3 features will not be supported for SOAP. We recommend that you use either this REST API or the AWS SDKs at the following link: Headers - Common request headers and Common response headers. Error responses. Requests to Amazon S3 can be authenticated or anonymous. Using Amazon S3 with the AWS Command Line Interface in the AWS Command Line Interface Making direct REST API calls The PUT request header is limited to 8 KB in size. If you'd like to make your own REST API calls instead of using one of the above alternatives, there are some things to keep in mind. To make direct REST API calls from your code, create a signature using valid credentials and. The REST API uses standard HTTP headers and status codes, so standard browsers and toolkits. Upon receiving this request, Amazon S3 concatenates all the parts in ascending order by part number to create a new object. After Amazon S3 begins processing the request, it sends an HTTP response header that specifies a 200 OK response. While processing is in progress, Amazon S3 periodically sends white space characters to keep the connection from timing out. For more information, see Amazon S3 Error Best Practices. multipart upload API, see Multipart Upload and Permissions in the Amazon S3 User Guide. Otherwise, Amazon S3 returns a 412 Precondition Failed error. Otherwise, Amazon S3 returns a 412 Precondition Failed error. For more information, see Checking object integrity in the Amazon S3 checksum of the object. For more information, see Checking object integrity in the Amazon S3 User Guide. For more information, see Checking object integrity in the Amazon S3 User Guide. For more information, see Checking object integrity in the Amazon S3 User x-amz-mp-object-size The expected total object size of the multipart upload request. For more information, see Protecting data using SSE-C keys in the Amazon S3 User Guide. For more information, see Protecting data using SSE-C keys in the Amazon S3 User Guide. For more information, see Controlling ownership of objects and disabling ACLs in the Amazon S3 User Guide. | aws-exec-read | bucket-owner-read | bucket-owner-full-control x-amz-checksum-algorithm Indicates the algorithm that you want Amazon S3 to use to create the checksum for the object. Alternatively, for objects accessed through Amazon S3 on Outposts, specify the ARN of the object as accessed in the format arn:aws:s3-outposts:<Region>:<account- reports/january.pdf through outpost my-outpost owned by account 123456789012 west-2:123456789012:outpost/my-outpost/object/reports/january.pdf. If the current version is a delete marker, Amazon S3 behaves as if the object was deleted. If you don't specify a version ID, Amazon S3 copies the latest version of the source object. If you enable versioning on the destination bucket, Amazon S3 generates a unique version ID for the copied object. x-amz-copy-source-server-side-encryption-customer-key Specifies the customer-provided encryption key for Amazon S3 to use to decrypt the source object. x-amz-copy-source-server-side-encryption-customer-key-MD5 If the source object for the copy is stored in Amazon S3 using SSE-C, you must provide the necessary encryption information in your request so that Amazon S3 can decrypt the object for copying. For more information, see Protecting data with server-side encryption in the Amazon S3 User Guide. Amazon S3 stores the value of this header in the object metadata. For more information, see Checking object integrity in the Amazon S3 Returns the ETag of the new object. Zones in the Amazon S3 User Guide. For more information, see Controlling ownership of objects and disabling ACLs for your bucket and Blocking public access to your Amazon S3 storage in the Amazon S3 S3 Block Public Access - If your specific use case requires granting public access to your.",
+      "preserved_entities": [
+        "rest api",
+        "amazon s3",
+        "s3",
+        "multipart upload",
+        "objects",
+        "amazon",
+        "object metadata",
+        "aws"
+      ],
+      "preserved_akus": [
+        {
+          "subject": "REST API",
+          "predicate": "USES",
+          "object": "standard HTTP headers"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "SUPPORTS",
+          "object": "REST API"
+        },
+        {
+          "subject": "REST API",
+          "predicate": "USES",
+          "object": "standard HTTP headers"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "CONCATENATE",
+          "object": "all the parts"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "SENDS",
+          "object": "white space characters"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "CONCATENATE",
+          "object": "ascending order"
+        },
+        {
+          "subject": "CompleteMultipartUpload",
+          "predicate": "RETURNS",
+          "object": "200 OK response"
+        },
+        {
+          "subject": "SDKs",
+          "predicate": "DETECT",
+          "object": "embedded error"
+        },
+        {
+          "subject": "S3",
+          "predicate": "RETURNS",
+          "object": "409 ConditionalRequestConflict response"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "RETURNS",
+          "object": "412 Precondition Failed error"
+        },
+        {
+          "subject": "header",
+          "predicate": "SPECIFIES",
+          "object": "Base64 encoded, 32-bit CRC32 checksum data"
+        },
+        {
+          "subject": "header",
+          "predicate": "SPECIFIES",
+          "object": "Base64 encoded, 32-bit CRC32C checksum"
+        },
+        {
+          "subject": "header",
+          "predicate": "SPECIFIES",
+          "object": "Base64 encoded, 160-bit SHA1 digest"
+        },
+        {
+          "subject": "header",
+          "predicate": "SPECIFIES",
+          "object": "Base64 encoded, 256-bit SHA256 digest"
+        },
+        {
+          "subject": "multipart upload",
+          "predicate": "USES",
+          "object": "S3 Bucket Key"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "SUPPORTS",
+          "object": "copy operations"
+        },
+        {
+          "subject": "Objects",
+          "predicate": "HAS",
+          "object": "diﬀerent entity tags"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "RECEIVES",
+          "object": "copy request"
+        },
+        {
+          "subject": "SDKs",
+          "predicate": "DETECT",
+          "object": "embedded error"
+        },
+        {
+          "subject": "S3",
+          "predicate": "RETURNS",
+          "object": "409 ConditionalRequestConflict response"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "RETURNS",
+          "object": "412 Precondition Failed error"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "COPY",
+          "object": "latest version"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "CREATES",
+          "object": "unique version ID"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "CREATES",
+          "object": "x amz version id response header"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "RETURNS",
+          "object": "version ID"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "SUPPORTS",
+          "object": "copy operations"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "RETURNS",
+          "object": "x amz copy source server side encryption customer algorithm"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "CREATES",
+          "object": "x amz version id response header"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "RETURNS",
+          "object": "version ID"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "RETURNS",
+          "object": "412 Precondition Failed response code"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "RETURNS",
+          "object": "200 OK"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "USES",
+          "object": "corresponding KMS key"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "ENCRYPTS",
+          "object": "all new objects"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "USES",
+          "object": "corresponding encryption key"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "ENCRYPTS",
+          "object": "server-side encryption"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "USES",
+          "object": "S3 Bucket Key"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "USES",
+          "object": "OUTPOSTS Storage Class"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "USES",
+          "object": "object encryption"
+        },
+        {
+          "subject": "Amazon",
+          "predicate": "USES",
+          "object": "OUTPOSTS Storage Class"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "STORES",
+          "object": "object metadata"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "CREATES",
+          "object": "default checksum"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "CREATES",
+          "object": "uploaded object"
+        },
+        {
+          "subject": "ETag",
+          "predicate": "REFLECT",
+          "object": "only changes"
+        },
+        {
+          "subject": "AWS",
+          "predicate": "HAS",
+          "object": "four partitions"
+        },
+        {
+          "subject": "desired bucket ACL",
+          "predicate": "GRANTS",
+          "object": "public access"
+        },
+        {
+          "subject": "objects",
+          "predicate": "UPLOAD",
+          "object": "bucket owner full control canned ACL"
+        },
+        {
+          "subject": "Objects",
+          "predicate": "UPDATES",
+          "object": "bucket owner"
+        },
+        {
+          "subject": "account",
+          "predicate": "ENABLES",
+          "object": "Local Zones"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "RETURNS",
+          "object": "all AWS Regions"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "RETURNS",
+          "object": "200 OK"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "RETURNS",
+          "object": "legacy compatibility"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "USES",
+          "object": "corresponding KMS key"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "ENCRYPTS",
+          "object": "all new objects"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "ENCRYPTS",
+          "object": "diﬀerent encryption key"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "ABORT",
+          "object": "multipart upload"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "USES",
+          "object": "encryption settings values"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "USES",
+          "object": "AWS managed key"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "USES",
+          "object": "encryption settings values"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "USES",
+          "object": "STANDARD Storage Class"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "USES",
+          "object": "OUTPOSTS Storage Class"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "USES",
+          "object": "S3 Bucket"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "USES",
+          "object": "message integrity check"
+        },
+        {
+          "subject": "multipart upload",
+          "predicate": "USES",
+          "object": "S3 Bucket Key"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "RETURNS",
+          "object": "encryption algorithm"
+        },
+        {
+          "subject": "SDKs",
+          "predicate": "HANDLES",
+          "object": "session token refreshes"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "USES",
+          "object": "encryption settings values"
+        }
+      ],
+      "token_count": 650,
+      "doc_id": "AWS-Document"
+    }
+  ],
+  "level_3_documents": [
+    {
+      "doc_id": "AWS-Document",
+      "summary": "## Actions Simple Storage Service (Amazon S3) application programming interface (API). You can use any toolkit that supports HTTP to use the REST API. The REST API uses the standard HTTP headers and status codes, so that standard browsers and toolkits work as expected. Amazon S3 supports the REST API. However, new Amazon S3 features will not be supported for SOAP. We recommend that you use either this REST API or the AWS SDKs at the following link: Headers - Common request headers and Common response headers. Error responses. Requests to Amazon S3 can be authenticated or anonymous. Using Amazon S3 with the AWS Command Line Interface in the AWS Command Line Interface Making direct REST API calls The PUT request header is limited to 8 KB in size. If you'd like to make your own REST API calls instead of using one of the above alternatives, there are some things to keep in mind. To make direct REST API calls from your code, create a signature using valid credentials and. The REST API uses standard HTTP headers and status codes, so standard browsers and toolkits. Upon receiving this request, Amazon S3 concatenates all the parts in ascending order by part number to create a new object. After Amazon S3 begins processing the request, it sends an HTTP response header that specifies a 200 OK response. While processing is in",
+      "top_entities": [
+        "amazon s3",
+        "rest api",
+        "directory buckets",
+        "s3",
+        "s3 bucket key",
+        "objects",
+        "destination object",
+        "general purpose buckets",
+        "s3 object lock",
+        "new bucket"
+      ],
+      "top_relationships": [
+        {
+          "source": "rest api",
+          "relation": "USES",
+          "target": "standard http headers"
+        },
+        {
+          "source": "amazon s3",
+          "relation": "SUPPORTS",
+          "target": "rest api"
+        },
+        {
+          "source": "rest api",
+          "relation": "USES",
+          "target": "standard http headers"
+        },
+        {
+          "source": "sdks",
+          "relation": "DETECT",
+          "target": "embedded error"
+        },
+        {
+          "source": "amazon s3",
+          "relation": "CONCATENATE",
+          "target": "all the parts"
+        }
+      ],
+      "token_count": 230
+    }
+  ]
+}

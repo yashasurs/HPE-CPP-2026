@@ -1,0 +1,61 @@
+{
+  "level_4_sections": [
+    {
+      "section_id": "sec_batch_020",
+      "summary": ". import com.example.s3.util.AsyncExampleUtils; import software.amazon.awssdk.core.async.AsyncRequestBody; import software.amazon.awssdk.services.s3.S3AsyncClient; import java.io.ByteArrayInputStream; import java.io.InputStream; import java.util.concurrent.ExecutorService; import java.util.concurrent.Executors; public class PutObjectFromStreamAsync { LoggerFactory.getLogger(PutObjectFromStreamAsync.class); String bucketName = \"amzn-s3-demo-bucket-\" + UUID.randomUUID(); // Change bucket name. String key = UUID.randomUUID().toString(); AsyncExampleUtils.createBucket(bucketName); PutObjectFromStreamAsync example = new PutObjectFromStreamAsync(); S3AsyncClient s3AsyncClientCrt = S3AsyncClient.crtCreate(); PutObjectResponse putObjectResponse = example.putObjectFromStreamCrt(s3AsyncClientCrt, bucketName, key); logger.info(\"Object {} etag: {}\", key, putObjectResponse.eTag()); logger.info(\"Object {} uploaded to bucket {}. \", key, bucketName); AsyncExampleUtils.deleteObject(bucketName, key); AsyncExampleUtils.deleteBucket(bucketName); @param s33CrtAsyncClient - To upload content from a stream of unknown. size, use can the AWS CRT-based S3 client. public PutObjectResponse putObjectFromStreamCrt(S3AsyncClient s33CrtAsyncClient, String bucketName, String key) { // AsyncExampleUtils.randomString() returns a random string up to 100 characters. /// - bucket: The Amazon S3 bucket name to store the file into. << //! Routine which uploads an object to an S3 bucket with different object integrity hashing methods. Routine which retrieves the hash value of an object stored in an S3 bucket. \\param bucket: The name of the S3 bucket where the object is stored. \\param key: The unique identifier (key) of the object within the S3 bucket. Routine which uploads an object to an S3 bucket using the AWS C++ SDK's Transfer Manager. Routine which calculates the hash values for each part of a file being uploaded to an S3 bucket. Upload a part to an S3 bucket. Abort a multipart upload to an S3 bucket. Complete a multipart upload to an S3 bucket. \\param bucket: The name of the S3 bucket where the object was uploaded. \\param bucketName: The name of the S3 bucket to use. << \"This workflow demonstrates how Amazon S3 uses checksum values to verify the integrity of data\\n\"; std::cout << \"uploaded to Amazon S3 buckets\" << std::endl; << \"The AWS SDK for C++ automatically handles checksums.\\n\"; << \"By default it calculates a checksum that is uploaded with an object.\\n\" << \"The default checksum algorithm for PutObject and MultiPart upload is an MD5 hash.\\n\" << \"The default checksum algorithm for TransferManager uploads is a CRC32 checksum.\" << \"This workflow will locally compute checksums for files uploaded to an Amazon S3 bucket,\\n\"; std::cout << \"even when the SDK also computes the checksum.\" if (std::filesystem::exists(MULTI_PART_TEST_FILE)) { std::ofstream newFile(MULTI_PART_TEST_FILE, std::ios::out | std::ios::binary); if (!newFile) { std::cerr << \"createLargeFileIfNotExists- Error creating file \" << MULTI_PART_TEST_FILE << std::ifstream input(TEST_FILE, std::ios::in | std::ios::binary); if (!input) { std::cerr << \"Error opening file \" << TEST_FILE << std::stringstream buffer; buffer << input.rdbuf(); input.close(); while (newFile.tellp() < LARGE_FILE_SIZE && !newFile.bad()) { buffer.seekg(std::stringstream::beg); newFile << buffer.rdbuf(); newFile.close(); Work with Amazon S3 versioned objects using an AWS SDK The following code example shows how to: Create a versioned S3 bucket. def create_versioned_bucket(bucket_name, prefix): Creates an Amazon S3 bucket, enables it for versioning, and configures a lifecycle that expires noncurrent object versions after 7 days. \"This demonstration uploads a single stanza of a poem to an Amazon \" \"S3 bucket and then applies various revisions to it.\" Invoke a Lambda function from an Amazon S3 trigger The following code examples show how to implement a Lambda function that receives an event triggered by uploading an object to an S3 bucket. The function retrieves the S3 bucket name and object key from the event parameter and calls the Amazon S3 API to retrieve and log the content type of the object. public class HelloS3Batch { private static S3ControlAsyncClient asyncClient; S3BatchActions actions = new S3BatchActions(); String accountId = actions.getAccountId(); listBatchJobsAsync(accountId) System.err.println(\"List batch jobs failed: \" + System.err.println(\"Failed to list batch jobs: \" + ex.getMessage()); Retrieves the asynchronous S3 Control client instance. \"); System.out.println(\"\"\" S3 Batch operations enables efficient and cost-effective processing of large-scale data stored in Amazon S3. One of the key features of S3 Batch is its ability to perform tagging operations on objects stored in S3 buckets. S3 Batch's scalability and serverless nature make it an ideal solution for organizations with growing data volumes and complex data management requirements. This Java program walks you through Amazon S3 Batch operations.",
+      "preserved_entities": [
+        "amazon \" \"s3 bucket",
+        "amazon s3 batch operations",
+        "s3 batch",
+        "asynchronous s3 control client instance",
+        "s3 bucket"
+      ],
+      "preserved_akus": [],
+      "token_count": 650,
+      "doc_id": "AWS-Document"
+    }
+  ],
+  "level_3_documents": [
+    {
+      "doc_id": "AWS-Document",
+      "summary": ". import com.example.s3.util.AsyncExampleUtils; import software.amazon.awssdk.core.async.AsyncRequestBody; import software.amazon.awssdk.services.s3.S3AsyncClient; import java.io.ByteArrayInputStream; import java.io.InputStream; import java.util.concurrent.ExecutorService; import java.util.concurrent.Executors; public class PutObjectFromStreamAsync { LoggerFactory.getLogger(PutObjectFromStreamAsync.class); String bucketName = \"amzn-s3-demo-bucket-\" + UUID.randomUUID(); // Change bucket name. String key = UUID.randomUUID().toString(); AsyncExampleUtils.createBucket(bucketName); PutObjectFromStreamAsync example = new PutObjectFromStreamAsync(); S3AsyncClient s3AsyncClientCrt = S3AsyncClient.crtCreate(); PutObjectResponse putObjectResponse = example.putObjectFromStreamCrt(s3AsyncClientCrt, bucketName, key); logger.info(\"Object {} etag: {}\", key, putObjectResponse.eTag()); logger.info(\"Object {} uploaded to bucket {}. \", key, bucketName); AsyncExampleUtils.deleteObject(bucketName, key); AsyncExampleUtils.deleteBucket(bucketName); @param s33CrtAsyncClient - To upload content from a stream of unknown. size, use can the AWS CRT-based S3 client. public PutObjectResponse putObjectFromStreamCrt(S3AsyncClient s33CrtAsyncClient, String bucketName, String key) { // AsyncExampleUtils.randomString() returns a random string up to 100 characters. /// - bucket: The Amazon S3 bucket name to store the file into. << //! Routine which uploads an object to an S3 bucket with different object integrity hashing methods. Routine which retrieves the hash value of an object stored in an S3 bucket. \\param bucket: The name of the S3 bucket where the object is stored. \\param key: The unique identifier (key) of the object within the S3 bucket. Routine which uploads an object to an S3 bucket using the AWS C++ SDK's Transfer Manager. Routine which calculates the hash values for each part of a file being uploaded to an S3 bucket. Upload a part to an S3 bucket. Abort a multipart upload to an S3 bucket. Complete a multipart upload to",
+      "top_entities": [
+        "amazon \" \"s3 bucket",
+        "amazon s3 batch operations",
+        "s3 batch",
+        "asynchronous s3 control client instance",
+        "asynchronous s3 job",
+        "aws service clients",
+        "s3 bucket"
+      ],
+      "top_relationships": [
+        {
+          "source": "sdk",
+          "relation": "USES",
+          "target": "crc32 algorithm"
+        },
+        {
+          "source": "demonstration",
+          "relation": "UPLOAD",
+          "target": "amazon \" \"s3 bucket"
+        },
+        {
+          "source": "java program",
+          "relation": "WALK",
+          "target": "amazon s3 batch operations"
+        },
+        {
+          "source": "users",
+          "relation": "LEVERAGE",
+          "target": "s3 batch"
+        },
+        {
+          "source": "scanner scanner",
+          "relation": "ENABLES",
+          "target": "efficient and cost-effective processing"
+        }
+      ],
+      "token_count": 230
+    }
+  ]
+}

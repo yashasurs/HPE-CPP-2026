@@ -1,0 +1,119 @@
+{
+  "level_4_sections": [
+    {
+      "section_id": "sec_batch_008",
+      "summary": "NotificationConfigurationFilter Specifies object key name filtering rules. A container for object key name prefix and suﬃx filtering rules. The entity tag is a hash of the object. The ETag reflects changes only to the contents of an object, not its metadata. The ETag may or may not be an MD5 digest of the object data. Whether or not it is depends on how the object was created and how it is encrypted as described below: Objects created by the PUT Object, POST Object, or Copy operation, or through the AWS. Management Console, and are encrypted by SSE-S3 or plaintext, have ETags that are an MD5 digest of their object data. Objects created by the PUT Object, POST Object, or Copy operation, or through the AWS. Management Console, and are encrypted by SSE-C or SSE-KMS, have ETags that are not an MD5 digest of their object data. If an object is created by either the Multipart Upload or Part Copy operation, the ETag is not. an MD5 digest, regardless of the method of encryption. Directory buckets - MD5 is not supported by directory buckets. Directory buckets - The bucket owner is returned as the object owner. Directory buckets - Directory buckets only support EXPRESS_ONEZONE (the S3 Express Valid Values: STANDARD | REDUCED_REDUNDANCY | GLACIER | STANDARD_IA Currently, Amazon S3 supports only the filter that you can specify for objects created with server-side encryption using a customer managed key stored in AWS Key Management Service (SSE-KMS). Currently, Amazon S3 supports only the filter that you can specify for objects created with server-side encryption using a customer managed key stored in AWS Key Management Service (SSE-KMS). In this case, Amazon S3 makes a call to AWS KMS every time a copy request is made for a KMS-encrypted object. In this case, Amazon S3 makes a call to AWS KMS every time a copy request is made for a KMS-encrypted object. The access key ID and the secret access key are used together to sign programmatic AWS requests cryptographically. Specifies whether Amazon S3 replicates objects created with server-side encryption using an AWS KMS key stored in AWS Key Management Service. You must specify the full AWS KMS key ARN. The KMS key ID and KMS key alias aren't Pattern: (arn:aws[-a-z0-9]*:kms:[-a-z0-9]*:[0-9]{12}:key/.+) Pattern: arn:aws[a-zA-Z0-9-]*:kms:[a-z0-9-]+:[0-9]{12}:key/[a-zA-Z0-9- BucketKeyEnabled side encryption using AWS Key Management Service (AWS KMS) keys (SSE-KMS). Pattern: arn:aws[a-zA-Z0-9-]*:kms:[a-z0-9-]+:[0-9]{12}:key/[a-zA-Z0-9-]+ Specifies encryption-related information for an Amazon S3 bucket that is a destination for replicated objects. Pattern: arn:[^:]+:s3:[a-zA-Z0-9\\-]+:\\d{12}:job\\/. You can use the UpdateObjectEncryption operation to change encrypted objects from server-side encryption with Amazon S3 managed keys (SSE-S3) to server-side encryption with AWS Key Management Service (AWS KMS) keys (SSE-KMS), or to apply S3 Bucket Keys. For more information, see Automate object processing in Amazon S3 directory buckets with S3 Batch Operations and AWS Lambda in the AWS Storage Blog. For more information, see Automate object processing in Amazon S3 directory buckets with S3 Batch Operations and AWS Lambda in the AWS Storage Blog. You can have one S3 Access Grants instance per Region per account. Each route contains the Amazon S3 bucket name and the AWS Region that the bucket is located in. The name of the Amazon S3 bucket for which you'll submit a routing configuration change. S3 Batch Operations jobs can operate either on S3 Glacier and S3 Glacier Deep Archive storage class objects or on S3 Intelligent-Tiering Archive Access and Deep Archive Access storage tier objects, but not both types in the same job. S3Retention Contains the S3 Object Lock retention mode to be applied to all objects in the S3 Batch Operations job. For more information, see Using S3 Object Lock legal hold with S3 Batch Operations in the Amazon S3 User LegalHold Contains the Object Lock legal hold status to be applied to all objects in the Batch Operations job. Pattern: arn:aws[a-zA-Z0-9-]*:kms:[a-z0-9-]+:[0-9]{12}:key/[a-zA-Z0-9- BucketKeyEnabled side encryption using AWS Key Management Service (AWS KMS) keys (SSE-KMS).",
+      "preserved_entities": [
+        "directory buckets",
+        "amazon s3",
+        "bucket owner",
+        "objects",
+        "s3",
+        "aws kms key",
+        "s3 bucket key",
+        "buckets",
+        "s3 access",
+        "all objects",
+        "s3 batch operations job",
+        "amazon s3 bucket name",
+        "s3 batch operations",
+        "s3 glacier and s3 glacier deep archive storage class objects",
+        "s3 batch operations jobs",
+        "s3retention",
+        "s3 object lock retention mode",
+        "object lock legal hold status",
+        "object lock retention mode"
+      ],
+      "preserved_akus": [
+        {
+          "subject": "AWS",
+          "predicate": "REPORT",
+          "object": "s3api delete-bucket"
+        },
+        {
+          "subject": "AWS",
+          "predicate": "REPORT",
+          "object": "s3api delete-bucket"
+        },
+        {
+          "subject": "GetObjectLegalHold",
+          "predicate": "RETRIEVE",
+          "object": "legal hold status"
+        },
+        {
+          "subject": "multipart uploads",
+          "predicate": "INCUR",
+          "object": "Amazon S3"
+        },
+        {
+          "subject": "count",
+          "predicate": "CREATES",
+          "object": "Could n't list buckets"
+        },
+        {
+          "subject": "Console",
+          "predicate": "FOREACH",
+          "object": "var entry"
+        },
+        {
+          "subject": "count",
+          "predicate": "CREATES",
+          "object": "Listed count objects"
+        },
+        {
+          "subject": "String accountId",
+          "predicate": "DELETES",
+          "object": "Amazon S3 bucket"
+        }
+      ],
+      "token_count": 650,
+      "doc_id": "AWS-Document"
+    }
+  ],
+  "level_3_documents": [
+    {
+      "doc_id": "AWS-Document",
+      "summary": "NotificationConfigurationFilter Specifies object key name filtering rules. A container for object key name prefix and suﬃx filtering rules. The entity tag is a hash of the object. The ETag reflects changes only to the contents of an object, not its metadata. The ETag may or may not be an MD5 digest of the object data. Whether or not it is depends on how the object was created and how it is encrypted as described below: Objects created by the PUT Object, POST Object, or Copy operation, or through the AWS. Management Console, and are encrypted by SSE-S3 or plaintext, have ETags that are an MD5 digest of their object data. Objects created by the PUT Object, POST Object, or Copy operation, or through the AWS. Management Console, and are encrypted by SSE-C or SSE-KMS, have ETags that are not an MD5 digest of their object data. If an object is created by either the Multipart Upload or Part Copy operation, the ETag is not. an MD5 digest, regardless of the method of encryption. Directory buckets - MD5 is not supported by directory buckets. Directory buckets - The bucket owner is returned as the object owner. Directory buckets - Directory buckets only support EXPRESS_ONEZONE (the S3 Express Valid Values: STANDARD | REDUCED_REDUNDANCY | GLACIER | STANDARD_IA Currently, Amazon S3 supports only the filter that you can specify for objects created with",
+      "top_entities": [
+        "amazon s3",
+        "directory buckets",
+        "s3",
+        "s3 bucket key",
+        "all objects",
+        "every object",
+        "uploaded object",
+        "public bucket policies",
+        "noncurrent object versions",
+        "new objects"
+      ],
+      "top_relationships": [
+        {
+          "source": "directory buckets",
+          "relation": "SUPPORTS",
+          "target": "availability zones"
+        },
+        {
+          "source": "amazon s3",
+          "relation": "CREATES",
+          "target": "default checksum"
+        },
+        {
+          "source": "amazon s3",
+          "relation": "CREATES",
+          "target": "uploaded object"
+        },
+        {
+          "source": "bucket settings",
+          "relation": "REQUIRES",
+          "target": "both a mode"
+        },
+        {
+          "source": "amazon s3",
+          "relation": "CREATES",
+          "target": "default checksum"
+        }
+      ],
+      "token_count": 230
+    }
+  ]
+}

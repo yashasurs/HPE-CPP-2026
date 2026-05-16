@@ -1,0 +1,264 @@
+{
+  "level_4_sections": [
+    {
+      "section_id": "sec_batch_011",
+      "summary": ". /// <returns>A boolean value representing the success or failure of /// the bucket creation process.</returns> public async Task<bool> CreateBucketAsync(string bucketName) var request = new PutBucketRequest UseClientRegion = true, var response = await _amazonS3.PutBucketAsync(request); Console.WriteLine($\"Error creating bucket: '{ex.Message}'\"); /// Shows how to upload a file from the local computer to an Amazon S3 /// bucket. /// <param name=\"bucketName\">The Amazon S3 bucket to which the object /// will be uploaded.</param> /// <param name=\"filePath\">The path, including file name, of the object /// on the local computer to upload.</param> /// <returns>A boolean value indicating the success or failure of the /// upload procedure.</returns> public async Task<bool> UploadFileAsync( var request = new PutObjectRequest Key = objectName, var response = await _amazonS3.PutObjectAsync(request); Console.WriteLine($\"Error uploading {objectName}: {ex.Message}\"); /// Shows how to download an object from an Amazon S3 bucket to the /// local computer. /// <param name=\"bucketName\">The name of the bucket where the object is /// currently stored.</param> /// <param name=\"filePath\">The path, including filename, where the /// downloaded object will be stored.</param> /// <returns>A boolean value indicating the success or failure of the /// download process.</returns> public async Task<bool> DownloadObjectFromBucketAsync( var request = new GetObjectRequest Key = objectName, using GetObjectResponse response = await _amazonS3.GetObjectAsync(request); // Save object to local file await response.WriteResponseStreamToFileAsync($\"{filePath}\\ \\{objectName}\", true, CancellationToken.None); Console.WriteLine($\"Error saving {objectName}: {ex.Message}\"); /// Copies an object in an Amazon S3 bucket to a folder within the /// same bucket. /// object to copy is located.</param> /// <param name=\"folderName\">The folder to which the object will /// be copied.</param> /// <returns>A boolean value that indicates the success or failure of /// the copy operation.</returns> public async Task<bool> CopyObjectInBucketAsync( string folderName) var request = new CopyObjectRequest SourceBucket = bucketName, SourceKey = objectName, DestinationBucket = bucketName, DestinationKey = $\"{folderName}\\\\{objectName}\", var response = await _amazonS3.CopyObjectAsync(request); Console.WriteLine($\"Error copying object: '{ex.Message}'\"); /// Shows how to list the objects in an Amazon S3 bucket. \"strings\" \"github.com/awsdocs/aws-doc-sdk-examples/gov2/demotools\" \"github.com/awsdocs/aws-doc-sdk-examples/gov2/s3/actions\" // RunGetStartedScenario is an interactive example that shows you how to use // Simple Storage Service (Amazon S3) to create an S3 bucket and use it to store // 1. // 2. // This example creates an Amazon S3 service client from the specified sdkConfig so that // you can replace it with a mocked or stubbed config for unit testing. \", \"y\") { log.Println(r) }() log.Println(\"Welcome to the Amazon S3 getting started demo.\") Creates an Amazon S3 bucket. List all objects located in the Amazon S3 bucket. List all objects located in the Amazon S3 bucket. List all objects located in the Amazon S3 bucket. Copies the object to another Amazon S3 bucket. Copies the object to another Amazon S3 bucket. Copy the object to another Amazon S3 bucket using multi copy. Copy the object to another Amazon S3 bucket using multi copy. Copy the object to another Amazon S3 bucket using multi copy. Deletes the object from the Amazon S3 bucket. Deletes the object from the Amazon S3 bucket. Deletes the Amazon S3 bucket. \"); Amazon S3 is a highly scalable and durable object storage service provided by Amazon Web Services (AWS). The `S3AsyncClient` interface in the AWS SDK for Java 2.x provides a set of methods to programmatically interact with the Amazon S3 (Simple Storage Service) service. Create an Amazon S3 bucket. Upload a local file to the Amazon S3 bucket. Copy the object to another Amazon S3 bucket. Delete objects from the Amazon S3 bucket. Delete objects from the Amazon S3 bucket. PutObjectResponse} when the upload is successful, or throws a {@link RuntimeException} if the upload fails public CompletableFuture<PutObjectResponse> uploadLocalFileAsync(String bucketName, String key, String objectPath) { PutObjectRequest objectRequest = PutObjectRequest.builder() CompletableFuture<PutObjectResponse> response = getAsyncClient().putObject(objectRequest, AsyncRequestBody.fromFile(Paths.get(objectPath))); return response.whenComplete((resp, ex) -> { throw new RuntimeException(\"Failed to upload file\", ex); Asynchronously retrieves the bytes of an object from an Amazon S3 bucket. \")); await emptyBucket({ bucketName }); await deleteBucket({ bucketName }); console.error(err); suspend fun main(args: Array<String>) { val usage = \"\"\" bucketName - The Amazon S3 bucket to create.",
+      "preserved_entities": [
+        "aws"
+      ],
+      "preserved_akus": [
+        {
+          "subject": "Amazon S3",
+          "predicate": "SUPPORTS",
+          "object": "Signature Version"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "SUPPORTS",
+          "object": "all AWS Regions"
+        },
+        {
+          "subject": "string",
+          "predicate": "SPECIFIES",
+          "object": "AWS Signature Version"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "SUPPORTS",
+          "object": "multiple content encoding values"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "STORES",
+          "object": "resulting object"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "STORES",
+          "object": "aws-chunked value"
+        },
+        {
+          "subject": "string",
+          "predicate": "IDENTIFY",
+          "object": "AWS Signature"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "SUPPORTS",
+          "object": "both Signature Version"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "SUPPORTS",
+          "object": "authenticated requests"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "SUPPORTS",
+          "object": "Version 4 s3 authType"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "SUPPORTS",
+          "object": "various methods"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "USES",
+          "object": "corresponding KMS key"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "USES",
+          "object": "version ID"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "ENCRYPTS",
+          "object": "all new objects"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "STORES",
+          "object": "partial objects"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "VALIDATES",
+          "object": "provided MD5 value"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "RECEIVES",
+          "object": "multiple write requests"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "USES",
+          "object": "default storage class"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "SUPPORTS",
+          "object": "other storage classes"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "RETURNS",
+          "object": "XML document"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "RETURNS",
+          "object": "empty document type"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "RETURNS",
+          "object": "empty document"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "STORES",
+          "object": "object metadata"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "USES",
+          "object": "S3 Bucket Key"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "USES",
+          "object": "object encryption"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "USES",
+          "object": "AWS managed key"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "USES",
+          "object": "message-integrity check"
+        },
+        {
+          "subject": "Amazon",
+          "predicate": "STORES",
+          "object": "encryption key"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "ACCEPTS",
+          "object": "select request"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "RESTORE",
+          "object": "current version"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "PROCESSES",
+          "object": "current restore request"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "DELETES",
+          "object": "temporary copy"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "UPDATES",
+          "object": "restoration period"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "DELETES",
+          "object": "specified period"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "RETURNS",
+          "object": "202 Accepted"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "RETURNS",
+          "object": "200 OK"
+        },
+        {
+          "subject": "error",
+          "predicate": "APPLY",
+          "object": "SELECT type requests"
+        },
+        {
+          "subject": "error",
+          "predicate": "APPLY",
+          "object": "Expedited retrievals"
+        },
+        {
+          "subject": "user",
+          "predicate": "UPLOAD",
+          "object": "Amazon S3"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "RETURNS",
+          "object": "200 OK response"
+        },
+        {
+          "subject": "error",
+          "predicate": "APPLY",
+          "object": "Expedited retrievals"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "RETURNS",
+          "object": "XML document"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "RETURNS",
+          "object": "empty document type"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "RETURNS",
+          "object": "empty document"
+        },
+        {
+          "subject": "default implementation",
+          "predicate": "USES",
+          "object": "Amazon S3"
+        }
+      ],
+      "token_count": 650,
+      "doc_id": "AWS-Document"
+    }
+  ],
+  "level_3_documents": [
+    {
+      "doc_id": "AWS-Document",
+      "summary": ". /// <returns>A boolean value representing the success or failure of /// the bucket creation process.</returns> public async Task<bool> CreateBucketAsync(string bucketName) var request = new PutBucketRequest UseClientRegion = true, var response = await _amazonS3.PutBucketAsync(request); Console.WriteLine($\"Error creating bucket: '{ex.Message}'\"); /// Shows how to upload a file from the local computer to an Amazon S3 /// bucket. /// <param name=\"bucketName\">The Amazon S3 bucket to which the object /// will be uploaded.</param> /// <param name=\"filePath\">The path, including file name, of the object /// on the local computer to upload.</param> /// <returns>A boolean value indicating the success or failure of the /// upload procedure.</returns> public async Task<bool> UploadFileAsync( var request = new PutObjectRequest Key = objectName, var response = await _amazonS3.PutObjectAsync(request); Console.WriteLine($\"Error uploading {objectName}: {ex.Message}\"); /// Shows how to download an object from an Amazon S3 bucket to the /// local computer. /// <param name=\"bucketName\">The name of the bucket where the object is /// currently stored.</param> /// <param name=\"filePath\">The path, including filename, where the /// downloaded object will be stored.</param> /// <returns>A boolean value indicating the success or failure of the /// download process.</returns> public async Task<bool> DownloadObjectFromBucketAsync( var request = new GetObjectRequest Key = objectName, using GetObjectResponse response = await _amazonS3.GetObjectAsync(request); // Save object to local file await response.WriteResponseStreamToFileAsync($\"{filePath}\\ \\{objectName}\", true, CancellationToken.None); Console.WriteLine($\"Error saving {objectName}: {ex.Message}\"); /// Copies an object in an Amazon S3 bucket to a folder within the /// same bucket.",
+      "top_entities": [
+        "s3api delete-bucket",
+        "aws",
+        "listbuckets"
+      ],
+      "top_relationships": [
+        {
+          "source": "aws",
+          "relation": "REPORT",
+          "target": "s3api delete-bucket"
+        },
+        {
+          "source": "listbuckets",
+          "relation": "RETRIEVE",
+          "target": "current account"
+        }
+      ],
+      "token_count": 230
+    }
+  ]
+}

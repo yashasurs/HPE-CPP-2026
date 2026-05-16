@@ -1,0 +1,71 @@
+{
+  "level_4_sections": [
+    {
+      "section_id": "sec_batch_025",
+      "summary": "To ensure an object is not corrupted over the network, you can calculate the MD5 of an object, PUT it to Amazon S3, and compare the returned Etag to the calculated MD5 value. PutObjectInline is not suitable for use with large objects. The system limits this operation to working with objects 1MB or smaller. PutObjectInline will fail with the InlineDataTooLargeError status code if the Data parameter encodes an object larger than 1MB. To upload large objects, consider using the non-inline PutObject API, or the REST API instead. This example writes some text and metadata into the \"Nelson\" object in the \"quotes\" bucket, give a user (usually the owner) FULL_CONTROL access to the object, and make the object readable by anonymous parties. <PutObjectInline xmlns=\" <Grantee xsi:type=\"Group\"> <URI> </PutObjectInline> <PutObjectInlineResponse xmlns=\" <PutObjectInlineResponse> </PutObjectInlineResponse> </PutObjectInlineResponse> Bucket: The bucket in which to add the object. Data: The base 64 encoded form of the data. If. PutObject (SOAP API). Amazon S3 does not provide object locking; if you need this, make sure to build it into your application layer. For more information, see AWS Signature Version 2 turned oﬀ (deprecated) for Amazon S3 Signature Version 4 is supported in all AWS Regions, and it is the only version that is supported for new Regions. Authenticating requests using the REST API (AWS signature version 2) When accessing Amazon S3 using REST, you must provide the following items in your request so the request can be authenticated: Browser-based uploads using POST (AWS signature version 2). Authenticating requests using the REST API (AWS signature version 2) When accessing Amazon S3 using REST, you must provide the following items in your request so the request can be authenticated: AWS access key Id - Each request must contain the access key ID of the identity you are using to. Under the Amazon S3 authentication scheme, the Authorization header has the following form: Authorization: AWS AWSAccessKeyId:Signature Developers are issued an AWS access key ID and AWS secret access key when they register. Browser-based uploads using POST (AWS signature version 2) Amazon S3 supports POST, which allows your users to upload content directly to Amazon S3. Amazon S3 now supports Signature Version 4, a protocol for authenticating inbound API requests to AWS services, in all AWS Regions. Amazon S3 now supports Signature Version 4, a protocol for authenticating inbound API requests to AWS services, in all AWS Regions. For more information, see Authenticating Requests in Browser-Based Uploads Using POST (AWS Signature Version The following figure shows an upload using Amazon S3 POST. With POST, users upload data directly to Amazon S3 through their browsers, which cannot process the SOAP API or create a REST PUT request. successful_upload.html. Content-Disposition: form-data; name=\"submit\" Upload to Amazon S3 HTTP/1.1 303 Redirect x-amz-request-id: 1AEE782442F35865 x-amz-id-2: cxzFLJRatFHy+NGtaDFRR8YvI9BHmgLxjvJzNiGGICARZ/mVXHj7T+qQKhdpzHFh HTTP/1.1 303 Redirect x-amz-request-id: 1AEE782442F35865 x-amz-id-2: cxzFLJRatFHy+NGtaDFRR8YvI9BHmgLxjvJzNiGGICARZ/mVXHj7T+qQKhdpzHFh Date: Wed, 14 Nov 2007 21:21:33 GMT Location: bucket=awsexamplebucket1&key=user/eric/ NewEntry.html&etag=40c3271af26b7f1672e41b8a274d28d4 POST with adobe flash (AWS signature version 2) This section describes how to use POST with Adobe Flash. With lifecycle configuration, you can tell Amazon S3 to cancel incomplete multipart uploads, which are identified by the key name prefix specified in the rule, if they don't complete within a specified number of days. This ensures that you don't have incomplete multipart uploads that have left parts stored in Amazon S3, so you don't have to pay storage costs for them. This action tells Amazon S3 to cancel incomplete multipart uploads seven days after initiation. If it does not complete by the specified number of days, it becomes eligible for an abort operation and Amazon S3 cancels the incomplete multipart upload. If it does not complete by the specified number of days, it becomes e ligible for an abort operation and Amazon S3 cancels the incomplete multipart upload. If it does not complete by the specified number of days, it becomes e ligible for an abort operation and Amazon S3 cancels the incomplete multipart upload.",
+      "preserved_entities": [
+        "putobjectinline",
+        "amazon s3",
+        "object locking",
+        "soap api",
+        "all aws regions",
+        "api requests",
+        "amazon s3 authentication scheme",
+        "aws access key id",
+        "aws signature version",
+        "upload",
+        "incomplete multipart upload",
+        "multipart upload"
+      ],
+      "preserved_akus": [],
+      "token_count": 650,
+      "doc_id": "AWS-Document"
+    }
+  ],
+  "level_3_documents": [
+    {
+      "doc_id": "AWS-Document",
+      "summary": "To ensure an object is not corrupted over the network, you can calculate the MD5 of an object, PUT it to Amazon S3, and compare the returned Etag to the calculated MD5 value. PutObjectInline is not suitable for use with large objects. The system limits this operation to working with objects 1MB or smaller. PutObjectInline will fail with the InlineDataTooLargeError status code if the Data parameter encodes an object larger than 1MB. To upload large objects, consider using the non-inline PutObject API, or the REST API instead. This example writes some text and metadata into the \"Nelson\" object in the \"quotes\" bucket, give a user (usually the owner) FULL_CONTROL access to the object, and make the object readable by anonymous parties. <PutObjectInline xmlns=\" <Grantee xsi:type=\"Group\"> <URI> </PutObjectInline> <PutObjectInlineResponse xmlns=\" <PutObjectInlineResponse> </PutObjectInlineResponse> </PutObjectInlineResponse> Bucket: The bucket in which to add the object. Data: The base 64 encoded form of the data. If. PutObject (SOAP API). Amazon S3 does not provide object locking; if you need this, make sure to build it into your application layer. For more information, see AWS Signature Version 2 turned oﬀ (deprecated) for Amazon S3 Signature Version 4 is supported in all AWS Regions, and it is the only version that is supported for new Regions. Authenticating requests using the REST API (AWS signature version 2) When accessing Amazon S3 using REST, you must provide the following",
+      "top_entities": [
+        "amazon s3",
+        "all aws regions",
+        "incomplete multipart upload",
+        "amazon s3 rest api",
+        "aws signature version",
+        "amazon s3 storage class",
+        "noncurrent object versions",
+        "putobjectinline",
+        "object locking",
+        "object key names"
+      ],
+      "top_relationships": [
+        {
+          "source": "requester",
+          "relation": "GIVE",
+          "target": "full_control access"
+        },
+        {
+          "source": "putobjectinline",
+          "relation": "FAIL",
+          "target": "inlinedatatoolargeerror status code"
+        },
+        {
+          "source": "amazon s3",
+          "relation": "RECEIVES",
+          "target": "multiple write requests"
+        },
+        {
+          "source": "amazon s3",
+          "relation": "PROVIDES",
+          "target": "object locking"
+        },
+        {
+          "source": "amazon s3",
+          "relation": "STORES",
+          "target": "last write request"
+        }
+      ],
+      "token_count": 230
+    }
+  ]
+}

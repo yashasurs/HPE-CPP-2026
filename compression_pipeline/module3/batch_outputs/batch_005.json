@@ -1,0 +1,299 @@
+{
+  "level_4_sections": [
+    {
+      "section_id": "sec_batch_005",
+      "summary": "(access key ID and secret access key for the IAM identities). All headers with the x-amz- prefix, including x-amz-copy-source, must be signed. Error Code: NoSuchUpload. Pattern: arn:[^:]+:s3-object-lambda:[^:]*:\\d{12}:accesspoint/. DeleteAccessPoint syntax for Amazon S3 on Outposts The following request deletes the access point of the specified Outpost. Sample request syntax for using the DeleteAccessPointPolicy action with Amazon S3 on This example illustrates one usage of DeleteAccessPointPolicy. To delete an S3 bucket, see Deletes the Amazon S3 on Outposts bucket. Sample request to delete an Amazon S3 on Outposts bucket This request deletes the Outposts bucket named example-outpost-bucket. DELETE /v20180820/bucket/example-outpost-bucket/ HTTP/1.1 x-amz-account-id:example-account-id DeleteBucketLifecycleConfiguration This action deletes an Amazon S3 on Outposts bucket's lifecycle configuration. To delete an S3 bucket's lifecycle configuration, see DeleteBucketLifecycle in the Amazon S3 API Deletes the lifecycle configuration from the specified Outposts bucket. Amazon S3 on Outposts removes all the lifecycle configuration rules in the lifecycle subresource associated with the bucket. Your objects never expire, and Amazon S3 on Outposts no longer automatically deletes any objects on the basis of rules contained in the deleted lifecycle configuration. Sample request to delete the lifecycle configuration of an Amazon S3 on Outposts bucket This example illustrates one usage of DeleteBucketLifecycleConfiguration. DELETE /v20180820/bucket/example-outpost-bucket/ lifecycleconfiguration HTTP/1.1 x-amz-account-id:example-account-id DeleteBucketPolicy This action deletes an Amazon S3 on Outposts bucket policy. DELETE /v20180820/bucket/example-outpost-bucket/replication HTTP/1.1 x-amz-account-id:example-account-id DeleteBucketTagging This action deletes an Amazon S3 on Outposts bucket's tags. The AWS account ID used to create the Storage Lens group that you're trying to delete. This will always be true for an Amazon S3 on Outposts access point Valid Values: Internet | VPC The PublicAccessBlock configuration that you want to apply to this Amazon S3 account. For more information about public access through access points, see Managing Data Access with Amazon S3 access points in the Amazon S3 User Guide. For more information about how Amazon S3 evaluates policies to determine whether they are public, see The Meaning of \"Public\" in the Type: PolicyStatus data type GetAccessPointScope Returns the access point scope for a directory bucket. For more information about how Amazon S3 evaluates policies to determine whether they are public, see The Meaning of \"Public\" in the Type: PolicyStatus data type GetAccessPointScope Returns the access point scope for a directory bucket. For more information about how Amazon S3 evaluates policies to determine whether they are public, see The Meaning of \"Public\" in the Type: PolicyStatus data type GetMultiRegionAccessPointRoutes Returns the routing configuration for a Multi-Region Access Point, indicating which Regions are active or passive. To obtain routing control changes and failover requests, use the Amazon S3 failover control infrastructure endpoints in these five AWS Regions: us-east-1. Specifies whether Amazon S3 should block public access control lists (ACLs) for buckets in this account. Specifies whether Amazon S3 should block public bucket policies for buckets in this account. Setting this element to TRUE causes Amazon S3 to reject calls to PUT Bucket policy if the Setting this element to TRUE causes Amazon S3 to reject calls to PUT Bucket policy if the specified bucket policy allows public access. Specifies whether Amazon S3 should ignore public ACLs for buckets in this account. Setting this element to TRUE causes Amazon S3 to ignore all public ACLs on buckets in this account and any objects that they contain. Specifies whether Amazon S3 should restrict public bucket policies for buckets in this account. NoSuchPublicAccessBlockConfiguration Amazon S3 throws this exception if you make a GetPublicAccessBlock request against an account that doesn't have a PublicAccessBlockConfiguration set. For more information, see Assessing your storage activity and usage with Amazon S3 Storage Lens in the Amazon S3 User Guide. For a complete list of S3 Storage Lens metrics, see S3 Storage Lens metrics glossary in the Amazon S3 User Guide. Type: StorageLensExpandedPrefixesDataExport data type A container for the Amazon S3 Storage Lens configuration ID. If either a prefix delimiter or existing delimiter is undefined, Amazon S3 uses the.",
+      "preserved_entities": [
+        "amazon s3",
+        "aws",
+        "aws account id",
+        "s3",
+        "any objects",
+        "outposts bucket",
+        "api",
+        "public bucket policies",
+        "s3 storage lens"
+      ],
+      "preserved_akus": [
+        {
+          "subject": "Amazon S3",
+          "predicate": "UPDATES",
+          "object": "whose priority"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "ABORT",
+          "object": "incomplete multipart upload"
+        },
+        {
+          "subject": "Container",
+          "predicate": "SPECIFIES",
+          "object": "replica ownership"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "ASSIGN",
+          "object": "Type LoggingEnabled data type"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "ASSIGN",
+          "object": "all log object keys"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "CREATES",
+          "object": "default checksum"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "CREATES",
+          "object": "uploaded object"
+        },
+        {
+          "subject": "Pattern",
+          "predicate": "INDICATE",
+          "object": "AWS region"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "CREATES",
+          "object": "default checksum"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "CREATES",
+          "object": "uploaded object"
+        },
+        {
+          "subject": "header",
+          "predicate": "SPECIFIES",
+          "object": "Base64 encoded, 32-bit CRC32 checksum"
+        },
+        {
+          "subject": "header",
+          "predicate": "SPECIFIES",
+          "object": "Base64 encoded, 64-bit CRC64NVME checksum"
+        },
+        {
+          "subject": "header",
+          "predicate": "SPECIFIES",
+          "object": "Base64 encoded, 160-bit SHA1 checksum"
+        },
+        {
+          "subject": "header",
+          "predicate": "SPECIFIES",
+          "object": "Base64 encoded, 256-bit SHA256 Entity tag"
+        },
+        {
+          "subject": "header",
+          "predicate": "SPECIFIES",
+          "object": "Base64 encoded, 32-bit CRC32C"
+        },
+        {
+          "subject": "account",
+          "predicate": "ENABLES",
+          "object": "Local Zones"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "SUPPORTS",
+          "object": "symmetric encryption KMS keys"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "USES",
+          "object": "storage class"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "SUPPORTS",
+          "object": "symmetric encryption KMS keys"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "RETURNS",
+          "object": "all AWS Regions"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "RETURNS",
+          "object": "200 OK"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "RETURNS",
+          "object": "legacy compatibility"
+        },
+        {
+          "subject": "account",
+          "predicate": "SIGN",
+          "object": "Amazon S3 service"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "REPLICATE",
+          "object": "existing source bucket objects"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "REPLICATE",
+          "object": "existing source bucket objects"
+        },
+        {
+          "subject": "Valid Values",
+          "predicate": "SPECIFIES",
+          "object": "S3 Inventory configuration"
+        },
+        {
+          "subject": "S3BucketDestination",
+          "predicate": "CONTAINS",
+          "object": "bucket name"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "SCAN",
+          "object": "general purpose bucket"
+        },
+        {
+          "subject": "S3BucketDestination",
+          "predicate": "CONTAINS",
+          "object": "bucket name"
+        },
+        {
+          "subject": "InventoryS3BucketDestination",
+          "predicate": "CONTAINS",
+          "object": "bucket name"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "USES",
+          "object": "newline character"
+        },
+        {
+          "subject": "Lifecycle Rule",
+          "predicate": "APPLY",
+          "object": "any object"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "ASSIGN",
+          "object": "all log object keys"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "DELETES",
+          "object": "noncurrent object versions"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "TRANSITION",
+          "object": "noncurrent object versions"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "STORES",
+          "object": "server access logs"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "TRANSITION",
+          "object": "specific storage class"
+        },
+        {
+          "subject": "Buckets",
+          "predicate": "SUPPORTS",
+          "object": "target grants"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "RETAIN",
+          "object": "how many noncurrent versions"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "TRANSITION",
+          "object": "any additional noncurrent versions"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "DELETES",
+          "object": "noncurrent object versions"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "TRANSITION",
+          "object": "noncurrent object versions"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "RETAIN",
+          "object": "same storage class"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "PERFORM",
+          "object": "associated action"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "DETECT",
+          "object": "specified events"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "TRANSITION",
+          "object": "specific period"
+        }
+      ],
+      "token_count": 650,
+      "doc_id": "AWS-Document"
+    }
+  ],
+  "level_3_documents": [
+    {
+      "doc_id": "AWS-Document",
+      "summary": "(access key ID and secret access key for the IAM identities). All headers with the x-amz- prefix, including x-amz-copy-source, must be signed. Error Code: NoSuchUpload. Pattern: arn:[^:]+:s3-object-lambda:[^:]*:\\d{12}:accesspoint/. DeleteAccessPoint syntax for Amazon S3 on Outposts The following request deletes the access point of the specified Outpost. Sample request syntax for using the DeleteAccessPointPolicy action with Amazon S3 on This example illustrates one usage of DeleteAccessPointPolicy. To delete an S3 bucket, see Deletes the Amazon S3 on Outposts bucket. Sample request to delete an Amazon S3 on Outposts bucket This request deletes the Outposts bucket named example-outpost-bucket. DELETE /v20180820/bucket/example-outpost-bucket/ HTTP/1.1 x-amz-account-id:example-account-id DeleteBucketLifecycleConfiguration This action deletes an Amazon S3 on Outposts bucket's lifecycle configuration. To delete an S3 bucket's lifecycle configuration, see DeleteBucketLifecycle in the Amazon S3 API Deletes the lifecycle configuration from the specified Outposts bucket. Amazon S3 on Outposts removes all the lifecycle configuration rules in the lifecycle subresource associated with the bucket. Your objects never expire, and Amazon S3 on Outposts no longer automatically deletes any objects on the basis of rules contained in the deleted lifecycle configuration. Sample request to delete the lifecycle configuration of an Amazon S3 on Outposts bucket This example illustrates one usage of DeleteBucketLifecycleConfiguration. DELETE /v20180820/bucket/example-outpost-bucket/ lifecycleconfiguration HTTP/1.1 x-amz-account-id:example-account-id DeleteBucketPolicy This action deletes an Amazon S3 on Outposts bucket policy. DELETE /v20180820/bucket/example-outpost-bucket/replication HTTP/1.1 x-amz-account-id:example-account-id DeleteBucketTagging This action deletes an Amazon S3 on Outposts bucket's tags.",
+      "top_entities": [
+        "amazon s3",
+        "s3 access grants",
+        "outposts bucket",
+        "s3",
+        "outposts buckets",
+        "public bucket policies",
+        "source and destination buckets",
+        "same parent aws region",
+        "s3 bucket key",
+        "multipart upload"
+      ],
+      "top_relationships": [
+        {
+          "source": "amazon s3",
+          "relation": "RETURNS",
+          "target": "200 ok"
+        },
+        {
+          "source": "amazon s3",
+          "relation": "SUPPORTS",
+          "target": "copy operations"
+        },
+        {
+          "source": "source and destination buckets",
+          "relation": "HAS",
+          "target": "same parent aws region"
+        },
+        {
+          "source": "amazon s3",
+          "relation": "RETURNS",
+          "target": "200 ok"
+        },
+        {
+          "source": "multipart upload",
+          "relation": "USES",
+          "target": "s3 bucket key"
+        }
+      ],
+      "token_count": 230
+    }
+  ]
+}

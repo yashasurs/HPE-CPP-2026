@@ -1,0 +1,74 @@
+{
+  "level_4_sections": [
+    {
+      "section_id": "sec_batch_022",
+      "summary": "# Construct the parts of a directory bucket name that is made unique with a UUID string. directory_bucket_suffix = f\"--{availability_zone['ZoneId']}--x-s3\" max_uuid_length = 63 - len(bucket_prefix) - len(directory_bucket_suffix) - 1 bucket_uuid = str(uuid.uuid4()).replace(\"-\", \"\")[:max_uuid_length] directory_bucket_name = ( f\"{bucket_prefix}-{bucket_uuid}{directory_bucket_suffix}\" regular_bucket_name = f\"{bucket_prefix}-regular-{bucket_uuid}\" configuration = { \"Bucket\": { \"Type\": \"Directory\", \"DataRedundancy\": \"SingleAvailabilityZone\", \"Location\": { \"Name\": availability_zone[\"ZoneId\"], \"Type\": \"AvailabilityZone\", \"Now, let's create the actual Directory bucket, as well as a regular bucket.\" self.s3_express_wrapper.create_bucket( directory_bucket_name, configuration if client_error.response[\"Error\"][\"Code\"] == \"InvalidBucketName\": f\"Bucket '{directory_bucket_name}' is invalid. This may be because of selected availability zone.\" if q.ask( \"Would you like to select a different availability zone? \", q.is_yesno, continue print(f\"Created directory bucket, '{directory_bucket_name}'\") self.directory_bucket_name = directory_bucket_name self.s3_regular_wrapper.create_bucket(regular_bucket_name) print(f\"Created regular bucket, '{regular_bucket_name}'\") self.regular_bucket_name = regular_bucket_name print(\"Great! Both buckets were created.\") def create_session_and_add_objects(self) -> None: Create a session for the express S3 client and add objects to the 5. Create an object and copy it over. We'll create a basic object consisting of some text and upload it to the normal bucket. Next we'll copy the object into the Directory bucket using the regular client. This works fine because copy operations are not restricted for Directory buckets. bucket_object = \"basic-text-object\" self.s3_regular_wrapper.put_object( self.regular_bucket_name, bucket_object, \"Look Ma, I'm a bucket!\" self.s3_express_wrapper.create_session(self.directory_bucket_name) self.s3_express_wrapper.copy_object( self.regular_bucket_name, bucket_object, self.directory_bucket_name, bucket_object, It worked! It's important to remember the user permissions when interacting with Directory buckets. Instead of validating permissions on every call as normal buckets do, Directory buckets utilize the user credentials and session token to validate. This allows for much faster connection speeds on every call. For single calls, this is low, but for many concurrent calls this adds up to a lot of time saved. Demonstrate performance difference.\") if difference < 0: \"The directory buckets were slower. def show_lexicographical_differences(self, bucket_object: str) -> None: Show the lexicographical difference between Directory buckets and regular This is done by creating a few objects in each bucket and listing them to show the difference. Now let's explore how Directory buckets store objects in a different manner to regular buckets. Where regular buckets store their key/value pairs in a flat manner, Directory buckets use actual directories/folders. The resources are defined in the associated `cfn_template.yaml` AWS CloudFormation script and are deployed as a CloudFormation stack, so they can be easily managed and destroyed. These excerpts call the S3 Directory Buckets API and are code excerpts from larger programs that must be run in context. public static List<String> listDirectoryBuckets(S3Client s3Client) { logger.info(\"Listing all directory buckets\"); // Create a ListBucketsRequest ListDirectoryBucketsRequest listDirectoryBucketsRequest = ListDirectoryBucketsRequest.builder().build(); // Retrieve the list of buckets ListDirectoryBucketsResponse response = s3Client.listDirectoryBuckets(listDirectoryBucketsRequest); // Extract bucket names List<String> bucketNames = response.buckets().stream().map(Bucket::name) return bucketNames; logger.error(\"Failed to list buckets: {} - Error code: {}\", Use ListMultipartUploads with an AWS SDK The following code example shows how to use ListMultipartUploads. For directory // buckets, AWS managed KMS keys aren't supported. This policy grants all S3 directory bucket actions to identities in the. Create a presigned URL for Amazon S3 directory buckets to get an object using an AWS SDK. Create a presigned URL for Amazon S3 directory buckets to get an object using an AWS SDK The following code example shows how to create a presigned URL for S3 directory buckets and get an object. Amazon S3 Signature Version 4 Authentication Specific Policy Keys. Because of this, we recommend that you maximize protection by signing request headers and body, making HTTPS requests to Amazon S3, and by using the s3:x-amz-content-sha256 condition key (see requests to Amazon S3, and by using the s3:x-amz-content-sha256 condition key (see Amazon S3 Signature Version 4 Authentication Specific Policy Keys) in AWS policies to require users to sign Amazon S3 request bodies. Amazon S3 supports Signature Version 4, a protocol for authenticating inbound API requests to AWS services, in all AWS Regions. The x-amz-content-sha256 header is required for all AWS Signature Version 4. requests. Content-Encoding : aws-chunked,gzip Amazon S3 stores the resulting object without the aws-chunked value in the content-encoding header.",
+      "preserved_entities": [
+        "user credentials",
+        "directory buckets",
+        "associated `cfn_template.yaml` aws cloudformation script",
+        "s3 directory buckets api",
+        "directory // buckets",
+        "aws managed kms keys",
+        "policy",
+        "all s3 directory bucket actions",
+        "amazon s3",
+        "all aws regions",
+        "aws signature version",
+        "all aws signature version",
+        "bucket name",
+        "resulting object",
+        "aws-chunked value"
+      ],
+      "preserved_akus": [],
+      "token_count": 650,
+      "doc_id": "AWS-Document"
+    }
+  ],
+  "level_3_documents": [
+    {
+      "doc_id": "AWS-Document",
+      "summary": "# Construct the parts of a directory bucket name that is made unique with a UUID string. directory_bucket_suffix = f\"--{availability_zone['ZoneId']}--x-s3\" max_uuid_length = 63 - len(bucket_prefix) - len(directory_bucket_suffix) - 1 bucket_uuid = str(uuid.uuid4()).replace(\"-\", \"\")[:max_uuid_length] directory_bucket_name = ( f\"{bucket_prefix}-{bucket_uuid}{directory_bucket_suffix}\" regular_bucket_name = f\"{bucket_prefix}-regular-{bucket_uuid}\" configuration = { \"Bucket\": { \"Type\": \"Directory\", \"DataRedundancy\": \"SingleAvailabilityZone\", \"Location\": { \"Name\": availability_zone[\"ZoneId\"], \"Type\": \"AvailabilityZone\", \"Now, let's create the actual Directory bucket, as well as a regular bucket.\" self.s3_express_wrapper.create_bucket( directory_bucket_name, configuration if client_error.response[\"Error\"][\"Code\"] == \"InvalidBucketName\": f\"Bucket '{directory_bucket_name}' is invalid. This may be because of selected availability zone.\" if q.ask( \"Would you like to select a different availability zone? \", q.is_yesno, continue print(f\"Created directory bucket, '{directory_bucket_name}'\") self.directory_bucket_name = directory_bucket_name self.s3_regular_wrapper.create_bucket(regular_bucket_name) print(f\"Created regular bucket, '{regular_bucket_name}'\") self.regular_bucket_name = regular_bucket_name print(\"Great! Both buckets were created.\") def create_session_and_add_objects(self) -> None: Create a session for the express S3 client and add objects to the 5. Create an object and copy it over. We'll create a basic object consisting of some text and upload it to the normal bucket. Next we'll copy the object into the Directory bucket using the regular client. This works fine because copy operations are not restricted for Directory buckets. bucket_object = \"basic-text-object\" self.s3_regular_wrapper.put_object( self.regular_bucket_name, bucket_object, \"Look Ma, I'm a bucket!\" self.s3_express_wrapper.create_session(self.directory_bucket_name) self.s3_express_wrapper.copy_object( self.regular_bucket_name, bucket_object, self.directory_bucket_name, bucket_object, It worked! It's important to remember the user permissions when interacting with Directory buckets. Instead of validating permissions on every call as normal buckets do, Directory",
+      "top_entities": [
+        "amazon s3",
+        "directory buckets",
+        "aws signature version",
+        "bucket name",
+        "user credentials",
+        "associated `cfn_template.yaml` aws cloudformation script",
+        "s3 directory buckets api",
+        "directory // buckets",
+        "aws managed kms keys",
+        "policy"
+      ],
+      "top_relationships": [
+        {
+          "source": "directory buckets",
+          "relation": "UTILIZE",
+          "target": "user credentials"
+        },
+        {
+          "source": "copy operations",
+          "relation": "RESTRICTS",
+          "target": "directory buckets"
+        },
+        {
+          "source": "directory buckets",
+          "relation": "STORES",
+          "target": "different manner"
+        },
+        {
+          "source": "resources",
+          "relation": "DEFINES",
+          "target": "associated `cfn_template.yaml` aws cloudformation script"
+        },
+        {
+          "source": "excerpts",
+          "relation": "INVOKES",
+          "target": "s3 directory buckets api"
+        }
+      ],
+      "token_count": 230
+    }
+  ]
+}

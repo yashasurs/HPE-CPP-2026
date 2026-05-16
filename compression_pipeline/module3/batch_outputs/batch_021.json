@@ -1,0 +1,61 @@
+{
+  "level_4_sections": [
+    {
+      "section_id": "sec_batch_021",
+      "summary": ". self.s3control_client.put_job_tagging( Tags=[ {'Key': 'Environment', 'Value': 'Development'}, {'Key': 'Team', 'Value': 'DataProcessing'} print(f\"Additional tags were added to job {job_id}\") print(f\"Error adding job tags: {e}\") def list_jobs(self, account_id: str) -> None: List all batch jobs for the account. response = self.s3control_client.list_jobs( JobStatuses=['Active', 'Complete', 'Cancelled', 'Failed', 'New', 'Paused', 'Pausing', 'Preparing', 'Ready', 'Suspended'] jobs = response.get('Jobs', []) for job in jobs: print(f\"The job id is {job['JobId']}\") print(f\"The job priority is {job['Priority']}\") print(f\"Error listing jobs: {e}\") def delete_job_tags(self, job_id: str, account_id: str) -> None: Delete all tags from a batch job. print(f\"Error deleting job tags: {e}\") def cleanup_resources(self, bucket_name: str, file_names: List[str]) -> None: Clean up all resources created during the scenario. bucket_name (str): Name of the bucket to clean up file_names (list): List of files to delete ClientError: If cleanup fails for file_name in file_names: self.s3_client.delete_object(Bucket=bucket_name, Key=file_name) print(f\"Deleted {file_name}\") response = self.s3_client.list_objects_v2( Prefix='batch-op-reports/' if 'Contents' in response: for obj in response['Contents']: self.s3_client.delete_object( Key=obj['Key'] print(f\"Deleted {obj['Key']}\") self.s3_client.delete_bucket(Bucket=bucket_name) print(f\"Deleted bucket {bucket_name}\") print(f\"Error in cleanup: {e}\") DeleteJobTagging. GetJobTagging. PutJobTagging. UpdateJobPriority. ## Actions for Amazon S3 Control using AWS SDKs The following code examples demonstrate how to perform individual Amazon S3 Control actions with AWS SDKs. For a complete list, see the Use CreateJob with an AWS SDK or CLI. print(f\"Job is in '{current_status}' state - cancel not allowed\") print(f\"Error canceling job: {e}\") Code examples for S3 Directory Buckets using AWS SDKs The following code examples show how to use S3 Directory Buckets with an AWS software development kit (SDK). S3 Directory Buckets Use UploadPartCopy with an AWS SDK. Scenarios for S3 Directory Buckets using AWS SDKs. Create a presigned URL for Amazon S3 directory buckets to get an object using an AWS SDK. Basic examples for S3 Directory Buckets using AWS SDKs The following code examples show how to use the basics of Amazon S3 Directory Buckets with Use ListObjectsV2 with an AWS SDK. Hello Amazon S3 directory buckets The following code example shows how to get started using Amazon S3 directory buckets. To use S3 directory buckets, configure a gateway VPC endpoint. public class HelloS3DirectoryBuckets { LoggerFactory.getLogger(HelloS3DirectoryBuckets.class); String bucketName = \"test-bucket-\" + System.currentTimeMillis() + \"-- usw2-az1--x-s3\"; Region region = Region.US_WEST_2; String zone = \"usw2-az1\"; S3Client s3Client = createS3Client(region); // Create the directory bucket createDirectoryBucket(s3Client, bucketName, zone); logger.info(\"Created bucket: {}\", bucketName); // List all directory buckets List<String> bucketNames = listDirectoryBuckets(s3Client); bucketNames.forEach(name -> logger.info(\"Bucket Name: {}\", name)); logger.error(\"An error occurred during S3 operations: {} - Error code: {}\", // Delete the created bucket deleteDirectoryBucket(s3Client, bucketName); logger.info(\"Deleted bucket: {}\", bucketName); logger.error(\"Failed to delete the bucket due to S3 error: {} - Error code: {}\", } catch (RuntimeException e) { logger.error(\"Failed to delete the bucket due to unexpected error: {}\", e.getMessage(), e); s3Client.close(); Creates a new S3 directory bucket in a specified Zone (For example, a. specified Availability Zone in this code example). public static void createDirectoryBucket(S3Client s3Client, String bucketName, String zone) throws S3Exception { logger.info(\"Creating bucket: {}\", bucketName); CreateBucketConfiguration bucketConfiguration = CreateBucketConfiguration.builder().location(LocationInfo.builder().type(LocationType.AVAILABILITY_ZONE).name(zone).build()).bucket(BucketInfo.builder().type(BucketType.DIRECTORY).dataRedundancy(DataRedundancy.SINGLE_AVAILABILITY_ZONE).createBucketConfiguration(bucketConfiguration).build(); CreateBucketResponse response = s3Client.createBucket(bucketRequest); logger.info(\"Bucket created successfully with location: {}\", response.location()); logger.error(\"Error creating bucket: {} - Error code: {}\", Lists all S3 directory buckets. Learn the basics of S3 Directory Buckets with an AWS SDK The following code examples show how to: Set up a VPC and VPC Endpoint. Set up the Policies, Roles, and User to work with S3 directory buckets and the S3 Express One. Instead of validating permissions on every call as regular buckets do, directory buckets utilize the user credentials and session token to validate. Run a scenario demonstrating the basics of Amazon S3 directory buckets and S3 Express One Zone. Run a scenario demonstrating the basics of Amazon S3 directory buckets and S3 Express One Zone. It's important to remember the user permissions when interacting with Directory buckets.\\n\"; echo \"Instead of validating permissions on every call as normal buckets do, Directory buckets utilize the user credentials and session token to validate.\\n\"; echo \"This allows for much faster connection speeds on every call.",
+      "preserved_entities": [
+        "s3 directory buckets",
+        "aws sdk",
+        "new s3 directory bucket",
+        "user credentials",
+        "directory buckets"
+      ],
+      "preserved_akus": [],
+      "token_count": 650,
+      "doc_id": "AWS-Document"
+    }
+  ],
+  "level_3_documents": [
+    {
+      "doc_id": "AWS-Document",
+      "summary": ". self.s3control_client.put_job_tagging( Tags=[ {'Key': 'Environment', 'Value': 'Development'}, {'Key': 'Team', 'Value': 'DataProcessing'} print(f\"Additional tags were added to job {job_id}\") print(f\"Error adding job tags: {e}\") def list_jobs(self, account_id: str) -> None: List all batch jobs for the account. response = self.s3control_client.list_jobs( JobStatuses=['Active', 'Complete', 'Cancelled', 'Failed', 'New', 'Paused', 'Pausing', 'Preparing', 'Ready', 'Suspended'] jobs = response.get('Jobs', []) for job in jobs: print(f\"The job id is {job['JobId']}\") print(f\"The job priority is {job['Priority']}\") print(f\"Error listing jobs: {e}\") def delete_job_tags(self, job_id: str, account_id: str) -> None: Delete all tags from a batch job. print(f\"Error deleting job tags: {e}\") def cleanup_resources(self, bucket_name: str, file_names: List[str]) -> None: Clean up all resources created during the scenario. bucket_name (str): Name of the bucket to clean up file_names (list): List of files to delete ClientError: If cleanup fails for file_name in file_names: self.s3_client.delete_object(Bucket=bucket_name, Key=file_name) print(f\"Deleted {file_name}\") response = self.s3_client.list_objects_v2( Prefix='batch-op-reports/' if 'Contents' in response: for obj in response['Contents']: self.s3_client.delete_object( Key=obj['Key'] print(f\"Deleted {obj['Key']}\") self.s3_client.delete_bucket(Bucket=bucket_name) print(f\"Deleted bucket {bucket_name}\") print(f\"Error in cleanup: {e}\") DeleteJobTagging. GetJobTagging. PutJobTagging. UpdateJobPriority. ## Actions for Amazon S3 Control using AWS SDKs The following code examples demonstrate how to perform individual Amazon S3 Control actions with AWS SDKs. For a complete list, see the Use CreateJob with an AWS SDK or CLI. print(f\"Job is in '{current_status}' state - cancel not allowed\") print(f\"Error canceling job: {e}\") Code examples for S3 Directory Buckets using AWS SDKs The following code examples show how",
+      "top_entities": [
+        "directory buckets",
+        "s3 directory buckets",
+        "aws sdk",
+        "new s3 directory bucket",
+        "specified s3 bucket",
+        "actual directory bucket",
+        "user credentials"
+      ],
+      "top_relationships": [
+        {
+          "source": "completablefuture",
+          "relation": "RETURNS",
+          "target": "job id"
+        },
+        {
+          "source": "job",
+          "relation": "REQUIRES",
+          "target": "manual activation"
+        },
+        {
+          "source": "s3 directory buckets",
+          "relation": "USES",
+          "target": "aws sdk"
+        },
+        {
+          "source": "runtime environment",
+          "relation": "CONFIGURES",
+          "target": "java sdk"
+        },
+        {
+          "source": "program",
+          "relation": "EXECUTES",
+          "target": "ec2 instance"
+        }
+      ],
+      "token_count": 230
+    }
+  ]
+}

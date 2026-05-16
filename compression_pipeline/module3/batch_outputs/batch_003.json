@@ -1,0 +1,409 @@
+{
+  "level_4_sections": [
+    {
+      "section_id": "sec_batch_003",
+      "summary": "### ListMultipartUploadsResult Root level tag for the ListMultipartUploadsResult parameters. Further, Amazon S3 uses the delimiter character to group keys that contain the same substring until the first occurrence of the delimiter character after the specified prefix. If you created folders by using the Amazon S3 console, you will see an additional 0-byte object with a key of photos/2006/. If you created folders by using the Amazon S3 console, you will see an additional 0-byte object with a key of photos/2006/. For more information, see Organizing objects in the Amazon S3 console using folders in the Amazon S3 User Guide. For more information, see Organizing objects in the Amazon S3 console using folders in the Amazon S3 User Guide. In response to this request, Amazon S3 returns the IsTruncated element with the value set to true and with a NextContinuationToken element. s3:ListBucketVersions action. For more information, see Controlling object ownership in the Amazon S3 User You can set access permissions by using one of the following methods: Specify a canned ACL with the x-amz-acl request header. Amazon S3 supports a set of. For example, the following x-amz-grant-write header grants create, overwrite, and delete objects permission to LogDelivery group predefined by Amazon S3 and two AWS accounts identified by their email addresses. For information about lifecycle configuration, see Object Lifecycle Management in the Amazon S3 By default, all Amazon S3 resources, including buckets, objects, and related subresources (for example, lifecycle configuration and website configuration) are private. For more information, see the following topics in the Amazon S3 User Guide: Specifying Permissions in a Policy. Managing Access Permissions to your Amazon S3 Resources. Specifies lifecycle configuration rules for an Amazon S3 bucket. Each action specifies a time line when Amazon S3 should perform the action. For more information about multipart uploads, see Multipart Upload Overview in the Amazon S3 User Guide. With lifecycle configuration, you can tell Amazon S3 to abort incomplete multipart uploads, which are identified by the key name prefix specified in the rule, if they don't complete within a specified number of days. When Amazon S3 aborts a multipart upload, it deletes all parts associated with the upload. This ensures that you don't have incomplete multipart uploads that have left parts stored in Amazon S3, so you don't have to pay storage costs for them. This action tells Amazon S3 to abort incomplete multipart uploads seven days after initiation. The lifecycle configuration specifies two rules, each with one action: The Transition action tells Amazon S3 to transition objects with the \"documents/\" prefix to. The Expiration action tells Amazon S3 to delete objects with the \"logs/\" prefix 365 days after. x-amz-id-2: r+qR7+nhXtJDDIJ0JJYcd+1j5nM/rUFiiiZ/fNbDOsd3JUE8NWMLNHXmvPfwMpdc x-amz-request-id: 9E26D08072A8EF9E Example 3: Add a lifecycle configuration - bucket is versioning-enabled The following lifecycle configuration for a general purpose bucket specifies two rules, each with one action for Amazon S3 to perform. The For information about CloudWatch request metrics for Amazon S3, see Monitoring Metrics with Amazon CloudWatch. If you are using an identity other than the root user of the AWS account that owns the bucket, the calling identity must both have the PutBucketPolicy permissions on the specified bucket and belong to the bucket owner's account in order to use this operation. To ensure that bucket owners don't inadvertently lock themselves out of their own buckets, the root principal in a bucket owner's AWS account can perform the GetBucketPolicy, PutBucketPolicy, and DeleteBucketPolicy API actions, even if their bucket policy explicitly denies the root principal's access. Bucket owner root principals can only be blocked from performing these API actions by VPC endpoint policies and AWS Organizations policies. x-amz-id-2: r+qR7+nhXtJDDIJ0JJYcd+1j5nM/rUFiiiZ/fNbDOsd3JUE8NWMLNHXmvPfwMpdc x-amz-request-id: 9E26D08072A8EF9E Date: Wed, 11 Feb 2015 02:11:22 GMT Sample Request: Add a Replication Configuration with Amazon S3 Replication Time Control You can use S3 Replication Time Control (S3 RTC) to replicate your data in the same AWS Region or across diﬀerent AWS Regions in a predictable time frame.",
+      "preserved_entities": [
+        "amazon s3",
+        "continuationtoken",
+        "multipart upload",
+        "objects",
+        "buckets",
+        "putbucketpolicy permissions",
+        "s3",
+        "getbucketpolicy, putbucketpolicy, and deletebucketpolicy api actions",
+        "s3 rtc"
+      ],
+      "preserved_akus": [
+        {
+          "subject": "S3",
+          "predicate": "RETURNS",
+          "object": "409 ConditionalRequestConflict response"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "RETURNS",
+          "object": "412 Precondition Failed error"
+        },
+        {
+          "subject": "S3",
+          "predicate": "FAIL",
+          "object": "BadDigest error"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "ENCRYPTS",
+          "object": "server-side encryption"
+        },
+        {
+          "subject": "header",
+          "predicate": "SPECIFIES",
+          "object": "Base64 encoded, 32-bit CRC32 checksum data"
+        },
+        {
+          "subject": "header",
+          "predicate": "SPECIFIES",
+          "object": "Base64 encoded, 32-bit CRC32C checksum"
+        },
+        {
+          "subject": "header",
+          "predicate": "SPECIFIES",
+          "object": "Base64 encoded, 160-bit SHA1 digest"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "USES",
+          "object": "AWS managed key"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "USES",
+          "object": "S3 Bucket"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "USES",
+          "object": "encryption settings values"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "USES",
+          "object": "STANDARD Storage Class"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "USES",
+          "object": "OUTPOSTS Storage Class"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "STORES",
+          "object": "object metadata"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "CREATES",
+          "object": "default checksum"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "CREATES",
+          "object": "uploaded object"
+        },
+        {
+          "subject": "expiration",
+          "predicate": "CONFIGURES",
+          "object": "Amazon S3 User Guide"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "CREATES",
+          "object": "unique version ID"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "RECEIVES",
+          "object": "multiple write requests"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "STORES",
+          "object": "specified object tags"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "RETURNS",
+          "object": "encryption algorithm"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "STORES",
+          "object": "tagging subresource"
+        },
+        {
+          "subject": "ACL",
+          "predicate": "SET",
+          "object": "object version level"
+        },
+        {
+          "subject": "PutObjectLockConfiguration",
+          "predicate": "PLACE",
+          "object": "specified bucket"
+        },
+        {
+          "subject": "version ID",
+          "predicate": "INDICATE",
+          "object": "Root level tag"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "EVALUATE",
+          "object": "PublicAccessBlock configuration"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "IGNORE",
+          "object": "all public ACLs"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "IGNORE",
+          "object": "public ACLs"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "BLOCKS",
+          "object": "public bucket policies"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "RESTRICTS",
+          "object": "public bucket policies"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "BLOCKS",
+          "object": "public access control lists"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "USES",
+          "object": "most restrictive combination"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "RETURNS",
+          "object": "412 Precondition Failed error"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "RESTORE",
+          "object": "current version"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "PROCESSES",
+          "object": "current restore request"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "RETURNS",
+          "object": "200 OK response"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "RETURNS",
+          "object": "202 Accepted"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "RETURNS",
+          "object": "200 OK"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "UPDATES",
+          "object": "restoration period"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "RETURNS",
+          "object": "200 OK response"
+        },
+        {
+          "subject": "OutputSerialization",
+          "predicate": "DIRECT",
+          "object": "Amazon S3"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "RETURNS",
+          "object": "upload ID"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "VALIDATES",
+          "object": "provided MD5 value"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "FREE",
+          "object": "parts storage"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "VALIDATES",
+          "object": "part data"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "ENCRYPTS",
+          "object": "server-side encryption"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "VALIDATES",
+          "object": "provided MD5 value"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "VALIDATES",
+          "object": "part data"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "RETURNS",
+          "object": "encryption-specific headers"
+        },
+        {
+          "subject": "header",
+          "predicate": "SPECIFIES",
+          "object": "Base64 encoded, 32-bit CRC32 checksum data"
+        },
+        {
+          "subject": "header",
+          "predicate": "SPECIFIES",
+          "object": "Base64 encoded, 32-bit CRC32C checksum"
+        },
+        {
+          "subject": "header",
+          "predicate": "SPECIFIES",
+          "object": "Base64 encoded, 160-bit SHA1 digest"
+        },
+        {
+          "subject": "header",
+          "predicate": "SPECIFIES",
+          "object": "Base64 encoded, 256-bit SHA256 digest"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "RETURNS",
+          "object": "upload ID"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "RETURNS",
+          "object": "encryption-specific headers"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "RETURNS",
+          "object": "200 OK"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "SUPPORTS",
+          "object": "copy operations"
+        },
+        {
+          "subject": "multipart upload",
+          "predicate": "USES",
+          "object": "S3 Bucket Key"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "RETURNS",
+          "object": "200 OK"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "RETURNS",
+          "object": "412 Precondition"
+        },
+        {
+          "subject": "header",
+          "predicate": "SPECIFIES",
+          "object": "Base64 encoded, 32-bit CRC32 checksum"
+        },
+        {
+          "subject": "header",
+          "predicate": "SPECIFIES",
+          "object": "Base64 encoded, 64-bit CRC64NVME checksum"
+        },
+        {
+          "subject": "header",
+          "predicate": "SPECIFIES",
+          "object": "Base64 encoded, 160-bit SHA1 checksum"
+        },
+        {
+          "subject": "header",
+          "predicate": "SPECIFIES",
+          "object": "Base64 encoded, 256-bit SHA256 Entity tag"
+        },
+        {
+          "subject": "header",
+          "predicate": "SPECIFIES",
+          "object": "Base64 encoded, 32-bit CRC32C"
+        },
+        {
+          "subject": "AWS",
+          "predicate": "PROVIDES",
+          "object": "some prebuilt Lambda functions"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "RETURNS",
+          "object": "all objects"
+        },
+        {
+          "subject": "grant",
+          "predicate": "INCLUDES",
+          "object": "application ARN"
+        },
+        {
+          "subject": "S3",
+          "predicate": "SUPPORTS",
+          "object": "VPC-style access points"
+        }
+      ],
+      "token_count": 650,
+      "doc_id": "AWS-Document"
+    }
+  ],
+  "level_3_documents": [
+    {
+      "doc_id": "AWS-Document",
+      "summary": "### ListMultipartUploadsResult Root level tag for the ListMultipartUploadsResult parameters. Further, Amazon S3 uses the delimiter character to group keys that contain the same substring until the first occurrence of the delimiter character after the specified prefix. If you created folders by using the Amazon S3 console, you will see an additional 0-byte object with a key of photos/2006/. If you created folders by using the Amazon S3 console, you will see an additional 0-byte object with a key of photos/2006/. For more information, see Organizing objects in the Amazon S3 console using folders in the Amazon S3 User Guide. For more information, see Organizing objects in the Amazon S3 console using folders in the Amazon S3 User Guide. In response to this request, Amazon S3 returns the IsTruncated element with the value set to true and with a NextContinuationToken element. s3:ListBucketVersions action. For more information, see Controlling object ownership in the Amazon S3 User You can set access permissions by using one of the following methods: Specify a canned ACL with the x-amz-acl request header. Amazon S3 supports a set of. For example, the following x-amz-grant-write header grants create, overwrite, and delete objects permission to LogDelivery group predefined by Amazon S3 and two AWS accounts identified by their email addresses. For information about lifecycle configuration, see Object Lifecycle Management in the Amazon S3 By default, all Amazon S3 resources, including",
+      "top_entities": [
+        "amazon s3",
+        "object key",
+        "general purpose buckets",
+        "general purpose bucket permissions",
+        "directory buckets",
+        "listobjectsv2",
+        "continuationtoken",
+        "s3 intelligent-tiering",
+        "amazon s3 inventory",
+        "s3 inventory report"
+      ],
+      "top_relationships": [
+        {
+          "source": "distinct key prefixes",
+          "relation": "RETURNS",
+          "target": "prefix child element"
+        },
+        {
+          "source": "object key",
+          "relation": "CONTAINS",
+          "target": "any unicode character"
+        },
+        {
+          "source": "xml 1.0 parser",
+          "relation": "PARSE",
+          "target": "certain characters"
+        },
+        {
+          "source": "amazon s3",
+          "relation": "CONTINUE",
+          "target": "backward compatibility"
+        },
+        {
+          "source": "amazon s3",
+          "relation": "START",
+          "target": "specified key"
+        }
+      ],
+      "token_count": 230
+    }
+  ]
+}

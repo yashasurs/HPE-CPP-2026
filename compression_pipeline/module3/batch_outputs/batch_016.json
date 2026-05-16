@@ -1,0 +1,67 @@
+{
+  "level_4_sections": [
+    {
+      "section_id": "sec_batch_016",
+      "summary": "# This function creates a file in the specified bucket. $1 - The name of the bucket to copy the file to. $2 - The path and file name of the local file to copy to the bucket. $3 - The key (name) to call the copy of the file in the bucket. function copy_file_to_bucket() { local response bucket_name source_file destination_file_name bucket_name=$1 source_file=$2 destination_file_name=$3 response=$(aws s3api put-object --key \"$destination_file_name\") errecho \"ERROR: AWS reports put-object operation failed.\\n$response\" For API details, see PutObject in AWS CLI Command Reference. bool AwsDoc::S3::putObject(const Aws::String &bucketName, const Aws::String &fileName, const Aws::S3::S3ClientConfiguration &clientConfig) { Aws::S3::Model::PutObjectRequest request; //We are using the name of the file as the key for the object in the bucket. //However, this is just a string and can be set according to your retrieval needs. request.SetKey(fileName); std::shared_ptr<Aws::IOStream> inputData = Aws::MakeShared<Aws::FStream>(\"SampleAllocationTag\", fileName.c_str(), std::ios_base::in | std::ios_base::binary); if (! *inputData) { std::cerr << \"Error unable to read file \" << fileName << std::endl; request.SetBody(inputData); Aws::S3::Model::PutObjectOutcome outcome = s3Client.PutObject(request); std::cerr << \"Error: putObject: \" << std::cout << \"Added object '\" << fileName << \"' to bucket '\" << bucketName << \"'. \"; Example 1: Upload an object to Amazon S3 The following put-object command example uploads an object to Amazon S3. // UploadObject uses the S3 upload manager to upload an object to a bucket. @param bucketName The name of the Amazon S3 bucket. public static void putS3ObjectTags(S3Client s3, String bucketName, String objectKey, String objectPath) { Tag tag1 = Tag.builder().key(\"Tag 1\").value(\"This is tag 1\") Tag tag2 = Tag.builder().key(\"Tag 2\").value(\"This is tag 2\") tags.add(tag1); tags.add(tag2); Tagging allTags = Tagging.builder().tagSet(tags) PutObjectRequest putOb = PutObjectRequest.builder().tagging(allTags) s3.putObject(putOb, RequestBody.fromBytes(getObjectFile(objectPath))); System.err.println(e.getMessage()); Updates the tags associated with an object in an Amazon S3 bucket. objectPath - The path where the file is located (for example, C:/ AWS/book2.pdf).\\s if (args.length != 3) { System.out.println(USAGE); String objectKey = args[1]; String objectPath = args[2]; System.out.println(\"Putting object \" + objectKey + \" into bucket \" + System.out.println(\" in bucket: \" + bucketName); putS3Object(s3, bucketName, objectKey, objectPath); Uploads an object to an Amazon S3 bucket with metadata. import software.amazon.awssdk.services.s3.model.PutObjectRetentionRequest; import software.amazon.awssdk.services.s3.model.ObjectLockRetention; import java.time.Instant; import java.time.LocalDate; import java.time.LocalDateTime; import java.time.ZoneOffset; public class PutObjectRetention { key - The name of the object (for example, book.pdf).\\s bucketName - The Amazon S3 bucket name that contains the object (for example, bucket1).\\s String key = args[0]; String bucketName = args[1]; setRentionPeriod(s3, key, bucketName); Sets the retention period for an object in an Amazon S3 bucket. period public static void setRentionPeriod(S3Client s3, String key, String bucket) { LocalDate localDate = LocalDate.parse(\"2020-07-17\"); LocalDateTime localDateTime = localDate.atStartOfDay(); Instant instant = localDateTime.toInstant(ZoneOffset.UTC); ObjectLockRetention lockRetention = ObjectLockRetention.builder().mode(\"COMPLIANCE\").retainUntilDate(instant) PutObjectRetentionRequest retentionRequest = PutObjectRetentionRequest.builder().bypassGovernanceRetention(true).retention(lockRetention) // To set Retention on an object, the Amazon S3 bucket must support // locking, otherwise an exception is thrown. \"); PutObjectRetentionCommand, Place a 24-hour retention period on an object in an Amazon S3 bucket. public class RestoreArchivedObject string objectKey = \"archived-object.txt\"; RegionEndpoint bucketRegion = RegionEndpoint.USWest2; IAmazonS3 client = new AmazonS3Client(bucketRegion); RestoreObjectAsync(client, bucketName, objectKey).Wait(); /// This method restores an archived object from an Amazon S3 bucket. Amazon S3 buckets are named in a. global namespace; use this method to determine if a specified bucket name already exists, and therefore can't. public class GenPresignedUrl const string bucketName = \"amzn-s3-demo-bucket\"; const string objectKey = \"sample.txt\"; // Specify how long the presigned URL lasts, in hours const double timeoutDuration = 12; // Specify the AWS Region of your Amazon S3 bucket. double timeoutDuration = 12; // Specify the AWS Region of your Amazon S3 bucket. /// GetPreSignedURL.</param> /// <param name=\"bucketName\">The name of the Amazon S3 bucket to which /// presigned URL will point.</param> /// <param name=\"objectKey\">The name of the file that will be uploaded.</ /// <param name=\"duration\">How long (in hours) the presigned URL will /// be valid.</param> public static string GeneratePreSignedURL( string objectKey, double duration) var request = new GetPreSignedUrlRequest Verb = HttpVerb.PUT, Expires = DateTime.UtcNow.AddHours(duration), string url = client.GetPreSignedURL(request); return url Create and use presigned POST URLs for direct browser uploads.",
+      "preserved_entities": [
+        "s3 upload manager",
+        "uploadobject",
+        "string objectkey",
+        "amazon s3 bucket",
+        "amazon s3",
+        "putobjectretention",
+        "amazon s3 buckets",
+        "aws region"
+      ],
+      "preserved_akus": [],
+      "token_count": 650,
+      "doc_id": "AWS-Document"
+    }
+  ],
+  "level_3_documents": [
+    {
+      "doc_id": "AWS-Document",
+      "summary": "# This function creates a file in the specified bucket. $1 - The name of the bucket to copy the file to. $2 - The path and file name of the local file to copy to the bucket. $3 - The key (name) to call the copy of the file in the bucket. function copy_file_to_bucket() { local response bucket_name source_file destination_file_name bucket_name=$1 source_file=$2 destination_file_name=$3 response=$(aws s3api put-object --key \"$destination_file_name\") errecho \"ERROR: AWS reports put-object operation failed.\\n$response\" For API details, see PutObject in AWS CLI Command Reference. bool AwsDoc::S3::putObject(const Aws::String &bucketName, const Aws::String &fileName, const Aws::S3::S3ClientConfiguration &clientConfig) { Aws::S3::Model::PutObjectRequest request; //We are using the name of the file as the key for the object in the bucket. //However, this is just a string and can be set according to your retrieval needs. request.SetKey(fileName); std::shared_ptr<Aws::IOStream> inputData = Aws::MakeShared<Aws::FStream>(\"SampleAllocationTag\", fileName.c_str(), std::ios_base::in | std::ios_base::binary); if (! *inputData) { std::cerr << \"Error unable to read file \" << fileName << std::endl; request.SetBody(inputData); Aws::S3::Model::PutObjectOutcome outcome = s3Client.PutObject(request); std::cerr << \"Error: putObject: \" << std::cout << \"Added object '\" << fileName << \"' to bucket '\" << bucketName << \"'. \"; Example 1: Upload an object to Amazon S3 The following put-object command example uploads an object to Amazon S3. // UploadObject uses the S3 upload manager to upload an object to a bucket. @param bucketName The name of the Amazon S3 bucket. public static void putS3ObjectTags(S3Client",
+      "top_entities": [
+        "amazon s3",
+        "new s3 object",
+        "s3 object key",
+        "s3 upload manager",
+        "uploadobject",
+        "string objectkey",
+        "amazon s3 bucket",
+        "s3api acl commands",
+        "putobjectlegalhold",
+        "object locking"
+      ],
+      "top_relationships": [
+        {
+          "source": "uploadobject",
+          "relation": "USES",
+          "target": "s3 upload manager"
+        },
+        {
+          "source": "string objectkey",
+          "relation": "UPLOAD",
+          "target": "amazon s3 bucket"
+        },
+        {
+          "source": "command",
+          "relation": "UPLOAD",
+          "target": "amazon s3"
+        },
+        {
+          "source": "string key",
+          "relation": "SET",
+          "target": "retention period"
+        },
+        {
+          "source": "command",
+          "relation": "UPLOAD",
+          "target": "amazon s3"
+        }
+      ],
+      "token_count": 230
+    }
+  ]
+}

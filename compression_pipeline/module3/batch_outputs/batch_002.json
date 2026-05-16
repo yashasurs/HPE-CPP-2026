@@ -1,0 +1,313 @@
+{
+  "level_4_sections": [
+    {
+      "section_id": "sec_batch_002",
+      "summary": "GET /amzn-s3-demo-bucket?/ownershipControls HTTP/1.1 Date: Mon, 29 Nov 2021 00:17:22 GMT Authorization: signatureValue; Sample GetBucketOwnershipControls Response This example illustrates one usage of GetBucketOwnershipControls. x-amz-id-2: Adphn7MaAHDEg9mh5JmcTN8mzyVX0JhIztSiQNaqTxnXXcYi4uiZbYdwWC3JXmh/ XXVUUQwO4Vs x-amz-request-id: 252631E05F84A415 Date: Mon, 29 Nov 2021 00:17:22 GMT Content-Length: 194 Sample GetBucketOwnershipControls Request for BucketOwnerPreferred This example illustrates one usage of GetBucketOwnershipControls. Directory buckets - For directory buckets, you must make requests for this API operation Zones in the Amazon S3 User Guide. If you don't have GetBucketPolicy permissions, Amazon S3 returns a 403 Access Denied error. If you have the correct permissions, but you're not using an identity that belongs to the bucket owner's account, Amazon S3 returns a 405 Method Not Allowed error. For more information, see Protecting data with server-side encryption in the Amazon S3 User Guide. The headers you can override using the following query parameters in the request are a subset of the headers that Amazon S3 accepts when you create an object. For more information about the HTTP Range header, see Amazon S3 doesn't support retrieving multiple ranges of data per GET request. If you encrypt an object by using server-side encryption with customer-provided encryption keys (SSE-C) when you store the object in Amazon S3, then when you GET the object, you must use the following headers: For more information about SSE-C, see Server-Side Encryption (Using Customer-Provided Encryption Keys) in the Amazon S3 User Guide. If you encrypt an object by using server-side encryption with customer-provided encryption keys (SSE-C) when you store the object in Amazon S3, then when you GET the object, you must use the following headers: For more information about SSE-C, see Server-Side Encryption (Using Customer-Provided Encryption Keys) in the Amazon S3 User Guide. If you encrypt an object by using server-side encryption with customer-provided encryption keys (SSE-C) when you store the object in Amazon S3, then when you GET the object, you must use the following headers: For more information about SSE-C, see Server-Side Encryption (Using Customer-Provided Encryption Keys) in the Amazon S3 User Guide. Specifies the customer-provided encryption key that you originally provided for Amazon S3 to encrypt the data before storing it. Amazon S3 uses this header for a message integrity check to ensure that the encryption key was transmitted without error. For more information, see Checking object integrity in the Amazon S3 User Guide. For more information, see Checking object integrity in the Amazon S3 User Guide. If the current version of the object is a delete marker, Amazon S3 behaves as if the. Amazon S3 returns this header for all objects except for S3 Standard storage class objects. Amazon S3 returns this header for all objects except for S3 Standard storage class objects. Amazon S3 returns this header for all objects except for S3 Standard storage class objects. Amazon S3 stores the value of this header in the object metadata. Amazon S3 stores the value of this header in the object metadata. Date: Mon, 3 Oct 2016 22:32:00 GMT Last-Modified: Wed, 12 Oct 2009 17:50:00 GMT [434234 bytes of object data] Sample Response for general purpose buckets: Object with associated tags If the object had tags associated with it, Amazon S3 returns the x-amz-tagging-count header with tag count. Amazon S3 doesn't support retrieving multiple ranges of data per GET request. If you encrypt an object by using server-side encryption with customer-provided encryption keys (SSE-C) when you store the object in Amazon S3, then when you retrieve the metadata from the object, you must use the following headers to provide the encryption key for the server to be able to retrieve the object's metadata. GET /?intelligent-tiering&continuation-token=ContinuationToken HTTP/1.1 The name of the Amazon S3 bucket whose configuration you want to modify or retrieve. encoding-type Encoding type used by Amazon S3 to encode the object keys in the response. For characters that aren't supported in XML 1.0, you can add this parameter to request that Amazon S3 encode the keys in the response.",
+      "preserved_entities": [
+        "getbucketpolicy permissions",
+        "amazon s3",
+        "all objects",
+        "directory buckets",
+        "s3",
+        "object metadata",
+        "continuationtoken",
+        "object key"
+      ],
+      "preserved_akus": [
+        {
+          "subject": "ContinuationToken",
+          "predicate": "INDICATE",
+          "object": "Amazon S3"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "APPLY",
+          "object": "default page size"
+        },
+        {
+          "subject": "object key",
+          "predicate": "CONTAINS",
+          "object": "any Unicode character"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "START",
+          "object": "specified key"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "CONTINUE",
+          "object": "backward compatibility"
+        },
+        {
+          "subject": "object key",
+          "predicate": "CONTAINS",
+          "object": "any Unicode character"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "RETRIEVE",
+          "object": "alphabetical order"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "RETURNS",
+          "object": "all of the results"
+        },
+        {
+          "subject": "object key",
+          "predicate": "CONTAINS",
+          "object": "any Unicode character"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "RETURNS",
+          "object": "each such key group"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "RETURNS",
+          "object": "only the keys"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "RETURNS",
+          "object": "one CommonPrefixes element"
+        },
+        {
+          "subject": "ListObjectsV2",
+          "predicate": "RETURNS",
+          "object": "general purpose buckets"
+        },
+        {
+          "subject": "ListObjectsV2",
+          "predicate": "RETURNS",
+          "object": "directory buckets"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "USES",
+          "object": "delimiter character"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "CONTINUE",
+          "object": "backward compatibility"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "START",
+          "object": "specified key"
+        },
+        {
+          "subject": "ContinuationToken",
+          "predicate": "INDICATE",
+          "object": "Amazon S3"
+        },
+        {
+          "subject": "object key",
+          "predicate": "CONTAINS",
+          "object": "any Unicode character"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "RETURNS",
+          "object": "Contents element"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "RETURNS",
+          "object": "IsTruncated element"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "RETURNS",
+          "object": "each such key group"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "RETURNS",
+          "object": "only the keys"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "RETURNS",
+          "object": "one CommonPrefixes element"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "USES",
+          "object": "delimiter character"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "RETURNS",
+          "object": "all of the results"
+        },
+        {
+          "subject": "object key",
+          "predicate": "CONTAINS",
+          "object": "any Unicode character"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "VALIDATES",
+          "object": "KMS key ID"
+        },
+        {
+          "subject": "user",
+          "predicate": "CREATES",
+          "object": "S3 Inventory report"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "ABORT",
+          "object": "multipart upload"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "PROVIDES",
+          "object": "predefined actions"
+        },
+        {
+          "subject": "user",
+          "predicate": "HAS",
+          "object": "PutLifecycleConfiguration permission"
+        },
+        {
+          "subject": "Objects",
+          "predicate": "TRANSITION",
+          "object": "Glacier Flexible"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "ASSIGN",
+          "object": "all log object keys"
+        },
+        {
+          "subject": "Buckets",
+          "predicate": "SUPPORTS",
+          "object": "target grants"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "DETECT",
+          "object": "specified events"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "PUBLISHES",
+          "object": "event notification"
+        },
+        {
+          "subject": "S3",
+          "predicate": "FAIL",
+          "object": "BadDigest error"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "RETURNS",
+          "object": "403 Access Denied error"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "RETURNS",
+          "object": "405 Method Not"
+        },
+        {
+          "subject": "All objects",
+          "predicate": "RECEIVES",
+          "object": "unique version ID"
+        },
+        {
+          "subject": "All objects",
+          "predicate": "RECEIVES",
+          "object": "version ID"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "PROVIDES",
+          "object": "S3 Object Lock"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "CREATES",
+          "object": "unique version ID"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "CREATES",
+          "object": "partial objects"
+        },
+        {
+          "subject": "S3",
+          "predicate": "RETURNS",
+          "object": "409 ConditionalRequestConflict response"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "RETURNS",
+          "object": "412 Precondition Failed error"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "RECEIVES",
+          "object": "multiple write. requests"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "CREATES",
+          "object": "each write request"
+        }
+      ],
+      "token_count": 650,
+      "doc_id": "AWS-Document"
+    }
+  ],
+  "level_3_documents": [
+    {
+      "doc_id": "AWS-Document",
+      "summary": "GET /amzn-s3-demo-bucket?/ownershipControls HTTP/1.1 Date: Mon, 29 Nov 2021 00:17:22 GMT Authorization: signatureValue; Sample GetBucketOwnershipControls Response This example illustrates one usage of GetBucketOwnershipControls. x-amz-id-2: Adphn7MaAHDEg9mh5JmcTN8mzyVX0JhIztSiQNaqTxnXXcYi4uiZbYdwWC3JXmh/ XXVUUQwO4Vs x-amz-request-id: 252631E05F84A415 Date: Mon, 29 Nov 2021 00:17:22 GMT Content-Length: 194 Sample GetBucketOwnershipControls Request for BucketOwnerPreferred This example illustrates one usage of GetBucketOwnershipControls. Directory buckets - For directory buckets, you must make requests for this API operation Zones in the Amazon S3 User Guide. If you don't have GetBucketPolicy permissions, Amazon S3 returns a 403 Access Denied error. If you have the correct permissions, but you're not using an identity that belongs to the bucket owner's account, Amazon S3 returns a 405 Method Not Allowed error. For more information, see Protecting data with server-side encryption in the Amazon S3 User Guide. The headers you can override using the following query parameters in the request are a subset of the headers that Amazon S3 accepts when you create an object. For more information about the HTTP Range header, see Amazon S3 doesn't support retrieving multiple ranges of data per GET request. If you encrypt an object by using server-side encryption with customer-provided encryption keys (SSE-C) when you store the object in Amazon S3, then when you GET the object, you must use the following headers: For more information about SSE-C, see Server-Side Encryption (Using Customer-Provided Encryption Keys) in the Amazon S3 User Guide. If you encrypt",
+      "top_entities": [
+        "amazon s3",
+        "all objects",
+        "directory buckets",
+        "nextcontinuationtoken",
+        "object replicas",
+        "s3",
+        "object metadata",
+        "aws accounts",
+        "listmultipartuploads response",
+        "multipart uploads"
+      ],
+      "top_relationships": [
+        {
+          "source": "amazon s3",
+          "relation": "RETURNS",
+          "target": "403 access denied error"
+        },
+        {
+          "source": "amazon s3",
+          "relation": "RETURNS",
+          "target": "405 method not"
+        },
+        {
+          "source": "root principal",
+          "relation": "PERFORM",
+          "target": "getbucketpolicy, putbucketpolicy, and deletebucketpolicy api actions"
+        },
+        {
+          "source": "calling identity",
+          "relation": "HAS",
+          "target": "getbucketpolicy permissions"
+        },
+        {
+          "source": "amazon s3",
+          "relation": "REPLICATE",
+          "target": "all objects"
+        }
+      ],
+      "token_count": 230
+    }
+  ]
+}

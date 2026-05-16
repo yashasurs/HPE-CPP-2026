@@ -1,0 +1,58 @@
+{
+  "level_4_sections": [
+    {
+      "section_id": "sec_batch_019",
+      "summary": "# Configure logging logger = logging.getLogger(__name__) class S3ConditionalRequests: \"\"\"Encapsulates S3 conditional request operations.\"\"\" def __init__(self, s3_client): self.s3 = s3_client def from_client(cls): Instantiates this class from a Boto3 client. def get_object_conditional( object_key: str, source_bucket: str, condition_type: str, condition_value: str, Retrieves an object from Amazon S3 with a conditional request. print(\"\\tConditional write failed: Precondition failed\") def copy_object_conditional( source_key: str, dest_key: str, source_bucket: str, dest_bucket: str, condition_type: str, condition_value: str, Copies an object from one Amazon S3 bucket to another with a conditional :param source_key: The key of the source object to copy. print(\"\\tConditional copy failed: Object not modified\") Manage access control lists (ACLs) for Amazon S3 buckets using an AWS SDK The following code example shows how to manage access control lists (ACLs) for Amazon S3 /// This example shows how to manage Amazon Simple Storage Service /// (Amazon S3) access control lists (ACLs) to control Amazon S3 bucket /// access. public class ManageACLs string bucketName = \"amzn-s3-demo-bucket1\"; string newBucketName = \"amzn-s3-demo-bucket2\"; string keyName = \"sample-object.txt\"; string emailAddress = \"someone@example.com\"; // If the AWS Region where your bucket is located is different from // the Region defined for the default user, pass the Amazon S3 bucket's // name to the client constructor. It should look like this: // RegionEndpoint bucketRegion = RegionEndpoint.USEast1; await TestBucketObjectACLsAsync(client, bucketName, newBucketName, keyName, emailAddress); /// Creates a new Amazon S3 bucket with a canned ACL, then retrieves the /// information and then adds a new ACL to one of the objects in the /// Amazon S3 bucket. /// methods to create a bucket, get an ACL, and add a different ACL to /// one of the objects.</param> /// <param name=\"bucketName\">A string representing the original Amazon S3 /// bucket name.</param> /// <param name=\"newBucketName\">A string representing the name of the /// new bucket that will be created.</param> /// <param name=\"keyName\">A string representing the key name of an Amazon S3 /// object for which we will change the ACL.</param> /// <param name=\"emailAddress\">A string representing the email address /// belonging to the person to whom access to the Amazon S3 bucket will be /// granted.</param> public static async Task TestBucketObjectACLsAsync( string newBucketName, string emailAddress) // Create a new Amazon S3 bucket and specify canned ACL. await AddACLToExistingObjectAsync(client, bucketName, keyName, emailAddress); catch (AmazonS3Exception amazonS3Exception) Console.WriteLine($\"Exception: {amazonS3Exception.Message}\"); /// Creates a new Amazon S3 bucket with a canned ACL attached. /// <param name=\"client\">The initialized client object used to call /// PutBucketAsync.</param> /// <param name=\"newBucketName\">A string representing the name of the /// new Amazon S3 bucket.</param> /// <returns>Returns a boolean value indicating success or failure.</ public static async Task<bool> CreateBucketWithCannedACLAsync(IAmazonS3 client, string newBucketName) var request = new PutBucketRequest() BucketName = newBucketName, BucketRegion = S3Region.EUWest1, // Add a canned ACL. CannedACL = S3CannedACL.LogDeliveryWrite, var response = await client.PutBucketAsync(request); /// Retrieves the ACL associated with the Amazon S3 bucket name in the /// bucketName parameter. /// <param name=\"client\">The initialized client object used to call /// PutBucketAsync.</param> /// <param name=\"bucketName\">The Amazon S3 bucket for which we want to get the /// ACL list.</param> /// <returns>Returns an S3AccessControlList returned from the call to /// GetACLAsync.</returns> public static async Task<S3AccessControlList> GetBucketACLAsync(IAmazonS3 client, string bucketName) GetACLResponse response = await client.GetACLAsync(new GetACLRequest return response.AccessControlList; /// Adds a new ACL to an existing object in the Amazon S3 bucket. Upload the image file to an Amazon S3 bucket. Get EXIF information from a JPG, JPEG, or PNG file, upload the image file to an Amazon S3 bucket, use Amazon Rekognition to identify the three top attributes (labels in Amazon Rekognition) in the file, and add the EXIF and label information to a Amazon DynamoDB table in the Region. An AWS CloudFormation stack sets up the bucket, queue, topic before the. using Amazon.S3.Transfer; /// This example shows how to track the progress of a multipart upload /// using the Amazon Simple Storage Service (Amazon S3) TransferUtility to /// upload to an Amazon S3 bucket. Uploads a file to an Amazon S3 bucket using the S3TransferManager.",
+      "preserved_entities": [
+        "bucket, queue, topic",
+        "aws cloudformation stack",
+        "amazon s3",
+        "amazon s3 bucket"
+      ],
+      "preserved_akus": [],
+      "token_count": 650,
+      "doc_id": "AWS-Document"
+    }
+  ],
+  "level_3_documents": [
+    {
+      "doc_id": "AWS-Document",
+      "summary": "# Configure logging logger = logging.getLogger(__name__) class S3ConditionalRequests: \"\"\"Encapsulates S3 conditional request operations.\"\"\" def __init__(self, s3_client): self.s3 = s3_client def from_client(cls): Instantiates this class from a Boto3 client. def get_object_conditional( object_key: str, source_bucket: str, condition_type: str, condition_value: str, Retrieves an object from Amazon S3 with a conditional request. print(\"\\tConditional write failed: Precondition failed\") def copy_object_conditional( source_key: str, dest_key: str, source_bucket: str, dest_bucket: str, condition_type: str, condition_value: str, Copies an object from one Amazon S3 bucket to another with a conditional :param source_key: The key of the source object to copy. print(\"\\tConditional copy failed: Object not modified\") Manage access control lists (ACLs) for Amazon S3 buckets using an AWS SDK The following code example shows how to manage access control lists (ACLs) for Amazon S3 /// This example shows how to manage Amazon Simple Storage Service /// (Amazon S3) access control lists (ACLs) to control Amazon S3 bucket /// access. public class ManageACLs string bucketName = \"amzn-s3-demo-bucket1\"; string newBucketName = \"amzn-s3-demo-bucket2\"; string keyName = \"sample-object.txt\"; string emailAddress = \"someone@example.com\"; // If the AWS Region where your bucket is located is different from // the Region defined for the default user, pass the Amazon S3 bucket's // name to the client constructor. It should look like this: // RegionEndpoint bucketRegion = RegionEndpoint.USEast1; await TestBucketObjectACLsAsync(client, bucketName, newBucketName, keyName, emailAddress); /// Creates a new Amazon S3 bucket with a canned ACL, then retrieves the",
+      "top_entities": [
+        "bucket, queue, topic",
+        "aws cloudformation stack",
+        "%v mib object",
+        "amazon s3",
+        "amazon s3 bucket"
+      ],
+      "top_relationships": [
+        {
+          "source": "permission",
+          "relation": "SPECIFIES",
+          "target": "log delivery group"
+        },
+        {
+          "source": "sdk",
+          "relation": "RETURNS",
+          "target": "decoded uri values"
+        },
+        {
+          "source": "uri",
+          "relation": "CONTAINS",
+          "target": "no query parameters"
+        },
+        {
+          "source": "sdk",
+          "relation": "RETURNS",
+          "target": "empty map"
+        },
+        {
+          "source": "aws cloudformation stack",
+          "relation": "SET",
+          "target": "bucket, queue, topic"
+        }
+      ],
+      "token_count": 230
+    }
+  ]
+}

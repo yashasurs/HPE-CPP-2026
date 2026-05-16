@@ -75,7 +75,7 @@ def summarize_topic(
         summary = _run_summarizer(
             combined,
             max_length=max_tokens,
-            min_length=max(10, max_tokens // 4),
+            min_length=max(60, max_tokens // 2),
         )
     except Exception as exc:
         logger.warning("Topic summarization failed for %s: %s — falling back", topic_id, exc)

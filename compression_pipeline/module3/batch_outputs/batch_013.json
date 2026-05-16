@@ -1,0 +1,301 @@
+{
+  "level_4_sections": [
+    {
+      "section_id": "sec_batch_013",
+      "summary": ". Use CreateMultipartUpload with an AWS SDK or CLI The following code examples show how to use CreateMultipartUpload. //! DeleteBucketCommand, Delete an Amazon S3 bucket. :return: A result structure that Amazon S3 uses to interpret the result of operation. When the result code is TemporaryFailure, S3 retries the # Parse job parameters from Amazon S3 batch operations invocation_id = event[\"invocationId\"] invocation_schema_version = event[\"invocationSchemaVersion\"] results = [] result_code = None result_string = None task = event[\"tasks\"][0] task_id = task[\"taskId\"] obj_key = parse.unquote_plus(task[\"s3Key\"], encoding=\"utf-8\") obj_version_id = task[\"s3VersionId\"] bucket_name = task[\"s3BucketArn\"].split(\":\")[-1] \"Got task: remove delete marker %s from object %s. /// Delete all of the objects stored in an existing Amazon S3 bucket. /// This example shows how to delete multiple objects from an Amazon Simple /// Storage Service (Amazon S3) bucket. public class DeleteMultipleObjects /// The Main method initializes the Amazon S3 client and the name of /// the bucket and then passes those values to MultiObjectDeleteAsync. IAmazonS3 s3Client = new AmazonS3Client(); await MultiObjectDeleteAsync(s3Client, bucketName); /// This method uses the passed Amazon S3 client to first create and then /// delete three files from the named bucket. /// Amazon S3 methods.</param> /// <param name=\"bucketName\">The name of the Amazon S3 bucket where objects /// will be created and then deleted.</param> public static async Task MultiObjectDeleteAsync(IAmazonS3 client, string // Create three sample objects which we will then delete. /// <param name=\"client\">The Amazon S3 client used to call PutObjectAsync.</param> /// <param name=\"bucketName\">The name of the bucket where the objects /// will be created.</param> /// <returns>A list of keys (object keys) and versions that the calling /// method will use to delete the newly created files.</returns> client, int number, string bucketName) for (int i = 0; i < number; i++) string key = \"ExampleObject-\" + new System.Random().Next(); PutObjectRequest request = new PutObjectRequest Key = key, ContentBody = \"This is the content body! /// This example shows how to delete objects in a version-enabled Amazon /// Simple StorageService (Amazon S3) bucket. public class DeleteMultipleObjects // If the AWS Region for your Amazon S3 bucket is different from // the AWS Region of the default user, define the AWS Region for // the Amazon S3 bucket and pass it to the client constructor // like this: // RegionEndpoint bucketRegion = RegionEndpoint.USWest2; IAmazonS3 s3Client; s3Client = new AmazonS3Client(); await DeleteMultipleObjectsFromVersionedBucketAsync(s3Client, /// This method removes multiple versions and objects from a /// version-enabled Amazon S3 bucket. var deletedObjects = await DeleteObjectsAsync(client, bucketName); // Additional exercise - remove the delete markers Amazon S3 returned from // the preceding response. The method returns a list of the Amazon S3 objects deleted. \"); DeleteObjectsResponse response = await client.DeleteObjectsAsync(multiObjectDeleteRequest); Console.WriteLine($\"Successfully deleted all the {response.DeletedObjects.Count} items\"); catch (DeleteObjectsException ex) DisplayDeletionErrors(ex); /// Deletes multiple objects from a non-versioned Amazon S3 bucket. You can verify that the objects were removed // using the Amazon S3 console. var multiObjectDeleteRequest = new DeleteObjectsRequest Objects = keyVersionList, // Now, delete the delete marker to bring your objects back to the var deleteObjectResponse = await client.DeleteObjectsAsync(multiObjectDeleteRequest); Console.WriteLine($\"Successfully deleted the {deleteObjectResponse.DeletedObjects.Count} delete markers\"); catch (DeleteObjectsException ex) DisplayDeletionErrors(ex); /// Create temporary Amazon S3 objects to show how object deletion wors in an /// Amazon S3 bucket with versioning enabled . func (actor S3Actions) DeleteObjects(ctx context.Context, bucket string, objects []types.ObjectIdentifier, bypassGovernance bool) error { if len(objects) == 0 { return nil input := s3.DeleteObjectsInput{ Delete: &types.Delete{ Objects: objects, Quiet: aws.Bool(true), input.BypassGovernanceRetention = aws.Bool(true) delOut, err := actor.S3Client.DeleteObjects(ctx, &input) if err != nil || len(delOut.Errors) > 0 { log.Printf(\"Error deleting objects from bucket %s.\\n\", bucket) } else if len(delOut.Errors) > 0 { for _, outErr := range delOut.Errors { log.Printf(\"%s: %s\\n\", *outErr.Key, *outErr.Message) err = fmt.Errorf(\"%s\", *delOut.Errors[0].Message) for _, delObjs := range delOut.Deleted { err = s3.NewObjectNotExistsWaiter(actor.S3Client).Wait( ctx, &s3.HeadObjectInput{Bucket: aws.String(bucket), Key: delObjs.Key}, time.Minute) log.Printf(\"Failed attempt to wait for object %s to be deleted.\\n\", log.Printf(\"Deleted %s.\\n\", *delObjs.Key) import software.amazon.awssdk.services.s3.model.ObjectIdentifier; import software.amazon.awssdk.services.s3.model.Delete; import software.amazon.awssdk.services.s3.model.DeleteObjectsRequest; public class DeleteMultiObjects { Usage: <bucketName> bucketName - the Amazon S3 bucket name.",
+      "preserved_entities": [
+        "aws"
+      ],
+      "preserved_akus": [
+        {
+          "subject": "Amazon S3",
+          "predicate": "PROVIDES",
+          "object": "object locking"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "STORES",
+          "object": "last write request"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "RECEIVES",
+          "object": "multiple write requests"
+        },
+        {
+          "subject": "Values",
+          "predicate": "RESULT",
+          "object": "immediate error"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "RETURNS",
+          "object": "first megabyte"
+        },
+        {
+          "subject": "Replacement",
+          "predicate": "MAKE",
+          "object": "object keys"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "ACCEPTS",
+          "object": "API requests"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "USES",
+          "object": "access key ID"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "SUPPORTS",
+          "object": "latest Signature Version"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "RETURNS",
+          "object": "error response"
+        },
+        {
+          "subject": "\\n",
+          "predicate": "MEAN",
+          "object": "Unicode code point"
+        },
+        {
+          "subject": "\\n",
+          "predicate": "MEAN",
+          "object": "Unicode code point"
+        },
+        {
+          "subject": "CanonicalizedResource",
+          "predicate": "INCLUDES",
+          "object": "bucket name"
+        },
+        {
+          "subject": "users",
+          "predicate": "UPLOAD",
+          "object": "Amazon S3"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "SUPPORTS",
+          "object": "Signature Version"
+        },
+        {
+          "subject": "users",
+          "predicate": "UPLOAD",
+          "object": "Amazon S3"
+        },
+        {
+          "subject": "user",
+          "predicate": "UPLOAD",
+          "object": "Amazon S3"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "SUPPORTS",
+          "object": "all AWS Regions"
+        },
+        {
+          "subject": "user",
+          "predicate": "UPLOAD",
+          "object": "HTML form declaration"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "APPEND",
+          "object": "bucket, key, and etag values"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "RETURNS",
+          "object": "XML document"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "RETURNS",
+          "object": "empty document type"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "APPEND",
+          "object": "query string parameters"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "RETURNS",
+          "object": "empty document"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "RETURNS",
+          "object": "empty document type"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "SUPPORTS",
+          "object": "Signature Version"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "SUPPORTS",
+          "object": "all AWS Regions"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "RETURNS",
+          "object": "empty document type"
+        },
+        {
+          "subject": "upload",
+          "predicate": "OCCUR",
+          "object": "12:00 UTC"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "RETURNS",
+          "object": "XML document"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "CANCEL",
+          "object": "incomplete multipart upload"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "CANCEL",
+          "object": "multipart upload"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "TAKE",
+          "object": "appropriate expiration action"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "DELETES",
+          "object": "only copy"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "TRANSITION",
+          "object": "STANDARD_IA, ONEZONE_IA, or GLACIER storage class"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "CALCULATE",
+          "object": "Amazon Simple Type"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "TRANSITION",
+          "object": "only the current versions"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "DELETES",
+          "object": "noncurrent object versions"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "TRANSITION",
+          "object": "specified storage class"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "PERFORM",
+          "object": "associated action"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "CANCEL",
+          "object": "incomplete multipart upload"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "CANCEL",
+          "object": "incomplete multipart upload"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "DELETES",
+          "object": "noncurrent object versions"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "PERFORM",
+          "object": "associated action"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "TAKE",
+          "object": "appropriate expiration action"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "DELETES",
+          "object": "only copy"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "TRANSITION",
+          "object": "STANDARD_IA, ONEZONE_IA, or GLACIER storage class"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "TRANSITION",
+          "object": "only the current versions"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "TRANSITION",
+          "object": "specified storage class"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "TRANSITION",
+          "object": "only copy"
+        }
+      ],
+      "token_count": 650,
+      "doc_id": "AWS-Document"
+    }
+  ],
+  "level_3_documents": [
+    {
+      "doc_id": "AWS-Document",
+      "summary": ". Use CreateMultipartUpload with an AWS SDK or CLI The following code examples show how to use CreateMultipartUpload. //! DeleteBucketCommand, Delete an Amazon S3 bucket. :return: A result structure that Amazon S3 uses to interpret the result of operation. When the result code is TemporaryFailure, S3 retries the # Parse job parameters from Amazon S3 batch operations invocation_id = event[\"invocationId\"] invocation_schema_version = event[\"invocationSchemaVersion\"] results = [] result_code = None result_string = None task = event[\"tasks\"][0] task_id = task[\"taskId\"] obj_key = parse.unquote_plus(task[\"s3Key\"], encoding=\"utf-8\") obj_version_id = task[\"s3VersionId\"] bucket_name = task[\"s3BucketArn\"].split(\":\")[-1] \"Got task: remove delete marker %s from object %s. /// Delete all of the objects stored in an existing Amazon S3 bucket. /// This example shows how to delete multiple objects from an Amazon Simple /// Storage Service (Amazon S3) bucket. public class DeleteMultipleObjects /// The Main method initializes the Amazon S3 client and the name of /// the bucket and then passes those values to MultiObjectDeleteAsync. IAmazonS3 s3Client = new AmazonS3Client(); await MultiObjectDeleteAsync(s3Client, bucketName); /// This method uses the passed Amazon S3 client to first create and then /// delete three files from the named bucket. /// Amazon S3 methods.</param> /// <param name=\"bucketName\">The name of the Amazon S3 bucket where objects /// will be created and then deleted.</param> public static async Task MultiObjectDeleteAsync(IAmazonS3 client, string // Create three sample objects which we will then delete. /// <param name=\"client\">The Amazon S3 client",
+      "top_entities": [
+        "s3api delete-bucket",
+        "aws",
+        "object keys collection",
+        "getbucketaclcommand",
+        "string objectkey"
+      ],
+      "top_relationships": [
+        {
+          "source": "aws",
+          "relation": "REPORT",
+          "target": "s3api delete-bucket"
+        },
+        {
+          "source": "object keys collection",
+          "relation": "INCLUDES",
+          "target": "null version ids"
+        },
+        {
+          "source": "getbucketaclcommand",
+          "relation": "RETRIEVE",
+          "target": "access control list"
+        },
+        {
+          "source": "string objectkey",
+          "relation": "RETRIEVE",
+          "target": "access control list"
+        }
+      ],
+      "token_count": 230
+    }
+  ]
+}

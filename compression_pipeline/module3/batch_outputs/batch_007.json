@@ -1,0 +1,190 @@
+{
+  "level_4_sections": [
+    {
+      "section_id": "sec_batch_007",
+      "summary": "GET /table-record-expiration?tableArn=tableArn HTTP/1.1 \"settings\": { \"days\": number The record expiration configuration for the table, including the status and retention settings. Valid Values: NotYetRun | Successful | Failed | Disabled MethodNotAllowedException The requested operation is not allowed on this resource. You must have the s3tables:PutTableBucketEncryption permission to use this If you choose SSE-KMS encryption you must grant the S3 Tables maintenance principal access to your KMS key. For more information, see Permissions requirements for S3 Tables SSE-KMS encryption in the Amazon Simple Storage Service User Guide. For more information, see S3 Tables maintenance in the Amazon Simple Storage Service User You must have the s3tables:PutTableMaintenanceConfiguration permission to use this PUT /tables/tableBucketARN/namespace/name/maintenance/type HTTP/1.1 \"value\": { \"settings\": {. For tables and table buckets, you must have the s3tables:TagResource permission to use POST /tag/resourceArn HTTP/1.1 TagResource Applies one or more user-defined tags to an Amazon S3 Tables resource or updates existing tags. For tables and table buckets, you must have the s3tables:TagResource permission to use POST /tag/resourceArn HTTP/1.1 The Amazon Resource Name (ARN) of the Amazon S3 Tables resource that you're applying tags to. For tables and table buckets, you must have the s3tables:UntagResource permission to use DELETE /tag/resourceArn?tagKeys=tagKeys HTTP/1.1 The Amazon Resource Name (ARN) of the Amazon S3 Tables resource that you're removing tags from. If your Filter includes a Tag element, the DeleteMarkerReplication Status must be set to Disabled, because Amazon S3 does not support replicating delete markers for tag-based rules. If you are using an earlier version of the replication configuration, Amazon S3 handles replication of delete markers diﬀerently. Specifies information about where to publish analysis or configuration results for an Amazon S3 bucket and S3 Replication Time Control (S3 RTC). In a cross-account scenario, if you direct Amazon S3 to change replica ownership to the AWS account that owns the destination bucket by specifying the AccessControlTranslation property, this is the account ID of the destination bucket owner. For more information, see Replication Additional Configuration: Changing the Replica Owner in the Amazon S3 User Guide. Amazon S3 only supports symmetric encryption KMS keys. Simple programs display the message directly to the end user if they encounter an error condition they don't know how or don't care to handle. Sophisticated programs with more exhaustive error handling and proper internationalization are more likely to ignore the error message. To fix the resource policy, Amazon S3 needs to create a new metadata table. To fix the resource policy, Amazon S3 needs to create a new metadata table. To fix the resource policy, Amazon S3 needs to create a new metadata table. To fix the resource policy, Amazon S3 needs to create a new metadata table. Specifies whether Amazon S3 replicates existing source bucket objects. Specifies whether Amazon S3 replicates existing source bucket objects. the inventory table for your metadata configuration, the table goes through a process known as backfilling, during which Amazon S3 scans your general purpose bucket to retrieve the initial metadata for all objects in the bucket. If no value is specified, Amazon S3 uses a newline character ('\\n'). The Amazon S3 bucket event for which to invoke the AWS Lambda function. For more information, see Supported Event Types in the Amazon S3 User Guide. For information about key name filtering, see Configuring event notifications using object key name filtering in the Amazon S3 User Guide. For information about key name filtering, see Configuring event notifications using object key name filtering in the Amazon S3 User Guide. For more information see, Managing your storage lifecycle in the Amazon S3 User Guide. For more information see, Managing your storage lifecycle in the Amazon S3 User Guide. For more information see, Managing your storage lifecycle in the Amazon S3 User Guide. Specifies lifecycle configuration rules for an Amazon S3 bucket. For more information about Tag filters, see Adding filters to Lifecycle rules in the Amazon S3 Tag filters are not supported for directory buckets.",
+      "preserved_entities": [
+        "amazon s3",
+        "general purpose bucket",
+        "existing source bucket objects",
+        "buckets",
+        "all objects"
+      ],
+      "preserved_akus": [
+        {
+          "subject": "Valid Values",
+          "predicate": "RETRIEVE",
+          "object": "versioning state"
+        },
+        {
+          "subject": "key",
+          "predicate": "CREATES",
+          "object": "AWS resource"
+        },
+        {
+          "subject": "S3 Tables",
+          "predicate": "ASSIGN",
+          "object": "field ID"
+        },
+        {
+          "subject": "tables",
+          "predicate": "REPLICATE",
+          "object": "IAM role"
+        },
+        {
+          "subject": "S3 Tables",
+          "predicate": "SUPPORTS",
+          "object": "all Apache Iceberg primitive types"
+        },
+        {
+          "subject": "S3 Tables",
+          "predicate": "ASSIGN",
+          "object": "field IDs"
+        },
+        {
+          "subject": "Valid values",
+          "predicate": "INCLUDES",
+          "object": "storage classes"
+        },
+        {
+          "subject": "policy",
+          "predicate": "PREVENT",
+          "object": "IPv6 addresses"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "SUPPORTS",
+          "object": "only regional dual-stack endpoint names"
+        },
+        {
+          "subject": "AWS account",
+          "predicate": "REQUEST",
+          "object": "temporary security credentials"
+        },
+        {
+          "subject": "code",
+          "predicate": "SENDS",
+          "object": "Amazon S3"
+        },
+        {
+          "subject": "Programs",
+          "predicate": "HANDLES",
+          "object": "application layer"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "RETURNS",
+          "object": "final response"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "USES",
+          "object": "permanent redirects"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "RESPOND",
+          "object": "temporary redirect"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "RETURNS",
+          "object": "all Regions"
+        },
+        {
+          "subject": "AWS account",
+          "predicate": "ACCESSES",
+          "object": "AWS CLI"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "SUPPORTS",
+          "object": "only AWS Signature Version"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "SUPPORTS",
+          "object": "both Signature Version"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "SUPPORTS",
+          "object": "some of the older AWS Regions"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "SUPPORTS",
+          "object": "most AWS Regions"
+        },
+        {
+          "subject": "Signing requests",
+          "predicate": "ENABLES",
+          "object": "Amazon S3"
+        },
+        {
+          "subject": "Support",
+          "predicate": "END",
+          "object": "Signature Version"
+        },
+        {
+          "subject": "Amazon S3 bucket",
+          "predicate": "PROVIDES",
+          "object": "detailed information"
+        },
+        {
+          "subject": "Amazon S3 bucket",
+          "predicate": "PROVIDES",
+          "object": "detailed records"
+        }
+      ],
+      "token_count": 650,
+      "doc_id": "AWS-Document"
+    }
+  ],
+  "level_3_documents": [
+    {
+      "doc_id": "AWS-Document",
+      "summary": "GET /table-record-expiration?tableArn=tableArn HTTP/1.1 \"settings\": { \"days\": number The record expiration configuration for the table, including the status and retention settings. Valid Values: NotYetRun | Successful | Failed | Disabled MethodNotAllowedException The requested operation is not allowed on this resource. You must have the s3tables:PutTableBucketEncryption permission to use this If you choose SSE-KMS encryption you must grant the S3 Tables maintenance principal access to your KMS key. For more information, see Permissions requirements for S3 Tables SSE-KMS encryption in the Amazon Simple Storage Service User Guide. For more information, see S3 Tables maintenance in the Amazon Simple Storage Service User You must have the s3tables:PutTableMaintenanceConfiguration permission to use this PUT /tables/tableBucketARN/namespace/name/maintenance/type HTTP/1.1 \"value\": { \"settings\": {. For tables and table buckets, you must have the s3tables:TagResource permission to use POST /tag/resourceArn HTTP/1.1 TagResource Applies one or more user-defined tags to an Amazon S3 Tables resource or updates existing tags. For tables and table buckets, you must have the s3tables:TagResource permission to use POST /tag/resourceArn HTTP/1.1 The Amazon Resource Name (ARN) of the Amazon S3 Tables resource that you're applying tags to. For tables and table buckets, you must have the s3tables:UntagResource permission to use DELETE /tag/resourceArn?tagKeys=tagKeys HTTP/1.1 The Amazon Resource Name (ARN) of the Amazon S3 Tables resource that you're removing tags from. If your Filter includes a Tag element, the DeleteMarkerReplication Status must be set to Disabled, because Amazon S3",
+      "top_entities": [
+        "amazon s3",
+        "general purpose bucket",
+        "all log object keys",
+        "uploaded object",
+        "existing source bucket objects",
+        "bucket name",
+        "s3bucketdestination",
+        "s3 inventory configuration",
+        "noncurrent object versions",
+        "s3 vectors"
+      ],
+      "top_relationships": [
+        {
+          "source": "gettablestorageclass",
+          "relation": "RETRIEVE",
+          "target": "storage class configuration"
+        },
+        {
+          "source": "tagresource",
+          "relation": "APPLY",
+          "target": "one or more user-defined tags"
+        },
+        {
+          "source": "untagresource",
+          "relation": "DELETES",
+          "target": "specified user-defined tags"
+        },
+        {
+          "source": "applications",
+          "relation": "REQUEST",
+          "target": "parallel listvectors operation"
+        },
+        {
+          "source": "s3 vectors",
+          "relation": "CONVERT",
+          "target": "32-bit floating point"
+        }
+      ],
+      "token_count": 230
+    }
+  ]
+}

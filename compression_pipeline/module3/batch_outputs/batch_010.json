@@ -1,0 +1,153 @@
+{
+  "level_4_sections": [
+    {
+      "section_id": "sec_batch_010",
+      "summary": ". AmazonSecurityTokenServiceClient class. Start a session by calling the GetFederationToken method of the STS client. You need. to provide session information, including the user name and an IAM policy that you want to attach to the temporary credentials. Optionally, you can provide a session duration. This method returns your temporary security credentials. Package the temporary security credentials in an instance of the SessionAWSCredentials. object. You use this object to provide the temporary security credentials to your Amazon S3 client. credentials. You use this client to send requests to Amazon S3. If you send requests using expired credentials, Amazon S3 returns an error. In the example, you obtain temporary security credentials for a two-hour session for your federated user (User1), and use the credentials to send authenticated requests to Amazon S3. Using the credentials. of this IAM user, you request temporary credentials for others. Create an IAM user with the following policy attached: \"Statement\":[{ \"Action\":[\"s3:ListBucket\", \"sts:GetFederationToken*\" \"Resource\":\"*\" The policy allows the IAM user to request temporary security credentials and access permission only to list your AWS resources. Create an IAM user with the following policy attached: \"Statement\":[{ \"Action\":[\"s3:ListBucket\", \"sts:GetFederationToken*\" \"Resource\":\"*\" The policy allows the IAM user to request temporary security credentials and access permission only to list your AWS resources. Use the IAM user security credentials to test the following example. The example sends. authenticated request to Amazon S3 using temporary security credentials. For information about setting up and running the code examples, see Getting Started with the AWS SDK for.NET in the AWS SDK for.NET using Amazon.Runtime; using Amazon.SecurityToken; using Amazon.SecurityToken.Model; namespace Amazon.DocSamples.S3 class TempFederatedCredentialsTest private const string bucketName = \"*** bucket name ***\"; private static readonly RegionEndpoint bucketRegion = RegionEndpoint.USWest2; private static IAmazonS3 client; ListObjectsAsync().Wait(); private static async Task ListObjectsAsync() Console.WriteLine(\"Listing objects stored in a bucket\"); // Credentials use the default AWS SDK for.NET credential search chain. Message:'{0}' when writing an object\", e.Message); private static async Task<SessionAWSCredentials> GetTemporaryFederatedCredentialsAsync() AmazonSecurityTokenServiceConfig config = new AmazonSecurityTokenServiceConfig(); AmazonSecurityTokenServiceClient stsClient = new AmazonSecurityTokenServiceClient( config); GetFederationTokenRequest federationTokenRequest = new GetFederationTokenRequest(); federationTokenRequest.DurationSeconds = 7200; federationTokenRequest.Name = \"User1\"; federationTokenRequest.Policy = @\"{ \"\"Statement\"\": \"\"Sid\"\":\"\"Stmt1311212314284\"\", \"\"Action\"\":[\"\"s3:ListBucket\"\"], \"\"Effect\"\":\"\"Allow\"\", \"\"Resource\"\":\"\"arn:aws:s3:::\" + bucketName + @\"\"\" \"; GetFederationTokenResponse federationTokenResponse = stsClient.GetFederationTokenAsync(federationTokenRequest); Credentials credentials = federationTokenResponse.Credentials; SessionAWSCredentials sessionCredentials = new SessionAWSCredentials(credentials.AccessKeyId, credentials.SecretAccessKey, credentials.SessionToken); return sessionCredentials; This topic explains how to use classes from version 3 of the AWS SDK for PHP to request temporary security credentials for federated users and applications and use them to access resources stored in Amazon S3. For more information about temporary security credentials, see Temporary Security Credentials in the IAM User Guide. For added security when requesting temporary security credentials for federated users and applications, we recommend using a dedicated IAM user with only the necessary access permissions. Then you use the temporary security credentials to send authenticated requests to Amazon S3. For added security when requesting temporary credentials for others, you use the security credentials of an IAM user who has permissions to request temporary security credentials. The example sends an authenticated request to Amazon S3 using temporary security credentials. $sessionToken = $sts->getFederationToken([ 'Name' => 'User1', 'DurationSeconds' => '3600', 'Policy' => json_encode([ 'Statement' => [ 'Sid' => 'randomstatementid'. time(), 'Action' => ['s3:ListBucket'], 'Effect' => 'Allow', 'Resource' => 'arn:aws:s3:::'. time(), 'Action' => ['s3:ListBucket'], 'Effect' => 'Allow', 'Resource' => 'arn:aws:s3:::'. However, if you are requesting temporary credentials using IAM user credentials, you can explicitly set a diﬀerent duration value when requesting the temporary security credentials for federated users and applications. Request routing. For a list of all the Amazon S3 Regions and the signature versions they support, see Regions and For all AWS Regions, AWS SDKs use Signature Version 4 by default to authenticate requests. To obtain the request ID pair from successful requests, use your browser's developer tools to look at the HTTP response headers. Scenarios for S3 Directory Buckets using AWS SDKs. Create a presigned URL for Amazon S3 directory buckets to get an object using an AWS.",
+      "preserved_entities": [
+        "iam user",
+        "default aws sdk",
+        "credentials",
+        "temporary security credentials",
+        "amazon s3",
+        "aws sdks",
+        "all aws regions",
+        "aws sdk"
+      ],
+      "preserved_akus": [
+        {
+          "subject": "SDK",
+          "predicate": "PROVIDES",
+          "object": "LoggingTransferListener implementation"
+        },
+        {
+          "subject": "'s",
+          "predicate": "DOWNLOAD",
+          "object": "%v MiB object"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "ACCEPTS",
+          "object": "Range header"
+        },
+        {
+          "subject": "config",
+          "predicate": "DOWNLOAD",
+          "object": "Amazon S3 bucket"
+        },
+        {
+          "subject": "SDK",
+          "predicate": "USES",
+          "object": "CRC32 algorithm"
+        },
+        {
+          "subject": "Users",
+          "predicate": "LEVERAGE",
+          "object": "S3 Batch"
+        },
+        {
+          "subject": "S3 Directory Buckets",
+          "predicate": "USES",
+          "object": "AWS SDK"
+        },
+        {
+          "subject": "Directory buckets",
+          "predicate": "UTILIZE",
+          "object": "user credentials"
+        },
+        {
+          "subject": "'s",
+          "predicate": "CREATES",
+          "object": "actual Directory bucket"
+        },
+        {
+          "subject": "Directory buckets",
+          "predicate": "STORES",
+          "object": "different manner"
+        },
+        {
+          "subject": "Directory buckets",
+          "predicate": "BEHAVE",
+          "object": "different ways"
+        },
+        {
+          "subject": "Directory buckets",
+          "predicate": "UTILIZE",
+          "object": "user credentials"
+        },
+        {
+          "subject": "copy operations",
+          "predicate": "RESTRICTS",
+          "object": "Directory buckets"
+        },
+        {
+          "subject": "Directory buckets",
+          "predicate": "STORES",
+          "object": "different manner"
+        },
+        {
+          "subject": "resources",
+          "predicate": "DEFINES",
+          "object": "associated `cfn_template.yaml` AWS CloudFormation script"
+        },
+        {
+          "subject": "policy",
+          "predicate": "GRANTS",
+          "object": "all S3 directory bucket actions"
+        },
+        {
+          "subject": "Scenarios",
+          "predicate": "TARGET",
+          "object": "intermediate level"
+        }
+      ],
+      "token_count": 650,
+      "doc_id": "AWS-Document"
+    }
+  ],
+  "level_3_documents": [
+    {
+      "doc_id": "AWS-Document",
+      "summary": ". AmazonSecurityTokenServiceClient class. Start a session by calling the GetFederationToken method of the STS client. You need. to provide session information, including the user name and an IAM policy that you want to attach to the temporary credentials. Optionally, you can provide a session duration. This method returns your temporary security credentials. Package the temporary security credentials in an instance of the SessionAWSCredentials. object. You use this object to provide the temporary security credentials to your Amazon S3 client. credentials. You use this client to send requests to Amazon S3. If you send requests using expired credentials, Amazon S3 returns an error. In the example, you obtain temporary security credentials for a two-hour session for your federated user (User1), and use the credentials to send authenticated requests to Amazon S3. Using the credentials. of this IAM user, you request temporary credentials for others. Create an IAM user with the following policy attached: \"Statement\":[{ \"Action\":[\"s3:ListBucket\", \"sts:GetFederationToken*\" \"Resource\":\"*\" The policy allows the IAM user to request temporary security credentials and access permission only to list your AWS resources. Create an IAM user with the following policy attached: \"Statement\":[{ \"Action\":[\"s3:ListBucket\", \"sts:GetFederationToken*\" \"Resource\":\"*\" The policy allows the IAM user to request temporary security credentials and access permission only to list your AWS resources. Use the IAM user security credentials to test the following example. The example sends. authenticated request to Amazon S3 using temporary",
+      "top_entities": [
+        "amazon s3",
+        "iam user",
+        "all aws regions",
+        "default aws sdk",
+        "credentials",
+        "temporary security credentials",
+        "amazon s3 access points endpoints",
+        "appropriate amazon s3 facilities",
+        "aws cli",
+        "amazon s3 aws cli commands"
+      ],
+      "top_relationships": [
+        {
+          "source": "iam user",
+          "relation": "REQUEST",
+          "target": "temporary security credentials"
+        },
+        {
+          "source": "credentials",
+          "relation": "USES",
+          "target": "default aws sdk"
+        },
+        {
+          "source": "iam user",
+          "relation": "GRANTS",
+          "target": "only the minimum application-specific permissions"
+        },
+        {
+          "source": "code",
+          "relation": "SENDS",
+          "target": "amazon s3"
+        },
+        {
+          "source": "amazon s3 access points endpoints",
+          "relation": "FOLLOW",
+          "target": "standard structure"
+        }
+      ],
+      "token_count": 230
+    }
+  ]
+}

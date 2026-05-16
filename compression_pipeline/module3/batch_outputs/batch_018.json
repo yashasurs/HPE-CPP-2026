@@ -1,0 +1,75 @@
+{
+  "level_4_sections": [
+    {
+      "section_id": "sec_batch_018",
+      "summary": ". /// <param name=\"filePath\">The path, including file name, of the object to upload.</param> public async Task<bool> UploadFileAsync(string bucketName, string objectName, var request = new PutObjectRequest Key = objectName, ChecksumAlgorithm = ChecksumAlgorithm.SHA256 var response = await _amazonS3.PutObjectAsync(request); if (response.HttpStatusCode == System.Net.HttpStatusCode.OK) Console.WriteLine($\"\\tSuccessfully uploaded {objectName} to Console.WriteLine($\"\\tCould not upload {objectName} to /// List bucket objects and versions. public async Task<ListVersionsResponse> ListBucketObjectsAndVersions(string var request = new ListVersionsRequest() BucketName = bucketName var response = await _amazonS3.ListVersionsAsync(request); /// Delete an object from a specific bucket. /// <param name=\"hasRetention\">True if the object has retention settings.</ public async Task<bool> DeleteObjectFromBucket(string bucketName, string objectKey, bool hasRetention, string? versionId = null) var request = new DeleteObjectRequest() VersionId = versionId, if (hasRetention) // Set the BypassGovernanceRetention header // if the file has retention settings. request.BypassGovernanceRetention = true; await _amazonS3.DeleteObjectAsync(request); $\"Deleted {objectKey} in {bucketName}. \"); Console.WriteLine($\"\\tUnable to delete object {objectKey} in bucket {bucketName}: \" + ex.Message); /// Delete a specific bucket. public async Task<bool> DeleteBucketByName(string bucketName) var request = new DeleteBucketRequest() { BucketName = bucketName, }; var response = await _amazonS3.DeleteBucketAsync(request); Console.WriteLine($\"\\tDelete for {bucketName} complete. \"); return response.HttpStatusCode == HttpStatusCode.OK; Console.WriteLine($\"\\tUnable to delete bucket {bucketName}: \" + ex.Message); GetObjectLegalHold. type ObjectLockScenario struct { questioner demotools.IQuestioner resources Resources s3Actions *actions.S3Actions sdkConfig aws.Config // NewObjectLockScenario constructs a new ObjectLockScenario instance. func NewObjectLockScenario(sdkConfig aws.Config, questioner demotools.IQuestioner) ObjectLockScenario { scenario := ObjectLockScenario{ questioner: questioner, resources: Resources{}, s3Actions: &actions.S3Actions{S3Client: s3.NewFromConfig(sdkConfig)}, sdkConfig: sdkConfig, scenario.s3Actions.S3Manager = manager.NewUploader(scenario.s3Actions.S3Client) scenario.resources.init(scenario.s3Actions, questioner) return scenario type nameLocked struct { name string locked bool var createInfo = []nameLocked{ {\"standard-bucket\", false}, {\"lock-bucket\", true}, {\"retention-bucket\", false}, // CreateBuckets creates the S3 buckets required for the workflow. func (scenario *ObjectLockScenario) CreateBuckets(ctx context.Context) { log.Println(\"Let's create some S3 buckets to use for this workflow.\") // EnableLockOnBucket enables object locking on an existing bucket . func (scenario *ObjectLockScenario) EnableLockOnBucket(ctx context.Context) { log.Println(\"\\nA bucket can be configured to use object locking.\") bucket := scenario.resources.demoBuckets[\"retention-bucket\"] err = scenario.s3Actions.EnableObjectLockOnBucket(ctx, bucket.name) log.Printf(\"Couldn't enable object locking on bucket %s.\\n\", bucket.name) log.Printf(\"Object locking enabled on bucket %s. \", bucket.name, retentionPeriod) bucket.retentionEnabled = true // UploadTestObjects uploads test objects to the S3 buckets. func (scenario *ObjectLockScenario) UploadTestObjects(ctx context.Context) { log.Println(\"Uploading test objects to S3 buckets.\") type BucketKeyVersionId struct { bucket string key string versionId string // GetAllObjects gets the object versions in the example S3 buckets and returns them in a flattened list. func (scenario *ObjectLockScenario) GetAllObjects(ctx context.Context) []BucketKeyVersionId { var objectList []BucketKeyVersionId for _, info := range createInfo { bucket := scenario.resources.demoBuckets[info.name] versions, err := scenario.s3Actions.ListObjectVersions(ctx, bucket.name) log.Printf(\"Couldn't get object versions for %s.\\n\", bucket.name) for _, version := range versions { objectList = append(objectList, BucketKeyVersionId{bucket: bucket.name, key: *version.Key, versionId: return objectList // makeObjectChoiceList makes the object version list into a list of strings that are displayed // as choices. scenario.CreateBuckets(ctx) scenario.EnableLockOnBucket(ctx) scenario.SetDefaultRetentionPolicy(ctx) scenario.UploadTestObjects(ctx) scenario.SetObjectLockConfigurations(ctx) scenario.InteractWithObjects(ctx) scenario.resources.Cleanup(ctx) log.Println(\"Thanks for watching!\") func (actor S3Actions) ModifyDefaultBucketRetention( ctx context.Context, bucket string, lockMode types.ObjectLockEnabled, retentionPeriod int32, retentionMode types.ObjectLockRetentionMode) error { input := &s3.PutObjectLockConfigurationInput{ ObjectLockConfiguration: &types.ObjectLockConfiguration{ ObjectLockEnabled: lockMode, Rule: &types.ObjectLockRule{ DefaultRetention: &types.DefaultRetention{ Days: aws.Int32(retentionPeriod), Mode: retentionMode, _, err := actor.S3Client.PutObjectLockConfiguration(ctx, input) // EnableObjectLockOnBucket enables object locking on an existing bucket. func (actor S3Actions) EnableObjectLockOnBucket(ctx context.Context, bucket string) error { // Versioning must be enabled on the bucket before object locking is enabled. func (actor S3Actions) PutObjectRetention(ctx context.Context, bucket string, key string, retentionMode types.ObjectLockRetentionMode, retentionPeriodDays int32) error { input := &s3.PutObjectRetentionInput{ Retention: &types.ObjectLockRetention{ Mode: retentionMode, RetainUntilDate: aws.Time(time.Now().AddDate(0, 0, int(retentionPeriodDays))), BypassGovernanceRetention: aws.Bool(true), _, err := actor.S3Client.PutObjectRetention(ctx, input) // UploadObject uses the S3 upload manager to upload an object to a bucket. GetObjectLegalHold. import software.amazon.awssdk.services.s3.model.BucketVersioningStatus; import software.amazon.awssdk.services.s3.model.ChecksumAlgorithm; import software.amazon.awssdk.services.s3.model.CreateBucketRequest; import software.amazon.awssdk.services.s3.model.DefaultRetention; import software.amazon.awssdk.services.s3.model.DeleteBucketRequest; import software.amazon.awssdk.services.s3.model.DeleteObjectRequest; import software.amazon.awssdk.services.s3.model.GetObjectLegalHoldRequest; import software.amazon.awssdk.services.s3.model.GetObjectLegalHoldResponse; software.amazon.awssdk.services.s3.model.GetObjectLockConfigurationRequest; software.amazon.awssdk.services.s3.model.GetObjectLockConfigurationResponse; import software.amazon.awssdk.services.s3.model.GetObjectRetentionRequest; import software.amazon.awssdk.services.s3.model.GetObjectRetentionResponse; import software.amazon.awssdk.services.s3.model.HeadBucketRequest; import software.amazon.awssdk.services.s3.model.ListObjectVersionsRequest; import software.amazon.awssdk.services.s3.model.ListObjectVersionsResponse; import software.amazon.awssdk.services.s3.model.MFADelete; import software.amazon.awssdk.services.s3.model.ObjectLockConfiguration; import software.amazon.awssdk.services.s3.model.ObjectLockEnabled; import software.amazon.awssdk.services.s3.model.ObjectLockLegalHold; import software.amazon.awssdk.services.s3.model.ObjectLockLegalHoldStatus; import software.amazon.awssdk.services.s3.model.ObjectLockRetention; import software.amazon.awssdk.services.s3.model.ObjectLockRetentionMode; import software.amazon.awssdk.services.s3.model.ObjectLockRule; import software.amazon.awssdk.services.s3.model.PutBucketVersioningRequest; import software.amazon.awssdk.services.s3.model.PutObjectLegalHoldRequest; software.amazon.awssdk.services.s3.model.PutObjectLockConfigurationRequest; import software.amazon.awssdk.services.s3.model.PutObjectRetentionRequest; import software.amazon.awssdk.services.s3.model.VersioningConfiguration; import software.amazon.awssdk.services.s3.waiters.S3Waiter; import java.time.Instant; import java.time.ZoneId; import java.time.ZonedDateTime; import java.time.format.DateTimeFormatter; import java.time.temporal.ChronoUnit; import java.util.concurrent.atomic.AtomicInteger; // Contains application logic for the Amazon S3 operations used in this workflow.",
+      "preserved_entities": [
+        "new objectlockscenario instance",
+        "some s3 buckets",
+        "newobjectlockscenario",
+        "enablelockonbucket",
+        "object locking",
+        "setobjectlockconfigurations",
+        "s3 buckets",
+        "uploadtestobjects",
+        "object versions",
+        "getallobjects",
+        "putobjectlegalhold",
+        "getobjectlegalhold",
+        "s3 upload manager",
+        "enableobjectlockonbucket",
+        "putobjectretention",
+        "uploadobject"
+      ],
+      "preserved_akus": [],
+      "token_count": 650,
+      "doc_id": "AWS-Document"
+    }
+  ],
+  "level_3_documents": [
+    {
+      "doc_id": "AWS-Document",
+      "summary": ". /// <param name=\"filePath\">The path, including file name, of the object to upload.</param> public async Task<bool> UploadFileAsync(string bucketName, string objectName, var request = new PutObjectRequest Key = objectName, ChecksumAlgorithm = ChecksumAlgorithm.SHA256 var response = await _amazonS3.PutObjectAsync(request); if (response.HttpStatusCode == System.Net.HttpStatusCode.OK) Console.WriteLine($\"\\tSuccessfully uploaded {objectName} to Console.WriteLine($\"\\tCould not upload {objectName} to /// List bucket objects and versions. public async Task<ListVersionsResponse> ListBucketObjectsAndVersions(string var request = new ListVersionsRequest() BucketName = bucketName var response = await _amazonS3.ListVersionsAsync(request); /// Delete an object from a specific bucket. /// <param name=\"hasRetention\">True if the object has retention settings.</ public async Task<bool> DeleteObjectFromBucket(string bucketName, string objectKey, bool hasRetention, string? versionId = null) var request = new DeleteObjectRequest() VersionId = versionId, if (hasRetention) // Set the BypassGovernanceRetention header // if the file has retention settings. request.BypassGovernanceRetention = true; await _amazonS3.DeleteObjectAsync(request); $\"Deleted {objectKey} in {bucketName}. \"); Console.WriteLine($\"\\tUnable to delete object {objectKey} in bucket {bucketName}: \" + ex.Message); /// Delete a specific bucket. public async Task<bool> DeleteBucketByName(string bucketName) var request = new DeleteBucketRequest() { BucketName = bucketName, }; var response = await _amazonS3.DeleteBucketAsync(request); Console.WriteLine($\"\\tDelete for {bucketName} complete. \"); return response.HttpStatusCode == HttpStatusCode.OK; Console.WriteLine($\"\\tUnable to delete bucket {bucketName}: \" + ex.Message); GetObjectLegalHold. type ObjectLockScenario struct { questioner demotools.IQuestioner resources Resources s3Actions *actions.S3Actions sdkConfig aws.Config // NewObjectLockScenario constructs a new ObjectLockScenario instance. func NewObjectLockScenario(sdkConfig aws.Config, questioner demotools.IQuestioner) ObjectLockScenario { scenario := ObjectLockScenario{ questioner: questioner, resources: Resources{}, s3Actions: &actions.S3Actions{S3Client: s3.NewFromConfig(sdkConfig)}, sdkConfig: sdkConfig, scenario.s3Actions.S3Manager = manager.NewUploader(scenario.s3Actions.S3Client) scenario.resources.init(scenario.s3Actions,",
+      "top_entities": [
+        "object locking",
+        "object's etag",
+        "new objectlockscenario instance",
+        "some s3 buckets",
+        "newobjectlockscenario",
+        "enablelockonbucket",
+        "setobjectlockconfigurations",
+        "s3 buckets",
+        "uploadtestobjects",
+        "object versions"
+      ],
+      "top_relationships": [
+        {
+          "source": "newobjectlockscenario",
+          "relation": "CONSTRUCT",
+          "target": "new objectlockscenario instance"
+        },
+        {
+          "source": "enablelockonbucket",
+          "relation": "ENABLES",
+          "target": "object locking"
+        },
+        {
+          "source": "'s",
+          "relation": "CREATES",
+          "target": "some s3 buckets"
+        },
+        {
+          "source": "uploadtestobjects",
+          "relation": "UPLOAD",
+          "target": "s3 buckets"
+        },
+        {
+          "source": "setobjectlockconfigurations",
+          "relation": "SET",
+          "target": "test func"
+        }
+      ],
+      "token_count": 230
+    }
+  ]
+}

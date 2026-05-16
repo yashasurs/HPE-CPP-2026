@@ -1,0 +1,61 @@
+{
+  "level_4_sections": [
+    {
+      "section_id": "sec_batch_015",
+      "summary": ". // ListObjectVersions lists all versions of all objects in a bucket. func (actor S3Actions) ListObjectVersions(ctx context.Context, bucket string) ([]types.ObjectVersion, error) { var output *s3.ListObjectVersionsOutput var versions []types.ObjectVersion input := &s3.ListObjectVersionsInput{Bucket: aws.String(bucket)} versionPaginator := s3.NewListObjectVersionsPaginator(actor.S3Client, input) for versionPaginator.HasMorePages() { output, err = versionPaginator.NextPage(ctx) versions = append(versions, output.Versions.) return versions, err let resp = client.list_object_versions().bucket(bucket).send().await? ; for version in resp.versions() { println! (\"{}\", version.key().unwrap_or_default()); println! (\" version ID: {}\", version.version_id().unwrap_or_default()); println! (); oo_result = lo_s3->listobjectversions( \" oo_result is returned for testing purposes. \" iv_prefix = iv_prefix ). MESSAGE 'Retrieved object versions.' Delete all objects in a bucket. /// Shows how to list the objects in an Amazon S3 bucket. public class ListObjectsPaginator private const string BucketName = \"amzn-s3-demo-bucket\"; IAmazonS3 s3Client = new AmazonS3Client(); Console.WriteLine($\"Listing the objects contained in {BucketName}: \\n\"); await ListingObjectsAsync(s3Client, BucketName); /// This method uses a paginator to retrieve the list of objects in an /// an Amazon S3 bucket. import software.amazon.awssdk.services.s3.model.ListObjectsV2Request; import software.amazon.awssdk.services.s3.paginators.ListObjectsV2Iterable; public class ListObjectsPaginated { <bucketName>\\s bucketName - The Amazon S3 bucket from which objects are read.\\s listBucketObjects(s3, bucketName); Lists the objects in the specified S3 bucket. /// <param name=\"client\">An Amazon S3 client used to enable the /// acceleration on an Amazon S3 bucket.</param> /// <param name=\"bucketName\">The name of the Amazon S3 bucket for which /// method will be enabling acceleration.</param> private static async Task EnableAccelerationAsync(AmazonS3Client client, string bucketName) var putRequest = new PutBucketAccelerateConfigurationRequest AccelerateConfiguration = new AccelerateConfiguration Status = BucketAccelerateStatus.Enabled, await client.PutBucketAccelerateConfigurationAsync(putRequest); var getRequest = new GetBucketAccelerateConfigurationRequest client.GetBucketAccelerateConfigurationAsync(getRequest); Console.WriteLine($\"Acceleration state = '{response.Status}' \"); Console.WriteLine($\"Error occurred. /// Creates an Amazon S3 bucket with an ACL to control access to the /// bucket and the objects stored in it. /// <param name=\"client\">The initialized client object used to create /// an Amazon S3 bucket, with an ACL applied to the bucket. /// </param> /// <param name=\"region\">The AWS Region where the bucket will be created.</param> public static async Task<bool> CreateBucketUseCannedACLAsync(IAmazonS3 client, S3Region region, string newBucketName) // Create a new Amazon S3 bucket with Canned ACL. \\return Type: Type enumeration Aws::S3::Model::Type setGranteeType(const Aws::String &type) { if (type == \"Amazon customer by email\") return Aws::S3::Model::Type::AmazonCustomerByEmail; if (type == \"Canonical user\") return Aws::S3::Model::Type::CanonicalUser; if (type == \"Group\") return Aws::S3::Model::Type::Group; return Aws::S3::Model::Type::NOT_SET; This example grants full control to two AWS users (user1@example.com and user2@example.com) and read permission to everyone: aws s3api put-bucket-acl --bucket amzn-s3-demo-bucket --grant-full- control emailaddress=user1@example.com,emailaddress=user2@example.com --grant- read uri details on custom ACLs (the s3api ACL commands, such as put-bucket-acl, use the same shorthand argument notation). import software.amazon.awssdk.services.s3.model.AccessControlPolicy; import software.amazon.awssdk.services.s3.model.Grant; import software.amazon.awssdk.services.s3.model.Permission; import software.amazon.awssdk.services.s3.model.PutBucketAclRequest; import software.amazon.awssdk.services.s3.model.Type; public class SetAcl { bucketName - The Amazon S3 bucket to grant permissions on.\\s id - The ID of the owner of this bucket (you can get this value from the AWS Management Console). \"); Sets the Access Control List (ACL) for an Amazon S3 bucket. @param id the ID of the AWS user or account that will be granted full. instead. /// Add CORS configuration to the Amazon S3 bucket. /// <param name=\"client\">The initialized Amazon S3 client object used /// to apply the CORS configuration to an Amazon S3 bucket.</param> private static async Task PutCORSConfigurationAsync(AmazonS3Client client, CORSConfiguration configuration) PutCORSConfigurationRequest request = new PutCORSConfigurationRequest() BucketName = BucketName, Configuration = configuration, _ = await client.PutCORSConfigurationAsync(request) The following example enables PUT, POST, and DELETE requests from www.example.com, and enables GET requests from any domain: aws s3api put-bucket-cors --bucket amzn-s3-demo-bucket --cors- configuration file://cors.json cors.json: \"CORSRules\": [ \"AllowedOrigins\": [\" \"AllowedHeaders\": [\"*\"], \"AllowedMethods\": [\"PUT\", \"POST\", \"DELETE\"], \"ExposeHeaders\": [\"x-amz-server-side-encryption\"] \"AllowedOrigins\": [\"*\"], \"AllowedHeaders\": [\"Authorization\"], \"AllowedMethods\": [\"GET\"], \"MaxAgeSeconds\": 3000 For API details, see PutBucketCors in AWS CLI Command Reference. import software.amazon.awssdk.services.s3.model.GetBucketCorsRequest; import software.amazon.awssdk.services.s3.model.GetBucketCorsResponse; import software.amazon.awssdk.services.s3.model.DeleteBucketCorsRequest; import software.amazon.awssdk.services.s3.model.CORSRule; import software.amazon.awssdk.services.s3.model.CORSConfiguration; import software.amazon.awssdk.services.s3.model.PutBucketCorsRequest; public class S3Cors { bucketName - The Amazon S3 bucket to upload an object into. Amazon S3 bucket. the Amazon S3 service @param bucketName the name of the Amazon S3 bucket for which the CORS. CORSRule corsRule = CORSRule.builder().allowedMethods(allowMethods).allowedOrigins(allowOrigins) corsRules.add(corsRule); CORSConfiguration configuration = CORSConfiguration.builder().corsRules(corsRules) PutBucketCorsRequest putBucketCorsRequest = PutBucketCorsRequest.builder().corsConfiguration(configuration) s3.putBucketCors(putBucketCorsRequest); Add a CORS rule.",
+      "preserved_entities": [
+        "s3api acl commands",
+        "bucketcorsrequest",
+        "amazon s3 bucket",
+        "aws user"
+      ],
+      "preserved_akus": [],
+      "token_count": 650,
+      "doc_id": "AWS-Document"
+    }
+  ],
+  "level_3_documents": [
+    {
+      "doc_id": "AWS-Document",
+      "summary": ". // ListObjectVersions lists all versions of all objects in a bucket. func (actor S3Actions) ListObjectVersions(ctx context.Context, bucket string) ([]types.ObjectVersion, error) { var output *s3.ListObjectVersionsOutput var versions []types.ObjectVersion input := &s3.ListObjectVersionsInput{Bucket: aws.String(bucket)} versionPaginator := s3.NewListObjectVersionsPaginator(actor.S3Client, input) for versionPaginator.HasMorePages() { output, err = versionPaginator.NextPage(ctx) versions = append(versions, output.Versions.) return versions, err let resp = client.list_object_versions().bucket(bucket).send().await? ; for version in resp.versions() { println! (\"{}\", version.key().unwrap_or_default()); println! (\" version ID: {}\", version.version_id().unwrap_or_default()); println! (); oo_result = lo_s3->listobjectversions( \" oo_result is returned for testing purposes. \" iv_prefix = iv_prefix ). MESSAGE 'Retrieved object versions.' Delete all objects in a bucket. /// Shows how to list the objects in an Amazon S3 bucket. public class ListObjectsPaginator private const string BucketName = \"amzn-s3-demo-bucket\"; IAmazonS3 s3Client = new AmazonS3Client(); Console.WriteLine($\"Listing the objects contained in {BucketName}: \\n\"); await ListingObjectsAsync(s3Client, BucketName); /// This method uses a paginator to retrieve the list of objects in an /// an Amazon S3 bucket. import software.amazon.awssdk.services.s3.model.ListObjectsV2Request; import software.amazon.awssdk.services.s3.paginators.ListObjectsV2Iterable; public class ListObjectsPaginated { <bucketName>\\s bucketName - The Amazon S3 bucket from which objects are read.\\s listBucketObjects(s3, bucketName); Lists the objects in the specified S3 bucket. /// <param name=\"client\">An Amazon S3 client used to enable the /// acceleration on an Amazon S3 bucket.</param> /// <param name=\"bucketName\">The name of the Amazon S3 bucket for which /// method will be enabling acceleration.</param> private static async Task EnableAccelerationAsync(AmazonS3Client client, string bucketName) var putRequest = new PutBucketAccelerateConfigurationRequest AccelerateConfiguration =",
+      "top_entities": [
+        "iam policy",
+        "write-s3buckettagging cmdlet",
+        "listed count objects",
+        "s3api acl commands",
+        "bucketcorsrequest",
+        "amazon s3 bucket",
+        "putbucketcorscommand",
+        "aws user"
+      ],
+      "top_relationships": [
+        {
+          "source": "console",
+          "relation": "FOREACH",
+          "target": "var entry"
+        },
+        {
+          "source": "count",
+          "relation": "CREATES",
+          "target": "listed count objects"
+        },
+        {
+          "source": "s3api acl commands",
+          "relation": "USES",
+          "target": "same shorthand argument notation"
+        },
+        {
+          "source": "string accountid",
+          "relation": "DELETES",
+          "target": "amazon s3 bucket"
+        },
+        {
+          "source": "bucketcorsrequest",
+          "relation": "RETRIEVE",
+          "target": "cors cross origin resource sharing configuration for the specified"
+        }
+      ],
+      "token_count": 230
+    }
+  ]
+}

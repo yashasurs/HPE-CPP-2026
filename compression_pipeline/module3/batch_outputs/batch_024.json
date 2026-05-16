@@ -1,0 +1,75 @@
+{
+  "level_4_sections": [
+    {
+      "section_id": "sec_batch_024",
+      "summary": "The following table describes response headers that are common to most Amazon S3 responses. ntrol-All ow-Creden tials A Boolean that determines if the server allows CORS requests to contain credentials. If the Access-Control-Allow-Origin request header is set to '*' then the Access-Control-Allow-Credentials response header will be omitted, else it is set to true when CORS evaluatio n is successful. ntrol-All ow-Headers A list of HTTP headers allowed for your CORS requests. The Access-Co ntrol-Allow-Headers response header is returned for successful CORS evaluations and explicitly specifies all allowed Access-Control- Request-Headers. ntrol-All ow-Methods A list that specifies which HTTP methods are allowed. Amazon S3 will only allow CORS requests from allowed CORS methods when the CORS evaluation is successful. ntrol-All ow-Origin The location of the allowed origin. Amazon S3 will only send the Access- Control-Allow-Origin response header when the CORS evaluation is successful. If the request origin matches '*' in the CORS configuration's allowed origins then the '*' is returned in this response header instead of the original origin. ntrol-Exp ose-Headers A list that allows a server to identify a response header that exposes access for applications when the CORS evaluation is successful. The Access-Control-Max-Age response header is only returned when the CORS evaluation is successful. Vary A list that indicates which request headers the CORS evaluation result varies on. The Vary response header is only returned when the CORS evaluation is successful. Content-L ength The length in bytes of the body in the response. Content-Type The MIME type of the content. For example, Content-Type: text/ html; charset=utf-8. Type: Enum Valid Values: open | close Date The date and time that Amazon S3 responded; for example, Wed, 01 Mar 2006 12:00:00 GMT. Amazon S3 managed keys (SSE-S3) have ETags that are an MD5 digest of their data. Amazon S3 returns this error in all AWS Regions except in the US East (N. Virginia) Region (us-east-1). S3 Replication Time Control (S3 RTC) is not supported in this AWS Region. The SOAP API returns standard Amazon S3 error codes. For more information about Amazon S3 regions and endpoints, see Regions and Endpoints in the AWS 11, 2017 with SQL Amazon S3 now supports querying Amazon Glacier data archives with SQL. For more information, see Amazon S3 Inventory in the The following APIs are updated accordingly: GetBucketInventoryConfiguration PutBucketInventoryConfiguration for S3 buckets Amazon S3 default encryption provides a way to set the default encryption behavior for an S3 bucket. For more information, see Amazon S3 Default Encryption for S3 Buckets in the The following APIs are updated accordingly: DeleteBucketEncryption GetBucketEncryption PutBucketEncryption DeleteBucketEncryption GetBucketEncryption PutBucketEncryption Amazon S3 inventory Amazon S3 now supports including encryption status in Amazon S3 inventory so you can see how your objects are encrypted at rest for compliance auditing or other purposes. For more information, see Amazon S3 Inventory in the The following APIs are updated accordingly: GetBucketInventoryConfiguration PutBucketInventoryConfiguration 06, 2017 Cross-region replicati on (CRR) enhanceme nts Cross-region replication (CRR) now supports the In a cross-account scenario, you can add a CRR configuration to change replica ownership to the AWS account that owns the destination bucket. For more information about Amazon S3 regions and endpoints, see Regions and Endpoints in the AWS 8, 2016 support Amazon S3 now supports object tagging. 29, 2016 S3 lifecycle now supports object tag based filter Amazon S3 now supports tag-based filtering in lifecycle configuration. For more information, see Monitoring Metrics with Amazon CloudWatch in the Amazon Simple Storage 29, 2016 Amazon S3 Inventory Amazon S3 now supports storage inventory. Amazon S3 inventory provides a flat-file output of your objects and their corresponding metadata on a daily or weekly basis for an S3 bucket or a shared prefix (that is, objects that have names that begin with a common string). 14, 2011 Large Object Support Amazon S3 has increased the maximum size of an object you can store in an S3 bucket from 5 GB to 5 TB.",
+      "preserved_entities": [
+        "amazon s3",
+        "all aws regions",
+        "s3 replication time control",
+        "aws region",
+        "s3",
+        "standard amazon s3 error codes",
+        "soap api",
+        "s3 lifecycle",
+        "object tag based filter",
+        "amazon s3 inventory amazon s3",
+        "s3 bucket",
+        "amazon s3 inventory",
+        "object tagging",
+        "amazon glacier",
+        "large object support",
+        "aws"
+      ],
+      "preserved_akus": [],
+      "token_count": 650,
+      "doc_id": "AWS-Document"
+    }
+  ],
+  "level_3_documents": [
+    {
+      "doc_id": "AWS-Document",
+      "summary": "The following table describes response headers that are common to most Amazon S3 responses. ntrol-All ow-Creden tials A Boolean that determines if the server allows CORS requests to contain credentials. If the Access-Control-Allow-Origin request header is set to '*' then the Access-Control-Allow-Credentials response header will be omitted, else it is set to true when CORS evaluatio n is successful. ntrol-All ow-Headers A list of HTTP headers allowed for your CORS requests. The Access-Co ntrol-Allow-Headers response header is returned for successful CORS evaluations and explicitly specifies all allowed Access-Control- Request-Headers. ntrol-All ow-Methods A list that specifies which HTTP methods are allowed. Amazon S3 will only allow CORS requests from allowed CORS methods when the CORS evaluation is successful. ntrol-All ow-Origin The location of the allowed origin. Amazon S3 will only send the Access- Control-Allow-Origin response header when the CORS evaluation is successful. If the request origin matches '*' in the CORS configuration's allowed origins then the '*' is returned in this response header instead of the original origin. ntrol-Exp ose-Headers A list that allows a server to identify a response header that exposes access for applications when the CORS evaluation is successful. The Access-Control-Max-Age response header is only returned when the CORS evaluation is successful. Vary A list that indicates which request headers the CORS evaluation result varies on. The Vary response header is only returned when the CORS evaluation is",
+      "top_entities": [
+        "amazon s3",
+        "all aws regions",
+        "multi-region access point idempotency token",
+        "object lambda access point",
+        "amazon s3 service",
+        "objectserializatio",
+        "invalidbucketfilter organization-level configurations",
+        "s3 replication time control",
+        "bucket filters",
+        "aws region"
+      ],
+      "top_relationships": [
+        {
+          "source": "amazon s3",
+          "relation": "CREATES",
+          "target": "random number"
+        },
+        {
+          "source": "amazon s3",
+          "relation": "SENDS",
+          "target": "access- control allow origin response header"
+        },
+        {
+          "source": "amazon s3",
+          "relation": "ALLOWS",
+          "target": "cors requests"
+        },
+        {
+          "source": "access co ntrol allow headers response header",
+          "relation": "RETURNS",
+          "target": "successful cors evaluations"
+        },
+        {
+          "source": "support",
+          "relation": "USES",
+          "target": "request ids"
+        }
+      ],
+      "token_count": 230
+    }
+  ]
+}

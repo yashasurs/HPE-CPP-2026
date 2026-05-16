@@ -1,0 +1,271 @@
+{
+  "level_4_sections": [
+    {
+      "section_id": "sec_batch_012",
+      "summary": "# Deletes the objects in an Amazon S3 bucket and deletes the bucket. @param bucket [Aws::S3::Bucket] The bucket to empty and delete. def delete_bucket(bucket) puts(\"\\nDo you want to delete all of the objects as well as the bucket (y/n)? \") answer = gets.chomp.downcase if answer == 'y' bucket.objects.batch_delete! # Runs the Amazon S3 getting started scenario. def run_scenario(scenario) puts('-' * 88) puts('Welcome to the Amazon S3 getting started demo!') #! Purpose //! Shows how to use the AWS SDK for Rust to get started using //! Amazon Simple Storage Service (Amazon S3). This example follows the steps in \"Getting started with Amazon S3\" in the Amazon S3 //! user guide. ; s3_code_examples::clear_bucket(&client, &bucket_name).await? ENDLOOP. import Foundation import Smithy import ClientRuntime /// A class containing all the code that interacts with the AWS SDK for Swift. @main struct Main { static func main() async { let args = Array(CommandLine.arguments.dropFirst()) let command = try ExampleCommand.parse(args) try await command.runAsync() ExampleCommand.exit(withError: error) ## Actions for Amazon S3 using AWS SDKs The following code examples demonstrate how to perform individual Amazon S3 actions with AWS SDKs. These excerpts call the Amazon S3 API and are code excerpts from larger programs that must be run in context. You can see actions in context in Scenarios for Amazon S3 using AWS SDKs. For a complete list, see the Use PutObjectLockConfiguration with an AWS SDK or CLI. Use PutObjectRetention with an AWS SDK or CLI. Use RestoreObject with an AWS SDK or CLI. Use SelectObjectContent with an AWS SDK or CLI. Use UploadPart with an AWS SDK or CLI. Use UploadPartCopy with an AWS SDK or CLI. Use AbortMultipartUpload with an AWS SDK or CLI The following code examples show how to use AbortMultipartUpload. Use CompleteMultipartUpload with an AWS SDK or CLI The following code examples show how to use CompleteMultipartUpload. ; let mut upload_parts: Vec<aws_sdk_s3::types::CompletedPart> = Vec::new(); for chunk_index in 0.chunk_count { let this_chunk = if chunk_count - 1 == chunk_index { size_of_last_chunk CHUNK_SIZE let stream = ByteStream::read_from().path(path).offset(chunk_index * CHUNK_SIZE).length(Length::Exact(this_chunk)) // Chunk index needs to start at 0, but part numbers start at 1. let part_number = (chunk_index as i32) + 1; let upload_part_res = client.upload_part().body(stream) upload_parts.push( CompletedPart::builder().e_tag(upload_part_res.e_tag.unwrap_or_default()) Use CopyObject with an AWS SDK or CLI The following code examples show how to use CopyObject. /// Copies an object in an Amazon S3 bucket to a folder within the /// same bucket. /// Copies an object from one Amazon S3 bucket to another with a conditional /// <param name=\"conditionType\">The type of condition to apply, e.g . /// Copies an object from one Amazon S3 bucket to another with a conditional /// <param name=\"conditionType\">The type of condition to apply, e.g. 'CopySourceIfMatch', 'CopySourceIfNoneMatch', 'CopySourceIfModifiedSince', 'CopySourceIfUnmodifiedSince'.</param> /// <param name=\"conditionDateValue\">The value to use for the condition for dates.</param> /// <param name=\"etagConditionalValue\">The value to use for the condition for etags.</param> /// <returns>True if the conditional copy is successful, False otherwise.</ public async Task<bool> CopyObjectConditional(string sourceKey, string destKey, string sourceBucket, string destBucket, S3ConditionType conditionType, DateTime? def copy_object_conditional( source_key: str, dest_key: str, source_bucket: str, dest_bucket: str, condition_type: str, condition_value: str, Copies an object from one Amazon S3 bucket to another with a conditional :param source_key: The key of the source object to copy. class ObjectCopyWrapper attr_reader :source_object @param source_object [Aws::S3::Object] An existing Amazon S3 object. @param target_bucket [Aws::S3::Bucket] An existing Amazon S3 bucket where the object is copied. @param target_bucket [Aws::S3::Bucket] An existing Amazon S3 bucket where the object is copied. class ObjectCopyEncryptWrapper attr_reader :source_object @param source_object [Aws::S3::Object] An existing Amazon S3 object. Use CreateBucket with an AWS SDK or CLI The following code examples show how to use CreateBucket. /// Shows how to create a new Amazon S3 bucket. /// Create a new Amazon S3 bucket with object lock actions. // Create a new Amazon S3 bucket with object lock options. print(\"ERROR: \", dump(error, name: \"Creating a bucket\")) Use CreateMultiRegionAccessPoint with an AWS SDK The following code example shows how to use CreateMultiRegionAccessPoint.",
+      "preserved_entities": [
+        "amazon s3 api",
+        "upload_part_res",
+        "aws sdk"
+      ],
+      "preserved_akus": [
+        {
+          "subject": "Amazon S3",
+          "predicate": "RECEIVES",
+          "object": "authenticated request"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "SENDS",
+          "object": "Access- Control Allow Origin response header"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "ALLOWS",
+          "object": "CORS requests"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "CREATES",
+          "object": "random number"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "RETURNS",
+          "object": "all AWS Regions"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "RETURNS",
+          "object": "200 OK"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "CREATES",
+          "object": "random number"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "RETURNS",
+          "object": "InternalError response"
+        },
+        {
+          "subject": "S3",
+          "predicate": "HAS",
+          "object": "protection mechanisms"
+        },
+        {
+          "subject": "class",
+          "predicate": "OFFER",
+          "object": "Latest documentation update"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "SUPPORTS",
+          "object": "Apache optimized row columnar ORC format"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "SUPPORTS",
+          "object": "CloudWatch metrics"
+        },
+        {
+          "subject": "Amazon S3 inventory",
+          "predicate": "PROVIDES",
+          "object": "S3 bucket"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "SUPPORTS",
+          "object": "object tagging"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "SUPPORTS",
+          "object": "lifecycle configuration"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "SUPPORTS",
+          "object": "Expedited and Bulk data retrievals"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "DELETES",
+          "object": "any uploaded parts"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "SUPPORTS",
+          "object": "only the s3 Reduce dRedundancyLostObject event type"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "ENCRYPTS",
+          "object": "custom encryptio n keys"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "SUPPORTS",
+          "object": "server-side encryption"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "SUPPORTS",
+          "object": "Signature Version"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "SUPPORTS",
+          "object": "all regions"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "ARCHIVE",
+          "object": "Amazon Glacier"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "SUPPORTS",
+          "object": "South America São Paulo region"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "SUPPORTS",
+          "object": "Cross-Origin Resource Sharing"
+        },
+        {
+          "subject": "Many customers",
+          "predicate": "HOST",
+          "object": "Amazon S3"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "OFFER",
+          "object": "new API"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "SUPPORTS",
+          "object": "cost allocation tagging"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "SUPPORTS",
+          "object": "storage option"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "EXTEND",
+          "object": "multipart upload API"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "DETECT",
+          "object": "key event"
+        },
+        {
+          "subject": "Authenticated and anonymous SOAP requests",
+          "predicate": "SENDS",
+          "object": "Amazon S3"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "SUPPORTS",
+          "object": "Asia Pacific Singapore region"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "RETURNS",
+          "object": "custom error message"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "INCREASE",
+          "object": "maximum size"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "GIVE",
+          "object": "unique version ID"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "SUPPORTS",
+          "object": "US West Northern California region"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "SUPPORTS",
+          "object": "Asia Pacific Singapore region"
+        },
+        {
+          "subject": "AWS",
+          "predicate": "PROVIDES",
+          "object": "software developers"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "SENDS",
+          "object": "RequestLevelError message"
+        },
+        {
+          "subject": "client",
+          "predicate": "RECEIVES",
+          "object": "End message"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "RETURNS",
+          "object": "403 Forbidden response"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "SUPPORTS",
+          "object": "cross-origin resource sharing"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "PROVIDES",
+          "object": "object locking"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "STORES",
+          "object": "last write request"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "RECEIVES",
+          "object": "multiple write requests"
+        }
+      ],
+      "token_count": 650,
+      "doc_id": "AWS-Document"
+    }
+  ],
+  "level_3_documents": [
+    {
+      "doc_id": "AWS-Document",
+      "summary": "# Deletes the objects in an Amazon S3 bucket and deletes the bucket. @param bucket [Aws::S3::Bucket] The bucket to empty and delete. def delete_bucket(bucket) puts(\"\\nDo you want to delete all of the objects as well as the bucket (y/n)? \") answer = gets.chomp.downcase if answer == 'y' bucket.objects.batch_delete! # Runs the Amazon S3 getting started scenario. def run_scenario(scenario) puts('-' * 88) puts('Welcome to the Amazon S3 getting started demo!') #! Purpose //! Shows how to use the AWS SDK for Rust to get started using //! Amazon Simple Storage Service (Amazon S3). This example follows the steps in \"Getting started with Amazon S3\" in the Amazon S3 //! user guide. ; s3_code_examples::clear_bucket(&client, &bucket_name).await? ENDLOOP. import Foundation import Smithy import ClientRuntime /// A class containing all the code that interacts with the AWS SDK for Swift. @main struct Main { static func main() async { let args = Array(CommandLine.arguments.dropFirst()) let command = try ExampleCommand.parse(args) try await command.runAsync() ExampleCommand.exit(withError: error) ## Actions for Amazon S3 using AWS SDKs The following code examples demonstrate how to perform individual Amazon S3 actions with AWS SDKs. These excerpts call the Amazon S3 API and are code excerpts from larger programs that must be run in context. You can see actions in context in Scenarios for Amazon S3 using AWS SDKs. For a complete list, see the Use PutObjectLockConfiguration with an AWS SDK or CLI. Use",
+      "top_entities": [
+        "amazon s3 api",
+        "upload_part_res",
+        "aws sdk"
+      ],
+      "top_relationships": [
+        {
+          "source": "excerpts",
+          "relation": "INVOKES",
+          "target": "amazon s3 api"
+        },
+        {
+          "source": "upload_part_res",
+          "relation": "USES",
+          "target": "aws sdk"
+        }
+      ],
+      "token_count": 230
+    }
+  ]
+}

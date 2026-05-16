@@ -1,0 +1,442 @@
+{
+  "level_4_sections": [
+    {
+      "section_id": "sec_batch_006",
+      "summary": "ListAccessGrants Returns the list of access grants in your S3 Access Grants instance. You must have the s3:ListAccessGrants permission to use this operation. Type: Array of ObjectLambdaAccessPoint data types ListCallerAccessGrants Use this API to list the access grants that grant the caller access to Amazon S3 data through S3 Access Grants. For more information, see List the caller's access grants in the Amazon S3 User Guide. For more information about directory buckets policies and permissions, see Identity and Access Management (IAM) for S3 Express One Zone in the Amazon S3 User Guide. For more information about directory buckets policies and permissions, see Identity and Access Management (IAM) for S3 Express One Zone in the Amazon S3 User Guide. For more information about directory buckets policies and permissions, see Identity and Access Management (IAM) for S3 Express One Zone in the Amazon S3 User Guide. For information about S3 Tagging errors, see List of Amazon S3 Tagging error codes. For information about S3 Tagging errors, see List of Amazon S3 Tagging error codes. For information about S3 Tagging errors, see List of Amazon S3 Tagging error codes. For more information about access point policies, see Managing data access with Amazon S3 access points or Managing access to shared datasets in directory buckets with access points in the Amazon S3 User Guide. Sample request syntax for the PutAccessPointPolicy action for Amazon S3 on Outposts access point This example illustrates one usage of PutAccessPointPolicy. For an example policy, see Creating Object Lambda Access Points in the Amazon S3 User Guide. Sample PutBucketLifecycleConfiguration request on an Amazon S3 on Outposts bucket This request puts a lifecycle configuration on an Outposts bucket named example-outpost- PUT /v20180820/bucket/example-outpost-bucket/lifecycleconfiguration Host:s3-outposts.<Region>.amazonaws.com Content-Length: 214 PutBucketPolicy PUT /v20180820/bucket/example-outpost-bucket/lifecycleconfiguration Host:s3-outposts.<Region>.amazonaws.com Content-Length: 214 PutBucketPolicy This action puts a bucket policy to an Amazon S3 on Outposts bucket. To put a policy on an Applies an Amazon S3 bucket policy to an Outposts bucket. If you don't have PutBucketPolicy permissions, Amazon S3 returns a 403 Access Denied error. If you have the correct permissions, but you're not using an identity that belongs to the bucket owner's account, Amazon S3 returns a 405 Method Not Allowed error. Sample request for putting a bucket policy in an Amazon S3 on Outposts bucket The following request shows the PUT an individual policy request for the Outposts bucket example-outpost-bucket. PUT v20180820/bucket/example-outpost-bucket/policy HTTP/1.1 \"Id\":\"exampleS3OnOutpostBucketPolicy\", \"Statement\":[ \"Sid\":\"st1\", \"Principal\":{ \"AWS\":\"example-account-id\" \"Action\":\"s3-outposts:*\", \"Resource\":\"arn:aws:s3-outposts:<your-region>:example-account-id:outpost/ op-01ac5d28a6a232904/bucket/example-outpost-bucket PutBucketReplication This action creates an Amazon S3 on Outposts bucket's replication configuration. To create an S3 bucket's replication configuration, see PutBucketReplication in the Amazon S3 API Creates a replication configuration or replaces an existing one. For information about S3 replication on Outposts configuration, see Replicating objects for S3 on Outposts in the Amazon S3 User It can take a while to propagate PUT or DELETE requests for a replication configuration to all S3 on Outposts systems. For information about S3 replication on Outposts configuration, see Setting up replication in the Amazon S3 User Guide. Type: Array of ReplicationRule data types Sample Request: Add a replication configuration to an Amazon S3 on Outposts bucket The following sample PUT request creates a replication subresource on the specified Outposts bucket named example-outpost-bucket and saves the replication configuration in it. For more examples of S3 replication on Outposts configuration, see Creating replication rules on Outposts in the Amazon S3 User Guide. PUT /v20180820/bucket/example-outpost-bucket/replication HTTP/1.1 Host:s3-outposts.<Region>.amazonaws.com <Rules <Bucket>arn:aws:s3-outposts:us-east-1:example-account-id:outpost/SOURCE-OUTPOST- ID/accesspoint/SOURCE-OUTPOSTS-BUCKET-ACCESS-POINT</Bucket> <Bucket>arn:aws:s3-outposts:us-east-1:example-account-id:outpost/DESTINATION- OUTPOST-ID/accesspoint/DESTINATION-OUTPOSTS-BUCKET-ACCESS-POINT</Bucket> PutBucketTagging This action puts tags on an Amazon S3 on Outposts bucket. For more information about permissions, see Permissions Related to Bucket Subresource Operations and Managing access permissions to your Amazon S3 resources. Each Multi-Region Access Point can have only one policy, so a request made to this action replaces any existing policy that is associated with the specified Multi-Region Access Point. ListOutpostsWithS3. For more information, see Creating an Amazon S3 table in the Amazon Simple Storage Service User Guide. s3tables:PutTableData permission.",
+      "preserved_entities": [
+        "s3 access grants instance",
+        "amazon s3",
+        "only one policy",
+        "putbucketpolicy permissions",
+        "s3",
+        "putbuckettagging",
+        "s3 access grants"
+      ],
+      "preserved_akus": [
+        {
+          "subject": "Amazon S3",
+          "predicate": "CREATES",
+          "object": "default checksum"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "CREATES",
+          "object": "uploaded object"
+        },
+        {
+          "subject": "S3",
+          "predicate": "RETRIEVE",
+          "object": "S3 location"
+        },
+        {
+          "subject": "Directory buckets",
+          "predicate": "USES",
+          "object": "bucket owner enforced setting"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "CREATES",
+          "object": "default checksum"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "CREATES",
+          "object": "uploaded object"
+        },
+        {
+          "subject": "objects",
+          "predicate": "UPLOAD",
+          "object": "bucket owner full control canned ACL"
+        },
+        {
+          "subject": "Objects",
+          "predicate": "UPDATES",
+          "object": "bucket owner"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "IGNORE",
+          "object": "all public ACLs"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "IGNORE",
+          "object": "public ACLs"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "BLOCKS",
+          "object": "public bucket policies"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "RESTRICTS",
+          "object": "public bucket policies"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "BLOCKS",
+          "object": "public access control lists"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "DETECT",
+          "object": "specified events"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "REPLICATE",
+          "object": "replica modifications"
+        },
+        {
+          "subject": "Directory buckets",
+          "predicate": "SUPPORTS",
+          "object": "Availability Zones"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "SUPPORTS",
+          "object": "only the filter"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "DELETES",
+          "object": "noncurrent object versions"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "TRANSITION",
+          "object": "noncurrent object versions"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "TRANSITION",
+          "object": "specific period"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "CREATES",
+          "object": "AWS KMS key"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "USES",
+          "object": "KMS key"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "CREATES",
+          "object": "AWS account"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "USES",
+          "object": "S3 Bucket Key"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "SUPPORTS",
+          "object": "symmetric encryption KMS keys"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "USES",
+          "object": "new objects"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "USES",
+          "object": "S3 Bucket Key"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "USES",
+          "object": "object encryption"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "REPLICATE",
+          "object": "replica modifications"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "SUPPORTS",
+          "object": "only the filter"
+        },
+        {
+          "subject": "Buckets",
+          "predicate": "SUPPORTS",
+          "object": "target grants"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "DETECT",
+          "object": "specified events"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "ABORT",
+          "object": "incomplete multipart upload"
+        },
+        {
+          "subject": "VpcConfiguration",
+          "predicate": "SPECIFIES",
+          "object": "access point"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "DETECT",
+          "object": "specified events"
+        },
+        {
+          "subject": "VpcConfiguration",
+          "predicate": "SPECIFIES",
+          "object": "access point"
+        },
+        {
+          "subject": "S3",
+          "predicate": "USES",
+          "object": "OUTPOSTS storage class"
+        },
+        {
+          "subject": "S3 Access",
+          "predicate": "GRANTS",
+          "object": "vends to grantees"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "USES",
+          "object": "KMS key"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "REPLICATE",
+          "object": "existing source bucket objects"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "SUPPORTS",
+          "object": "only symmetric encryption KMS keys"
+        },
+        {
+          "subject": "ID",
+          "predicate": "IS",
+          "object": "either the Amazon Resource Name"
+        },
+        {
+          "subject": "Manifests",
+          "predicate": "IMPORT",
+          "object": "directory buckets"
+        },
+        {
+          "subject": "Manifests",
+          "predicate": "IMPORT",
+          "object": "directory buckets"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "TRANSITION",
+          "object": "noncurrent object versions"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "TRANSITION",
+          "object": "specific storage class"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "TRANSITION",
+          "object": "set period"
+        },
+        {
+          "subject": "grant",
+          "predicate": "INCLUDES",
+          "object": "application ARN"
+        },
+        {
+          "subject": "Active routes",
+          "predicate": "PROCESSES",
+          "object": "Multi-Region Access Point"
+        },
+        {
+          "subject": "S3",
+          "predicate": "RETAIN",
+          "object": "how many noncurrent versions"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "PERFORM",
+          "object": "associated action"
+        },
+        {
+          "subject": "S3",
+          "predicate": "TAKE",
+          "object": "associated action"
+        },
+        {
+          "subject": "S3",
+          "predicate": "REPLICATE",
+          "object": "source objects"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "IGNORE",
+          "object": "all public ACLs"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "IGNORE",
+          "object": "public ACLs"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "BLOCKS",
+          "object": "public bucket policies"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "RESTRICTS",
+          "object": "public bucket policies"
+        },
+        {
+          "subject": "S3",
+          "predicate": "REPLICATE",
+          "object": "metadata changes"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "BLOCKS",
+          "object": "public access control lists"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "USES",
+          "object": "S3 Bucket Key"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "COPY",
+          "object": "original objects"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "USES",
+          "object": "object encryption"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "ASSIGN",
+          "object": "new objects"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "MAKE",
+          "object": "Valid Values"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "COPY",
+          "object": "all the metadata"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "ASSIGN",
+          "object": "supplied tags"
+        },
+        {
+          "subject": "Manifests",
+          "predicate": "IMPORT",
+          "object": "directory buckets"
+        },
+        {
+          "subject": "Manifests",
+          "predicate": "WRITES",
+          "object": "directory buckets"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "USES",
+          "object": "S3 Bucket Key"
+        },
+        {
+          "subject": "S3",
+          "predicate": "REPLICATE",
+          "object": "source objects"
+        },
+        {
+          "subject": "S3",
+          "predicate": "REPLICATE",
+          "object": "metadata changes"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "USES",
+          "object": "the. delimiter"
+        },
+        {
+          "subject": "S3",
+          "predicate": "USES",
+          "object": "the. default delimiter"
+        },
+        {
+          "subject": "Objects",
+          "predicate": "MATCH",
+          "object": "all of the listed filter conditions"
+        },
+        {
+          "subject": "Objects",
+          "predicate": "MATCH",
+          "object": "any of the listed filter conditions"
+        }
+      ],
+      "token_count": 650,
+      "doc_id": "AWS-Document"
+    }
+  ],
+  "level_3_documents": [
+    {
+      "doc_id": "AWS-Document",
+      "summary": "ListAccessGrants Returns the list of access grants in your S3 Access Grants instance. You must have the s3:ListAccessGrants permission to use this operation. Type: Array of ObjectLambdaAccessPoint data types ListCallerAccessGrants Use this API to list the access grants that grant the caller access to Amazon S3 data through S3 Access Grants. For more information, see List the caller's access grants in the Amazon S3 User Guide. For more information about directory buckets policies and permissions, see Identity and Access Management (IAM) for S3 Express One Zone in the Amazon S3 User Guide. For more information about directory buckets policies and permissions, see Identity and Access Management (IAM) for S3 Express One Zone in the Amazon S3 User Guide. For more information about directory buckets policies and permissions, see Identity and Access Management (IAM) for S3 Express One Zone in the Amazon S3 User Guide. For information about S3 Tagging errors, see List of Amazon S3 Tagging error codes. For information about S3 Tagging errors, see List of Amazon S3 Tagging error codes. For information about S3 Tagging errors, see List of Amazon S3 Tagging error codes. For more information about access point policies, see Managing data access with Amazon S3 access points or Managing access to shared datasets in directory buckets with access points in the Amazon S3 User Guide. Sample request syntax for the PutAccessPointPolicy action for Amazon S3",
+      "top_entities": [
+        "amazon s3",
+        "outposts buckets",
+        "amazon resource name",
+        "each pagination token",
+        "only one policy",
+        "s3 access grants instance",
+        "iam amazon resource name",
+        "nexttoken field",
+        "listaccesspointsfordirectorybuckets response",
+        "nexttoken element"
+      ],
+      "top_relationships": [
+        {
+          "source": "grant",
+          "relation": "INCLUDES",
+          "target": "application arn"
+        },
+        {
+          "source": "identifier",
+          "relation": "IS",
+          "target": "iam amazon resource name"
+        },
+        {
+          "source": "maximum number",
+          "relation": "RETURNS",
+          "target": "list access grants response"
+        },
+        {
+          "source": "s3 access grants instance",
+          "relation": "SERVE",
+          "target": "logical grouping"
+        },
+        {
+          "source": "maximum number",
+          "relation": "RETURNS",
+          "target": "list access grants response"
+        }
+      ],
+      "token_count": 230
+    }
+  ]
+}

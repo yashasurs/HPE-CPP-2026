@@ -1,0 +1,68 @@
+{
+  "level_4_sections": [
+    {
+      "section_id": "sec_batch_014",
+      "summary": ". Example 1: This command returns the location constraint for the bucket 'amzn-s3-demo- bucket', if a constraint exists. Get-S3BucketLocation -BucketName 'amzn-s3-demo-bucket' ap-south-1 For API details, see GetBucketLocation in AWS Tools for PowerShell Cmdlet Reference (V5). async fn show_buckets( strict: bool, client: &Client, region: BucketLocationConstraint, let mut buckets = client.list_buckets().into_paginator().send(); let mut num_buckets = 0; let mut in_region = 0; while let Some(Ok(output)) = buckets.next().await { for bucket in output.buckets() { num_buckets += 1; if strict { let r = client.get_bucket_location().bucket(bucket.name().unwrap_or_default()) if r.location_constraint() == Some(&region) { println! To retrieve the logging status for a bucket The following get-bucket-logging example retrieves the logging status for the specified aws s3api get-bucket-logging \\ \"LoggingEnabled\": { \"TargetPrefix\": \"\", \"TargetBucket\": \"amzn-s3-demo-bucket-logs\" For API details, see GetBucketLogging in AWS CLI Command Reference. Example 1: This command returns the details about the metrics filter named 'testfilter' for the given S3 bucket. Example 1: This command returns the details about the metrics filter named 'testfilter' for the given S3 bucket. Use GetBucketPolicy with an AWS SDK or CLI The following code examples show how to use GetBucketPolicy. Example 1: This command outputs the bucket policy associated with the given S3 bucket. (:read) ? Use GetObjectLegalHold with an AWS SDK or CLI The following code examples show how to use GetObjectLegalHold. func (actor S3Actions) GetObjectLegalHold(ctx context.Context, bucket string, key string, versionId string) (*types.ObjectLockLegalHoldStatus, error) { var status *types.ObjectLockLegalHoldStatus input := &s3.GetObjectLegalHoldInput{ Bucket: aws.String(bucket), Key: aws.String(key), VersionId: aws.String(versionId), output, err := actor.S3Client.GetObjectLegalHold(ctx, input) var noSuchKeyErr *types.NoSuchKey if errors.As(err, &noSuchKeyErr) { err = noSuchKeyErr case \"NoSuchObjectLockConfiguration\": log.Printf(\"Object %s does not have an object lock configuration.\\n\", key) case \"InvalidRequest\": log.Printf(\"Bucket %s does not have an object lock configuration.\\n\", bucket) status = &output.LegalHold.Status return status, err // Get the legal hold details for an S3 object. Example 1: This command returns the value 'Enabled' if Object lock configuration is enabled for the given S3 bucket. Example 1: This command returns the value 'Enabled' if Object lock configuration is enabled for the given S3 bucket. Use GetObjectRetention with an AWS SDK or CLI The following code examples show how to use GetObjectRetention. // GetObjectRetention retrieves the object retention configuration for an S3 func (actor S3Actions) GetObjectRetention(ctx context.Context, bucket string, key string) (*types.ObjectLockRetention, error) { var retention *types.ObjectLockRetention input := &s3.GetObjectRetentionInput{ output, err := actor.S3Client.GetObjectRetention(ctx, input) case \"NoSuchObjectLockConfiguration\": case \"InvalidRequest\": log.Printf(\"Bucket %s does not have locking enabled. Use ListBuckets with an AWS SDK or CLI The following code examples show how to use ListBuckets. namespace ListBucketsExample /// This example uses the AWS SDK for.NET to list the Amazon Simple Storage /// Service (Amazon S3) buckets belonging to the default account. For example: // _s3Client = new AmazonS3Client(RegionEndpoint.USEast1); _s3Client = new AmazonS3Client(); var response = await GetBuckets(_s3Client); DisplayBucketList(response.Buckets); bool AwsDoc::S3::listBuckets(const Aws::S3::S3ClientConfiguration &clientConfig) auto outcome = client.ListBuckets(); bool result = true; std::cerr << \"Failed with error: \" << outcome.GetError() << std::endl; result = false; std::cout << \"Found \" << outcome.GetResult().GetBuckets().size() << \" buckets\\n\"; for (auto &&b: outcome.GetResult().GetBuckets()) { std::cout << b.GetName() << std::endl; return result; The following command uses the list-buckets command to display the names of all your Amazon S3 buckets (across all regions): aws s3api list-buckets --query \"Buckets[].Name\" The query option filters the output of list-buckets down to only the bucket names. For more information about buckets, see Working with Amazon S3 Buckets in the Amazon S3 For API details, see ListBuckets in AWS CLI Command Reference. paginateListBuckets, List the Amazon S3 buckets in your account. public func getAllBuckets() async throws -> [S3ClientTypes.Bucket] { return try await client.listBuckets(input: ListBucketsInput()) Use ListMultipartUploads with an AWS SDK or CLI The following code examples show how to use ListMultipartUploads. The following command lists all of the active multipart uploads for a bucket named amzn- s3-demo-bucket: aws s3api list-multipart-uploads --bucket amzn-s3-demo-bucket \"Uploads\": [ \"Initiator\": { \"DisplayName\": \"username\", \"ID\": \"arn:aws:iam::0123456789012:user/username\" \"Initiated\": \"2015-06-02T18:01:30.000Z\", \"UploadId\": \"dfRtDYU0WWCCcH43C3WFbkRONycyCpTJJvxu2i5GYkZljF.Yxwh6XG7WfS2vC4to6HiV6Yjlx.cph0gtNBtJ8P3URCSbB7rjxI5iEwVDmgaXZOGgkk5nVTW16HOQ5l0R\", \"Key\": \"multipart/01\", \"DisplayName\": \"aws-account-name\", \"100719349fc3b6dcd7c820a124bf7aecd408092c3d7b51b38494939801fc248b\" \"CommonPrefixes\": [] In progress multipart uploads incur storage costs in Amazon S3.",
+      "preserved_entities": [
+        "getobjectlegalhold",
+        "object lock configuration",
+        "given s3 bucket",
+        "getobjectretention",
+        "object retention configuration",
+        "listbuckets",
+        "amazon s3",
+        "multipart uploads",
+        "aws sdk"
+      ],
+      "preserved_akus": [],
+      "token_count": 650,
+      "doc_id": "AWS-Document"
+    }
+  ],
+  "level_3_documents": [
+    {
+      "doc_id": "AWS-Document",
+      "summary": ". Example 1: This command returns the location constraint for the bucket 'amzn-s3-demo- bucket', if a constraint exists. Get-S3BucketLocation -BucketName 'amzn-s3-demo-bucket' ap-south-1 For API details, see GetBucketLocation in AWS Tools for PowerShell Cmdlet Reference (V5). async fn show_buckets( strict: bool, client: &Client, region: BucketLocationConstraint, let mut buckets = client.list_buckets().into_paginator().send(); let mut num_buckets = 0; let mut in_region = 0; while let Some(Ok(output)) = buckets.next().await { for bucket in output.buckets() { num_buckets += 1; if strict { let r = client.get_bucket_location().bucket(bucket.name().unwrap_or_default()) if r.location_constraint() == Some(&region) { println! To retrieve the logging status for a bucket The following get-bucket-logging example retrieves the logging status for the specified aws s3api get-bucket-logging \\ \"LoggingEnabled\": { \"TargetPrefix\": \"\", \"TargetBucket\": \"amzn-s3-demo-bucket-logs\" For API details, see GetBucketLogging in AWS CLI Command Reference. Example 1: This command returns the details about the metrics filter named 'testfilter' for the given S3 bucket. Example 1: This command returns the details about the metrics filter named 'testfilter' for the given S3 bucket. Use GetBucketPolicy with an AWS SDK or CLI The following code examples show how to use GetBucketPolicy. Example 1: This command outputs the bucket policy associated with the given S3 bucket. (:read) ? Use GetObjectLegalHold with an AWS SDK or CLI The following code examples show how to use GetObjectLegalHold. func (actor S3Actions) GetObjectLegalHold(ctx context.Context, bucket string, key string, versionId string) (*types.ObjectLockLegalHoldStatus, error) { var status *types.ObjectLockLegalHoldStatus input :=",
+      "top_entities": [
+        "getobjectlegalhold",
+        "object lock configuration",
+        "given s3 bucket",
+        "getobjectretention",
+        "object retention configuration",
+        "listbuckets",
+        "all s3 buckets",
+        "amazon s3",
+        "could n't list buckets",
+        "multipart uploads"
+      ],
+      "top_relationships": [
+        {
+          "source": "string path",
+          "relation": "RETRIEVE",
+          "target": "local file"
+        },
+        {
+          "source": "def",
+          "relation": "INSTANTIATE",
+          "target": "boto3 client"
+        },
+        {
+          "source": "getobjectlegalhold",
+          "relation": "RETRIEVE",
+          "target": "legal hold status"
+        },
+        {
+          "source": "object lock configuration",
+          "relation": "ENABLES",
+          "target": "given s3 bucket"
+        },
+        {
+          "source": "getobjectretention",
+          "relation": "RETRIEVE",
+          "target": "object retention configuration"
+        }
+      ],
+      "token_count": 230
+    }
+  ]
+}

@@ -1,0 +1,274 @@
+{
+  "level_4_sections": [
+    {
+      "section_id": "sec_batch_004",
+      "summary": "want to enable MFA Delete in the bucket versioning configuration, you must include the x-amz- mfa request header and the Status and the MfaDelete request elements in a request to set the versioning state of the bucket. RedirectAllRequestsTo. HostName. For more information, see Controlling ownership of objects and disabling ACLs in the Amazon S3 User Guide. For more information, see Checking object integrity in the Amazon S3 checksum of the object. For more information, see Checking object integrity in the Amazon S3 User Guide. For more information, see Checking object integrity in the Amazon S3 User Guide. For more information, see Checking object integrity in the Amazon S3 User Guide. For more information, see Checking object integrity in the Amazon S3 User Guide. For more information, see Checking object integrity in the Amazon S3 User Guide. For more information about S3 Object Lock, see Object Lock in the Amazon S3 User Guide. Otherwise, Amazon S3 fails the request with the HTTP status code 400 Bad Request. Otherwise, Amazon S3 fails the request with the HTTP status code 400 Bad Request. If the individual checksum value you provide through x-amz-checksum-algorithm doesn't match the checksum algorithm you set through x-amz-sdk-checksum-algorithm, Amazon S3 fails the request with a BadDigest error. The server-side encryption algorithm that was used when you store this object in Amazon S3 or Amazon FSx. using server-side encryption in Amazon S3, depending on how you choose to manage the encryption keys. Specifically, the encryption key options are Amazon S3 managed keys (SSE- S3), AWS KMS keys (SSE-KMS or DSSE-KMS), and customer-provided keys (SSE-C). Amazon S3 encrypts data with server-side encryption by using Amazon S3 managed keys (SSE-S3) by default. You can optionally tell Amazon S3 to encrypt data at rest by using server-side encryption with other key options. For more information, see Protecting data with server-side encryption in the Amazon S3 User Guide. For more information, see Protecting data with server-side encryption in the Amazon S3 User Guide. You don't need to explicitly specify these encryption settings values in Zonal endpoint API calls, and Amazon S3 will use the encryption settings values from the CreateSession request to protect new objects in the directory bucket. If you specify x-amz-server-side-encryption:aws:kms or x-amz-server- side-encryption:aws:kms:dsse, but do not provide x-amz-server-side-encryption- aws-kms-key-id, Amazon S3 uses the AWS managed key (aws/s3) to protect the data. General purpose buckets - Setting this header to true causes Amazon S3 to use an S3 Bucket Key for object encryption with SSE-KMS. Root level tag for the AccessControlPolicy parameters. Amazon S3 then returns a 412 Precondition Failed error if the object with the specified name already exists. To learn more about Zonal endpoint API operations, see Authorizing Zonal endpoint API operations with CreateSession in the Amazon S3 User Guide. For information about bucket naming restrictions, see Directory bucket naming rules in the Amazon S3 User Guide. For more information, see Protecting data using SSE-C keys in the Amazon S3 User Guide. For more information, see Protecting data using SSE-C keys in the Amazon S3 User Guide. For more information, see Protecting data using SSE-C keys in the Amazon S3 User Guide. Amazon S3. Specifically, the encryption key options are Amazon S3 managed keys (SSE-S3), AWS KMS keys (SSE-KMS), and Customer- Provided Keys (SSE-C). Amazon S3 encrypts data with server-side encryption using Amazon S3 managed keys (SSE-S3) by default. You can optionally tell Amazon S3 to encrypt data at rest using server-side encryption with other key options. For more information, see Using Server-Side Encryption in the Amazon S3 User Guide. Error Code: NoSuchUpload. For more information, see Checking object integrity in the Amazon S3 data that was originally sent. For conceptual information about multipart uploads, see Uploading Objects Using Multipart Upload in the Amazon S3 User Guide. For information about copying objects using a single atomic action vs. a multipart upload, see Operations on Objects in the Amazon S3 User Guide.",
+      "preserved_entities": [
+        "amazon s3",
+        "s3",
+        "s3 object lock",
+        "zonal endpoint api calls",
+        "aws managed key",
+        "s3 bucket",
+        "amazon s3 user guide",
+        "object lock",
+        "aws kms key"
+      ],
+      "preserved_akus": [
+        {
+          "subject": "S3 Object Lock",
+          "predicate": "ENABLES",
+          "object": "new bucket"
+        },
+        {
+          "subject": "ID",
+          "predicate": "REQUIRES",
+          "object": "Outposts buckets"
+        },
+        {
+          "subject": "ID",
+          "predicate": "REQUIRES",
+          "object": "Outposts buckets"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "DELETES",
+          "object": "all the lifecycle configuration rules"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "DELETES",
+          "object": "any objects"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "RETURNS",
+          "object": "403 Access Denied error"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "RETURNS",
+          "object": "405 Method Not"
+        },
+        {
+          "subject": "Root level tag",
+          "predicate": "INDICATE",
+          "object": "current policy status"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "RETURNS",
+          "object": "403 Access Denied error"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "RETURNS",
+          "object": "403 Access Denied error"
+        },
+        {
+          "subject": "tag",
+          "predicate": "SET",
+          "object": "Outposts bucket"
+        },
+        {
+          "subject": "API",
+          "predicate": "RETURNS",
+          "object": "directory identities"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "BLOCKS",
+          "object": "public bucket policies"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "BLOCKS",
+          "object": "public access control lists"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "IGNORE",
+          "object": "all public ACLs"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "IGNORE",
+          "object": "public ACLs"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "RESTRICTS",
+          "object": "public bucket policies"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "USES",
+          "object": "the. delimiter"
+        },
+        {
+          "subject": "S3",
+          "predicate": "USES",
+          "object": "the. default delimiter"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "RETRIEVE",
+          "object": "next page"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "RETURNS",
+          "object": "NextToken element"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "INCLUDES",
+          "object": "List Jobs response"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "RETURNS",
+          "object": "previous List Jobs request"
+        },
+        {
+          "subject": "ID",
+          "predicate": "REQUIRES",
+          "object": "Outposts buckets"
+        },
+        {
+          "subject": "AWS account ID",
+          "predicate": "CREATES",
+          "object": "Amazon S3"
+        },
+        {
+          "subject": "Root level tag",
+          "predicate": "CREATES",
+          "object": "Amazon S3"
+        },
+        {
+          "subject": "Root level tag",
+          "predicate": "CREATES",
+          "object": "lifecycle configuration"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "RETURNS",
+          "object": "405 Method Not Allowed error"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "RETURNS",
+          "object": "403 Access Denied error"
+        },
+        {
+          "subject": "S3",
+          "predicate": "ASSUME",
+          "object": "Amazon Resource Name"
+        },
+        {
+          "subject": "S3",
+          "predicate": "ASSUME",
+          "object": "AWS Identity"
+        },
+        {
+          "subject": "PutBucketTagging",
+          "predicate": "HAS",
+          "object": "Error code"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "DELETES",
+          "object": "existing tag"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "LIMITS",
+          "object": "maximum number"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "LIMITS",
+          "object": "50 tags"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "IGNORE",
+          "object": "all public ACLs"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "IGNORE",
+          "object": "public ACLs"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "BLOCKS",
+          "object": "public bucket policies"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "RESTRICTS",
+          "object": "public bucket policies"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "THROW",
+          "object": "Associates an access control policy with the specified Multi Region"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "BLOCKS",
+          "object": "public access control lists"
+        }
+      ],
+      "token_count": 650,
+      "doc_id": "AWS-Document"
+    }
+  ],
+  "level_3_documents": [
+    {
+      "doc_id": "AWS-Document",
+      "summary": "want to enable MFA Delete in the bucket versioning configuration, you must include the x-amz- mfa request header and the Status and the MfaDelete request elements in a request to set the versioning state of the bucket. RedirectAllRequestsTo. HostName. For more information, see Controlling ownership of objects and disabling ACLs in the Amazon S3 User Guide. For more information, see Checking object integrity in the Amazon S3 checksum of the object. For more information, see Checking object integrity in the Amazon S3 User Guide. For more information, see Checking object integrity in the Amazon S3 User Guide. For more information, see Checking object integrity in the Amazon S3 User Guide. For more information, see Checking object integrity in the Amazon S3 User Guide. For more information, see Checking object integrity in the Amazon S3 User Guide. For more information about S3 Object Lock, see Object Lock in the Amazon S3 User Guide. Otherwise, Amazon S3 fails the request with the HTTP status code 400 Bad Request. Otherwise, Amazon S3 fails the request with the HTTP status code 400 Bad Request. If the individual checksum value you provide through x-amz-checksum-algorithm doesn't match the checksum algorithm you set through x-amz-sdk-checksum-algorithm, Amazon S3 fails the request with a BadDigest error. The server-side encryption algorithm that was used when you store this object in Amazon S3 or Amazon FSx. using server-side encryption in Amazon",
+      "top_entities": [
+        "amazon s3",
+        "s3",
+        "zonal endpoint api calls",
+        "existing bucket",
+        "object lock",
+        "aws s3",
+        "upload id",
+        "general purpose bucket permissions",
+        "s3 object lock",
+        "partial objects"
+      ],
+      "top_relationships": [
+        {
+          "source": "routing rule",
+          "relation": "REDIRECT",
+          "target": "ec2 instance"
+        },
+        {
+          "source": "amazon s3",
+          "relation": "RETURNS",
+          "target": "412 precondition failed error"
+        },
+        {
+          "source": "s3",
+          "relation": "RETURNS",
+          "target": "409 conditionalrequestconflict response"
+        },
+        {
+          "source": "amazon s3",
+          "relation": "CREATES",
+          "target": "unique version id"
+        },
+        {
+          "source": "amazon s3",
+          "relation": "PROVIDES",
+          "target": "s3 object lock"
+        }
+      ],
+      "token_count": 230
+    }
+  ]
+}

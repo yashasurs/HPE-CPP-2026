@@ -1,0 +1,73 @@
+{
+  "level_4_sections": [
+    {
+      "section_id": "sec_batch_023",
+      "summary": "aws4_request,SignedHeaders=content-encoding;content-length;host;x-amz- content-sha256;x-amz-date;x-amz-decoded-content-length;x-amz-storage- class,Signature=106e2a8a18243abcf37539882f36619c00e2dfc72633413f02d3b74544bfeb8e 5. Chunk 1: (65536 bytes, with value 97 for letter 'a') 106e2a8a18243abcf37539882f36619c00e2dfc72633413f02d3b74544bfeb8e bf718b6f653bebc184e1479f1935b8da974d701b893afcf49e701f3e2f9f9c5a For information about each line in the string to sign, see the diagram in the preceding topic (Calculating the Seed Signature) that shows various components of the string to sign. For example, the last three lines consist of the following: previous-signature. hash(\"\"). hash(current-chunk-data). b474d8862b1487a5145d686f57f013e54db672cee1c953b3010fb58501ef5aa2 10000;chunk- signature=b474d8862b1487a5145d686f57f013e54db672cee1c953b3010fb58501ef5aa2 <65536-bytes> 6. Chunk 2: (1024 bytes, with value 97 for letter 'a') b474d8862b1487a5145d686f57f013e54db672cee1c953b3010fb58501ef5aa2 2edc986847e209b4016e141a6dc8716d3207350f416969382d431539bf292e4a 1c1344b170168f8e65b41376b44b20fe354e373826ccbbe2c1d40a8cae51e5c7 400;chunk- signature=1c1344b170168f8e65b41376b44b20fe354e373826ccbbe2c1d40a8cae51e5c7 <1024-bytes> 7. Chunk 3: (0 byte data) 1c1344b170168f8e65b41376b44b20fe354e373826ccbbe2c1d40a8cae51e5c7 2ca2aba2005185cf7159c6277faf83795951dd77a3a99e6e65d5c9f85863f992 0;chunk- signature=2ca2aba2005185cf7159c6277faf83795951dd77a3a99e6e65d5c9f85863f992 8. Chunk 4: Trailing headers a. Trailer chunk string to sign: AWS4-HMAC-SHA256-TRAILER 2ca2aba2005185cf7159c6277faf83795951dd77a3a99e6e65d5c9f85863f992 1e376db7e1a34a8ef1c4bcee131a2d60a1cb62503747488624e10995f448d774 The last two lines are previous-signature (the 0 byte data chunk signature), hash(trailing-checksum-header-name:base64-encoded-trailing- checksum-value\\n). The hash is calculated as follows with no whitespace: The trailing checksum header name. A colon (:). The base64-encoded trailing checksum value. A use case scenario for presigned URLs is that you can grant temporary access to your Amazon S3 resources. The general form for this parameter value is as follows: ice> /aws4_request AKIAIOSFODNN7EXAMPLE/20130721/us-east-1/s3/aw s4_request For Amazon S3, the AWS-service string is s3. Valid values: \"AWS\" identifies Signature Version 2 \"AWS4-HMAC-SHA256\" identifies Signature ## Version 4 s3:authType Amazon S3 supports various methods of authentication (see Authenticating Requests (AWS Signature Version 4). \", \"Effect\": \"Deny\", \"Action\": \"s3:*\", \"Resource\": \"arn:aws:s3:::examplebucket3/*\", \"StringEquals\": \"s3:x-amz-content-sha256\": \"UNSIGNED-PAYLOAD\" Browser-Based Uploads Using POST (AWS Signature ## Version 4) This section discusses how to upload files directly to Amazon S3 through a browser using HTTP POST requests. Amazon S3 never stores partial objects. Amazon S3 automatically encrypts all new objects that are uploaded to an S3 bucket. By default, all buckets have a default encryption configuration that uses server- side encryption with Amazon S3 managed keys (SSE-S3). Host: destinationBucket.s3.amazonaws.com User-Agent: browser_data Accept: file_types Accept-Language: Regions Accept-Encoding: encoding Accept-Charset: character_set Keep-Alive: 300 Content-Type: multipart/form-data; boundary=9431149156168 Content-Disposition: form-data; name=\"key\" acl Content-Disposition: form-data; name=\"tagging\" Tagging> Content-Disposition: form-data; name=\"success_action_redirect\" success_redirect Content-Disposition: form-data; name=\"Content-Type\" content_type Content-Disposition: form-data; name=\"x-amz-meta-uuid Content-Disposition: form-data; name=\"x-amz-meta-tag Content-Disposition: form-data; name=\"x-amz-meta-uuid Content-Disposition: form-data; name=\"x-amz-meta-tag Content-Disposition: form-data; name=\"AWSAccessKeyId\" access-key-id Content-Disposition: form-data; name=\"Policy\" encoded_policy Content-Disposition: form-data; name=\"Signature\" signature= Content-Disposition: form-data; name=\"file\"; filename=\"MyFilename.jpg\" Content-Type: image/jpeg file_content Content-Disposition: form-data; name=\"submit\" Upload to Amazon S3 This implementation of the operation does not use request parameters. Amazon S3 stores the value of this header in the object metadata. For information about object metadata, see Object key and metadata in the Amazon Simple In the following example, the request header sets the redirect to an object (anotherPage.html ) in the same bucket: x-amz-website-redirect-location: / anotherPage.html In the following example, the request header sets the object redirect to another website: x-amz-website-redirect-location: For more information about website hosting in Amazon S3, see Hosting websites on Amazon S3 and How to configure website page redirects in the Constraints: The value must be prefixed by /, or The length of the value is limited to 2 KB. When uploading an object, you can specify the type of server-side encryption that you want Amazon S3 to use for encrypting There are four types of server-side encryption: Server-side encryption with Amazon S3 managed keys (SSE-S3) - Starting May 2022, all. Setting this header to true causes Amazon S3 to use an S3 Bucket Key for object encryption with SSE-KMS or DSSE-KMS. If you specify x-amz-server-side-encryption:aws:kms or x-amz-server-side- encryption:aws:kms:dsse, but do not provide x-amz-server-side-encryption- If you specify x-amz-server-side-encryption:aws:kms or x-amz-server-side- encryption:aws:kms:dsse, but do not provide x-amz-server-side-encryption- aws-kms-key-id, Amazon S3 uses the AWS managed key (aws/S3) to protect the data. For more information about permissions, see Permissions Related to Bucket Subresource Operations and Managing Access Permissions to Your Amazon S3 Resources in the Querying Archives with Select Requests You use a select type of request to perform SQL queries on archived objects. sigv4examplebucket.s3.amazonaws.com/successful_upload.html. Using the AWS Amplify JavaScript library to Upload Files to Amazon S3 The AWS Amplify library Storage module gives a simple browser-based upload mechanism for managing user content in public or private Amazon S3 storage.",
+      "preserved_entities": [
+        "aws signature",
+        "amazon s3",
+        "\"aws",
+        "all new objects",
+        "partial objects",
+        "object metadata",
+        "object encryption",
+        "s3 bucket key",
+        "sse-s3",
+        "amazon",
+        "aws managed key",
+        "archived objects",
+        "aws amplify library storage module",
+        "simple browser-based upload mechanism"
+      ],
+      "preserved_akus": [],
+      "token_count": 650,
+      "doc_id": "AWS-Document"
+    }
+  ],
+  "level_3_documents": [
+    {
+      "doc_id": "AWS-Document",
+      "summary": "aws4_request,SignedHeaders=content-encoding;content-length;host;x-amz- content-sha256;x-amz-date;x-amz-decoded-content-length;x-amz-storage- class,Signature=106e2a8a18243abcf37539882f36619c00e2dfc72633413f02d3b74544bfeb8e 5. Chunk 1: (65536 bytes, with value 97 for letter 'a') 106e2a8a18243abcf37539882f36619c00e2dfc72633413f02d3b74544bfeb8e bf718b6f653bebc184e1479f1935b8da974d701b893afcf49e701f3e2f9f9c5a For information about each line in the string to sign, see the diagram in the preceding topic (Calculating the Seed Signature) that shows various components of the string to sign. For example, the last three lines consist of the following: previous-signature. hash(\"\"). hash(current-chunk-data). b474d8862b1487a5145d686f57f013e54db672cee1c953b3010fb58501ef5aa2 10000;chunk- signature=b474d8862b1487a5145d686f57f013e54db672cee1c953b3010fb58501ef5aa2 <65536-bytes> 6. Chunk 2: (1024 bytes, with value 97 for letter 'a') b474d8862b1487a5145d686f57f013e54db672cee1c953b3010fb58501ef5aa2 2edc986847e209b4016e141a6dc8716d3207350f416969382d431539bf292e4a 1c1344b170168f8e65b41376b44b20fe354e373826ccbbe2c1d40a8cae51e5c7 400;chunk- signature=1c1344b170168f8e65b41376b44b20fe354e373826ccbbe2c1d40a8cae51e5c7 <1024-bytes> 7. Chunk 3: (0 byte data) 1c1344b170168f8e65b41376b44b20fe354e373826ccbbe2c1d40a8cae51e5c7 2ca2aba2005185cf7159c6277faf83795951dd77a3a99e6e65d5c9f85863f992 0;chunk- signature=2ca2aba2005185cf7159c6277faf83795951dd77a3a99e6e65d5c9f85863f992 8. Chunk 4: Trailing headers a. Trailer chunk string to sign: AWS4-HMAC-SHA256-TRAILER 2ca2aba2005185cf7159c6277faf83795951dd77a3a99e6e65d5c9f85863f992 1e376db7e1a34a8ef1c4bcee131a2d60a1cb62503747488624e10995f448d774 The last two lines are previous-signature (the 0 byte data chunk signature), hash(trailing-checksum-header-name:base64-encoded-trailing- checksum-value\\n). The hash is calculated as follows with no whitespace: The trailing checksum header name. A colon (:). The base64-encoded trailing checksum value. A use case scenario for presigned URLs is that you can grant temporary access to your Amazon S3 resources. The general form for this parameter value is as follows: ice> /aws4_request AKIAIOSFODNN7EXAMPLE/20130721/us-east-1/s3/aw s4_request For Amazon S3, the AWS-service string is s3. Valid values: \"AWS\" identifies Signature Version 2 \"AWS4-HMAC-SHA256\" identifies Signature ## Version 4 s3:authType Amazon S3 supports various methods of authentication (see Authenticating Requests (AWS Signature Version 4). \", \"Effect\": \"Deny\", \"Action\": \"s3:*\", \"Resource\": \"arn:aws:s3:::examplebucket3/*\", \"StringEquals\": \"s3:x-amz-content-sha256\": \"UNSIGNED-PAYLOAD\" Browser-Based Uploads Using POST (AWS Signature ## Version 4) This section",
+      "top_entities": [
+        "amazon s3",
+        "aws signature",
+        "\"aws",
+        "version 4 s3 authtype",
+        "all new objects",
+        "partial objects",
+        "object metadata",
+        "object encryption",
+        "s3 bucket key",
+        "sse-s3"
+      ],
+      "top_relationships": [
+        {
+          "source": "string",
+          "relation": "IDENTIFY",
+          "target": "aws signature"
+        },
+        {
+          "source": "x-amz-expires",
+          "relation": "PROVIDES",
+          "target": "time period"
+        },
+        {
+          "source": "date and time format",
+          "relation": "FOLLOW",
+          "target": "iso 8601 standard"
+        },
+        {
+          "source": "uriencode",
+          "relation": "ENCODE",
+          "target": "every byte"
+        },
+        {
+          "source": "key calculations",
+          "relation": "USES",
+          "target": "us east-1"
+        }
+      ],
+      "token_count": 230
+    }
+  ]
+}

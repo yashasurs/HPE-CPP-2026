@@ -1,0 +1,171 @@
+{
+  "level_4_sections": [
+    {
+      "section_id": "sec_batch_009",
+      "summary": "### AbortMultipartUpload You can specify any amount of prefixes, but the total length of characters of all prefixes must be less than 256 bytes in size. SelectionCriteria A container for the delimiter of the selection criteria being used. Maximum value of 10. For more information about Amazon S3 Lifecycle configuration rules, see Transitioning objects using Amazon S3 Lifecycle in Indicates when objects are transitioned to the specified storage class. Valid Values: GLACIER | STANDARD_IA | ONEZONE_IA | INTELLIGENT_TIERING | DEEP_ARCHIVE VersioningConfiguration Describes the versioning state of an Amazon S3 on Outposts bucket. Amazon S3 Files The following data types are supported by Amazon S3 Files: CreationPermissions. Amazon S3 on Outposts Access Points simplify managing data access at scale for shared datasets in S3 on Outposts. Pattern: ^arn:(aws|aws-cn|aws-us-gov|aws-iso|aws-iso-b):s3-outposts:[a-z \\-0-9]*:[0-9]{12}:outpost/(op-[a-f0-9]{17}|\\d{12})/s3$ Amazon S3 Tables The following data types are supported by Amazon S3 Tables: Configuration specifying how data should be encrypted. For information on signing requests using temporary security credentials in your REST API requests, see Signing and authenticating REST requests (AWS signature version 2). Amazon S3 dual-stack endpoints When you make a request to a dual-stack endpoint, the bucket URL resolves to an IPv6 or an IPv4 address. The addressing style, set in the config file, controls if the bucket name is in the hostname or part of the URL. $ aws configure set default.s3.use_dualstack_endpoint true $ aws configure set default.s3.addressing_style virtual If you want to use a dual-stack endpoint for specified AWS CLI commands only (not all commands), you can use either of the following methods: You can use the dual-stack endpoint per command by setting the --endpoint-url. $ aws s3api list-objects --bucket bucketname --endpoint-url region.amazonaws.com You can set up separate profiles in your AWS Config file. To send authenticated requests using your AWS account or IAM user credentials: Create an instance of the AmazonS3Client class. Run one of the AmazonS3Client methods to send requests to Amazon S3. generates the necessary signature from the credentials that you provide and includes it in the request it sends to Amazon S3. You can create the AmazonS3Client client without providing your security. Amazon S3 returns an error if you send anonymous requests for a resource that is not publicly available. Amazon S3 returns an error if you send anonymous requests for a resource that is not publicly available. namespace Amazon.DocSamples.S3 class MakeS3RequestTest private const string bucketName = \"*** bucket name ***\"; private static readonly RegionEndpoint bucketRegion = RegionEndpoint.USWest2; private static IAmazonS3 client; using (client = new AmazonS3Client(bucketRegion)) Console.WriteLine(\"Listing objects stored in a bucket\"); ListingObjectsAsync().Wait(); static async Task ListingObjectsAsync() ListObjectsRequest request = new ListObjectsRequest MaxKeys = 2 do ListObjectsResponse response = await client.ListObjectsAsync(request); // Process the response. (s3_client, bucket_name) run_me if $PROGRAM_NAME == __FILE__ If you don't have a local AWS credentials file, you can still create the Aws::S3::Client resource and run code against Amazon S3 buckets and objects. Amazon S3 returns an error if you send anonymous requests for a resource that's not publicly available. Create an instance of the AmazonS3Client class using the temporary security credentials. Create an instance of the AmazonS3Client class using the temporary security credentials. Create an instance of the AmazonS3Client class by passing in the temporary security credentials. For a list of available AWS SDKs, see Sample Code and Libraries. Both the AWS account and an IAM user can request temporary security credentials for federated users. However, for added security, only an IAM user with the necessary permissions should request these temporary credentials to ensure that the federated user gets at most the permissions of the requesting IAM user. In some applications, you might find it suitable to create an IAM user with specific permissions for the sole purpose of granting temporary security credentials to your federated users and applications. To run the example, you need to create an IAM user with an attached policy that allows the user to request temporary security credentials and list your AWS resources.",
+      "preserved_entities": [
+        "s3",
+        "amazon s3",
+        "objects",
+        "aws resource",
+        "s3 tables",
+        "iam user",
+        "api",
+        "iam",
+        "temporary security credentials",
+        "policy",
+        "aws sdk",
+        "aws account",
+        "credentials",
+        "temporary credentials",
+        "only an iam user",
+        "both the aws account"
+      ],
+      "preserved_akus": [
+        {
+          "subject": "String objectKey",
+          "predicate": "UPLOAD",
+          "object": "Amazon S3 bucket"
+        },
+        {
+          "subject": "command",
+          "predicate": "UPLOAD",
+          "object": "Amazon S3"
+        },
+        {
+          "subject": "command",
+          "predicate": "UPLOAD",
+          "object": "Amazon S3"
+        },
+        {
+          "subject": "command",
+          "predicate": "CREATES",
+          "object": "new S3 object"
+        },
+        {
+          "subject": "command",
+          "predicate": "UPLOAD",
+          "object": "Amazon S3"
+        },
+        {
+          "subject": "def",
+          "predicate": "UPLOAD",
+          "object": "Amazon S3"
+        },
+        {
+          "subject": "command",
+          "predicate": "CREATES",
+          "object": "new S3 object"
+        },
+        {
+          "subject": "Console",
+          "predicate": "SET",
+          "object": "default retention period"
+        },
+        {
+          "subject": "Amazon S3 buckets",
+          "predicate": "NAME",
+          "object": "a. global namespace"
+        },
+        {
+          "subject": "Region us-east-1",
+          "predicate": "DEFAULT",
+          "object": "Signature Version"
+        },
+        {
+          "subject": "Presigned requests",
+          "predicate": "CONTAINS",
+          "object": "temporary credentials"
+        },
+        {
+          "subject": "URL",
+          "predicate": "EXPIRE",
+          "object": "10 minutes"
+        },
+        {
+          "subject": "S3",
+          "predicate": "PROVIDES",
+          "object": "standard buckets"
+        },
+        {
+          "subject": "'s",
+          "predicate": "CREATES",
+          "object": "some S3 buckets"
+        },
+        {
+          "subject": "UploadTestObjects",
+          "predicate": "UPLOAD",
+          "object": "S3 buckets"
+        },
+        {
+          "subject": "Permission",
+          "predicate": "SPECIFIES",
+          "object": "log delivery group"
+        },
+        {
+          "subject": "SDK",
+          "predicate": "RETURNS",
+          "object": "decoded URI values"
+        },
+        {
+          "subject": "URI",
+          "predicate": "CONTAINS",
+          "object": "no query parameters"
+        },
+        {
+          "subject": "SDK",
+          "predicate": "RETURNS",
+          "object": "empty map"
+        }
+      ],
+      "token_count": 650,
+      "doc_id": "AWS-Document"
+    }
+  ],
+  "level_3_documents": [
+    {
+      "doc_id": "AWS-Document",
+      "summary": "### AbortMultipartUpload You can specify any amount of prefixes, but the total length of characters of all prefixes must be less than 256 bytes in size. SelectionCriteria A container for the delimiter of the selection criteria being used. Maximum value of 10. For more information about Amazon S3 Lifecycle configuration rules, see Transitioning objects using Amazon S3 Lifecycle in Indicates when objects are transitioned to the specified storage class. Valid Values: GLACIER | STANDARD_IA | ONEZONE_IA | INTELLIGENT_TIERING | DEEP_ARCHIVE VersioningConfiguration Describes the versioning state of an Amazon S3 on Outposts bucket. Amazon S3 Files The following data types are supported by Amazon S3 Files: CreationPermissions. Amazon S3 on Outposts Access Points simplify managing data access at scale for shared datasets in S3 on Outposts. Pattern: ^arn:(aws|aws-cn|aws-us-gov|aws-iso|aws-iso-b):s3-outposts:[a-z \\-0-9]*:[0-9]{12}:outpost/(op-[a-f0-9]{17}|\\d{12})/s3$ Amazon S3 Tables The following data types are supported by Amazon S3 Tables: Configuration specifying how data should be encrypted. For information on signing requests using temporary security credentials in your REST API requests, see Signing and authenticating REST requests (AWS signature version 2). Amazon S3 dual-stack endpoints When you make a request to a dual-stack endpoint, the bucket URL resolves to an IPv6 or an IPv4 address. The addressing style, set in the config file, controls if the bucket name is in the hostname or part of the URL. $ aws configure set default.s3.use_dualstack_endpoint true $ aws configure set default.s3.addressing_style virtual",
+      "top_entities": [
+        "temporary security credentials",
+        "iam user",
+        "s3",
+        "amazon s3",
+        "s3 tables",
+        "sdk-specific credentials provider chain",
+        "each of these aws sdks",
+        "source objects",
+        "s3 storage lens",
+        "all s3 storage lens storage and activity data"
+      ],
+      "top_relationships": [
+        {
+          "source": "s3",
+          "relation": "REPLICATE",
+          "target": "source objects"
+        },
+        {
+          "source": "s3",
+          "relation": "REPLICATE",
+          "target": "metadata changes"
+        },
+        {
+          "source": "keyid",
+          "relation": "SPECIFIES",
+          "target": "side encryption"
+        },
+        {
+          "source": "and or or logical operator",
+          "relation": "USES",
+          "target": "multiple filter conditions"
+        },
+        {
+          "source": "s3 storage lens",
+          "relation": "COUNT",
+          "target": "prefix depth"
+        }
+      ],
+      "token_count": 230
+    }
+  ]
+}

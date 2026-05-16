@@ -1,0 +1,297 @@
+{
+  "level_4_sections": [
+    {
+      "section_id": "sec_batch_001",
+      "summary": "### CreateMultipartUpload This action initiates a multipart upload and returns an upload ID. For more information about multipart uploads, see Multipart Upload Overview in the Amazon S3 User Guide. Amazon S3. x-amz-server-side-encryption. x-amz-server-side-encryption-aws-kms-key-id, Amazon S3 uses the x-amz-server-side-encryption. Amazon S3 supports a set of predefined ACLs, known as canned ACLs. For more information, see Canned ACL in the Amazon S3 User Guide. When uploading an object, you can grant access permissions to individual AWS accounts or to predefined groups defined by Amazon S3. | aws-exec-read | bucket-owner-read | bucket-owner-full-control x-amz-checksum-algorithm Indicates the algorithm that you want Amazon S3 to use to create the checksum for the object. For more information, see Checking object integrity in the Amazon S3 User Guide. For more information, see Checking object integrity in the Amazon S3 User Guide. Indicates the checksum type that you want Amazon S3 to use to calculate the object’s checksum value. Indicates the checksum type that you want Amazon S3 to use to calculate the object’s checksum value. For more information, see Checking object integrity in the Amazon S3 User Specify access permissions explicitly to give the grantee READ, READ_ACP, and WRITE_ACP permissions on the object. This header maps to specific permissions that Amazon S3 supports in an ACL. This header maps to specific permissions that Amazon S3 supports in an ACL. This header maps to specific permissions that Amazon S3 supports in an ACL. This header maps to specific permissions that Amazon S3 supports in an ACL. For more information, see Access Control List (ACL) Overview in the Amazon S3 User Guide. For more information, see Access Control List (ACL) Overview in the Amazon S3 User Guide. For more information, see Access Control List (ACL) Overview in the Amazon S3 User Guide. For more information, see Access Control List (ACL) Overview in the Amazon S3 User Guide. For more information, see Checking object integrity in the Amazon S3 User Indicates whether the multipart upload uses an S3 Bucket Key for server-side encryption with If present, indicates the AWS KMS Encryption Context to use for object encryption. DELETE /?intelligent-tiering&id=Id HTTP/1.1 The name of the Amazon S3 bucket whose configuration you want to modify or retrieve. Amazon S3 removes all the lifecycle configuration rules in the lifecycle subresource associated with the bucket. Your objects never expire, and Amazon S3 no longer automatically deletes any objects on the basis of rules contained in the deleted lifecycle configuration. General purpose bucket permissions - By default, all Amazon S3 resources are private,. If you don't have DeleteBucketPolicy permissions, Amazon S3 returns a 403 Access Denied error. If you have the correct permissions, but you're not using an identity that belongs to the bucket owner's account, Amazon S3 returns a 405 Method Not Allowed error. For more information about general purpose buckets bucket policies, see Using Bucket Policies and User Policies in the Amazon S3 User Guide. For information about replication configuration, see Replication in the Amazon S3 User Guide. Otherwise, Amazon S3 fails the request with the HTTP status code 400 Bad Request. If the individual checksum value you provide through x-amz-checksum-algorithm doesn't match the checksum algorithm you set through x-amz-sdk-checksum-algorithm, Amazon S3 fails the request with a BadDigest error. Type: Array of DeletedObject data types Container for a failed delete action that describes the object that Amazon S3 attempted to delete and the error it encountered. In this example, the requester does not have permission to delete the sample2.txt Content-Length: 125 The response includes a DeleteResult element that includes a Deleted element for the item that Amazon S3 successfully deleted and an Error element that Amazon S3 did not delete because you didn't have permission to delete the object. However, Amazon S3 inserts a delete marker. Content-Length: 79 Because versioning is enabled on the bucket, Amazon S3 does not delete the object. For information about the Amazon S3 inventory feature, see Amazon S3 Inventory.",
+      "preserved_entities": [
+        "amazon s3",
+        "multipart upload",
+        "s3 bucket",
+        "s3 bucket key",
+        "any objects",
+        "deletebucketpolicy permissions",
+        "objects"
+      ],
+      "preserved_akus": [
+        {
+          "subject": "Amazon S3",
+          "predicate": "DELETES",
+          "object": "all the lifecycle configuration rules"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "DELETES",
+          "object": "any objects"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "RETURNS",
+          "object": "403 Access Denied error"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "RETURNS",
+          "object": "204 No Content response"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "RETURNS",
+          "object": "405 Method Not"
+        },
+        {
+          "subject": "calling identity",
+          "predicate": "HAS",
+          "object": "DeleteBucketPolicy permissions"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "RETURNS",
+          "object": "204 No Content response"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "RETURNS",
+          "object": "200 OK response"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "RETURNS",
+          "object": "404 response"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "USES",
+          "object": "header value"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "DELETES",
+          "object": "specific object version"
+        },
+        {
+          "subject": "Objects",
+          "predicate": "TRANSITION",
+          "object": "Glacier Flexible"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "CONTINUE",
+          "object": "backward compatibility"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "SET",
+          "object": "all newly created buckets"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "DETECT",
+          "object": "specified events"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "RETURNS",
+          "object": "403 Access Denied error"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "RETURNS",
+          "object": "405 Method Not"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "REPLICATE",
+          "object": "all objects"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "ASSUME",
+          "object": "specified IAM role"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "CREATES",
+          "object": "object replicas"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "RETURNS",
+          "object": "status code 404 Not"
+        },
+        {
+          "subject": "S3",
+          "predicate": "RETURNS",
+          "object": "304 Not Modified HTTP status code"
+        },
+        {
+          "subject": "S3",
+          "predicate": "RETURNS",
+          "object": "304 Not Modified status code"
+        },
+        {
+          "subject": "S3",
+          "predicate": "RETURNS",
+          "object": "200 OK"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "USES",
+          "object": "message integrity check"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "RETURNS",
+          "object": "all objects"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "STORES",
+          "object": "object metadata"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "RETURNS",
+          "object": "x amz tagging count header"
+        },
+        {
+          "subject": "General purpose bucket permissions",
+          "predicate": "HAS",
+          "object": "READ. access"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "RETURNS",
+          "object": "all objects"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "EVALUATE",
+          "object": "PublicAccessBlock configuration"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "IGNORE",
+          "object": "all public ACLs"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "IGNORE",
+          "object": "public ACLs"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "BLOCKS",
+          "object": "public bucket policies"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "RESTRICTS",
+          "object": "public bucket policies"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "BLOCKS",
+          "object": "public access control lists"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "USES",
+          "object": "most restrictive combination"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "RETURNS",
+          "object": "status code 404 Not Found error"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "RETURNS",
+          "object": "304 Not Modified response code"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "RETURNS",
+          "object": "200 OK"
+        },
+        {
+          "subject": "S3",
+          "predicate": "RETURNS",
+          "object": "416 - Requested Range Not Satisfiable error"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "RETURNS",
+          "object": "x- amz-replication-status header"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "RETURNS",
+          "object": "any object request"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "STORES",
+          "object": "object replicas"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "RETURNS",
+          "object": "all objects"
+        },
+        {
+          "subject": "Amazon S3",
+          "predicate": "STORES",
+          "object": "object metadata"
+        }
+      ],
+      "token_count": 650,
+      "doc_id": "AWS-Document"
+    }
+  ],
+  "level_3_documents": [
+    {
+      "doc_id": "AWS-Document",
+      "summary": "### CreateMultipartUpload This action initiates a multipart upload and returns an upload ID. For more information about multipart uploads, see Multipart Upload Overview in the Amazon S3 User Guide. Amazon S3. x-amz-server-side-encryption. x-amz-server-side-encryption-aws-kms-key-id, Amazon S3 uses the x-amz-server-side-encryption. Amazon S3 supports a set of predefined ACLs, known as canned ACLs. For more information, see Canned ACL in the Amazon S3 User Guide. When uploading an object, you can grant access permissions to individual AWS accounts or to predefined groups defined by Amazon S3. | aws-exec-read | bucket-owner-read | bucket-owner-full-control x-amz-checksum-algorithm Indicates the algorithm that you want Amazon S3 to use to create the checksum for the object. For more information, see Checking object integrity in the Amazon S3 User Guide. For more information, see Checking object integrity in the Amazon S3 User Guide. Indicates the checksum type that you want Amazon S3 to use to calculate the object’s checksum value. Indicates the checksum type that you want Amazon S3 to use to calculate the object’s checksum value. For more information, see Checking object integrity in the Amazon S3 User Specify access permissions explicitly to give the grantee READ, READ_ACP, and WRITE_ACP permissions on the object. This header maps to specific permissions that Amazon S3 supports in an ACL. This header maps to specific permissions that Amazon S3 supports in an ACL. This header maps to specific permissions that Amazon S3",
+      "top_entities": [
+        "amazon s3",
+        "bucket's default encryption configuration",
+        "multipart upload",
+        "zonal endpoint api calls",
+        "directory buckets",
+        "s3 intelligent-tiering",
+        "all new objects",
+        "aws managed key",
+        "s3 bucket",
+        "s3 bucket key"
+      ],
+      "top_relationships": [
+        {
+          "source": "amazon s3",
+          "relation": "USES",
+          "target": "corresponding kms key"
+        },
+        {
+          "source": "amazon s3",
+          "relation": "ENCRYPTS",
+          "target": "all new objects"
+        },
+        {
+          "source": "amazon s3",
+          "relation": "ABORT",
+          "target": "multipart upload"
+        },
+        {
+          "source": "amazon s3",
+          "relation": "ENCRYPTS",
+          "target": "diﬀerent encryption key"
+        },
+        {
+          "source": "amazon s3",
+          "relation": "USES",
+          "target": "encryption settings values"
+        }
+      ],
+      "token_count": 230
+    }
+  ]
+}

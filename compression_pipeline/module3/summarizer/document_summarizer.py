@@ -26,7 +26,8 @@ def _get_summarizer():
         logger.info("Loading abstractive summarization model (DistilBART)...")
         model_name = "sshleifer/distilbart-cnn-12-6"
         _TOKENIZER = AutoTokenizer.from_pretrained(model_name)
-        _MODEL = AutoModelForSeq2SeqLM.from_pretrained(model_name)
+        _MODEL = AutoModelFor
+        Seq2SeqLM.from_pretrained(model_name)
         _MODEL.eval()
     return _TOKENIZER, _MODEL
 
@@ -162,7 +163,7 @@ def summarize_document(
         summary = _run_summarizer(
             input_text,
             max_length=max_tokens,
-            min_length=max(10, max_tokens // 4),
+            min_length=max(120, max_tokens // 2),
         )
     except Exception as exc:
         logger.warning("Abstractive summarization failed for %s: %s — falling back to truncation", doc_id, exc)
